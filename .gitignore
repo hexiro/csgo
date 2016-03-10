@@ -1,0 +1,8 @@
+dist
+*.egg-info
+*.pyc
+.coverage
+*.swp
+
+csgo/protobufs/*.proto
+credentials/*
