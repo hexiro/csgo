@@ -12,6 +12,10 @@ for interacting with CSGO's Game Coordinator.
 Installation
 ------------
 
+Install latest version from PYPI::
+
+    pip install -U csgo
+
 Install the current dev version from ``github``::
 
     pip install git+https://github.com/ValvePython/csgo
