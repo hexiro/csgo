@@ -1,5 +1,5 @@
-https://github.com/SteamRE/SteamKit/raw/master/Resources/Protobufs/csgo/steammessages.proto
-https://github.com/SteamRE/SteamKit/raw/master/Resources/Protobufs/csgo/gcsystemmsgs.proto
-https://github.com/SteamRE/SteamKit/raw/master/Resources/Protobufs/csgo/base_gcmessages.proto
-https://github.com/SteamRE/SteamKit/raw/master/Resources/Protobufs/csgo/gcsdk_gcmessages.proto
-https://github.com/SteamRE/SteamKit/raw/master/Resources/Protobufs/csgo/cstrike15_gcmessages.proto
+https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/csgo/steammessages.proto
+https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/csgo/gcsystemmsgs.proto
+https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/csgo/base_gcmessages.proto
+https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/csgo/gcsdk_gcmessages.proto
+https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/csgo/cstrike15_gcmessages.proto
