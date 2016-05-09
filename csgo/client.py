@@ -86,6 +86,17 @@ class CSGOClient(EventEmitter, FeatureBase):
     def _handle_client_welcome(self, message):
         self._set_connection_status(GCConnectionStatus.HAVE_SESSION)
 
+        # handle CSGO Welcome
+        submessage = pb_gclient.CMsgCStrike15Welcome()
+        submessage.ParseFromString(message.game_data)
+
+        if self.verbose_debug:
+            logger.debug("Got CStrike15Welcome:\n%s" % str(submessage))
+        else:
+            logger.debug("Got CStrike15Welcome")
+
+        self.emit('csgo_welcome', submessage)
+
     def _handle_conn_status(self, message):
         self._set_connection_status(message.status)
 
