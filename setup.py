@@ -13,8 +13,8 @@ with open(path.join(here, 'csgo/__init__.py'), encoding='utf-8') as f:
 
 install_requires = [
     'steam>=0.6.5',
-    'gevent-eventemitter>=1.2',
-    'gevent>=1.1rc3',
+    'gevent-eventemitter>=1.4',
+    'gevent>=1.1',
     'protobuf>=2.6.1',
 ]
 
