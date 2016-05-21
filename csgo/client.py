@@ -6,7 +6,6 @@ the :mod:`csgo.features` package and it's submodules.
 import logging
 import gevent
 import google.protobuf
-from eventemitter import EventEmitter
 from steam.core.msg import GCMsgHdrProto
 from steam.client.gc import GameCoordinator
 from steam.enums.emsg import EMsg
@@ -16,18 +15,15 @@ from csgo.msg import get_emsg_enum, find_proto
 from csgo.protobufs import gcsdk_gcmessages_pb2 as pb_gc
 from csgo.protobufs import cstrike15_gcmessages_pb2 as pb_gclient
 
-logger = logging.getLogger("CSGOClient")
 
-
-class CSGOClient(EventEmitter, FeatureBase):
+class CSGOClient(GameCoordinator, FeatureBase):
     """
     :param steam_client: Instance of the steam client
     :type steam_client: :class:`steam.client.SteamClient`
     """
-    _logger = logger
     _retry_welcome_loop = None
     verbose_debug = False  #: enable pretty print of messages in debug logging
-    appid = 730  #: main client app id
+    app_id = 730  #: main client app id
     current_jobid = 0
     ready = False  #: ``True`` when we have a session with GC
     connection_status = GCConnectionStatus.NO_SESSION  #: :class:`csgo.enums.GCConnectionStatus`
@@ -40,23 +36,13 @@ class CSGOClient(EventEmitter, FeatureBase):
         return self.steam.steam_id.id
 
     def __init__(self, steam_client):
-        super(CSGOClient, self).__init__()
+        GameCoordinator.__init__(self, steam_client, self.app_id)
+        self._LOG = logging.getLogger(self.__class__.__name__)
 
-        from steam.client import SteamClient
-
-        if not isinstance(steam_client, SteamClient):
-            raise ValueError("Expected an instance of SteamClient as argument")
-
-        # SteamClient setup
-        self.steam = steam_client  #: instance of steam client
+        FeatureBase.__init__(self)
 
         self.steam.on('disconnected', self._handle_disconnect)
         self.steam.on(EMsg.ClientPlayingSessionState, self._handle_play_sess_state)
-
-        # GC setup
-        self.gc = GameCoordinator(self.steam, self.appid)  #: instance of :class:`steam.client.gc.GameCoordinator`
-
-        self.gc.on(None, self._handle_gc_message)
 
         # register GC message handles
         self.on(EGCBaseClientMsg.EMsgGCClientConnectionStatus, self._handle_conn_status)
@@ -68,13 +54,8 @@ class CSGOClient(EventEmitter, FeatureBase):
                                               repr(self.connection_status),
                                               )
 
-    def emit(self, event, *args):
-        if event is not None:
-            logger.debug("Emit event: %s" % repr(event))
-        super(CSGOClient, self).emit(event, *args)
-
     def _handle_play_sess_state(self, message):
-        if self.ready and message.playing_app != self.appid:
+        if self.ready and message.playing_app != self.app_id:
             self._set_connection_status(GCConnectionStatus.NO_SESSION)
 
     def _handle_disconnect(self):
@@ -91,33 +72,33 @@ class CSGOClient(EventEmitter, FeatureBase):
         submessage.ParseFromString(message.game_data)
 
         if self.verbose_debug:
-            logger.debug("Got CStrike15Welcome:\n%s" % str(submessage))
+            self._LOG.debug("Got CStrike15Welcome:\n%s" % str(submessage))
         else:
-            logger.debug("Got CStrike15Welcome")
+            self._LOG.debug("Got CStrike15Welcome")
 
         self.emit('csgo_welcome', submessage)
 
     def _handle_conn_status(self, message):
         self._set_connection_status(message.status)
 
-    def _handle_gc_message(self, emsg, header, payload):
+    def _process_gc_message(self, emsg, header, payload):
         emsg = get_emsg_enum(emsg)
         proto = find_proto(emsg)
 
         if proto is None:
-            logger.error("Failed to parse: %s" % repr(emsg))
+            self._LOG.error("Failed to parse: %s" % repr(emsg))
             return
 
         message = proto()
         message.ParseFromString(payload)
 
         if self.verbose_debug:
-            logger.debug("Incoming: %s\n%s\n---------\n%s" % (repr(emsg),
+            self._LOG.debug("Incoming: %s\n%s\n---------\n%s" % (repr(emsg),
                                                               str(header),
                                                               str(message),
                                                               ))
         else:
-            logger.debug("Incoming: %s", repr(emsg))
+            self._LOG.debug("Incoming: %s", repr(emsg))
 
         self.emit(emsg, message)
 
@@ -198,11 +179,11 @@ class CSGOClient(EventEmitter, FeatureBase):
             if str_body:
                 str_message += "-- message --------\n%s\n" % str_body
 
-            logger.debug("Outgoing: %s\n%s" % (repr(emsg), str_message))
+            self._LOG.debug("Outgoing: %s\n%s" % (repr(emsg), str_message))
         else:
-            logger.debug("Outgoing: %s", repr(emsg))
+            self._LOG.debug("Outgoing: %s", repr(emsg))
 
-        self.gc.send(header, message.SerializeToString())
+        GameCoordinator.send(self, header, message.SerializeToString())
 
     def _knock_on_gc(self):
             n = 1
@@ -231,7 +212,7 @@ class CSGOClient(EventEmitter, FeatureBase):
             self.steam.wait_event('logged_on')
 
         if not self._retry_welcome_loop:
-            self.steam.games_played([self.appid])
+            self.steam.games_played([self.app_id])
             self._retry_welcome_loop = gevent.spawn(self._knock_on_gc)
 
     def exit(self):
