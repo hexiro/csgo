@@ -5,17 +5,24 @@ from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
+from google.protobuf import symbol_database as _symbol_database
 from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
+_sym_db = _symbol_database.Default()
 
-import steammessages_pb2
+
+import csgo.protobufs.steammessages_pb2 as steammessages__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='cstrike15_gcmessages.proto',
   package='',
-  serialized_pb='\n\x1a\x63strike15_gcmessages.proto\x1a\x13steammessages.proto\"b\n\x0eGameServerPing\x12\x15\n\rgameserver_id\x18\x01 \x01(\x04\x12\x0c\n\x04ping\x18\x02 \x01(\x05\x12\n\n\x02ip\x18\x03 \x01(\r\x12\x0c\n\x04port\x18\x04 \x01(\r\x12\x11\n\tinstances\x18\x05 \x01(\r\"`\n\x17\x44\x65tailedSearchStatistic\x12\x11\n\tgame_type\x18\x01 \x01(\r\x12\x17\n\x0fsearch_time_avg\x18\x02 \x01(\r\x12\x19\n\x11players_searching\x18\x04 \x01(\r\"\xa7\x01\n\x10TournamentPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x13\n\x0bplayer_nick\x18\x02 \x01(\t\x12\x13\n\x0bplayer_name\x18\x03 \x01(\t\x12\x12\n\nplayer_dob\x18\x04 \x01(\r\x12\x13\n\x0bplayer_flag\x18\x05 \x01(\t\x12\x17\n\x0fplayer_location\x18\x06 \x01(\t\x12\x13\n\x0bplayer_desc\x18\x07 \x01(\t\"}\n\x0eTournamentTeam\x12\x0f\n\x07team_id\x18\x01 \x01(\x05\x12\x10\n\x08team_tag\x18\x02 \x01(\t\x12\x11\n\tteam_flag\x18\x03 \x01(\t\x12\x11\n\tteam_name\x18\x04 \x01(\t\x12\"\n\x07players\x18\x05 \x03(\x0b\x32\x11.TournamentPlayer\"\xdf\x01\n\x0fTournamentEvent\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x11\n\tevent_tag\x18\x02 \x01(\t\x12\x12\n\nevent_name\x18\x03 \x01(\t\x12\x18\n\x10\x65vent_time_start\x18\x04 \x01(\r\x12\x16\n\x0e\x65vent_time_end\x18\x05 \x01(\r\x12\x14\n\x0c\x65vent_public\x18\x06 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x07 \x01(\x05\x12\x18\n\x10\x65vent_stage_name\x18\x08 \x01(\t\x12\x19\n\x11\x61\x63tive_section_id\x18\t \x01(\r\"\x8f\x03\n\x10GlobalStatistics\x12\x16\n\x0eplayers_online\x18\x01 \x01(\r\x12\x16\n\x0eservers_online\x18\x02 \x01(\r\x12\x19\n\x11players_searching\x18\x03 \x01(\r\x12\x19\n\x11servers_available\x18\x04 \x01(\r\x12\x17\n\x0fongoing_matches\x18\x05 \x01(\r\x12\x17\n\x0fsearch_time_avg\x18\x06 \x01(\r\x12\x33\n\x11search_statistics\x18\x07 \x03(\x0b\x32\x18.DetailedSearchStatistic\x12\x15\n\rmain_post_url\x18\x08 \x01(\t\x12\x1e\n\x16required_appid_version\x18\t \x01(\r\x12\x1a\n\x12pricesheet_version\x18\n \x01(\r\x12\x1e\n\x16twitch_streams_version\x18\x0b \x01(\r\x12!\n\x19\x61\x63tive_tournament_eventid\x18\x0c \x01(\r\x12\x18\n\x10\x61\x63tive_survey_id\x18\r \x01(\r\">\n\x1fOperationalStatisticDescription\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05idkey\x18\x02 \x01(\r\"<\n\x1bOperationalStatisticElement\x12\r\n\x05idkey\x18\x01 \x01(\r\x12\x0e\n\x06values\x18\x02 \x03(\x05\"r\n\x1bOperationalStatisticsPacket\x12\x10\n\x08packetid\x18\x01 \x01(\x05\x12\x13\n\x0bmstimestamp\x18\x02 \x01(\x05\x12,\n\x06values\x18\x03 \x03(\x0b\x32\x1c.OperationalStatisticElement\"[\n\x11PlayerRankingInfo\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0f\n\x07rank_id\x18\x02 \x01(\r\x12\x0c\n\x04wins\x18\x03 \x01(\r\x12\x13\n\x0brank_change\x18\x04 \x01(\x02\"X\n\x16PlayerCommendationInfo\x12\x14\n\x0c\x63md_friendly\x18\x01 \x01(\r\x12\x14\n\x0c\x63md_teaching\x18\x02 \x01(\r\x12\x12\n\ncmd_leader\x18\x04 \x01(\r\"\xc0\x01\n\x10PlayerMedalsInfo\x12\x12\n\nmedal_team\x18\x01 \x01(\r\x12\x14\n\x0cmedal_combat\x18\x02 \x01(\r\x12\x14\n\x0cmedal_weapon\x18\x03 \x01(\r\x12\x14\n\x0cmedal_global\x18\x04 \x01(\r\x12\x12\n\nmedal_arms\x18\x05 \x01(\r\x12\x1c\n\x14\x64isplay_items_defidx\x18\x07 \x03(\r\x12$\n\x1c\x66\x65\x61tured_display_item_defidx\x18\x08 \x01(\r\">\n\x0f\x41\x63\x63ountActivity\x12\x10\n\x08\x61\x63tivity\x18\x01 \x01(\r\x12\x0c\n\x04mode\x18\x02 \x01(\r\x12\x0b\n\x03map\x18\x03 \x01(\r\"g\n\x14TournamentMatchSetup\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x12\n\nteam_id_ct\x18\x02 \x01(\x05\x12\x11\n\tteam_id_t\x18\x03 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x04 \x01(\x05\"\xc0\x03\n\x0eServerHltvInfo\x12\x13\n\x0btv_udp_port\x18\x01 \x01(\r\x12\x14\n\x0ctv_watch_key\x18\x02 \x01(\x04\x12\x10\n\x08tv_slots\x18\x03 \x01(\r\x12\x12\n\ntv_clients\x18\x04 \x01(\r\x12\x12\n\ntv_proxies\x18\x05 \x01(\r\x12\x0f\n\x07tv_time\x18\x06 \x01(\r\x12\x11\n\tgame_type\x18\x08 \x01(\r\x12\x15\n\rgame_mapgroup\x18\t \x01(\t\x12\x10\n\x08game_map\x18\n \x01(\t\x12\x19\n\x11tv_master_steamid\x18\x0b \x01(\x04\x12\x16\n\x0etv_local_slots\x18\x0c \x01(\r\x12\x18\n\x10tv_local_clients\x18\r \x01(\r\x12\x18\n\x10tv_local_proxies\x18\x0e \x01(\r\x12\x16\n\x0etv_relay_slots\x18\x0f \x01(\r\x12\x18\n\x10tv_relay_clients\x18\x10 \x01(\r\x12\x18\n\x10tv_relay_proxies\x18\x11 \x01(\r\x12\x18\n\x10tv_relay_address\x18\x12 \x01(\r\x12\x15\n\rtv_relay_port\x18\x13 \x01(\r\x12\x18\n\x10tv_relay_steamid\x18\x14 \x01(\x04\"X\n\rIpAddressMask\x12\t\n\x01\x61\x18\x01 \x01(\r\x12\t\n\x01\x62\x18\x02 \x01(\r\x12\t\n\x01\x63\x18\x03 \x01(\r\x12\t\n\x01\x64\x18\x04 \x01(\r\x12\x0c\n\x04\x62its\x18\x05 \x01(\r\x12\r\n\x05token\x18\x06 \x01(\r\"8\n\x0eXpProgressData\x12\x11\n\txp_points\x18\x01 \x01(\r\x12\x13\n\x0bxp_category\x18\x02 \x01(\x05\"_\n\x13MatchEndItemUpdates\x12\x0f\n\x07item_id\x18\x01 \x01(\x04\x12\x18\n\x10item_attr_defidx\x18\x02 \x01(\r\x12\x1d\n\x15item_attr_delta_value\x18\x03 \x01(\r\"\x9e\x02\n\x14ScoreLeaderboardData\x12\x10\n\x08quest_id\x18\x01 \x01(\x04\x12\r\n\x05score\x18\x02 \x01(\r\x12<\n\x0e\x61\x63\x63ountentries\x18\x03 \x03(\x0b\x32$.ScoreLeaderboardData.AccountEntries\x12\x31\n\x0cmatchentries\x18\x05 \x03(\x0b\x32\x1b.ScoreLeaderboardData.Entry\x1a!\n\x05\x45ntry\x12\x0b\n\x03tag\x18\x01 \x01(\r\x12\x0b\n\x03val\x18\x02 \x01(\r\x1aQ\n\x0e\x41\x63\x63ountEntries\x12\x11\n\taccountid\x18\x01 \x01(\r\x12,\n\x07\x65ntries\x18\x02 \x03(\x0b\x32\x1b.ScoreLeaderboardData.Entry\"\xd2\x02\n\x0fPlayerQuestData\x12\x1a\n\x12quester_account_id\x18\x01 \x01(\r\x12\x37\n\x0fquest_item_data\x18\x02 \x03(\x0b\x32\x1e.PlayerQuestData.QuestItemData\x12)\n\x10xp_progress_data\x18\x03 \x03(\x0b\x32\x0f.XpProgressData\x12\x13\n\x0btime_played\x18\x04 \x01(\r\x12\x14\n\x0cmm_game_mode\x18\x05 \x01(\r\x12*\n\x0citem_updates\x18\x06 \x03(\x0b\x32\x14.MatchEndItemUpdates\x1ah\n\rQuestItemData\x12\x10\n\x08quest_id\x18\x01 \x01(\x04\x12\"\n\x1aquest_normal_points_earned\x18\x02 \x01(\x05\x12!\n\x19quest_bonus_points_earned\x18\x03 \x01(\x05\"\xa5\x01\n\x1c\x43MsgGC_ServerQuestUpdateData\x12+\n\x11player_quest_data\x18\x01 \x03(\x0b\x32\x10.PlayerQuestData\x12\x13\n\x0b\x62inary_data\x18\x02 \x01(\x0c\x12\x14\n\x0cmm_game_mode\x18\x03 \x01(\r\x12-\n\x0emissionlbsdata\x18\x04 \x01(\x0b\x32\x15.ScoreLeaderboardData\"\xa7\x01\n0CMsgGCCStrike15_v2_MatchmakingGCOperationalStats\x12\x10\n\x08packetid\x18\x01 \x01(\x05\x12\x32\n\x08namekeys\x18\x02 \x03(\x0b\x32 .OperationalStatisticDescription\x12-\n\x07packets\x18\x03 \x03(\x0b\x32\x1c.OperationalStatisticsPacket\"`\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\r\n\x05token\x18\x01 \x01(\r\x12\r\n\x05stamp\x18\x02 \x01(\r\x12\x10\n\x08\x65xchange\x18\x03 \x01(\x04\"o\n-CMsgGCCStrike15_v2_GC2ServerReservationUpdate\x12\x1e\n\x16viewers_external_total\x18\x01 \x01(\r\x12\x1e\n\x16viewers_external_steam\x18\x02 \x01(\r\"\xab\x01\n#CMsgGCCStrike15_v2_MatchmakingStart\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x01 \x03(\r\x12\x11\n\tgame_type\x18\x02 \x01(\r\x12\x13\n\x0bticket_data\x18\x03 \x01(\t\x12\x16\n\x0e\x63lient_version\x18\x04 \x01(\r\x12/\n\x10tournament_match\x18\x05 \x01(\x0b\x32\x15.TournamentMatchSetup\"5\n\"CMsgGCCStrike15_v2_MatchmakingStop\x12\x0f\n\x07\x61\x62\x61ndon\x18\x01 \x01(\x05\"\x86\x01\n/CMsgGCCStrike15_v2_MatchmakingClient2ServerPing\x12(\n\x0fgameserverpings\x18\x01 \x03(\x0b\x32\x0f.GameServerPing\x12\x14\n\x0coffset_index\x18\x02 \x01(\x05\x12\x13\n\x0b\x66inal_batch\x18\x03 \x01(\x05\"\xf3\x04\n-CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate\x12\x13\n\x0bmatchmaking\x18\x01 \x01(\x05\x12#\n\x1bwaiting_account_id_sessions\x18\x02 \x03(\r\x12\r\n\x05\x65rror\x18\x03 \x01(\t\x12(\n ongoingmatch_account_id_sessions\x18\x06 \x03(\r\x12\'\n\x0cglobal_stats\x18\x07 \x01(\x0b\x32\x11.GlobalStatistics\x12$\n\x1c\x66\x61ilping_account_id_sessions\x18\x08 \x03(\r\x12#\n\x1bpenalty_account_id_sessions\x18\t \x03(\r\x12%\n\x1d\x66\x61ilready_account_id_sessions\x18\n \x03(\r\x12%\n\x1dvacbanned_account_id_sessions\x18\x0b \x03(\r\x12-\n\x15server_ipaddress_mask\x18\x0c \x01(\x0b\x32\x0e.IpAddressMask\x12\x42\n\x05notes\x18\r \x03(\x0b\x32\x33.CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate.Note\x12)\n!penalty_account_id_sessions_green\x18\x0e \x03(\r\x12\"\n\x1ainsufficientlevel_sessions\x18\x0f \x03(\r\x1aK\n\x04Note\x12\x0c\n\x04type\x18\x01 \x01(\x05\x12\x11\n\tregion_id\x18\x02 \x01(\x05\x12\x10\n\x08region_r\x18\x03 \x01(\x02\x12\x10\n\x08\x64istance\x18\x04 \x01(\x02\"\xd6\x02\n(CDataGCCStrike15_v2_TournamentMatchDraft\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x02 \x01(\x05\x12\x11\n\tteam_id_0\x18\x03 \x01(\x05\x12\x11\n\tteam_id_1\x18\x04 \x01(\x05\x12\x12\n\nmaps_count\x18\x05 \x01(\x05\x12\x14\n\x0cmaps_current\x18\x06 \x01(\x05\x12\x15\n\rteam_id_start\x18\x07 \x01(\x05\x12\x15\n\rteam_id_veto1\x18\x08 \x01(\x05\x12\x15\n\rteam_id_pickn\x18\t \x01(\x05\x12?\n\x06\x64rafts\x18\n \x03(\x0b\x32/.CDataGCCStrike15_v2_TournamentMatchDraft.Entry\x1a*\n\x05\x45ntry\x12\r\n\x05mapid\x18\x01 \x01(\x05\x12\x12\n\nteam_id_ct\x18\x02 \x01(\x05\"\xed\x01\n\x11\x43PreMatchInfoData\x12\x17\n\x0fpredictions_pct\x18\x01 \x01(\x05\x12\x38\n\x05\x64raft\x18\x04 \x01(\x0b\x32).CDataGCCStrike15_v2_TournamentMatchDraft\x12+\n\x05stats\x18\x05 \x03(\x0b\x32\x1c.CPreMatchInfoData.TeamStats\x1aX\n\tTeamStats\x12\x19\n\x11match_info_idxtxt\x18\x01 \x01(\x05\x12\x16\n\x0ematch_info_txt\x18\x02 \x01(\t\x12\x18\n\x10match_info_teams\x18\x03 \x03(\t\"\xf2\x03\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x01 \x03(\r\x12\x11\n\tgame_type\x18\x02 \x01(\r\x12\x10\n\x08match_id\x18\x03 \x01(\x04\x12\x16\n\x0eserver_version\x18\x04 \x01(\r\x12$\n\x08rankings\x18\x05 \x03(\x0b\x32\x12.PlayerRankingInfo\x12\x16\n\x0e\x65ncryption_key\x18\x06 \x01(\x04\x12\x1a\n\x12\x65ncryption_key_pub\x18\x07 \x01(\x04\x12\x11\n\tparty_ids\x18\x08 \x03(\r\x12!\n\twhitelist\x18\t \x03(\x0b\x32\x0e.IpAddressMask\x12\x19\n\x11tv_master_steamid\x18\n \x01(\x04\x12*\n\x10tournament_event\x18\x0b \x01(\x0b\x32\x10.TournamentEvent\x12)\n\x10tournament_teams\x18\x0c \x03(\x0b\x32\x0f.TournamentTeam\x12&\n\x1etournament_casters_account_ids\x18\r \x03(\r\x12\x18\n\x10tv_relay_steamid\x18\x0e \x01(\x04\x12*\n\x0epre_match_data\x18\x0f \x01(\x0b\x32\x12.CPreMatchInfoData\"\xed\x03\n7CMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x12\x15\n\rreservationid\x18\x01 \x01(\x04\x12\x44\n\x0breservation\x18\x02 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x03 \x01(\t\x12\x1b\n\x13gc_reservation_sent\x18\x04 \x01(\x04\x12\x16\n\x0eserver_version\x18\x05 \x01(\r\x12 \n\x07tv_info\x18\x06 \x01(\x0b\x32\x0f.ServerHltvInfo\x12\x1e\n\x16reward_player_accounts\x18\x07 \x03(\r\x12\x1c\n\x14idle_player_accounts\x18\x08 \x03(\r\x12 \n\x18reward_item_attr_def_idx\x18\t \x01(\r\x12\x1e\n\x16reward_item_attr_value\x18\n \x01(\r\x12#\n\x1breward_item_attr_reward_idx\x18\x0b \x01(\r\x12\x18\n\x10reward_drop_list\x18\x0c \x01(\r\x12\x16\n\x0etournament_tag\x18\r \x01(\t\x12\x1a\n\x12steamdatagram_port\x18\x0e \x01(\r\"\xc4\x01\n.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x10\n\x08serverid\x18\x01 \x01(\x04\x12\x15\n\rreservationid\x18\x04 \x01(\x04\x12\x44\n\x0breservation\x18\x05 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x06 \x01(\t\x12\x16\n\x0eserver_address\x18\x07 \x01(\t\"\xff\x05\n.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12\x15\n\rreservationid\x18\x01 \x01(\x04\x12\x44\n\x0breservation\x18\x02 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x03 \x01(\t\x12\r\n\x05round\x18\x04 \x01(\x05\x12\r\n\x05kills\x18\x05 \x03(\x05\x12\x0f\n\x07\x61ssists\x18\x06 \x03(\x05\x12\x0e\n\x06\x64\x65\x61ths\x18\x07 \x03(\x05\x12\x0e\n\x06scores\x18\x08 \x03(\x05\x12\r\n\x05pings\x18\t \x03(\x05\x12\x14\n\x0cround_result\x18\n \x01(\x05\x12\x14\n\x0cmatch_result\x18\x0b \x01(\x05\x12\x13\n\x0bteam_scores\x18\x0c \x03(\x05\x12@\n\x07\x63onfirm\x18\r \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\x19\n\x11reservation_stage\x18\x0e \x01(\x05\x12\x16\n\x0ematch_duration\x18\x0f \x01(\x05\x12\x13\n\x0b\x65nemy_kills\x18\x10 \x03(\x05\x12\x17\n\x0f\x65nemy_headshots\x18\x11 \x03(\x05\x12\x11\n\tenemy_3ks\x18\x12 \x03(\x05\x12\x11\n\tenemy_4ks\x18\x13 \x03(\x05\x12\x11\n\tenemy_5ks\x18\x14 \x03(\x05\x12\x0c\n\x04mvps\x18\x15 \x03(\x05\x12\x18\n\x10spectators_count\x18\x16 \x01(\r\x12\x1b\n\x13spectators_count_tv\x18\x17 \x01(\r\x12\x1c\n\x14spectators_count_lnk\x18\x18 \x01(\r\x12\x17\n\x0f\x65nemy_kills_agg\x18\x19 \x03(\x05\x12K\n\tdrop_info\x18\x1a \x01(\x0b\x32\x38.CMsgGCCStrike15_v2_MatchmakingServerRoundStats.DropInfo\x1a\x1f\n\x08\x44ropInfo\x12\x13\n\x0b\x61\x63\x63ount_mvp\x18\x01 \x01(\r\"\xde\x02\n,CMsgGCCStrike15_v2_MatchmakingServerMatchEnd\x12>\n\x05stats\x18\x01 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12@\n\x07\x63onfirm\x18\x03 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\x0f\n\x07rematch\x18\x04 \x01(\x04\x12\x14\n\x0creplay_token\x18\x05 \x01(\r\x12\x19\n\x11replay_cluster_id\x18\x06 \x01(\r\x12\x15\n\raborted_match\x18\x07 \x01(\x08\x12;\n\x14match_end_quest_data\x18\x08 \x01(\x0b\x32\x1d.CMsgGC_ServerQuestUpdateData\x12\x16\n\x0eserver_version\x18\t \x01(\r\".\n,CMsgGCCStrike15_v2_MatchmakingClient2GCHello\"\xad\x05\n,CMsgGCCStrike15_v2_MatchmakingGC2ClientHello\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x45\n\x0congoingmatch\x18\x02 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\'\n\x0cglobal_stats\x18\x03 \x01(\x0b\x32\x11.GlobalStatistics\x12\x17\n\x0fpenalty_seconds\x18\x04 \x01(\r\x12\x16\n\x0epenalty_reason\x18\x05 \x01(\r\x12\x12\n\nvac_banned\x18\x06 \x01(\x05\x12#\n\x07ranking\x18\x07 \x01(\x0b\x32\x12.PlayerRankingInfo\x12-\n\x0c\x63ommendation\x18\x08 \x01(\x0b\x32\x17.PlayerCommendationInfo\x12!\n\x06medals\x18\t \x01(\x0b\x32\x11.PlayerMedalsInfo\x12*\n\x10my_current_event\x18\n \x01(\x0b\x32\x10.TournamentEvent\x12/\n\x16my_current_event_teams\x18\x0b \x03(\x0b\x32\x0f.TournamentTeam\x12(\n\x0fmy_current_team\x18\x0c \x01(\x0b\x32\x0f.TournamentTeam\x12\x31\n\x17my_current_event_stages\x18\r \x03(\x0b\x32\x10.TournamentEvent\x12\x13\n\x0bsurvey_vote\x18\x0e \x01(\r\x12\"\n\x08\x61\x63tivity\x18\x0f \x01(\x0b\x32\x10.AccountActivity\x12\x14\n\x0cplayer_level\x18\x11 \x01(\x05\x12\x15\n\rplayer_cur_xp\x18\x12 \x01(\x05\x12\x1d\n\x15player_xp_bonus_flags\x18\x13 \x01(\x05\"\xa9\x01\n)CMsgGCCStrike15_v2_AccountPrivacySettings\x12\x44\n\x08settings\x18\x01 \x03(\x0b\x32\x32.CMsgGCCStrike15_v2_AccountPrivacySettings.Setting\x1a\x36\n\x07Setting\x12\x14\n\x0csetting_type\x18\x01 \x01(\r\x12\x15\n\rsetting_value\x18\x02 \x01(\r\"\xbf\x01\n.CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12H\n\x0f\x61\x62\x61ndoned_match\x18\x02 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x17\n\x0fpenalty_seconds\x18\x03 \x01(\r\x12\x16\n\x0epenalty_reason\x18\x04 \x01(\r\"\x97\x01\n+CMsgGCCStrike15_v2_MatchmakingServer2GCKick\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x44\n\x0breservation\x18\x02 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0e\n\x06reason\x18\x03 \x01(\r\"k\n1CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate\x12$\n\x08rankings\x18\x01 \x03(\x0b\x32\x12.PlayerRankingInfo\x12\x10\n\x08match_id\x18\x02 \x01(\x04\"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate\x12\x15\n\rmain_post_url\x18\x01 \x01(\t\"j\n3CMsgGCCStrike15_v2_ServerNotificationForUserPenalty\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0e\n\x06reason\x18\x02 \x01(\r\x12\x0f\n\x07seconds\x18\x03 \x01(\r\"\xd3\x01\n%CMsgGCCStrike15_v2_ClientReportPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x12\n\nrpt_aimbot\x18\x02 \x01(\r\x12\x14\n\x0crpt_wallhack\x18\x03 \x01(\r\x12\x15\n\rrpt_speedhack\x18\x04 \x01(\r\x12\x14\n\x0crpt_teamharm\x18\x05 \x01(\r\x12\x15\n\rrpt_textabuse\x18\x06 \x01(\r\x12\x16\n\x0erpt_voiceabuse\x18\x07 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\"\x8d\x01\n&CMsgGCCStrike15_v2_ClientCommendPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\x12-\n\x0c\x63ommendation\x18\t \x01(\x0b\x32\x17.PlayerCommendationInfo\x12\x0e\n\x06tokens\x18\n \x01(\r\"\xb5\x01\n%CMsgGCCStrike15_v2_ClientReportServer\x12\x14\n\x0crpt_poorperf\x18\x01 \x01(\r\x12\x19\n\x11rpt_abusivemodels\x18\x02 \x01(\r\x12\x13\n\x0brpt_badmotd\x18\x03 \x01(\r\x12\x18\n\x10rpt_listingabuse\x18\x04 \x01(\r\x12\x1a\n\x12rpt_inventoryabuse\x18\x05 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\"\xa9\x01\n\'CMsgGCCStrike15_v2_ClientReportResponse\x12\x17\n\x0f\x63onfirmation_id\x18\x01 \x01(\x04\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x11\n\tserver_ip\x18\x03 \x01(\r\x12\x15\n\rresponse_type\x18\x04 \x01(\r\x12\x17\n\x0fresponse_result\x18\x05 \x01(\r\x12\x0e\n\x06tokens\x18\x06 \x01(\r\"~\n0CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x02 \x03(\r\x12\x10\n\x08serverid\x18\x03 \x01(\x04\x12\x0f\n\x07matchid\x18\x04 \x01(\x04\"\xb0\x02\n\x12WatchableMatchInfo\x12\x11\n\tserver_ip\x18\x01 \x01(\r\x12\x0f\n\x07tv_port\x18\x02 \x01(\r\x12\x15\n\rtv_spectators\x18\x03 \x01(\r\x12\x0f\n\x07tv_time\x18\x04 \x01(\r\x12\x19\n\x11tv_watch_password\x18\x05 \x01(\x0c\x12\x1a\n\x12\x63l_decryptdata_key\x18\x06 \x01(\x04\x12\x1e\n\x16\x63l_decryptdata_key_pub\x18\x07 \x01(\x04\x12\x11\n\tgame_type\x18\x08 \x01(\r\x12\x15\n\rgame_mapgroup\x18\t \x01(\t\x12\x10\n\x08game_map\x18\n \x01(\t\x12\x11\n\tserver_id\x18\x0b \x01(\x04\x12\x10\n\x08match_id\x18\x0c \x01(\x04\x12\x16\n\x0ereservation_id\x18\r \x01(\x04\"\xcb\x01\n.CMsgGCCStrike15_v2_ClientRequestJoinFriendData\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x12\n\njoin_token\x18\x03 \x01(\r\x12\x10\n\x08join_ipp\x18\x04 \x01(\r\x12<\n\x03res\x18\x05 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x10\n\x08\x65rrormsg\x18\x06 \x01(\t\"\xcd\x01\n.CMsgGCCStrike15_v2_ClientRequestJoinServerData\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x10\n\x08serverid\x18\x03 \x01(\x04\x12\x11\n\tserver_ip\x18\x04 \x01(\r\x12\x13\n\x0bserver_port\x18\x05 \x01(\r\x12<\n\x03res\x18\x06 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\"U\n*CMsgGCCstrike15_v2_ClientRequestNewMission\x12\x12\n\nmission_id\x18\x02 \x01(\r\x12\x13\n\x0b\x63\x61mpaign_id\x18\x03 \x01(\r\"\xb1\x01\n,CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded\x12)\n\x10xp_progress_data\x18\x01 \x03(\x0b\x32\x0f.XpProgressData\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x12\n\ncurrent_xp\x18\x03 \x01(\r\x12\x15\n\rcurrent_level\x18\x04 \x01(\r\x12\x17\n\x0fupgraded_defidx\x18\x05 \x01(\r\"\x9a\x01\n!CMsgGCCStrike15_v2_WatchInfoUsers\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x02 \x03(\r\x12\x32\n\x15watchable_match_infos\x18\x03 \x03(\x0b\x32\x13.WatchableMatchInfo\x12\x18\n\x10\x65xtended_timeout\x18\x05 \x01(\r\"\x9c\x01\n.CMsgGCCStrike15_v2_ClientRequestPlayersProfile\x12\x1e\n\x16request_id__deprecated\x18\x01 \x01(\r\x12\x1f\n\x17\x61\x63\x63ount_ids__deprecated\x18\x02 \x03(\r\x12\x12\n\naccount_id\x18\x03 \x01(\r\x12\x15\n\rrequest_level\x18\x04 \x01(\r\"\x80\x01\n!CMsgGCCStrike15_v2_PlayersProfile\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12G\n\x10\x61\x63\x63ount_profiles\x18\x02 \x03(\x0b\x32-.CMsgGCCStrike15_v2_MatchmakingGC2ClientHello\"\xcc\x01\n,CMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x11\n\tsuspectid\x18\x03 \x01(\r\x12\x12\n\nfractionid\x18\x04 \x01(\r\x12\x12\n\nrpt_aimbot\x18\x05 \x01(\r\x12\x14\n\x0crpt_wallhack\x18\x06 \x01(\r\x12\x15\n\rrpt_speedhack\x18\x07 \x01(\r\x12\x14\n\x0crpt_teamharm\x18\x08 \x01(\r\x12\x0e\n\x06reason\x18\t \x01(\r\"\x8d\x02\n0CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x0f\n\x07\x63\x61seurl\x18\x02 \x01(\t\x12\x0f\n\x07verdict\x18\x03 \x01(\r\x12\x11\n\ttimestamp\x18\x04 \x01(\r\x12\x17\n\x0fthrottleseconds\x18\x05 \x01(\r\x12\x11\n\tsuspectid\x18\x06 \x01(\r\x12\x12\n\nfractionid\x18\x07 \x01(\r\x12\x11\n\tnumrounds\x18\x08 \x01(\r\x12\x16\n\x0e\x66ractionrounds\x18\t \x01(\r\x12\x19\n\x11streakconvictions\x18\n \x01(\x05\x12\x0e\n\x06reason\x18\x0b \x01(\r\"P\n,CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x10\n\x08statusid\x18\x02 \x01(\r\"C\n\x1e\x43\x43lientHeaderOverwatchEvidence\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0e\n\x06\x63\x61seid\x18\x02 \x01(\x04\"P\n#CMsgGCCStrike15_v2_GC2ClientTextMsg\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04type\x18\x02 \x01(\r\x12\x0f\n\x07payload\x18\x03 \x01(\x0c\"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x02 \x03(\x0c\"\xb6\x01\n)CMsgGCCStrike15_v2_MatchEndRunRewardDrops\x12L\n\nserverinfo\x18\x03 \x01(\x0b\x32\x38.CMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x12;\n\x14match_end_quest_data\x18\x04 \x01(\x0b\x32\x1d.CMsgGC_ServerQuestUpdateData\"\xcd\x03\n\x19\x43\x45\x63onItemPreviewDataBlock\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0e\n\x06itemid\x18\x02 \x01(\x04\x12\x10\n\x08\x64\x65\x66index\x18\x03 \x01(\r\x12\x12\n\npaintindex\x18\x04 \x01(\r\x12\x0e\n\x06rarity\x18\x05 \x01(\r\x12\x0f\n\x07quality\x18\x06 \x01(\r\x12\x11\n\tpaintwear\x18\x07 \x01(\r\x12\x11\n\tpaintseed\x18\x08 \x01(\r\x12\x1a\n\x12killeaterscoretype\x18\t \x01(\r\x12\x16\n\x0ekilleatervalue\x18\n \x01(\r\x12\x12\n\ncustomname\x18\x0b \x01(\t\x12\x34\n\x08stickers\x18\x0c \x03(\x0b\x32\".CEconItemPreviewDataBlock.Sticker\x12\x11\n\tinventory\x18\r \x01(\r\x12\x0e\n\x06origin\x18\x0e \x01(\r\x12\x0f\n\x07questid\x18\x0f \x01(\r\x12\x12\n\ndropreason\x18\x10 \x01(\r\x1aZ\n\x07Sticker\x12\x0c\n\x04slot\x18\x01 \x01(\r\x12\x12\n\nsticker_id\x18\x02 \x01(\r\x12\x0c\n\x04wear\x18\x03 \x01(\x02\x12\r\n\x05scale\x18\x04 \x01(\x02\x12\x10\n\x08rotation\x18\x05 \x01(\x02\"b\n2CMsgGCCStrike15_v2_MatchEndRewardDropsNotification\x12,\n\x08iteminfo\x18\x06 \x01(\x0b\x32\x1a.CEconItemPreviewDataBlock\"D\n\x14\x43MsgItemAcknowledged\x12,\n\x08iteminfo\x18\x01 \x01(\x0b\x32\x1a.CEconItemPreviewDataBlock\"}\n7CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest\x12\x0f\n\x07param_s\x18\x01 \x01(\x04\x12\x0f\n\x07param_a\x18\x02 \x01(\x04\x12\x0f\n\x07param_d\x18\x03 \x01(\x04\x12\x0f\n\x07param_m\x18\x04 \x01(\x04\"h\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse\x12,\n\x08iteminfo\x18\x01 \x01(\x0b\x32\x1a.CEconItemPreviewDataBlock\"s\n9CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x10\n\x08\x64\x65\x66index\x18\x02 \x01(\r\x12\x12\n\naccountids\x18\x03 \x03(\r\"5\n3CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames\"G\n2CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser\x12\x11\n\taccountid\x18\x01 \x01(\r\"G\n2CMsgGCCStrike15_v2_MatchListRequestRecentUserGames\x12\x11\n\taccountid\x18\x01 \x01(\r\"E\n2CMsgGCCStrike15_v2_MatchListRequestTournamentGames\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\x05\"d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo\x12\x0f\n\x07matchid\x18\x01 \x01(\x04\x12\x11\n\toutcomeid\x18\x02 \x01(\x04\x12\r\n\x05token\x18\x03 \x01(\r\"\x88\x02\n\x1d\x43\x44\x61taGCCStrike15_v2_MatchInfo\x12\x0f\n\x07matchid\x18\x01 \x01(\x04\x12\x11\n\tmatchtime\x18\x02 \x01(\r\x12/\n\x12watchablematchinfo\x18\x03 \x01(\x0b\x32\x13.WatchableMatchInfo\x12J\n\x11roundstats_legacy\x18\x04 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12\x46\n\rroundstatsall\x18\x05 \x03(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\"^\n\'CDataGCCStrike15_v2_TournamentGroupTeam\x12\x0f\n\x07team_id\x18\x01 \x01(\x05\x12\r\n\x05score\x18\x02 \x01(\x05\x12\x13\n\x0b\x63orrectpick\x18\x03 \x01(\x08\"\xd9\x02\n#CDataGCCStrike15_v2_TournamentGroup\x12\x0f\n\x07groupid\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x65sc\x18\x03 \x01(\t\x12\x19\n\x11picks__deprecated\x18\x04 \x01(\r\x12\x37\n\x05teams\x18\x05 \x03(\x0b\x32(.CDataGCCStrike15_v2_TournamentGroupTeam\x12\x11\n\tstage_ids\x18\x06 \x03(\x05\x12\x19\n\x11picklockuntiltime\x18\x07 \x01(\r\x12\x15\n\rpickableteams\x18\x08 \x01(\r\x12\x17\n\x0fpoints_per_pick\x18\t \x01(\r\x12\x39\n\x05picks\x18\n \x03(\x0b\x32*.CDataGCCStrike15_v2_TournamentGroup.Picks\x1a\x18\n\x05Picks\x12\x0f\n\x07pickids\x18\x01 \x03(\x05\"\x8c\x01\n%CDataGCCStrike15_v2_TournamentSection\x12\x11\n\tsectionid\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x65sc\x18\x03 \x01(\t\x12\x34\n\x06groups\x18\x04 \x03(\x0b\x32$.CDataGCCStrike15_v2_TournamentGroup\"\xb5\x01\n\"CDataGCCStrike15_v2_TournamentInfo\x12\x38\n\x08sections\x18\x01 \x03(\x0b\x32&.CDataGCCStrike15_v2_TournamentSection\x12*\n\x10tournament_event\x18\x02 \x01(\x0b\x32\x10.TournamentEvent\x12)\n\x10tournament_teams\x18\x03 \x03(\x0b\x32\x0f.TournamentTeam\"\xeb\x01\n\x1c\x43MsgGCCStrike15_v2_MatchList\x12\x14\n\x0cmsgrequestid\x18\x01 \x01(\r\x12\x11\n\taccountid\x18\x02 \x01(\r\x12\x12\n\nservertime\x18\x03 \x01(\r\x12/\n\x07matches\x18\x04 \x03(\x0b\x32\x1e.CDataGCCStrike15_v2_MatchInfo\x12 \n\x07streams\x18\x05 \x03(\x0b\x32\x0f.TournamentTeam\x12;\n\x0etournamentinfo\x18\x06 \x01(\x0b\x32#.CDataGCCStrike15_v2_TournamentInfo\"\xef\x01\n\x1e\x43MsgGCCStrike15_v2_Predictions\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\r\x12R\n\x16group_match_team_picks\x18\x02 \x03(\x0b\x32\x32.CMsgGCCStrike15_v2_Predictions.GroupMatchTeamPick\x1ag\n\x12GroupMatchTeamPick\x12\x11\n\tsectionid\x18\x01 \x01(\x05\x12\x0f\n\x07groupid\x18\x02 \x01(\x05\x12\r\n\x05index\x18\x03 \x01(\x05\x12\x0e\n\x06teamid\x18\x04 \x01(\x05\x12\x0e\n\x06itemid\x18\x05 \x01(\x04\"\xfb\x01\n\x1a\x43MsgGCCStrike15_v2_Fantasy\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\r\x12\x36\n\x05teams\x18\x02 \x03(\x0b\x32\'.CMsgGCCStrike15_v2_Fantasy.FantasyTeam\x1a\x39\n\x0b\x46\x61ntasySlot\x12\x0c\n\x04type\x18\x01 \x01(\x05\x12\x0c\n\x04pick\x18\x02 \x01(\x05\x12\x0e\n\x06itemid\x18\x03 \x01(\x04\x1aX\n\x0b\x46\x61ntasyTeam\x12\x11\n\tsectionid\x18\x01 \x01(\x05\x12\x36\n\x05slots\x18\x02 \x03(\x0b\x32\'.CMsgGCCStrike15_v2_Fantasy.FantasySlot\"\"\n\x11\x43\x41ttribute_String\x12\r\n\x05value\x18\x01 \x01(\t\"\x1a\n\x18\x43MsgGCToGCReloadVersions\"\xc4\x01\n\x14\x43MsgCStrike15Welcome\x12\x17\n\x0fstore_item_hash\x18\x05 \x01(\r\x12\x1f\n\x17timeplayedconsecutively\x18\x06 \x01(\r\x12\x19\n\x11time_first_played\x18\n \x01(\r\x12\x18\n\x10last_time_played\x18\x0c \x01(\r\x12\x17\n\x0flast_ip_address\x18\r \x01(\r\x12\x12\n\ngscookieid\x18\x12 \x01(\x04\x12\x10\n\x08uniqueid\x18\x13 \x01(\x04\"\x9b\x01\n1CMsgGCCStrike15_v2_ClientVarValueNotificationInfo\x12\x12\n\nvalue_name\x18\x01 \x01(\t\x12\x11\n\tvalue_int\x18\x02 \x01(\x05\x12\x13\n\x0bserver_addr\x18\x03 \x01(\r\x12\x13\n\x0bserver_port\x18\x04 \x01(\r\x12\x15\n\rchoked_blocks\x18\x05 \x03(\t\"h\n1CMsgGCCStrike15_v2_ServerVarValueNotificationInfo\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x12\n\nviewangles\x18\x02 \x03(\r\x12\x0c\n\x04type\x18\x03 \x01(\r\",\n*CMsgGCCStrike15_v2_GiftsLeaderboardRequest\"\x9d\x02\n+CMsgGCCStrike15_v2_GiftsLeaderboardResponse\x12\x12\n\nservertime\x18\x01 \x01(\r\x12\x1b\n\x13time_period_seconds\x18\x02 \x01(\r\x12\x19\n\x11total_gifts_given\x18\x03 \x01(\r\x12\x14\n\x0ctotal_givers\x18\x04 \x01(\r\x12R\n\x07\x65ntries\x18\x05 \x03(\x0b\x32\x41.CMsgGCCStrike15_v2_GiftsLeaderboardResponse.GiftLeaderboardEntry\x1a\x38\n\x14GiftLeaderboardEntry\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\r\n\x05gifts\x18\x02 \x01(\r\"L\n)CMsgGCCStrike15_v2_ClientSubmitSurveyVote\x12\x11\n\tsurvey_id\x18\x01 \x01(\r\x12\x0c\n\x04vote\x18\x02 \x01(\r\"?\n*CMsgGCCStrike15_v2_Server2GCClientValidate\x12\x11\n\taccountid\x18\x01 \x01(\r\"\xbb\x01\n7CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0c\n\x04path\x18\x02 \x01(\t\x12\x0c\n\x04\x66ile\x18\x03 \x01(\t\x12\x0b\n\x03\x63rc\x18\x04 \x01(\r\x12\x0c\n\x04hash\x18\x05 \x01(\x05\x12\x0b\n\x03len\x18\x06 \x01(\x05\x12\x13\n\x0bpack_number\x18\x07 \x01(\x05\x12\x14\n\x0cpack_file_id\x18\x08 \x01(\x05\"r\n*CMsgGCCStrike15_v2_GC2ClientTournamentInfo\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\r\x12\x0f\n\x07stageid\x18\x02 \x01(\r\x12\x11\n\tgame_type\x18\x03 \x01(\r\x12\x0f\n\x07teamids\x18\x04 \x03(\r\"O\n\rCSOEconCoupon\x12\x15\n\x07\x65ntryid\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x0e\n\x06\x64\x65\x66idx\x18\x02 \x01(\r\x12\x17\n\x0f\x65xpiration_date\x18\x03 \x01(\x07\"Y\n\x10\x43SOQuestProgress\x12\x15\n\x07questid\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x18\n\x10points_remaining\x18\x02 \x01(\r\x12\x14\n\x0c\x62onus_points\x18\x03 \x01(\r\"s\n\x14\x43SOPersonaDataPublic\x12\x14\n\x0cplayer_level\x18\x01 \x01(\x05\x12-\n\x0c\x63ommendation\x18\x02 \x01(\x0b\x32\x17.PlayerCommendationInfo\x12\x16\n\x0e\x65levated_state\x18\x03 \x01(\x08\"-\n\x1b\x43MsgGC_GlobalGame_Subscribe\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\"1\n\x1d\x43MsgGC_GlobalGame_Unsubscribe\x12\x10\n\x08timeleft\x18\x01 \x01(\x05\"P\n\x16\x43MsgGC_GlobalGame_Play\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\x12\x12\n\ngametimems\x18\x02 \x01(\r\x12\x12\n\nmsperpoint\x18\x03 \x01(\r\"=\n%CMsgGCCStrike15_v2_AcknowledgePenalty\x12\x14\n\x0c\x61\x63knowledged\x18\x01 \x01(\x05\"1\n/CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin\"F\n(CMsgGCCStrike15_v2_Client2GCStreamUnlock\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\x12\n\n\x02os\x18\x02 \x01(\x05\"<\n+CMsgGCCStrike15_v2_ClientToGCRequestElevate\x12\r\n\x05stage\x18\x01 \x01(\r\"C\n!CMsgGCCStrike15_v2_ClientToGCChat\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x0c\n\x04text\x18\x02 \x01(\t\"E\n!CMsgGCCStrike15_v2_GCToClientChat\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0c\n\x04text\x18\x02 \x01(\t*\xcd\x1f\n\nECsgoGCMsg\x12\x1e\n\x19k_EMsgGCCStrike15_v2_Base\x10\x8cG\x12*\n%k_EMsgGCCStrike15_v2_MatchmakingStart\x10\x8dG\x12)\n$k_EMsgGCCStrike15_v2_MatchmakingStop\x10\x8eG\x12\x36\n1k_EMsgGCCStrike15_v2_MatchmakingClient2ServerPing\x10\x8fG\x12\x34\n/k_EMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate\x10\x90G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x10\x91G\x12>\n9k_EMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x10\x92G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x10\x93G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingServerRoundStats\x10\x94G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingClient2GCHello\x10\x95G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingGC2ClientHello\x10\x96G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingServerMatchEnd\x10\x97G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon\x10\x98G\x12\x32\n-k_EMsgGCCStrike15_v2_MatchmakingServer2GCKick\x10\x99G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x10\x9aG\x12\x37\n2k_EMsgGCCStrike15_v2_MatchmakingGCOperationalStats\x10\x9bG\x12\x38\n3k_EMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate\x10\x9cG\x12:\n5k_EMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate\x10\x9dG\x12:\n5k_EMsgGCCStrike15_v2_ServerNotificationForUserPenalty\x10\x9eG\x12,\n\'k_EMsgGCCStrike15_v2_ClientReportPlayer\x10\x9fG\x12,\n\'k_EMsgGCCStrike15_v2_ClientReportServer\x10\xa0G\x12-\n(k_EMsgGCCStrike15_v2_ClientCommendPlayer\x10\xa1G\x12.\n)k_EMsgGCCStrike15_v2_ClientReportResponse\x10\xa2G\x12\x32\n-k_EMsgGCCStrike15_v2_ClientCommendPlayerQuery\x10\xa3G\x12:\n5k_EMsgGCCStrike15_v2_ClientCommendPlayerQueryResponse\x10\xa4G\x12(\n#k_EMsgGCCStrike15_v2_WatchInfoUsers\x10\xa6G\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestPlayersProfile\x10\xa7G\x12(\n#k_EMsgGCCStrike15_v2_PlayersProfile\x10\xa8G\x12)\n$k_EMsgGCCStrike15_v2_SetMyMedalsInfo\x10\xa9G\x12\x33\n.k_EMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate\x10\xabG\x12\x37\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment\x10\xacG\x12\x33\n.k_EMsgGCCStrike15_v2_PlayerOverwatchCaseStatus\x10\xadG\x12*\n%k_EMsgGCCStrike15_v2_GC2ClientTextMsg\x10\xaeG\x12*\n%k_EMsgGCCStrike15_v2_Client2GCTextMsg\x10\xafG\x12\x30\n+k_EMsgGCCStrike15_v2_MatchEndRunRewardDrops\x10\xb0G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification\x10\xb1G\x12\x38\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2\x10\xb2G\x12#\n\x1ek_EMsgGCCStrike15_v2_MatchList\x10\xb3G\x12:\n5k_EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames\x10\xb4G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestRecentUserGames\x10\xb5G\x12\x34\n/k_EMsgGCCStrike15_v2_GC2ServerReservationUpdate\x10\xb6G\x12\x38\n3k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo\x10\xb8G\x12@\n;k_EMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification\x10\xb9G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestTournamentGames\x10\xbaG\x12\x36\n1k_EMsgGCCStrike15_v2_MatchListRequestFullGameInfo\x10\xbbG\x12\x31\n,k_EMsgGCCStrike15_v2_GiftsLeaderboardRequest\x10\xbcG\x12\x32\n-k_EMsgGCCStrike15_v2_GiftsLeaderboardResponse\x10\xbdG\x12\x38\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo\x10\xbeG\x12\x1f\n\x1ak_EMsgGCToGCReloadVersions\x10\xbfG\x12\x30\n+k_EMsgGCCStrike15_v2_ClientSubmitSurveyVote\x10\xc0G\x12\x31\n,k_EMsgGCCStrike15_v2_Server2GCClientValidate\x10\xc1G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser\x10\xc2G\x12>\n9k_EMsgGCCStrike15_v2_Server2GCPureServerValidationFailure\x10\xc3G\x12>\n9k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest\x10\xc4G\x12?\n:k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse\x10\xc5G\x12\x30\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings\x10\xc6G\x12+\n&k_EMsgGCCStrike15_v2_SetMyActivityInfo\x10\xc7G\x12?\n:k_EMsgGCCStrike15_v2_MatchListRequestTournamentPredictions\x10\xc8G\x12>\n9k_EMsgGCCStrike15_v2_MatchListUploadTournamentPredictions\x10\xc9G\x12&\n!k_EMsgGCCStrike15_v2_DraftSummary\x10\xcaG\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestJoinFriendData\x10\xcbG\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestJoinServerData\x10\xccG\x12\x31\n,k_EMsgGCCStrike15_v2_ClientRequestNewMission\x10\xcdG\x12\x33\n.k_EMsgGCCStrike15_v2_GC2ServerNotifyXPRewarded\x10\xceG\x12\x31\n,k_EMsgGCCStrike15_v2_GC2ClientTournamentInfo\x10\xcfG\x12\"\n\x1dk_EMsgGC_GlobalGame_Subscribe\x10\xd0G\x12$\n\x1fk_EMsgGC_GlobalGame_Unsubscribe\x10\xd1G\x12\x1d\n\x18k_EMsgGC_GlobalGame_Play\x10\xd2G\x12,\n\'k_EMsgGCCStrike15_v2_AcknowledgePenalty\x10\xd3G\x12\x36\n1k_EMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin\x10\xd4G\x12.\n)k_EMsgGCCStrike15_v2_GC2ClientGlobalStats\x10\xd5G\x12/\n*k_EMsgGCCStrike15_v2_Client2GCStreamUnlock\x10\xd6G\x12\x32\n-k_EMsgGCCStrike15_v2_FantasyRequestClientData\x10\xd7G\x12\x31\n,k_EMsgGCCStrike15_v2_FantasyUpdateClientData\x10\xd8G\x12\x32\n-k_EMsgGCCStrike15_v2_ClientToGCRequestElevate\x10\xdbG\x12$\n\x1fk_EMsgGCCStrike15_v2_GlobalChat\x10\xdcG\x12.\n)k_EMsgGCCStrike15_v2_GlobalChat_Subscribe\x10\xddG\x12\x30\n+k_EMsgGCCStrike15_v2_GlobalChat_Unsubscribe\x10\xdeGB\x05H\x01\x80\x01\x00')
+  syntax='proto2',
+  serialized_pb=b'\n\x1a\x63strike15_gcmessages.proto\x1a\x13steammessages.proto\"b\n\x0eGameServerPing\x12\x15\n\rgameserver_id\x18\x01 \x01(\x04\x12\x0c\n\x04ping\x18\x02 \x01(\x05\x12\n\n\x02ip\x18\x03 \x01(\r\x12\x0c\n\x04port\x18\x04 \x01(\r\x12\x11\n\tinstances\x18\x05 \x01(\r\"`\n\x17\x44\x65tailedSearchStatistic\x12\x11\n\tgame_type\x18\x01 \x01(\r\x12\x17\n\x0fsearch_time_avg\x18\x02 \x01(\r\x12\x19\n\x11players_searching\x18\x04 \x01(\r\"\xa7\x01\n\x10TournamentPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x13\n\x0bplayer_nick\x18\x02 \x01(\t\x12\x13\n\x0bplayer_name\x18\x03 \x01(\t\x12\x12\n\nplayer_dob\x18\x04 \x01(\r\x12\x13\n\x0bplayer_flag\x18\x05 \x01(\t\x12\x17\n\x0fplayer_location\x18\x06 \x01(\t\x12\x13\n\x0bplayer_desc\x18\x07 \x01(\t\"}\n\x0eTournamentTeam\x12\x0f\n\x07team_id\x18\x01 \x01(\x05\x12\x10\n\x08team_tag\x18\x02 \x01(\t\x12\x11\n\tteam_flag\x18\x03 \x01(\t\x12\x11\n\tteam_name\x18\x04 \x01(\t\x12\"\n\x07players\x18\x05 \x03(\x0b\x32\x11.TournamentPlayer\"\xdf\x01\n\x0fTournamentEvent\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x11\n\tevent_tag\x18\x02 \x01(\t\x12\x12\n\nevent_name\x18\x03 \x01(\t\x12\x18\n\x10\x65vent_time_start\x18\x04 \x01(\r\x12\x16\n\x0e\x65vent_time_end\x18\x05 \x01(\r\x12\x14\n\x0c\x65vent_public\x18\x06 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x07 \x01(\x05\x12\x18\n\x10\x65vent_stage_name\x18\x08 \x01(\t\x12\x19\n\x11\x61\x63tive_section_id\x18\t \x01(\r\"\x8f\x03\n\x10GlobalStatistics\x12\x16\n\x0eplayers_online\x18\x01 \x01(\r\x12\x16\n\x0eservers_online\x18\x02 \x01(\r\x12\x19\n\x11players_searching\x18\x03 \x01(\r\x12\x19\n\x11servers_available\x18\x04 \x01(\r\x12\x17\n\x0fongoing_matches\x18\x05 \x01(\r\x12\x17\n\x0fsearch_time_avg\x18\x06 \x01(\r\x12\x33\n\x11search_statistics\x18\x07 \x03(\x0b\x32\x18.DetailedSearchStatistic\x12\x15\n\rmain_post_url\x18\x08 \x01(\t\x12\x1e\n\x16required_appid_version\x18\t \x01(\r\x12\x1a\n\x12pricesheet_version\x18\n \x01(\r\x12\x1e\n\x16twitch_streams_version\x18\x0b \x01(\r\x12!\n\x19\x61\x63tive_tournament_eventid\x18\x0c \x01(\r\x12\x18\n\x10\x61\x63tive_survey_id\x18\r \x01(\r\">\n\x1fOperationalStatisticDescription\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05idkey\x18\x02 \x01(\r\"<\n\x1bOperationalStatisticElement\x12\r\n\x05idkey\x18\x01 \x01(\r\x12\x0e\n\x06values\x18\x02 \x03(\x05\"r\n\x1bOperationalStatisticsPacket\x12\x10\n\x08packetid\x18\x01 \x01(\x05\x12\x13\n\x0bmstimestamp\x18\x02 \x01(\x05\x12,\n\x06values\x18\x03 \x03(\x0b\x32\x1c.OperationalStatisticElement\"[\n\x11PlayerRankingInfo\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0f\n\x07rank_id\x18\x02 \x01(\r\x12\x0c\n\x04wins\x18\x03 \x01(\r\x12\x13\n\x0brank_change\x18\x04 \x01(\x02\"X\n\x16PlayerCommendationInfo\x12\x14\n\x0c\x63md_friendly\x18\x01 \x01(\r\x12\x14\n\x0c\x63md_teaching\x18\x02 \x01(\r\x12\x12\n\ncmd_leader\x18\x04 \x01(\r\"\xc0\x01\n\x10PlayerMedalsInfo\x12\x12\n\nmedal_team\x18\x01 \x01(\r\x12\x14\n\x0cmedal_combat\x18\x02 \x01(\r\x12\x14\n\x0cmedal_weapon\x18\x03 \x01(\r\x12\x14\n\x0cmedal_global\x18\x04 \x01(\r\x12\x12\n\nmedal_arms\x18\x05 \x01(\r\x12\x1c\n\x14\x64isplay_items_defidx\x18\x07 \x03(\r\x12$\n\x1c\x66\x65\x61tured_display_item_defidx\x18\x08 \x01(\r\">\n\x0f\x41\x63\x63ountActivity\x12\x10\n\x08\x61\x63tivity\x18\x01 \x01(\r\x12\x0c\n\x04mode\x18\x02 \x01(\r\x12\x0b\n\x03map\x18\x03 \x01(\r\"g\n\x14TournamentMatchSetup\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x12\n\nteam_id_ct\x18\x02 \x01(\x05\x12\x11\n\tteam_id_t\x18\x03 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x04 \x01(\x05\"\xc0\x03\n\x0eServerHltvInfo\x12\x13\n\x0btv_udp_port\x18\x01 \x01(\r\x12\x14\n\x0ctv_watch_key\x18\x02 \x01(\x04\x12\x10\n\x08tv_slots\x18\x03 \x01(\r\x12\x12\n\ntv_clients\x18\x04 \x01(\r\x12\x12\n\ntv_proxies\x18\x05 \x01(\r\x12\x0f\n\x07tv_time\x18\x06 \x01(\r\x12\x11\n\tgame_type\x18\x08 \x01(\r\x12\x15\n\rgame_mapgroup\x18\t \x01(\t\x12\x10\n\x08game_map\x18\n \x01(\t\x12\x19\n\x11tv_master_steamid\x18\x0b \x01(\x04\x12\x16\n\x0etv_local_slots\x18\x0c \x01(\r\x12\x18\n\x10tv_local_clients\x18\r \x01(\r\x12\x18\n\x10tv_local_proxies\x18\x0e \x01(\r\x12\x16\n\x0etv_relay_slots\x18\x0f \x01(\r\x12\x18\n\x10tv_relay_clients\x18\x10 \x01(\r\x12\x18\n\x10tv_relay_proxies\x18\x11 \x01(\r\x12\x18\n\x10tv_relay_address\x18\x12 \x01(\r\x12\x15\n\rtv_relay_port\x18\x13 \x01(\r\x12\x18\n\x10tv_relay_steamid\x18\x14 \x01(\x04\"X\n\rIpAddressMask\x12\t\n\x01\x61\x18\x01 \x01(\r\x12\t\n\x01\x62\x18\x02 \x01(\r\x12\t\n\x01\x63\x18\x03 \x01(\r\x12\t\n\x01\x64\x18\x04 \x01(\r\x12\x0c\n\x04\x62its\x18\x05 \x01(\r\x12\r\n\x05token\x18\x06 \x01(\r\"8\n\x0eXpProgressData\x12\x11\n\txp_points\x18\x01 \x01(\r\x12\x13\n\x0bxp_category\x18\x02 \x01(\x05\"_\n\x13MatchEndItemUpdates\x12\x0f\n\x07item_id\x18\x01 \x01(\x04\x12\x18\n\x10item_attr_defidx\x18\x02 \x01(\r\x12\x1d\n\x15item_attr_delta_value\x18\x03 \x01(\r\"\x9e\x02\n\x14ScoreLeaderboardData\x12\x10\n\x08quest_id\x18\x01 \x01(\x04\x12\r\n\x05score\x18\x02 \x01(\r\x12<\n\x0e\x61\x63\x63ountentries\x18\x03 \x03(\x0b\x32$.ScoreLeaderboardData.AccountEntries\x12\x31\n\x0cmatchentries\x18\x05 \x03(\x0b\x32\x1b.ScoreLeaderboardData.Entry\x1a!\n\x05\x45ntry\x12\x0b\n\x03tag\x18\x01 \x01(\r\x12\x0b\n\x03val\x18\x02 \x01(\r\x1aQ\n\x0e\x41\x63\x63ountEntries\x12\x11\n\taccountid\x18\x01 \x01(\r\x12,\n\x07\x65ntries\x18\x02 \x03(\x0b\x32\x1b.ScoreLeaderboardData.Entry\"\xd2\x02\n\x0fPlayerQuestData\x12\x1a\n\x12quester_account_id\x18\x01 \x01(\r\x12\x37\n\x0fquest_item_data\x18\x02 \x03(\x0b\x32\x1e.PlayerQuestData.QuestItemData\x12)\n\x10xp_progress_data\x18\x03 \x03(\x0b\x32\x0f.XpProgressData\x12\x13\n\x0btime_played\x18\x04 \x01(\r\x12\x14\n\x0cmm_game_mode\x18\x05 \x01(\r\x12*\n\x0citem_updates\x18\x06 \x03(\x0b\x32\x14.MatchEndItemUpdates\x1ah\n\rQuestItemData\x12\x10\n\x08quest_id\x18\x01 \x01(\x04\x12\"\n\x1aquest_normal_points_earned\x18\x02 \x01(\x05\x12!\n\x19quest_bonus_points_earned\x18\x03 \x01(\x05\"\xa5\x01\n\x1c\x43MsgGC_ServerQuestUpdateData\x12+\n\x11player_quest_data\x18\x01 \x03(\x0b\x32\x10.PlayerQuestData\x12\x13\n\x0b\x62inary_data\x18\x02 \x01(\x0c\x12\x14\n\x0cmm_game_mode\x18\x03 \x01(\r\x12-\n\x0emissionlbsdata\x18\x04 \x01(\x0b\x32\x15.ScoreLeaderboardData\"\xa7\x01\n0CMsgGCCStrike15_v2_MatchmakingGCOperationalStats\x12\x10\n\x08packetid\x18\x01 \x01(\x05\x12\x32\n\x08namekeys\x18\x02 \x03(\x0b\x32 .OperationalStatisticDescription\x12-\n\x07packets\x18\x03 \x03(\x0b\x32\x1c.OperationalStatisticsPacket\"`\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\r\n\x05token\x18\x01 \x01(\r\x12\r\n\x05stamp\x18\x02 \x01(\r\x12\x10\n\x08\x65xchange\x18\x03 \x01(\x04\"o\n-CMsgGCCStrike15_v2_GC2ServerReservationUpdate\x12\x1e\n\x16viewers_external_total\x18\x01 \x01(\r\x12\x1e\n\x16viewers_external_steam\x18\x02 \x01(\r\"\xab\x01\n#CMsgGCCStrike15_v2_MatchmakingStart\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x01 \x03(\r\x12\x11\n\tgame_type\x18\x02 \x01(\r\x12\x13\n\x0bticket_data\x18\x03 \x01(\t\x12\x16\n\x0e\x63lient_version\x18\x04 \x01(\r\x12/\n\x10tournament_match\x18\x05 \x01(\x0b\x32\x15.TournamentMatchSetup\"5\n\"CMsgGCCStrike15_v2_MatchmakingStop\x12\x0f\n\x07\x61\x62\x61ndon\x18\x01 \x01(\x05\"\x86\x01\n/CMsgGCCStrike15_v2_MatchmakingClient2ServerPing\x12(\n\x0fgameserverpings\x18\x01 \x03(\x0b\x32\x0f.GameServerPing\x12\x14\n\x0coffset_index\x18\x02 \x01(\x05\x12\x13\n\x0b\x66inal_batch\x18\x03 \x01(\x05\"\xf3\x04\n-CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate\x12\x13\n\x0bmatchmaking\x18\x01 \x01(\x05\x12#\n\x1bwaiting_account_id_sessions\x18\x02 \x03(\r\x12\r\n\x05\x65rror\x18\x03 \x01(\t\x12(\n ongoingmatch_account_id_sessions\x18\x06 \x03(\r\x12\'\n\x0cglobal_stats\x18\x07 \x01(\x0b\x32\x11.GlobalStatistics\x12$\n\x1c\x66\x61ilping_account_id_sessions\x18\x08 \x03(\r\x12#\n\x1bpenalty_account_id_sessions\x18\t \x03(\r\x12%\n\x1d\x66\x61ilready_account_id_sessions\x18\n \x03(\r\x12%\n\x1dvacbanned_account_id_sessions\x18\x0b \x03(\r\x12-\n\x15server_ipaddress_mask\x18\x0c \x01(\x0b\x32\x0e.IpAddressMask\x12\x42\n\x05notes\x18\r \x03(\x0b\x32\x33.CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate.Note\x12)\n!penalty_account_id_sessions_green\x18\x0e \x03(\r\x12\"\n\x1ainsufficientlevel_sessions\x18\x0f \x03(\r\x1aK\n\x04Note\x12\x0c\n\x04type\x18\x01 \x01(\x05\x12\x11\n\tregion_id\x18\x02 \x01(\x05\x12\x10\n\x08region_r\x18\x03 \x01(\x02\x12\x10\n\x08\x64istance\x18\x04 \x01(\x02\"\xd6\x02\n(CDataGCCStrike15_v2_TournamentMatchDraft\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x02 \x01(\x05\x12\x11\n\tteam_id_0\x18\x03 \x01(\x05\x12\x11\n\tteam_id_1\x18\x04 \x01(\x05\x12\x12\n\nmaps_count\x18\x05 \x01(\x05\x12\x14\n\x0cmaps_current\x18\x06 \x01(\x05\x12\x15\n\rteam_id_start\x18\x07 \x01(\x05\x12\x15\n\rteam_id_veto1\x18\x08 \x01(\x05\x12\x15\n\rteam_id_pickn\x18\t \x01(\x05\x12?\n\x06\x64rafts\x18\n \x03(\x0b\x32/.CDataGCCStrike15_v2_TournamentMatchDraft.Entry\x1a*\n\x05\x45ntry\x12\r\n\x05mapid\x18\x01 \x01(\x05\x12\x12\n\nteam_id_ct\x18\x02 \x01(\x05\"\xed\x01\n\x11\x43PreMatchInfoData\x12\x17\n\x0fpredictions_pct\x18\x01 \x01(\x05\x12\x38\n\x05\x64raft\x18\x04 \x01(\x0b\x32).CDataGCCStrike15_v2_TournamentMatchDraft\x12+\n\x05stats\x18\x05 \x03(\x0b\x32\x1c.CPreMatchInfoData.TeamStats\x1aX\n\tTeamStats\x12\x19\n\x11match_info_idxtxt\x18\x01 \x01(\x05\x12\x16\n\x0ematch_info_txt\x18\x02 \x01(\t\x12\x18\n\x10match_info_teams\x18\x03 \x03(\t\"\xf2\x03\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x01 \x03(\r\x12\x11\n\tgame_type\x18\x02 \x01(\r\x12\x10\n\x08match_id\x18\x03 \x01(\x04\x12\x16\n\x0eserver_version\x18\x04 \x01(\r\x12$\n\x08rankings\x18\x05 \x03(\x0b\x32\x12.PlayerRankingInfo\x12\x16\n\x0e\x65ncryption_key\x18\x06 \x01(\x04\x12\x1a\n\x12\x65ncryption_key_pub\x18\x07 \x01(\x04\x12\x11\n\tparty_ids\x18\x08 \x03(\r\x12!\n\twhitelist\x18\t \x03(\x0b\x32\x0e.IpAddressMask\x12\x19\n\x11tv_master_steamid\x18\n \x01(\x04\x12*\n\x10tournament_event\x18\x0b \x01(\x0b\x32\x10.TournamentEvent\x12)\n\x10tournament_teams\x18\x0c \x03(\x0b\x32\x0f.TournamentTeam\x12&\n\x1etournament_casters_account_ids\x18\r \x03(\r\x12\x18\n\x10tv_relay_steamid\x18\x0e \x01(\x04\x12*\n\x0epre_match_data\x18\x0f \x01(\x0b\x32\x12.CPreMatchInfoData\"\xed\x03\n7CMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x12\x15\n\rreservationid\x18\x01 \x01(\x04\x12\x44\n\x0breservation\x18\x02 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x03 \x01(\t\x12\x1b\n\x13gc_reservation_sent\x18\x04 \x01(\x04\x12\x16\n\x0eserver_version\x18\x05 \x01(\r\x12 \n\x07tv_info\x18\x06 \x01(\x0b\x32\x0f.ServerHltvInfo\x12\x1e\n\x16reward_player_accounts\x18\x07 \x03(\r\x12\x1c\n\x14idle_player_accounts\x18\x08 \x03(\r\x12 \n\x18reward_item_attr_def_idx\x18\t \x01(\r\x12\x1e\n\x16reward_item_attr_value\x18\n \x01(\r\x12#\n\x1breward_item_attr_reward_idx\x18\x0b \x01(\r\x12\x18\n\x10reward_drop_list\x18\x0c \x01(\r\x12\x16\n\x0etournament_tag\x18\r \x01(\t\x12\x1a\n\x12steamdatagram_port\x18\x0e \x01(\r\"\xc4\x01\n.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x10\n\x08serverid\x18\x01 \x01(\x04\x12\x15\n\rreservationid\x18\x04 \x01(\x04\x12\x44\n\x0breservation\x18\x05 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x06 \x01(\t\x12\x16\n\x0eserver_address\x18\x07 \x01(\t\"\xff\x05\n.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12\x15\n\rreservationid\x18\x01 \x01(\x04\x12\x44\n\x0breservation\x18\x02 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x03 \x01(\t\x12\r\n\x05round\x18\x04 \x01(\x05\x12\r\n\x05kills\x18\x05 \x03(\x05\x12\x0f\n\x07\x61ssists\x18\x06 \x03(\x05\x12\x0e\n\x06\x64\x65\x61ths\x18\x07 \x03(\x05\x12\x0e\n\x06scores\x18\x08 \x03(\x05\x12\r\n\x05pings\x18\t \x03(\x05\x12\x14\n\x0cround_result\x18\n \x01(\x05\x12\x14\n\x0cmatch_result\x18\x0b \x01(\x05\x12\x13\n\x0bteam_scores\x18\x0c \x03(\x05\x12@\n\x07\x63onfirm\x18\r \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\x19\n\x11reservation_stage\x18\x0e \x01(\x05\x12\x16\n\x0ematch_duration\x18\x0f \x01(\x05\x12\x13\n\x0b\x65nemy_kills\x18\x10 \x03(\x05\x12\x17\n\x0f\x65nemy_headshots\x18\x11 \x03(\x05\x12\x11\n\tenemy_3ks\x18\x12 \x03(\x05\x12\x11\n\tenemy_4ks\x18\x13 \x03(\x05\x12\x11\n\tenemy_5ks\x18\x14 \x03(\x05\x12\x0c\n\x04mvps\x18\x15 \x03(\x05\x12\x18\n\x10spectators_count\x18\x16 \x01(\r\x12\x1b\n\x13spectators_count_tv\x18\x17 \x01(\r\x12\x1c\n\x14spectators_count_lnk\x18\x18 \x01(\r\x12\x17\n\x0f\x65nemy_kills_agg\x18\x19 \x03(\x05\x12K\n\tdrop_info\x18\x1a \x01(\x0b\x32\x38.CMsgGCCStrike15_v2_MatchmakingServerRoundStats.DropInfo\x1a\x1f\n\x08\x44ropInfo\x12\x13\n\x0b\x61\x63\x63ount_mvp\x18\x01 \x01(\r\"\xde\x02\n,CMsgGCCStrike15_v2_MatchmakingServerMatchEnd\x12>\n\x05stats\x18\x01 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12@\n\x07\x63onfirm\x18\x03 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\x0f\n\x07rematch\x18\x04 \x01(\x04\x12\x14\n\x0creplay_token\x18\x05 \x01(\r\x12\x19\n\x11replay_cluster_id\x18\x06 \x01(\r\x12\x15\n\raborted_match\x18\x07 \x01(\x08\x12;\n\x14match_end_quest_data\x18\x08 \x01(\x0b\x32\x1d.CMsgGC_ServerQuestUpdateData\x12\x16\n\x0eserver_version\x18\t \x01(\r\".\n,CMsgGCCStrike15_v2_MatchmakingClient2GCHello\"\xad\x05\n,CMsgGCCStrike15_v2_MatchmakingGC2ClientHello\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x45\n\x0congoingmatch\x18\x02 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\'\n\x0cglobal_stats\x18\x03 \x01(\x0b\x32\x11.GlobalStatistics\x12\x17\n\x0fpenalty_seconds\x18\x04 \x01(\r\x12\x16\n\x0epenalty_reason\x18\x05 \x01(\r\x12\x12\n\nvac_banned\x18\x06 \x01(\x05\x12#\n\x07ranking\x18\x07 \x01(\x0b\x32\x12.PlayerRankingInfo\x12-\n\x0c\x63ommendation\x18\x08 \x01(\x0b\x32\x17.PlayerCommendationInfo\x12!\n\x06medals\x18\t \x01(\x0b\x32\x11.PlayerMedalsInfo\x12*\n\x10my_current_event\x18\n \x01(\x0b\x32\x10.TournamentEvent\x12/\n\x16my_current_event_teams\x18\x0b \x03(\x0b\x32\x0f.TournamentTeam\x12(\n\x0fmy_current_team\x18\x0c \x01(\x0b\x32\x0f.TournamentTeam\x12\x31\n\x17my_current_event_stages\x18\r \x03(\x0b\x32\x10.TournamentEvent\x12\x13\n\x0bsurvey_vote\x18\x0e \x01(\r\x12\"\n\x08\x61\x63tivity\x18\x0f \x01(\x0b\x32\x10.AccountActivity\x12\x14\n\x0cplayer_level\x18\x11 \x01(\x05\x12\x15\n\rplayer_cur_xp\x18\x12 \x01(\x05\x12\x1d\n\x15player_xp_bonus_flags\x18\x13 \x01(\x05\"\xa9\x01\n)CMsgGCCStrike15_v2_AccountPrivacySettings\x12\x44\n\x08settings\x18\x01 \x03(\x0b\x32\x32.CMsgGCCStrike15_v2_AccountPrivacySettings.Setting\x1a\x36\n\x07Setting\x12\x14\n\x0csetting_type\x18\x01 \x01(\r\x12\x15\n\rsetting_value\x18\x02 \x01(\r\"\xbf\x01\n.CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12H\n\x0f\x61\x62\x61ndoned_match\x18\x02 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x17\n\x0fpenalty_seconds\x18\x03 \x01(\r\x12\x16\n\x0epenalty_reason\x18\x04 \x01(\r\"\x97\x01\n+CMsgGCCStrike15_v2_MatchmakingServer2GCKick\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x44\n\x0breservation\x18\x02 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0e\n\x06reason\x18\x03 \x01(\r\"k\n1CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate\x12$\n\x08rankings\x18\x01 \x03(\x0b\x32\x12.PlayerRankingInfo\x12\x10\n\x08match_id\x18\x02 \x01(\x04\"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate\x12\x15\n\rmain_post_url\x18\x01 \x01(\t\"j\n3CMsgGCCStrike15_v2_ServerNotificationForUserPenalty\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0e\n\x06reason\x18\x02 \x01(\r\x12\x0f\n\x07seconds\x18\x03 \x01(\r\"\xd3\x01\n%CMsgGCCStrike15_v2_ClientReportPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x12\n\nrpt_aimbot\x18\x02 \x01(\r\x12\x14\n\x0crpt_wallhack\x18\x03 \x01(\r\x12\x15\n\rrpt_speedhack\x18\x04 \x01(\r\x12\x14\n\x0crpt_teamharm\x18\x05 \x01(\r\x12\x15\n\rrpt_textabuse\x18\x06 \x01(\r\x12\x16\n\x0erpt_voiceabuse\x18\x07 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\"\x8d\x01\n&CMsgGCCStrike15_v2_ClientCommendPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\x12-\n\x0c\x63ommendation\x18\t \x01(\x0b\x32\x17.PlayerCommendationInfo\x12\x0e\n\x06tokens\x18\n \x01(\r\"\xb5\x01\n%CMsgGCCStrike15_v2_ClientReportServer\x12\x14\n\x0crpt_poorperf\x18\x01 \x01(\r\x12\x19\n\x11rpt_abusivemodels\x18\x02 \x01(\r\x12\x13\n\x0brpt_badmotd\x18\x03 \x01(\r\x12\x18\n\x10rpt_listingabuse\x18\x04 \x01(\r\x12\x1a\n\x12rpt_inventoryabuse\x18\x05 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\"\xa9\x01\n\'CMsgGCCStrike15_v2_ClientReportResponse\x12\x17\n\x0f\x63onfirmation_id\x18\x01 \x01(\x04\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x11\n\tserver_ip\x18\x03 \x01(\r\x12\x15\n\rresponse_type\x18\x04 \x01(\r\x12\x17\n\x0fresponse_result\x18\x05 \x01(\r\x12\x0e\n\x06tokens\x18\x06 \x01(\r\"~\n0CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x02 \x03(\r\x12\x10\n\x08serverid\x18\x03 \x01(\x04\x12\x0f\n\x07matchid\x18\x04 \x01(\x04\"\xb0\x02\n\x12WatchableMatchInfo\x12\x11\n\tserver_ip\x18\x01 \x01(\r\x12\x0f\n\x07tv_port\x18\x02 \x01(\r\x12\x15\n\rtv_spectators\x18\x03 \x01(\r\x12\x0f\n\x07tv_time\x18\x04 \x01(\r\x12\x19\n\x11tv_watch_password\x18\x05 \x01(\x0c\x12\x1a\n\x12\x63l_decryptdata_key\x18\x06 \x01(\x04\x12\x1e\n\x16\x63l_decryptdata_key_pub\x18\x07 \x01(\x04\x12\x11\n\tgame_type\x18\x08 \x01(\r\x12\x15\n\rgame_mapgroup\x18\t \x01(\t\x12\x10\n\x08game_map\x18\n \x01(\t\x12\x11\n\tserver_id\x18\x0b \x01(\x04\x12\x10\n\x08match_id\x18\x0c \x01(\x04\x12\x16\n\x0ereservation_id\x18\r \x01(\x04\"\xcb\x01\n.CMsgGCCStrike15_v2_ClientRequestJoinFriendData\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x12\n\njoin_token\x18\x03 \x01(\r\x12\x10\n\x08join_ipp\x18\x04 \x01(\r\x12<\n\x03res\x18\x05 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x10\n\x08\x65rrormsg\x18\x06 \x01(\t\"\xcd\x01\n.CMsgGCCStrike15_v2_ClientRequestJoinServerData\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x10\n\x08serverid\x18\x03 \x01(\x04\x12\x11\n\tserver_ip\x18\x04 \x01(\r\x12\x13\n\x0bserver_port\x18\x05 \x01(\r\x12<\n\x03res\x18\x06 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\"U\n*CMsgGCCstrike15_v2_ClientRequestNewMission\x12\x12\n\nmission_id\x18\x02 \x01(\r\x12\x13\n\x0b\x63\x61mpaign_id\x18\x03 \x01(\r\"\xb1\x01\n,CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded\x12)\n\x10xp_progress_data\x18\x01 \x03(\x0b\x32\x0f.XpProgressData\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x12\n\ncurrent_xp\x18\x03 \x01(\r\x12\x15\n\rcurrent_level\x18\x04 \x01(\r\x12\x17\n\x0fupgraded_defidx\x18\x05 \x01(\r\"\x9a\x01\n!CMsgGCCStrike15_v2_WatchInfoUsers\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x02 \x03(\r\x12\x32\n\x15watchable_match_infos\x18\x03 \x03(\x0b\x32\x13.WatchableMatchInfo\x12\x18\n\x10\x65xtended_timeout\x18\x05 \x01(\r\"\x9c\x01\n.CMsgGCCStrike15_v2_ClientRequestPlayersProfile\x12\x1e\n\x16request_id__deprecated\x18\x01 \x01(\r\x12\x1f\n\x17\x61\x63\x63ount_ids__deprecated\x18\x02 \x03(\r\x12\x12\n\naccount_id\x18\x03 \x01(\r\x12\x15\n\rrequest_level\x18\x04 \x01(\r\"\x80\x01\n!CMsgGCCStrike15_v2_PlayersProfile\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12G\n\x10\x61\x63\x63ount_profiles\x18\x02 \x03(\x0b\x32-.CMsgGCCStrike15_v2_MatchmakingGC2ClientHello\"\xcc\x01\n,CMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x11\n\tsuspectid\x18\x03 \x01(\r\x12\x12\n\nfractionid\x18\x04 \x01(\r\x12\x12\n\nrpt_aimbot\x18\x05 \x01(\r\x12\x14\n\x0crpt_wallhack\x18\x06 \x01(\r\x12\x15\n\rrpt_speedhack\x18\x07 \x01(\r\x12\x14\n\x0crpt_teamharm\x18\x08 \x01(\r\x12\x0e\n\x06reason\x18\t \x01(\r\"\x8d\x02\n0CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x0f\n\x07\x63\x61seurl\x18\x02 \x01(\t\x12\x0f\n\x07verdict\x18\x03 \x01(\r\x12\x11\n\ttimestamp\x18\x04 \x01(\r\x12\x17\n\x0fthrottleseconds\x18\x05 \x01(\r\x12\x11\n\tsuspectid\x18\x06 \x01(\r\x12\x12\n\nfractionid\x18\x07 \x01(\r\x12\x11\n\tnumrounds\x18\x08 \x01(\r\x12\x16\n\x0e\x66ractionrounds\x18\t \x01(\r\x12\x19\n\x11streakconvictions\x18\n \x01(\x05\x12\x0e\n\x06reason\x18\x0b \x01(\r\"P\n,CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x10\n\x08statusid\x18\x02 \x01(\r\"C\n\x1e\x43\x43lientHeaderOverwatchEvidence\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0e\n\x06\x63\x61seid\x18\x02 \x01(\x04\"P\n#CMsgGCCStrike15_v2_GC2ClientTextMsg\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04type\x18\x02 \x01(\r\x12\x0f\n\x07payload\x18\x03 \x01(\x0c\"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x02 \x03(\x0c\"\xb6\x01\n)CMsgGCCStrike15_v2_MatchEndRunRewardDrops\x12L\n\nserverinfo\x18\x03 \x01(\x0b\x32\x38.CMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x12;\n\x14match_end_quest_data\x18\x04 \x01(\x0b\x32\x1d.CMsgGC_ServerQuestUpdateData\"\xcd\x03\n\x19\x43\x45\x63onItemPreviewDataBlock\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0e\n\x06itemid\x18\x02 \x01(\x04\x12\x10\n\x08\x64\x65\x66index\x18\x03 \x01(\r\x12\x12\n\npaintindex\x18\x04 \x01(\r\x12\x0e\n\x06rarity\x18\x05 \x01(\r\x12\x0f\n\x07quality\x18\x06 \x01(\r\x12\x11\n\tpaintwear\x18\x07 \x01(\r\x12\x11\n\tpaintseed\x18\x08 \x01(\r\x12\x1a\n\x12killeaterscoretype\x18\t \x01(\r\x12\x16\n\x0ekilleatervalue\x18\n \x01(\r\x12\x12\n\ncustomname\x18\x0b \x01(\t\x12\x34\n\x08stickers\x18\x0c \x03(\x0b\x32\".CEconItemPreviewDataBlock.Sticker\x12\x11\n\tinventory\x18\r \x01(\r\x12\x0e\n\x06origin\x18\x0e \x01(\r\x12\x0f\n\x07questid\x18\x0f \x01(\r\x12\x12\n\ndropreason\x18\x10 \x01(\r\x1aZ\n\x07Sticker\x12\x0c\n\x04slot\x18\x01 \x01(\r\x12\x12\n\nsticker_id\x18\x02 \x01(\r\x12\x0c\n\x04wear\x18\x03 \x01(\x02\x12\r\n\x05scale\x18\x04 \x01(\x02\x12\x10\n\x08rotation\x18\x05 \x01(\x02\"b\n2CMsgGCCStrike15_v2_MatchEndRewardDropsNotification\x12,\n\x08iteminfo\x18\x06 \x01(\x0b\x32\x1a.CEconItemPreviewDataBlock\"D\n\x14\x43MsgItemAcknowledged\x12,\n\x08iteminfo\x18\x01 \x01(\x0b\x32\x1a.CEconItemPreviewDataBlock\"}\n7CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest\x12\x0f\n\x07param_s\x18\x01 \x01(\x04\x12\x0f\n\x07param_a\x18\x02 \x01(\x04\x12\x0f\n\x07param_d\x18\x03 \x01(\x04\x12\x0f\n\x07param_m\x18\x04 \x01(\x04\"h\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse\x12,\n\x08iteminfo\x18\x01 \x01(\x0b\x32\x1a.CEconItemPreviewDataBlock\"s\n9CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x10\n\x08\x64\x65\x66index\x18\x02 \x01(\r\x12\x12\n\naccountids\x18\x03 \x03(\r\"5\n3CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames\"G\n2CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser\x12\x11\n\taccountid\x18\x01 \x01(\r\"G\n2CMsgGCCStrike15_v2_MatchListRequestRecentUserGames\x12\x11\n\taccountid\x18\x01 \x01(\r\"E\n2CMsgGCCStrike15_v2_MatchListRequestTournamentGames\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\x05\"d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo\x12\x0f\n\x07matchid\x18\x01 \x01(\x04\x12\x11\n\toutcomeid\x18\x02 \x01(\x04\x12\r\n\x05token\x18\x03 \x01(\r\"\x88\x02\n\x1d\x43\x44\x61taGCCStrike15_v2_MatchInfo\x12\x0f\n\x07matchid\x18\x01 \x01(\x04\x12\x11\n\tmatchtime\x18\x02 \x01(\r\x12/\n\x12watchablematchinfo\x18\x03 \x01(\x0b\x32\x13.WatchableMatchInfo\x12J\n\x11roundstats_legacy\x18\x04 \x01(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12\x46\n\rroundstatsall\x18\x05 \x03(\x0b\x32/.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\"^\n\'CDataGCCStrike15_v2_TournamentGroupTeam\x12\x0f\n\x07team_id\x18\x01 \x01(\x05\x12\r\n\x05score\x18\x02 \x01(\x05\x12\x13\n\x0b\x63orrectpick\x18\x03 \x01(\x08\"\xd9\x02\n#CDataGCCStrike15_v2_TournamentGroup\x12\x0f\n\x07groupid\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x65sc\x18\x03 \x01(\t\x12\x19\n\x11picks__deprecated\x18\x04 \x01(\r\x12\x37\n\x05teams\x18\x05 \x03(\x0b\x32(.CDataGCCStrike15_v2_TournamentGroupTeam\x12\x11\n\tstage_ids\x18\x06 \x03(\x05\x12\x19\n\x11picklockuntiltime\x18\x07 \x01(\r\x12\x15\n\rpickableteams\x18\x08 \x01(\r\x12\x17\n\x0fpoints_per_pick\x18\t \x01(\r\x12\x39\n\x05picks\x18\n \x03(\x0b\x32*.CDataGCCStrike15_v2_TournamentGroup.Picks\x1a\x18\n\x05Picks\x12\x0f\n\x07pickids\x18\x01 \x03(\x05\"\x8c\x01\n%CDataGCCStrike15_v2_TournamentSection\x12\x11\n\tsectionid\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x65sc\x18\x03 \x01(\t\x12\x34\n\x06groups\x18\x04 \x03(\x0b\x32$.CDataGCCStrike15_v2_TournamentGroup\"\xb5\x01\n\"CDataGCCStrike15_v2_TournamentInfo\x12\x38\n\x08sections\x18\x01 \x03(\x0b\x32&.CDataGCCStrike15_v2_TournamentSection\x12*\n\x10tournament_event\x18\x02 \x01(\x0b\x32\x10.TournamentEvent\x12)\n\x10tournament_teams\x18\x03 \x03(\x0b\x32\x0f.TournamentTeam\"\xeb\x01\n\x1c\x43MsgGCCStrike15_v2_MatchList\x12\x14\n\x0cmsgrequestid\x18\x01 \x01(\r\x12\x11\n\taccountid\x18\x02 \x01(\r\x12\x12\n\nservertime\x18\x03 \x01(\r\x12/\n\x07matches\x18\x04 \x03(\x0b\x32\x1e.CDataGCCStrike15_v2_MatchInfo\x12 \n\x07streams\x18\x05 \x03(\x0b\x32\x0f.TournamentTeam\x12;\n\x0etournamentinfo\x18\x06 \x01(\x0b\x32#.CDataGCCStrike15_v2_TournamentInfo\"\xef\x01\n\x1e\x43MsgGCCStrike15_v2_Predictions\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\r\x12R\n\x16group_match_team_picks\x18\x02 \x03(\x0b\x32\x32.CMsgGCCStrike15_v2_Predictions.GroupMatchTeamPick\x1ag\n\x12GroupMatchTeamPick\x12\x11\n\tsectionid\x18\x01 \x01(\x05\x12\x0f\n\x07groupid\x18\x02 \x01(\x05\x12\r\n\x05index\x18\x03 \x01(\x05\x12\x0e\n\x06teamid\x18\x04 \x01(\x05\x12\x0e\n\x06itemid\x18\x05 \x01(\x04\"\xfb\x01\n\x1a\x43MsgGCCStrike15_v2_Fantasy\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\r\x12\x36\n\x05teams\x18\x02 \x03(\x0b\x32\'.CMsgGCCStrike15_v2_Fantasy.FantasyTeam\x1a\x39\n\x0b\x46\x61ntasySlot\x12\x0c\n\x04type\x18\x01 \x01(\x05\x12\x0c\n\x04pick\x18\x02 \x01(\x05\x12\x0e\n\x06itemid\x18\x03 \x01(\x04\x1aX\n\x0b\x46\x61ntasyTeam\x12\x11\n\tsectionid\x18\x01 \x01(\x05\x12\x36\n\x05slots\x18\x02 \x03(\x0b\x32\'.CMsgGCCStrike15_v2_Fantasy.FantasySlot\"\"\n\x11\x43\x41ttribute_String\x12\r\n\x05value\x18\x01 \x01(\t\"\x1a\n\x18\x43MsgGCToGCReloadVersions\"\xc4\x01\n\x14\x43MsgCStrike15Welcome\x12\x17\n\x0fstore_item_hash\x18\x05 \x01(\r\x12\x1f\n\x17timeplayedconsecutively\x18\x06 \x01(\r\x12\x19\n\x11time_first_played\x18\n \x01(\r\x12\x18\n\x10last_time_played\x18\x0c \x01(\r\x12\x17\n\x0flast_ip_address\x18\r \x01(\r\x12\x12\n\ngscookieid\x18\x12 \x01(\x04\x12\x10\n\x08uniqueid\x18\x13 \x01(\x04\"\x9b\x01\n1CMsgGCCStrike15_v2_ClientVarValueNotificationInfo\x12\x12\n\nvalue_name\x18\x01 \x01(\t\x12\x11\n\tvalue_int\x18\x02 \x01(\x05\x12\x13\n\x0bserver_addr\x18\x03 \x01(\r\x12\x13\n\x0bserver_port\x18\x04 \x01(\r\x12\x15\n\rchoked_blocks\x18\x05 \x03(\t\"h\n1CMsgGCCStrike15_v2_ServerVarValueNotificationInfo\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x12\n\nviewangles\x18\x02 \x03(\r\x12\x0c\n\x04type\x18\x03 \x01(\r\",\n*CMsgGCCStrike15_v2_GiftsLeaderboardRequest\"\x9d\x02\n+CMsgGCCStrike15_v2_GiftsLeaderboardResponse\x12\x12\n\nservertime\x18\x01 \x01(\r\x12\x1b\n\x13time_period_seconds\x18\x02 \x01(\r\x12\x19\n\x11total_gifts_given\x18\x03 \x01(\r\x12\x14\n\x0ctotal_givers\x18\x04 \x01(\r\x12R\n\x07\x65ntries\x18\x05 \x03(\x0b\x32\x41.CMsgGCCStrike15_v2_GiftsLeaderboardResponse.GiftLeaderboardEntry\x1a\x38\n\x14GiftLeaderboardEntry\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\r\n\x05gifts\x18\x02 \x01(\r\"L\n)CMsgGCCStrike15_v2_ClientSubmitSurveyVote\x12\x11\n\tsurvey_id\x18\x01 \x01(\r\x12\x0c\n\x04vote\x18\x02 \x01(\r\"?\n*CMsgGCCStrike15_v2_Server2GCClientValidate\x12\x11\n\taccountid\x18\x01 \x01(\r\"\xbb\x01\n7CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0c\n\x04path\x18\x02 \x01(\t\x12\x0c\n\x04\x66ile\x18\x03 \x01(\t\x12\x0b\n\x03\x63rc\x18\x04 \x01(\r\x12\x0c\n\x04hash\x18\x05 \x01(\x05\x12\x0b\n\x03len\x18\x06 \x01(\x05\x12\x13\n\x0bpack_number\x18\x07 \x01(\x05\x12\x14\n\x0cpack_file_id\x18\x08 \x01(\x05\"r\n*CMsgGCCStrike15_v2_GC2ClientTournamentInfo\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\r\x12\x0f\n\x07stageid\x18\x02 \x01(\r\x12\x11\n\tgame_type\x18\x03 \x01(\r\x12\x0f\n\x07teamids\x18\x04 \x03(\r\"O\n\rCSOEconCoupon\x12\x15\n\x07\x65ntryid\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x0e\n\x06\x64\x65\x66idx\x18\x02 \x01(\r\x12\x17\n\x0f\x65xpiration_date\x18\x03 \x01(\x07\"Y\n\x10\x43SOQuestProgress\x12\x15\n\x07questid\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x18\n\x10points_remaining\x18\x02 \x01(\r\x12\x14\n\x0c\x62onus_points\x18\x03 \x01(\r\"s\n\x14\x43SOPersonaDataPublic\x12\x14\n\x0cplayer_level\x18\x01 \x01(\x05\x12-\n\x0c\x63ommendation\x18\x02 \x01(\x0b\x32\x17.PlayerCommendationInfo\x12\x16\n\x0e\x65levated_state\x18\x03 \x01(\x08\"-\n\x1b\x43MsgGC_GlobalGame_Subscribe\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\"1\n\x1d\x43MsgGC_GlobalGame_Unsubscribe\x12\x10\n\x08timeleft\x18\x01 \x01(\x05\"P\n\x16\x43MsgGC_GlobalGame_Play\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\x12\x12\n\ngametimems\x18\x02 \x01(\r\x12\x12\n\nmsperpoint\x18\x03 \x01(\r\"=\n%CMsgGCCStrike15_v2_AcknowledgePenalty\x12\x14\n\x0c\x61\x63knowledged\x18\x01 \x01(\x05\"1\n/CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin\"F\n(CMsgGCCStrike15_v2_Client2GCStreamUnlock\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\x12\n\n\x02os\x18\x02 \x01(\x05\"<\n+CMsgGCCStrike15_v2_ClientToGCRequestElevate\x12\r\n\x05stage\x18\x01 \x01(\r\"C\n!CMsgGCCStrike15_v2_ClientToGCChat\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x0c\n\x04text\x18\x02 \x01(\t\"E\n!CMsgGCCStrike15_v2_GCToClientChat\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0c\n\x04text\x18\x02 \x01(\t*\xcd\x1f\n\nECsgoGCMsg\x12\x1e\n\x19k_EMsgGCCStrike15_v2_Base\x10\x8cG\x12*\n%k_EMsgGCCStrike15_v2_MatchmakingStart\x10\x8dG\x12)\n$k_EMsgGCCStrike15_v2_MatchmakingStop\x10\x8eG\x12\x36\n1k_EMsgGCCStrike15_v2_MatchmakingClient2ServerPing\x10\x8fG\x12\x34\n/k_EMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate\x10\x90G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x10\x91G\x12>\n9k_EMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x10\x92G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x10\x93G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingServerRoundStats\x10\x94G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingClient2GCHello\x10\x95G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingGC2ClientHello\x10\x96G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingServerMatchEnd\x10\x97G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon\x10\x98G\x12\x32\n-k_EMsgGCCStrike15_v2_MatchmakingServer2GCKick\x10\x99G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x10\x9aG\x12\x37\n2k_EMsgGCCStrike15_v2_MatchmakingGCOperationalStats\x10\x9bG\x12\x38\n3k_EMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate\x10\x9cG\x12:\n5k_EMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate\x10\x9dG\x12:\n5k_EMsgGCCStrike15_v2_ServerNotificationForUserPenalty\x10\x9eG\x12,\n\'k_EMsgGCCStrike15_v2_ClientReportPlayer\x10\x9fG\x12,\n\'k_EMsgGCCStrike15_v2_ClientReportServer\x10\xa0G\x12-\n(k_EMsgGCCStrike15_v2_ClientCommendPlayer\x10\xa1G\x12.\n)k_EMsgGCCStrike15_v2_ClientReportResponse\x10\xa2G\x12\x32\n-k_EMsgGCCStrike15_v2_ClientCommendPlayerQuery\x10\xa3G\x12:\n5k_EMsgGCCStrike15_v2_ClientCommendPlayerQueryResponse\x10\xa4G\x12(\n#k_EMsgGCCStrike15_v2_WatchInfoUsers\x10\xa6G\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestPlayersProfile\x10\xa7G\x12(\n#k_EMsgGCCStrike15_v2_PlayersProfile\x10\xa8G\x12)\n$k_EMsgGCCStrike15_v2_SetMyMedalsInfo\x10\xa9G\x12\x33\n.k_EMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate\x10\xabG\x12\x37\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment\x10\xacG\x12\x33\n.k_EMsgGCCStrike15_v2_PlayerOverwatchCaseStatus\x10\xadG\x12*\n%k_EMsgGCCStrike15_v2_GC2ClientTextMsg\x10\xaeG\x12*\n%k_EMsgGCCStrike15_v2_Client2GCTextMsg\x10\xafG\x12\x30\n+k_EMsgGCCStrike15_v2_MatchEndRunRewardDrops\x10\xb0G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification\x10\xb1G\x12\x38\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2\x10\xb2G\x12#\n\x1ek_EMsgGCCStrike15_v2_MatchList\x10\xb3G\x12:\n5k_EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames\x10\xb4G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestRecentUserGames\x10\xb5G\x12\x34\n/k_EMsgGCCStrike15_v2_GC2ServerReservationUpdate\x10\xb6G\x12\x38\n3k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo\x10\xb8G\x12@\n;k_EMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification\x10\xb9G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestTournamentGames\x10\xbaG\x12\x36\n1k_EMsgGCCStrike15_v2_MatchListRequestFullGameInfo\x10\xbbG\x12\x31\n,k_EMsgGCCStrike15_v2_GiftsLeaderboardRequest\x10\xbcG\x12\x32\n-k_EMsgGCCStrike15_v2_GiftsLeaderboardResponse\x10\xbdG\x12\x38\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo\x10\xbeG\x12\x1f\n\x1ak_EMsgGCToGCReloadVersions\x10\xbfG\x12\x30\n+k_EMsgGCCStrike15_v2_ClientSubmitSurveyVote\x10\xc0G\x12\x31\n,k_EMsgGCCStrike15_v2_Server2GCClientValidate\x10\xc1G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser\x10\xc2G\x12>\n9k_EMsgGCCStrike15_v2_Server2GCPureServerValidationFailure\x10\xc3G\x12>\n9k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest\x10\xc4G\x12?\n:k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse\x10\xc5G\x12\x30\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings\x10\xc6G\x12+\n&k_EMsgGCCStrike15_v2_SetMyActivityInfo\x10\xc7G\x12?\n:k_EMsgGCCStrike15_v2_MatchListRequestTournamentPredictions\x10\xc8G\x12>\n9k_EMsgGCCStrike15_v2_MatchListUploadTournamentPredictions\x10\xc9G\x12&\n!k_EMsgGCCStrike15_v2_DraftSummary\x10\xcaG\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestJoinFriendData\x10\xcbG\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestJoinServerData\x10\xccG\x12\x31\n,k_EMsgGCCStrike15_v2_ClientRequestNewMission\x10\xcdG\x12\x33\n.k_EMsgGCCStrike15_v2_GC2ServerNotifyXPRewarded\x10\xceG\x12\x31\n,k_EMsgGCCStrike15_v2_GC2ClientTournamentInfo\x10\xcfG\x12\"\n\x1dk_EMsgGC_GlobalGame_Subscribe\x10\xd0G\x12$\n\x1fk_EMsgGC_GlobalGame_Unsubscribe\x10\xd1G\x12\x1d\n\x18k_EMsgGC_GlobalGame_Play\x10\xd2G\x12,\n\'k_EMsgGCCStrike15_v2_AcknowledgePenalty\x10\xd3G\x12\x36\n1k_EMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin\x10\xd4G\x12.\n)k_EMsgGCCStrike15_v2_GC2ClientGlobalStats\x10\xd5G\x12/\n*k_EMsgGCCStrike15_v2_Client2GCStreamUnlock\x10\xd6G\x12\x32\n-k_EMsgGCCStrike15_v2_FantasyRequestClientData\x10\xd7G\x12\x31\n,k_EMsgGCCStrike15_v2_FantasyUpdateClientData\x10\xd8G\x12\x32\n-k_EMsgGCCStrike15_v2_ClientToGCRequestElevate\x10\xdbG\x12$\n\x1fk_EMsgGCCStrike15_v2_GlobalChat\x10\xdcG\x12.\n)k_EMsgGCCStrike15_v2_GlobalChat_Subscribe\x10\xddG\x12\x30\n+k_EMsgGCCStrike15_v2_GlobalChat_Unsubscribe\x10\xdeGB\x05H\x01\x90\x01\x00'
+  ,
+  dependencies=[steammessages__pb2.DESCRIPTOR,])
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _ECSGOGCMSG = _descriptor.EnumDescriptor(
   name='ECsgoGCMsg',
@@ -341,6 +348,7 @@ _ECSGOGCMSG = _descriptor.EnumDescriptor(
   serialized_start=17826,
   serialized_end=21871,
 )
+_sym_db.RegisterEnumDescriptor(_ECSGOGCMSG)
 
 ECsgoGCMsg = enum_type_wrapper.EnumTypeWrapper(_ECSGOGCMSG)
 k_EMsgGCCStrike15_v2_Base = 9100
@@ -474,7 +482,10 @@ _GAMESERVERPING = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=51,
   serialized_end=149,
 )
@@ -516,7 +527,10 @@ _DETAILEDSEARCHSTATISTIC = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=151,
   serialized_end=247,
 )
@@ -539,14 +553,14 @@ _TOURNAMENTPLAYER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='player_nick', full_name='TournamentPlayer.player_nick', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='player_name', full_name='TournamentPlayer.player_name', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -560,21 +574,21 @@ _TOURNAMENTPLAYER = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='player_flag', full_name='TournamentPlayer.player_flag', index=4,
       number=5, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='player_location', full_name='TournamentPlayer.player_location', index=5,
       number=6, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='player_desc', full_name='TournamentPlayer.player_desc', index=6,
       number=7, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -586,7 +600,10 @@ _TOURNAMENTPLAYER = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=250,
   serialized_end=417,
 )
@@ -609,21 +626,21 @@ _TOURNAMENTTEAM = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='team_tag', full_name='TournamentTeam.team_tag', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='team_flag', full_name='TournamentTeam.team_flag', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='team_name', full_name='TournamentTeam.team_name', index=3,
       number=4, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -642,7 +659,10 @@ _TOURNAMENTTEAM = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=419,
   serialized_end=544,
 )
@@ -665,14 +685,14 @@ _TOURNAMENTEVENT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='event_tag', full_name='TournamentEvent.event_tag', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='event_name', full_name='TournamentEvent.event_name', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -707,7 +727,7 @@ _TOURNAMENTEVENT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='event_stage_name', full_name='TournamentEvent.event_stage_name', index=7,
       number=8, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -726,7 +746,10 @@ _TOURNAMENTEVENT = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=547,
   serialized_end=770,
 )
@@ -791,7 +814,7 @@ _GLOBALSTATISTICS = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='main_post_url', full_name='GlobalStatistics.main_post_url', index=7,
       number=8, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -838,7 +861,10 @@ _GLOBALSTATISTICS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=773,
   serialized_end=1172,
 )
@@ -854,7 +880,7 @@ _OPERATIONALSTATISTICDESCRIPTION = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='name', full_name='OperationalStatisticDescription.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -873,7 +899,10 @@ _OPERATIONALSTATISTICDESCRIPTION = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=1174,
   serialized_end=1236,
 )
@@ -908,7 +937,10 @@ _OPERATIONALSTATISTICELEMENT = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=1238,
   serialized_end=1298,
 )
@@ -950,7 +982,10 @@ _OPERATIONALSTATISTICSPACKET = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=1300,
   serialized_end=1414,
 )
@@ -999,7 +1034,10 @@ _PLAYERRANKINGINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=1416,
   serialized_end=1507,
 )
@@ -1041,7 +1079,10 @@ _PLAYERCOMMENDATIONINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=1509,
   serialized_end=1597,
 )
@@ -1111,7 +1152,10 @@ _PLAYERMEDALSINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=1600,
   serialized_end=1792,
 )
@@ -1153,7 +1197,10 @@ _ACCOUNTACTIVITY = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=1794,
   serialized_end=1856,
 )
@@ -1202,7 +1249,10 @@ _TOURNAMENTMATCHSETUP = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=1858,
   serialized_end=1961,
 )
@@ -1267,14 +1317,14 @@ _SERVERHLTVINFO = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='game_mapgroup', full_name='ServerHltvInfo.game_mapgroup', index=7,
       number=9, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='game_map', full_name='ServerHltvInfo.game_map', index=8,
       number=10, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1356,7 +1406,10 @@ _SERVERHLTVINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=1964,
   serialized_end=2412,
 )
@@ -1419,7 +1472,10 @@ _IPADDRESSMASK = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=2414,
   serialized_end=2502,
 )
@@ -1454,7 +1510,10 @@ _XPPROGRESSDATA = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=2504,
   serialized_end=2560,
 )
@@ -1496,7 +1555,10 @@ _MATCHENDITEMUPDATES = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=2562,
   serialized_end=2657,
 )
@@ -1531,7 +1593,10 @@ _SCORELEADERBOARDDATA_ENTRY = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=2830,
   serialized_end=2863,
 )
@@ -1565,7 +1630,10 @@ _SCORELEADERBOARDDATA_ACCOUNTENTRIES = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=2865,
   serialized_end=2946,
 )
@@ -1613,7 +1681,10 @@ _SCORELEADERBOARDDATA = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=2660,
   serialized_end=2946,
 )
@@ -1655,7 +1726,10 @@ _PLAYERQUESTDATA_QUESTITEMDATA = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=3183,
   serialized_end=3287,
 )
@@ -1717,7 +1791,10 @@ _PLAYERQUESTDATA = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=2949,
   serialized_end=3287,
 )
@@ -1740,7 +1817,7 @@ _CMSGGC_SERVERQUESTUPDATEDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='binary_data', full_name='CMsgGC_ServerQuestUpdateData.binary_data', index=1,
       number=2, type=12, cpp_type=9, label=1,
-      has_default_value=False, default_value="",
+      has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1766,7 +1843,10 @@ _CMSGGC_SERVERQUESTUPDATEDATA = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=3290,
   serialized_end=3455,
 )
@@ -1808,7 +1888,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGCOPERATIONALSTATS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=3458,
   serialized_end=3625,
 )
@@ -1850,7 +1933,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERCONFIRM = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=3627,
   serialized_end=3723,
 )
@@ -1885,7 +1971,10 @@ _CMSGGCCSTRIKE15_V2_GC2SERVERRESERVATIONUPDATE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=3725,
   serialized_end=3836,
 )
@@ -1915,7 +2004,7 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSTART = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='ticket_data', full_name='CMsgGCCStrike15_v2_MatchmakingStart.ticket_data', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1941,7 +2030,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSTART = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=3839,
   serialized_end=4010,
 )
@@ -1969,7 +2061,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSTOP = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=4012,
   serialized_end=4065,
 )
@@ -2011,7 +2106,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2SERVERPING = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=4068,
   serialized_end=4202,
 )
@@ -2060,7 +2158,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE_NOTE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=4757,
   serialized_end=4832,
 )
@@ -2089,7 +2190,7 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='error', full_name='CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate.error', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2171,7 +2272,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=4205,
   serialized_end=4832,
 )
@@ -2206,7 +2310,10 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT_ENTRY = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=5135,
   serialized_end=5177,
 )
@@ -2296,7 +2403,10 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=4835,
   serialized_end=5177,
 )
@@ -2319,7 +2429,7 @@ _CPREMATCHINFODATA_TEAMSTATS = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='match_info_txt', full_name='CPreMatchInfoData.TeamStats.match_info_txt', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2338,7 +2448,10 @@ _CPREMATCHINFODATA_TEAMSTATS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=5329,
   serialized_end=5417,
 )
@@ -2379,7 +2492,10 @@ _CPREMATCHINFODATA = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=5180,
   serialized_end=5417,
 )
@@ -2505,7 +2621,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=5420,
   serialized_end=5918,
 )
@@ -2535,7 +2654,7 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE = _descriptor.Descripto
     _descriptor.FieldDescriptor(
       name='map', full_name='CMsgGCCStrike15_v2_MatchmakingServerReservationResponse.map', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2605,7 +2724,7 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE = _descriptor.Descripto
     _descriptor.FieldDescriptor(
       name='tournament_tag', full_name='CMsgGCCStrike15_v2_MatchmakingServerReservationResponse.tournament_tag', index=12,
       number=13, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2624,7 +2743,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE = _descriptor.Descripto
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=5921,
   serialized_end=6414,
 )
@@ -2661,14 +2783,14 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='map', full_name='CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve.map', index=3,
       number=6, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='server_address', full_name='CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve.server_address', index=4,
       number=7, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2680,7 +2802,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=6417,
   serialized_end=6613,
 )
@@ -2708,7 +2833,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS_DROPINFO = _descriptor.Descripto
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=7352,
   serialized_end=7383,
 )
@@ -2737,7 +2865,7 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='map', full_name='CMsgGCCStrike15_v2_MatchmakingServerRoundStats.map', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -2910,7 +3038,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=6616,
   serialized_end=7383,
 )
@@ -2987,7 +3118,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHEND = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=7386,
   serialized_end=7736,
 )
@@ -3008,7 +3142,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2GCHELLO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=7738,
   serialized_end=7784,
 )
@@ -3155,7 +3292,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=7787,
   serialized_end=8472,
 )
@@ -3190,7 +3330,10 @@ _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS_SETTING = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=8590,
   serialized_end=8644,
 )
@@ -3217,7 +3360,10 @@ _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=8475,
   serialized_end=8644,
 )
@@ -3266,7 +3412,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTABANDON = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=8647,
   serialized_end=8838,
 )
@@ -3308,7 +3457,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVER2GCKICK = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=8841,
   serialized_end=8992,
 )
@@ -3343,7 +3495,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRANKUPDATE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=8994,
   serialized_end=9101,
 )
@@ -3359,7 +3514,7 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGOPERATOR2GCBLOGUPDATE = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='main_post_url', full_name='CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate.main_post_url', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3371,7 +3526,10 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGOPERATOR2GCBLOGUPDATE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=9103,
   serialized_end=9179,
 )
@@ -3413,7 +3571,10 @@ _CMSGGCCSTRIKE15_V2_SERVERNOTIFICATIONFORUSERPENALTY = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=9181,
   serialized_end=9287,
 )
@@ -3490,7 +3651,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTREPORTPLAYER = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=9290,
   serialized_end=9501,
 )
@@ -3539,7 +3703,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTCOMMENDPLAYER = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=9504,
   serialized_end=9645,
 )
@@ -3602,7 +3769,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTREPORTSERVER = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=9648,
   serialized_end=9829,
 )
@@ -3665,7 +3835,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTREPORTRESPONSE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=9832,
   serialized_end=10001,
 )
@@ -3714,7 +3887,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTWATCHINFOFRIENDS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=10003,
   serialized_end=10129,
 )
@@ -3758,7 +3934,7 @@ _WATCHABLEMATCHINFO = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='tv_watch_password', full_name='WatchableMatchInfo.tv_watch_password', index=4,
       number=5, type=12, cpp_type=9, label=1,
-      has_default_value=False, default_value="",
+      has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3786,14 +3962,14 @@ _WATCHABLEMATCHINFO = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='game_mapgroup', full_name='WatchableMatchInfo.game_mapgroup', index=8,
       number=9, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='game_map', full_name='WatchableMatchInfo.game_map', index=9,
       number=10, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3826,7 +4002,10 @@ _WATCHABLEMATCHINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=10132,
   serialized_end=10436,
 )
@@ -3877,7 +4056,7 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINFRIENDDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='errormsg', full_name='CMsgGCCStrike15_v2_ClientRequestJoinFriendData.errormsg', index=5,
       number=6, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -3889,7 +4068,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINFRIENDDATA = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=10439,
   serialized_end=10642,
 )
@@ -3952,7 +4134,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINSERVERDATA = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=10645,
   serialized_end=10850,
 )
@@ -3987,7 +4172,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTNEWMISSION = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=10852,
   serialized_end=10937,
 )
@@ -4043,7 +4231,10 @@ _CMSGGCCSTRIKE15_V2_GC2SERVERNOTIFYXPREWARDED = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=10940,
   serialized_end=11117,
 )
@@ -4092,7 +4283,10 @@ _CMSGGCCSTRIKE15_V2_WATCHINFOUSERS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=11120,
   serialized_end=11274,
 )
@@ -4141,7 +4335,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTPLAYERSPROFILE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=11277,
   serialized_end=11433,
 )
@@ -4176,7 +4373,10 @@ _CMSGGCCSTRIKE15_V2_PLAYERSPROFILE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=11436,
   serialized_end=11564,
 )
@@ -4253,7 +4453,10 @@ _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASEUPDATE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=11567,
   serialized_end=11771,
 )
@@ -4276,7 +4479,7 @@ _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASEASSIGNMENT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='caseurl', full_name='CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment.caseurl', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4351,7 +4554,10 @@ _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASEASSIGNMENT = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=11774,
   serialized_end=12043,
 )
@@ -4386,7 +4592,10 @@ _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASESTATUS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=12045,
   serialized_end=12125,
 )
@@ -4421,7 +4630,10 @@ _CCLIENTHEADEROVERWATCHEVIDENCE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=12127,
   serialized_end=12194,
 )
@@ -4451,7 +4663,7 @@ _CMSGGCCSTRIKE15_V2_GC2CLIENTTEXTMSG = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='payload', full_name='CMsgGCCStrike15_v2_GC2ClientTextMsg.payload', index=2,
       number=3, type=12, cpp_type=9, label=1,
-      has_default_value=False, default_value="",
+      has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4463,7 +4675,10 @@ _CMSGGCCSTRIKE15_V2_GC2CLIENTTEXTMSG = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=12196,
   serialized_end=12276,
 )
@@ -4498,7 +4713,10 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCTEXTMSG = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=12278,
   serialized_end=12341,
 )
@@ -4533,7 +4751,10 @@ _CMSGGCCSTRIKE15_V2_MATCHENDRUNREWARDDROPS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=12344,
   serialized_end=12526,
 )
@@ -4589,7 +4810,10 @@ _CECONITEMPREVIEWDATABLOCK_STICKER = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=12900,
   serialized_end=12990,
 )
@@ -4674,7 +4898,7 @@ _CECONITEMPREVIEWDATABLOCK = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='customname', full_name='CEconItemPreviewDataBlock.customname', index=10,
       number=11, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -4721,7 +4945,10 @@ _CECONITEMPREVIEWDATABLOCK = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=12529,
   serialized_end=12990,
 )
@@ -4749,7 +4976,10 @@ _CMSGGCCSTRIKE15_V2_MATCHENDREWARDDROPSNOTIFICATION = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=12992,
   serialized_end=13090,
 )
@@ -4777,7 +5007,10 @@ _CMSGITEMACKNOWLEDGED = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=13092,
   serialized_end=13160,
 )
@@ -4826,7 +5059,10 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKREQUEST = _descriptor.Descripto
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=13162,
   serialized_end=13287,
 )
@@ -4854,7 +5090,10 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKRESPONSE = _descriptor.Descript
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=13289,
   serialized_end=13393,
 )
@@ -4896,7 +5135,10 @@ _CMSGGCCSTRIKE15_V2_TOURNAMENTMATCHREWARDDROPSNOTIFICATION = _descriptor.Descrip
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=13395,
   serialized_end=13510,
 )
@@ -4917,7 +5159,10 @@ _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTCURRENTLIVEGAMES = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=13512,
   serialized_end=13565,
 )
@@ -4945,7 +5190,10 @@ _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTLIVEGAMEFORUSER = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=13567,
   serialized_end=13638,
 )
@@ -4973,7 +5221,10 @@ _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTRECENTUSERGAMES = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=13640,
   serialized_end=13711,
 )
@@ -5001,7 +5252,10 @@ _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTTOURNAMENTGAMES = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=13713,
   serialized_end=13782,
 )
@@ -5043,7 +5297,10 @@ _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTFULLGAMEINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=13784,
   serialized_end=13884,
 )
@@ -5099,7 +5356,10 @@ _CDATAGCCSTRIKE15_V2_MATCHINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=13887,
   serialized_end=14151,
 )
@@ -5141,7 +5401,10 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUPTEAM = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=14153,
   serialized_end=14247,
 )
@@ -5169,7 +5432,10 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP_PICKS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=14571,
   serialized_end=14595,
 )
@@ -5191,14 +5457,14 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='name', full_name='CDataGCCStrike15_v2_TournamentGroup.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='desc', full_name='CDataGCCStrike15_v2_TournamentGroup.desc', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -5259,7 +5525,10 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=14250,
   serialized_end=14595,
 )
@@ -5282,14 +5551,14 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTSECTION = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='name', full_name='CDataGCCStrike15_v2_TournamentSection.name', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='desc', full_name='CDataGCCStrike15_v2_TournamentSection.desc', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -5308,7 +5577,10 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTSECTION = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=14598,
   serialized_end=14738,
 )
@@ -5350,7 +5622,10 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=14741,
   serialized_end=14922,
 )
@@ -5413,7 +5688,10 @@ _CMSGGCCSTRIKE15_V2_MATCHLIST = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=14925,
   serialized_end=15160,
 )
@@ -5469,7 +5747,10 @@ _CMSGGCCSTRIKE15_V2_PREDICTIONS_GROUPMATCHTEAMPICK = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=15299,
   serialized_end=15402,
 )
@@ -5503,7 +5784,10 @@ _CMSGGCCSTRIKE15_V2_PREDICTIONS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=15163,
   serialized_end=15402,
 )
@@ -5545,7 +5829,10 @@ _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYSLOT = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=15509,
   serialized_end=15566,
 )
@@ -5579,7 +5866,10 @@ _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYTEAM = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=15568,
   serialized_end=15656,
 )
@@ -5613,7 +5903,10 @@ _CMSGGCCSTRIKE15_V2_FANTASY = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=15405,
   serialized_end=15656,
 )
@@ -5629,7 +5922,7 @@ _CATTRIBUTE_STRING = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='value', full_name='CAttribute_String.value', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -5641,7 +5934,10 @@ _CATTRIBUTE_STRING = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=15658,
   serialized_end=15692,
 )
@@ -5662,7 +5958,10 @@ _CMSGGCTOGCRELOADVERSIONS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=15694,
   serialized_end=15720,
 )
@@ -5732,7 +6031,10 @@ _CMSGCSTRIKE15WELCOME = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=15723,
   serialized_end=15919,
 )
@@ -5748,7 +6050,7 @@ _CMSGGCCSTRIKE15_V2_CLIENTVARVALUENOTIFICATIONINFO = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='value_name', full_name='CMsgGCCStrike15_v2_ClientVarValueNotificationInfo.value_name', index=0,
       number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -5788,7 +6090,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTVARVALUENOTIFICATIONINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=15922,
   serialized_end=16077,
 )
@@ -5830,7 +6135,10 @@ _CMSGGCCSTRIKE15_V2_SERVERVARVALUENOTIFICATIONINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=16079,
   serialized_end=16183,
 )
@@ -5851,7 +6159,10 @@ _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDREQUEST = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=16185,
   serialized_end=16229,
 )
@@ -5886,7 +6197,10 @@ _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE_GIFTLEADERBOARDENTRY = _descriptor.
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=16461,
   serialized_end=16517,
 )
@@ -5941,7 +6255,10 @@ _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=16232,
   serialized_end=16517,
 )
@@ -5976,7 +6293,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTSUBMITSURVEYVOTE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=16519,
   serialized_end=16595,
 )
@@ -6004,7 +6324,10 @@ _CMSGGCCSTRIKE15_V2_SERVER2GCCLIENTVALIDATE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=16597,
   serialized_end=16660,
 )
@@ -6027,14 +6350,14 @@ _CMSGGCCSTRIKE15_V2_SERVER2GCPURESERVERVALIDATIONFAILURE = _descriptor.Descripto
     _descriptor.FieldDescriptor(
       name='path', full_name='CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure.path', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='file', full_name='CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure.file', index=2,
       number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -6081,7 +6404,10 @@ _CMSGGCCSTRIKE15_V2_SERVER2GCPURESERVERVALIDATIONFAILURE = _descriptor.Descripto
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=16663,
   serialized_end=16850,
 )
@@ -6130,7 +6456,10 @@ _CMSGGCCSTRIKE15_V2_GC2CLIENTTOURNAMENTINFO = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=16852,
   serialized_end=16966,
 )
@@ -6149,7 +6478,7 @@ _CSOECONCOUPON = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), '\200\246\035\001')),
+      options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), b'\200\246\035\001')),
     _descriptor.FieldDescriptor(
       name='defidx', full_name='CSOEconCoupon.defidx', index=1,
       number=2, type=13, cpp_type=3, label=1,
@@ -6172,7 +6501,10 @@ _CSOECONCOUPON = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=16968,
   serialized_end=17047,
 )
@@ -6191,7 +6523,7 @@ _CSOQUESTPROGRESS = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), '\200\246\035\001')),
+      options=_descriptor._ParseOptions(descriptor_pb2.FieldOptions(), b'\200\246\035\001')),
     _descriptor.FieldDescriptor(
       name='points_remaining', full_name='CSOQuestProgress.points_remaining', index=1,
       number=2, type=13, cpp_type=3, label=1,
@@ -6214,7 +6546,10 @@ _CSOQUESTPROGRESS = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17049,
   serialized_end=17138,
 )
@@ -6256,7 +6591,10 @@ _CSOPERSONADATAPUBLIC = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17140,
   serialized_end=17255,
 )
@@ -6284,7 +6622,10 @@ _CMSGGC_GLOBALGAME_SUBSCRIBE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17257,
   serialized_end=17302,
 )
@@ -6312,7 +6653,10 @@ _CMSGGC_GLOBALGAME_UNSUBSCRIBE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17304,
   serialized_end=17353,
 )
@@ -6354,7 +6698,10 @@ _CMSGGC_GLOBALGAME_PLAY = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17355,
   serialized_end=17435,
 )
@@ -6382,7 +6729,10 @@ _CMSGGCCSTRIKE15_V2_ACKNOWLEDGEPENALTY = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17437,
   serialized_end=17498,
 )
@@ -6403,7 +6753,10 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCREQUESTPRESTIGECOIN = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17500,
   serialized_end=17549,
 )
@@ -6438,7 +6791,10 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCSTREAMUNLOCK = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17551,
   serialized_end=17621,
 )
@@ -6466,7 +6822,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTTOGCREQUESTELEVATE = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17623,
   serialized_end=17683,
 )
@@ -6489,7 +6848,7 @@ _CMSGGCCSTRIKE15_V2_CLIENTTOGCCHAT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='text', full_name='CMsgGCCStrike15_v2_ClientToGCChat.text', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -6501,7 +6860,10 @@ _CMSGGCCSTRIKE15_V2_CLIENTTOGCCHAT = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17685,
   serialized_end=17752,
 )
@@ -6524,7 +6886,7 @@ _CMSGGCCSTRIKE15_V2_GCTOCLIENTCHAT = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='text', full_name='CMsgGCCStrike15_v2_GCToClientChat.text', index=1,
       number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=unicode("", "utf-8"),
+      has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -6536,7 +6898,10 @@ _CMSGGCCSTRIKE15_V2_GCTOCLIENTCHAT = _descriptor.Descriptor(
   ],
   options=None,
   is_extendable=False,
+  syntax='proto2',
   extension_ranges=[],
+  oneofs=[
+  ],
   serialized_start=17754,
   serialized_end=17823,
 )
@@ -6544,12 +6909,12 @@ _CMSGGCCSTRIKE15_V2_GCTOCLIENTCHAT = _descriptor.Descriptor(
 _TOURNAMENTTEAM.fields_by_name['players'].message_type = _TOURNAMENTPLAYER
 _GLOBALSTATISTICS.fields_by_name['search_statistics'].message_type = _DETAILEDSEARCHSTATISTIC
 _OPERATIONALSTATISTICSPACKET.fields_by_name['values'].message_type = _OPERATIONALSTATISTICELEMENT
-_SCORELEADERBOARDDATA_ENTRY.containing_type = _SCORELEADERBOARDDATA;
+_SCORELEADERBOARDDATA_ENTRY.containing_type = _SCORELEADERBOARDDATA
 _SCORELEADERBOARDDATA_ACCOUNTENTRIES.fields_by_name['entries'].message_type = _SCORELEADERBOARDDATA_ENTRY
-_SCORELEADERBOARDDATA_ACCOUNTENTRIES.containing_type = _SCORELEADERBOARDDATA;
+_SCORELEADERBOARDDATA_ACCOUNTENTRIES.containing_type = _SCORELEADERBOARDDATA
 _SCORELEADERBOARDDATA.fields_by_name['accountentries'].message_type = _SCORELEADERBOARDDATA_ACCOUNTENTRIES
 _SCORELEADERBOARDDATA.fields_by_name['matchentries'].message_type = _SCORELEADERBOARDDATA_ENTRY
-_PLAYERQUESTDATA_QUESTITEMDATA.containing_type = _PLAYERQUESTDATA;
+_PLAYERQUESTDATA_QUESTITEMDATA.containing_type = _PLAYERQUESTDATA
 _PLAYERQUESTDATA.fields_by_name['quest_item_data'].message_type = _PLAYERQUESTDATA_QUESTITEMDATA
 _PLAYERQUESTDATA.fields_by_name['xp_progress_data'].message_type = _XPPROGRESSDATA
 _PLAYERQUESTDATA.fields_by_name['item_updates'].message_type = _MATCHENDITEMUPDATES
@@ -6559,13 +6924,13 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGCOPERATIONALSTATS.fields_by_name['namekeys'].mes
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGCOPERATIONALSTATS.fields_by_name['packets'].message_type = _OPERATIONALSTATISTICSPACKET
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSTART.fields_by_name['tournament_match'].message_type = _TOURNAMENTMATCHSETUP
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2SERVERPING.fields_by_name['gameserverpings'].message_type = _GAMESERVERPING
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE_NOTE.containing_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE;
+_CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE_NOTE.containing_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE.fields_by_name['global_stats'].message_type = _GLOBALSTATISTICS
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE.fields_by_name['server_ipaddress_mask'].message_type = _IPADDRESSMASK
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE.fields_by_name['notes'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE_NOTE
-_CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT_ENTRY.containing_type = _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT;
+_CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT_ENTRY.containing_type = _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT
 _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT.fields_by_name['drafts'].message_type = _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT_ENTRY
-_CPREMATCHINFODATA_TEAMSTATS.containing_type = _CPREMATCHINFODATA;
+_CPREMATCHINFODATA_TEAMSTATS.containing_type = _CPREMATCHINFODATA
 _CPREMATCHINFODATA.fields_by_name['draft'].message_type = _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT
 _CPREMATCHINFODATA.fields_by_name['stats'].message_type = _CPREMATCHINFODATA_TEAMSTATS
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE.fields_by_name['rankings'].message_type = _PLAYERRANKINGINFO
@@ -6576,7 +6941,7 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE.fields_by_name['pre_match_data']
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE.fields_by_name['reservation'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE.fields_by_name['tv_info'].message_type = _SERVERHLTVINFO
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE.fields_by_name['reservation'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS_DROPINFO.containing_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS;
+_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS_DROPINFO.containing_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS.fields_by_name['reservation'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS.fields_by_name['confirm'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERCONFIRM
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS.fields_by_name['drop_info'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS_DROPINFO
@@ -6593,7 +6958,7 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO.fields_by_name['my_current_event_t
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO.fields_by_name['my_current_team'].message_type = _TOURNAMENTTEAM
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO.fields_by_name['my_current_event_stages'].message_type = _TOURNAMENTEVENT
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO.fields_by_name['activity'].message_type = _ACCOUNTACTIVITY
-_CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS_SETTING.containing_type = _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS;
+_CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS_SETTING.containing_type = _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS
 _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS.fields_by_name['settings'].message_type = _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS_SETTING
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTABANDON.fields_by_name['abandoned_match'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVER2GCKICK.fields_by_name['reservation'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE
@@ -6606,7 +6971,7 @@ _CMSGGCCSTRIKE15_V2_WATCHINFOUSERS.fields_by_name['watchable_match_infos'].messa
 _CMSGGCCSTRIKE15_V2_PLAYERSPROFILE.fields_by_name['account_profiles'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO
 _CMSGGCCSTRIKE15_V2_MATCHENDRUNREWARDDROPS.fields_by_name['serverinfo'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE
 _CMSGGCCSTRIKE15_V2_MATCHENDRUNREWARDDROPS.fields_by_name['match_end_quest_data'].message_type = _CMSGGC_SERVERQUESTUPDATEDATA
-_CECONITEMPREVIEWDATABLOCK_STICKER.containing_type = _CECONITEMPREVIEWDATABLOCK;
+_CECONITEMPREVIEWDATABLOCK_STICKER.containing_type = _CECONITEMPREVIEWDATABLOCK
 _CECONITEMPREVIEWDATABLOCK.fields_by_name['stickers'].message_type = _CECONITEMPREVIEWDATABLOCK_STICKER
 _CMSGGCCSTRIKE15_V2_MATCHENDREWARDDROPSNOTIFICATION.fields_by_name['iteminfo'].message_type = _CECONITEMPREVIEWDATABLOCK
 _CMSGITEMACKNOWLEDGED.fields_by_name['iteminfo'].message_type = _CECONITEMPREVIEWDATABLOCK
@@ -6614,7 +6979,7 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKRESPONSE.fields_by_name['itemin
 _CDATAGCCSTRIKE15_V2_MATCHINFO.fields_by_name['watchablematchinfo'].message_type = _WATCHABLEMATCHINFO
 _CDATAGCCSTRIKE15_V2_MATCHINFO.fields_by_name['roundstats_legacy'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS
 _CDATAGCCSTRIKE15_V2_MATCHINFO.fields_by_name['roundstatsall'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS
-_CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP_PICKS.containing_type = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP;
+_CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP_PICKS.containing_type = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP
 _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP.fields_by_name['teams'].message_type = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUPTEAM
 _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP.fields_by_name['picks'].message_type = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP_PICKS
 _CDATAGCCSTRIKE15_V2_TOURNAMENTSECTION.fields_by_name['groups'].message_type = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP
@@ -6624,13 +6989,13 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTINFO.fields_by_name['tournament_teams'].message_t
 _CMSGGCCSTRIKE15_V2_MATCHLIST.fields_by_name['matches'].message_type = _CDATAGCCSTRIKE15_V2_MATCHINFO
 _CMSGGCCSTRIKE15_V2_MATCHLIST.fields_by_name['streams'].message_type = _TOURNAMENTTEAM
 _CMSGGCCSTRIKE15_V2_MATCHLIST.fields_by_name['tournamentinfo'].message_type = _CDATAGCCSTRIKE15_V2_TOURNAMENTINFO
-_CMSGGCCSTRIKE15_V2_PREDICTIONS_GROUPMATCHTEAMPICK.containing_type = _CMSGGCCSTRIKE15_V2_PREDICTIONS;
+_CMSGGCCSTRIKE15_V2_PREDICTIONS_GROUPMATCHTEAMPICK.containing_type = _CMSGGCCSTRIKE15_V2_PREDICTIONS
 _CMSGGCCSTRIKE15_V2_PREDICTIONS.fields_by_name['group_match_team_picks'].message_type = _CMSGGCCSTRIKE15_V2_PREDICTIONS_GROUPMATCHTEAMPICK
-_CMSGGCCSTRIKE15_V2_FANTASY_FANTASYSLOT.containing_type = _CMSGGCCSTRIKE15_V2_FANTASY;
+_CMSGGCCSTRIKE15_V2_FANTASY_FANTASYSLOT.containing_type = _CMSGGCCSTRIKE15_V2_FANTASY
 _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYTEAM.fields_by_name['slots'].message_type = _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYSLOT
-_CMSGGCCSTRIKE15_V2_FANTASY_FANTASYTEAM.containing_type = _CMSGGCCSTRIKE15_V2_FANTASY;
+_CMSGGCCSTRIKE15_V2_FANTASY_FANTASYTEAM.containing_type = _CMSGGCCSTRIKE15_V2_FANTASY
 _CMSGGCCSTRIKE15_V2_FANTASY.fields_by_name['teams'].message_type = _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYTEAM
-_CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE_GIFTLEADERBOARDENTRY.containing_type = _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE;
+_CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE_GIFTLEADERBOARDENTRY.containing_type = _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE
 _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE.fields_by_name['entries'].message_type = _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE_GIFTLEADERBOARDENTRY
 _CSOPERSONADATAPUBLIC.fields_by_name['commendation'].message_type = _PLAYERCOMMENDATIONINFO
 DESCRIPTOR.message_types_by_name['GameServerPing'] = _GAMESERVERPING
@@ -6738,726 +7103,860 @@ DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_Client2GCStreamUnlock'] = _
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientToGCRequestElevate'] = _CMSGGCCSTRIKE15_V2_CLIENTTOGCREQUESTELEVATE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientToGCChat'] = _CMSGGCCSTRIKE15_V2_CLIENTTOGCCHAT
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_GCToClientChat'] = _CMSGGCCSTRIKE15_V2_GCTOCLIENTCHAT
+DESCRIPTOR.enum_types_by_name['ECsgoGCMsg'] = _ECSGOGCMSG
 
-class GameServerPing(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _GAMESERVERPING
-
+GameServerPing = _reflection.GeneratedProtocolMessageType('GameServerPing', (_message.Message,), dict(
+  DESCRIPTOR = _GAMESERVERPING,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:GameServerPing)
+  ))
+_sym_db.RegisterMessage(GameServerPing)
 
-class DetailedSearchStatistic(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _DETAILEDSEARCHSTATISTIC
-
+DetailedSearchStatistic = _reflection.GeneratedProtocolMessageType('DetailedSearchStatistic', (_message.Message,), dict(
+  DESCRIPTOR = _DETAILEDSEARCHSTATISTIC,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:DetailedSearchStatistic)
+  ))
+_sym_db.RegisterMessage(DetailedSearchStatistic)
 
-class TournamentPlayer(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _TOURNAMENTPLAYER
-
+TournamentPlayer = _reflection.GeneratedProtocolMessageType('TournamentPlayer', (_message.Message,), dict(
+  DESCRIPTOR = _TOURNAMENTPLAYER,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:TournamentPlayer)
+  ))
+_sym_db.RegisterMessage(TournamentPlayer)
 
-class TournamentTeam(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _TOURNAMENTTEAM
-
+TournamentTeam = _reflection.GeneratedProtocolMessageType('TournamentTeam', (_message.Message,), dict(
+  DESCRIPTOR = _TOURNAMENTTEAM,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:TournamentTeam)
+  ))
+_sym_db.RegisterMessage(TournamentTeam)
 
-class TournamentEvent(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _TOURNAMENTEVENT
-
+TournamentEvent = _reflection.GeneratedProtocolMessageType('TournamentEvent', (_message.Message,), dict(
+  DESCRIPTOR = _TOURNAMENTEVENT,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:TournamentEvent)
+  ))
+_sym_db.RegisterMessage(TournamentEvent)
 
-class GlobalStatistics(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _GLOBALSTATISTICS
-
+GlobalStatistics = _reflection.GeneratedProtocolMessageType('GlobalStatistics', (_message.Message,), dict(
+  DESCRIPTOR = _GLOBALSTATISTICS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:GlobalStatistics)
+  ))
+_sym_db.RegisterMessage(GlobalStatistics)
 
-class OperationalStatisticDescription(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _OPERATIONALSTATISTICDESCRIPTION
-
+OperationalStatisticDescription = _reflection.GeneratedProtocolMessageType('OperationalStatisticDescription', (_message.Message,), dict(
+  DESCRIPTOR = _OPERATIONALSTATISTICDESCRIPTION,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:OperationalStatisticDescription)
+  ))
+_sym_db.RegisterMessage(OperationalStatisticDescription)
 
-class OperationalStatisticElement(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _OPERATIONALSTATISTICELEMENT
-
+OperationalStatisticElement = _reflection.GeneratedProtocolMessageType('OperationalStatisticElement', (_message.Message,), dict(
+  DESCRIPTOR = _OPERATIONALSTATISTICELEMENT,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:OperationalStatisticElement)
+  ))
+_sym_db.RegisterMessage(OperationalStatisticElement)
 
-class OperationalStatisticsPacket(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _OPERATIONALSTATISTICSPACKET
-
+OperationalStatisticsPacket = _reflection.GeneratedProtocolMessageType('OperationalStatisticsPacket', (_message.Message,), dict(
+  DESCRIPTOR = _OPERATIONALSTATISTICSPACKET,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:OperationalStatisticsPacket)
+  ))
+_sym_db.RegisterMessage(OperationalStatisticsPacket)
 
-class PlayerRankingInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _PLAYERRANKINGINFO
-
+PlayerRankingInfo = _reflection.GeneratedProtocolMessageType('PlayerRankingInfo', (_message.Message,), dict(
+  DESCRIPTOR = _PLAYERRANKINGINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:PlayerRankingInfo)
+  ))
+_sym_db.RegisterMessage(PlayerRankingInfo)
 
-class PlayerCommendationInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _PLAYERCOMMENDATIONINFO
-
+PlayerCommendationInfo = _reflection.GeneratedProtocolMessageType('PlayerCommendationInfo', (_message.Message,), dict(
+  DESCRIPTOR = _PLAYERCOMMENDATIONINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:PlayerCommendationInfo)
+  ))
+_sym_db.RegisterMessage(PlayerCommendationInfo)
 
-class PlayerMedalsInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _PLAYERMEDALSINFO
-
+PlayerMedalsInfo = _reflection.GeneratedProtocolMessageType('PlayerMedalsInfo', (_message.Message,), dict(
+  DESCRIPTOR = _PLAYERMEDALSINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:PlayerMedalsInfo)
+  ))
+_sym_db.RegisterMessage(PlayerMedalsInfo)
 
-class AccountActivity(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _ACCOUNTACTIVITY
-
+AccountActivity = _reflection.GeneratedProtocolMessageType('AccountActivity', (_message.Message,), dict(
+  DESCRIPTOR = _ACCOUNTACTIVITY,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:AccountActivity)
+  ))
+_sym_db.RegisterMessage(AccountActivity)
 
-class TournamentMatchSetup(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _TOURNAMENTMATCHSETUP
-
+TournamentMatchSetup = _reflection.GeneratedProtocolMessageType('TournamentMatchSetup', (_message.Message,), dict(
+  DESCRIPTOR = _TOURNAMENTMATCHSETUP,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:TournamentMatchSetup)
+  ))
+_sym_db.RegisterMessage(TournamentMatchSetup)
 
-class ServerHltvInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _SERVERHLTVINFO
-
+ServerHltvInfo = _reflection.GeneratedProtocolMessageType('ServerHltvInfo', (_message.Message,), dict(
+  DESCRIPTOR = _SERVERHLTVINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:ServerHltvInfo)
+  ))
+_sym_db.RegisterMessage(ServerHltvInfo)
 
-class IpAddressMask(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _IPADDRESSMASK
-
+IpAddressMask = _reflection.GeneratedProtocolMessageType('IpAddressMask', (_message.Message,), dict(
+  DESCRIPTOR = _IPADDRESSMASK,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:IpAddressMask)
+  ))
+_sym_db.RegisterMessage(IpAddressMask)
 
-class XpProgressData(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _XPPROGRESSDATA
-
+XpProgressData = _reflection.GeneratedProtocolMessageType('XpProgressData', (_message.Message,), dict(
+  DESCRIPTOR = _XPPROGRESSDATA,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:XpProgressData)
+  ))
+_sym_db.RegisterMessage(XpProgressData)
 
-class MatchEndItemUpdates(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _MATCHENDITEMUPDATES
-
+MatchEndItemUpdates = _reflection.GeneratedProtocolMessageType('MatchEndItemUpdates', (_message.Message,), dict(
+  DESCRIPTOR = _MATCHENDITEMUPDATES,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:MatchEndItemUpdates)
+  ))
+_sym_db.RegisterMessage(MatchEndItemUpdates)
 
-class ScoreLeaderboardData(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+ScoreLeaderboardData = _reflection.GeneratedProtocolMessageType('ScoreLeaderboardData', (_message.Message,), dict(
 
-  class Entry(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _SCORELEADERBOARDDATA_ENTRY
-
+  Entry = _reflection.GeneratedProtocolMessageType('Entry', (_message.Message,), dict(
+    DESCRIPTOR = _SCORELEADERBOARDDATA_ENTRY,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:ScoreLeaderboardData.Entry)
+    ))
+  ,
 
-  class AccountEntries(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _SCORELEADERBOARDDATA_ACCOUNTENTRIES
-
+  AccountEntries = _reflection.GeneratedProtocolMessageType('AccountEntries', (_message.Message,), dict(
+    DESCRIPTOR = _SCORELEADERBOARDDATA_ACCOUNTENTRIES,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:ScoreLeaderboardData.AccountEntries)
-  DESCRIPTOR = _SCORELEADERBOARDDATA
-
+    ))
+  ,
+  DESCRIPTOR = _SCORELEADERBOARDDATA,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:ScoreLeaderboardData)
+  ))
+_sym_db.RegisterMessage(ScoreLeaderboardData)
+_sym_db.RegisterMessage(ScoreLeaderboardData.Entry)
+_sym_db.RegisterMessage(ScoreLeaderboardData.AccountEntries)
 
-class PlayerQuestData(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+PlayerQuestData = _reflection.GeneratedProtocolMessageType('PlayerQuestData', (_message.Message,), dict(
 
-  class QuestItemData(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _PLAYERQUESTDATA_QUESTITEMDATA
-
+  QuestItemData = _reflection.GeneratedProtocolMessageType('QuestItemData', (_message.Message,), dict(
+    DESCRIPTOR = _PLAYERQUESTDATA_QUESTITEMDATA,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:PlayerQuestData.QuestItemData)
-  DESCRIPTOR = _PLAYERQUESTDATA
-
+    ))
+  ,
+  DESCRIPTOR = _PLAYERQUESTDATA,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:PlayerQuestData)
+  ))
+_sym_db.RegisterMessage(PlayerQuestData)
+_sym_db.RegisterMessage(PlayerQuestData.QuestItemData)
 
-class CMsgGC_ServerQuestUpdateData(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGC_SERVERQUESTUPDATEDATA
-
+CMsgGC_ServerQuestUpdateData = _reflection.GeneratedProtocolMessageType('CMsgGC_ServerQuestUpdateData', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGC_SERVERQUESTUPDATEDATA,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGC_ServerQuestUpdateData)
+  ))
+_sym_db.RegisterMessage(CMsgGC_ServerQuestUpdateData)
 
-class CMsgGCCStrike15_v2_MatchmakingGCOperationalStats(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGCOPERATIONALSTATS
-
+CMsgGCCStrike15_v2_MatchmakingGCOperationalStats = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingGCOperationalStats', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGCOPERATIONALSTATS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingGCOperationalStats)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGCOperationalStats)
 
-class CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERCONFIRM
-
+CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERCONFIRM,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm)
 
-class CMsgGCCStrike15_v2_GC2ServerReservationUpdate(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2SERVERRESERVATIONUPDATE
-
+CMsgGCCStrike15_v2_GC2ServerReservationUpdate = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_GC2ServerReservationUpdate', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2SERVERRESERVATIONUPDATE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_GC2ServerReservationUpdate)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_GC2ServerReservationUpdate)
 
-class CMsgGCCStrike15_v2_MatchmakingStart(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSTART
-
+CMsgGCCStrike15_v2_MatchmakingStart = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingStart', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSTART,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingStart)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingStart)
 
-class CMsgGCCStrike15_v2_MatchmakingStop(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSTOP
-
+CMsgGCCStrike15_v2_MatchmakingStop = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingStop', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSTOP,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingStop)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingStop)
 
-class CMsgGCCStrike15_v2_MatchmakingClient2ServerPing(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2SERVERPING
-
+CMsgGCCStrike15_v2_MatchmakingClient2ServerPing = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingClient2ServerPing', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2SERVERPING,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingClient2ServerPing)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingClient2ServerPing)
 
-class CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate', (_message.Message,), dict(
 
-  class Note(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE_NOTE
-
+  Note = _reflection.GeneratedProtocolMessageType('Note', (_message.Message,), dict(
+    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE_NOTE,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate.Note)
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE
-
+    ))
+  ,
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate)
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate.Note)
 
-class CDataGCCStrike15_v2_TournamentMatchDraft(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+CDataGCCStrike15_v2_TournamentMatchDraft = _reflection.GeneratedProtocolMessageType('CDataGCCStrike15_v2_TournamentMatchDraft', (_message.Message,), dict(
 
-  class Entry(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT_ENTRY
-
+  Entry = _reflection.GeneratedProtocolMessageType('Entry', (_message.Message,), dict(
+    DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT_ENTRY,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CDataGCCStrike15_v2_TournamentMatchDraft.Entry)
-  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT
-
+    ))
+  ,
+  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CDataGCCStrike15_v2_TournamentMatchDraft)
+  ))
+_sym_db.RegisterMessage(CDataGCCStrike15_v2_TournamentMatchDraft)
+_sym_db.RegisterMessage(CDataGCCStrike15_v2_TournamentMatchDraft.Entry)
 
-class CPreMatchInfoData(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+CPreMatchInfoData = _reflection.GeneratedProtocolMessageType('CPreMatchInfoData', (_message.Message,), dict(
 
-  class TeamStats(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CPREMATCHINFODATA_TEAMSTATS
-
+  TeamStats = _reflection.GeneratedProtocolMessageType('TeamStats', (_message.Message,), dict(
+    DESCRIPTOR = _CPREMATCHINFODATA_TEAMSTATS,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CPreMatchInfoData.TeamStats)
-  DESCRIPTOR = _CPREMATCHINFODATA
-
+    ))
+  ,
+  DESCRIPTOR = _CPREMATCHINFODATA,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CPreMatchInfoData)
+  ))
+_sym_db.RegisterMessage(CPreMatchInfoData)
+_sym_db.RegisterMessage(CPreMatchInfoData.TeamStats)
 
-class CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE
-
+CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve)
 
-class CMsgGCCStrike15_v2_MatchmakingServerReservationResponse(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE
-
+CMsgGCCStrike15_v2_MatchmakingServerReservationResponse = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingServerReservationResponse', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingServerReservationResponse)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingServerReservationResponse)
 
-class CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE
-
+CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve)
 
-class CMsgGCCStrike15_v2_MatchmakingServerRoundStats(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+CMsgGCCStrike15_v2_MatchmakingServerRoundStats = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingServerRoundStats', (_message.Message,), dict(
 
-  class DropInfo(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS_DROPINFO
-
+  DropInfo = _reflection.GeneratedProtocolMessageType('DropInfo', (_message.Message,), dict(
+    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS_DROPINFO,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingServerRoundStats.DropInfo)
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS
-
+    ))
+  ,
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingServerRoundStats)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingServerRoundStats)
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingServerRoundStats.DropInfo)
 
-class CMsgGCCStrike15_v2_MatchmakingServerMatchEnd(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHEND
-
+CMsgGCCStrike15_v2_MatchmakingServerMatchEnd = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingServerMatchEnd', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHEND,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingServerMatchEnd)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingServerMatchEnd)
 
-class CMsgGCCStrike15_v2_MatchmakingClient2GCHello(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2GCHELLO
-
+CMsgGCCStrike15_v2_MatchmakingClient2GCHello = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingClient2GCHello', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2GCHELLO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingClient2GCHello)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingClient2GCHello)
 
-class CMsgGCCStrike15_v2_MatchmakingGC2ClientHello(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO
-
+CMsgGCCStrike15_v2_MatchmakingGC2ClientHello = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingGC2ClientHello', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingGC2ClientHello)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGC2ClientHello)
 
-class CMsgGCCStrike15_v2_AccountPrivacySettings(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+CMsgGCCStrike15_v2_AccountPrivacySettings = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_AccountPrivacySettings', (_message.Message,), dict(
 
-  class Setting(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS_SETTING
-
+  Setting = _reflection.GeneratedProtocolMessageType('Setting', (_message.Message,), dict(
+    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS_SETTING,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_AccountPrivacySettings.Setting)
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS
-
+    ))
+  ,
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_AccountPrivacySettings)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_AccountPrivacySettings)
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_AccountPrivacySettings.Setting)
 
-class CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTABANDON
-
+CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTABANDON,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon)
 
-class CMsgGCCStrike15_v2_MatchmakingServer2GCKick(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVER2GCKICK
-
+CMsgGCCStrike15_v2_MatchmakingServer2GCKick = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingServer2GCKick', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVER2GCKICK,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingServer2GCKick)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingServer2GCKick)
 
-class CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRANKUPDATE
-
+CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRANKUPDATE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate)
 
-class CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGOPERATOR2GCBLOGUPDATE
-
+CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGOPERATOR2GCBLOGUPDATE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate)
 
-class CMsgGCCStrike15_v2_ServerNotificationForUserPenalty(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_SERVERNOTIFICATIONFORUSERPENALTY
-
+CMsgGCCStrike15_v2_ServerNotificationForUserPenalty = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ServerNotificationForUserPenalty', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_SERVERNOTIFICATIONFORUSERPENALTY,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ServerNotificationForUserPenalty)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ServerNotificationForUserPenalty)
 
-class CMsgGCCStrike15_v2_ClientReportPlayer(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREPORTPLAYER
-
+CMsgGCCStrike15_v2_ClientReportPlayer = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientReportPlayer', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREPORTPLAYER,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientReportPlayer)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientReportPlayer)
 
-class CMsgGCCStrike15_v2_ClientCommendPlayer(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTCOMMENDPLAYER
-
+CMsgGCCStrike15_v2_ClientCommendPlayer = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientCommendPlayer', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTCOMMENDPLAYER,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientCommendPlayer)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientCommendPlayer)
 
-class CMsgGCCStrike15_v2_ClientReportServer(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREPORTSERVER
-
+CMsgGCCStrike15_v2_ClientReportServer = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientReportServer', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREPORTSERVER,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientReportServer)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientReportServer)
 
-class CMsgGCCStrike15_v2_ClientReportResponse(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREPORTRESPONSE
-
+CMsgGCCStrike15_v2_ClientReportResponse = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientReportResponse', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREPORTRESPONSE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientReportResponse)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientReportResponse)
 
-class CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTWATCHINFOFRIENDS
-
+CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTWATCHINFOFRIENDS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends)
 
-class WatchableMatchInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _WATCHABLEMATCHINFO
-
+WatchableMatchInfo = _reflection.GeneratedProtocolMessageType('WatchableMatchInfo', (_message.Message,), dict(
+  DESCRIPTOR = _WATCHABLEMATCHINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:WatchableMatchInfo)
+  ))
+_sym_db.RegisterMessage(WatchableMatchInfo)
 
-class CMsgGCCStrike15_v2_ClientRequestJoinFriendData(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINFRIENDDATA
-
+CMsgGCCStrike15_v2_ClientRequestJoinFriendData = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientRequestJoinFriendData', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINFRIENDDATA,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientRequestJoinFriendData)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientRequestJoinFriendData)
 
-class CMsgGCCStrike15_v2_ClientRequestJoinServerData(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINSERVERDATA
-
+CMsgGCCStrike15_v2_ClientRequestJoinServerData = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientRequestJoinServerData', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINSERVERDATA,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientRequestJoinServerData)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientRequestJoinServerData)
 
-class CMsgGCCstrike15_v2_ClientRequestNewMission(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTNEWMISSION
-
+CMsgGCCstrike15_v2_ClientRequestNewMission = _reflection.GeneratedProtocolMessageType('CMsgGCCstrike15_v2_ClientRequestNewMission', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTNEWMISSION,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCstrike15_v2_ClientRequestNewMission)
+  ))
+_sym_db.RegisterMessage(CMsgGCCstrike15_v2_ClientRequestNewMission)
 
-class CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2SERVERNOTIFYXPREWARDED
-
+CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded = _reflection.GeneratedProtocolMessageType('CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2SERVERNOTIFYXPREWARDED,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded)
+  ))
+_sym_db.RegisterMessage(CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded)
 
-class CMsgGCCStrike15_v2_WatchInfoUsers(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_WATCHINFOUSERS
-
+CMsgGCCStrike15_v2_WatchInfoUsers = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_WatchInfoUsers', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_WATCHINFOUSERS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_WatchInfoUsers)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_WatchInfoUsers)
 
-class CMsgGCCStrike15_v2_ClientRequestPlayersProfile(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTPLAYERSPROFILE
-
+CMsgGCCStrike15_v2_ClientRequestPlayersProfile = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientRequestPlayersProfile', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTPLAYERSPROFILE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientRequestPlayersProfile)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientRequestPlayersProfile)
 
-class CMsgGCCStrike15_v2_PlayersProfile(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PLAYERSPROFILE
-
+CMsgGCCStrike15_v2_PlayersProfile = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_PlayersProfile', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PLAYERSPROFILE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_PlayersProfile)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_PlayersProfile)
 
-class CMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASEUPDATE
-
+CMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASEUPDATE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate)
 
-class CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASEASSIGNMENT
-
+CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASEASSIGNMENT,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment)
 
-class CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASESTATUS
-
+CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASESTATUS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus)
 
-class CClientHeaderOverwatchEvidence(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CCLIENTHEADEROVERWATCHEVIDENCE
-
+CClientHeaderOverwatchEvidence = _reflection.GeneratedProtocolMessageType('CClientHeaderOverwatchEvidence', (_message.Message,), dict(
+  DESCRIPTOR = _CCLIENTHEADEROVERWATCHEVIDENCE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CClientHeaderOverwatchEvidence)
+  ))
+_sym_db.RegisterMessage(CClientHeaderOverwatchEvidence)
 
-class CMsgGCCStrike15_v2_GC2ClientTextMsg(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2CLIENTTEXTMSG
-
+CMsgGCCStrike15_v2_GC2ClientTextMsg = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_GC2ClientTextMsg', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2CLIENTTEXTMSG,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_GC2ClientTextMsg)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_GC2ClientTextMsg)
 
-class CMsgGCCStrike15_v2_Client2GCTextMsg(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENT2GCTEXTMSG
-
+CMsgGCCStrike15_v2_Client2GCTextMsg = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_Client2GCTextMsg', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENT2GCTEXTMSG,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Client2GCTextMsg)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Client2GCTextMsg)
 
-class CMsgGCCStrike15_v2_MatchEndRunRewardDrops(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHENDRUNREWARDDROPS
-
+CMsgGCCStrike15_v2_MatchEndRunRewardDrops = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchEndRunRewardDrops', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHENDRUNREWARDDROPS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchEndRunRewardDrops)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchEndRunRewardDrops)
 
-class CEconItemPreviewDataBlock(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+CEconItemPreviewDataBlock = _reflection.GeneratedProtocolMessageType('CEconItemPreviewDataBlock', (_message.Message,), dict(
 
-  class Sticker(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CECONITEMPREVIEWDATABLOCK_STICKER
-
+  Sticker = _reflection.GeneratedProtocolMessageType('Sticker', (_message.Message,), dict(
+    DESCRIPTOR = _CECONITEMPREVIEWDATABLOCK_STICKER,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CEconItemPreviewDataBlock.Sticker)
-  DESCRIPTOR = _CECONITEMPREVIEWDATABLOCK
-
+    ))
+  ,
+  DESCRIPTOR = _CECONITEMPREVIEWDATABLOCK,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CEconItemPreviewDataBlock)
+  ))
+_sym_db.RegisterMessage(CEconItemPreviewDataBlock)
+_sym_db.RegisterMessage(CEconItemPreviewDataBlock.Sticker)
 
-class CMsgGCCStrike15_v2_MatchEndRewardDropsNotification(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHENDREWARDDROPSNOTIFICATION
-
+CMsgGCCStrike15_v2_MatchEndRewardDropsNotification = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchEndRewardDropsNotification', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHENDREWARDDROPSNOTIFICATION,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchEndRewardDropsNotification)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchEndRewardDropsNotification)
 
-class CMsgItemAcknowledged(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGITEMACKNOWLEDGED
-
+CMsgItemAcknowledged = _reflection.GeneratedProtocolMessageType('CMsgItemAcknowledged', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGITEMACKNOWLEDGED,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgItemAcknowledged)
+  ))
+_sym_db.RegisterMessage(CMsgItemAcknowledged)
 
-class CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKREQUEST
-
+CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKREQUEST,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest)
 
-class CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKRESPONSE
-
+CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKRESPONSE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse)
 
-class CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_TOURNAMENTMATCHREWARDDROPSNOTIFICATION
-
+CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_TOURNAMENTMATCHREWARDDROPSNOTIFICATION,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification)
 
-class CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTCURRENTLIVEGAMES
-
+CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTCURRENTLIVEGAMES,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames)
 
-class CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTLIVEGAMEFORUSER
-
+CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTLIVEGAMEFORUSER,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser)
 
-class CMsgGCCStrike15_v2_MatchListRequestRecentUserGames(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTRECENTUSERGAMES
-
+CMsgGCCStrike15_v2_MatchListRequestRecentUserGames = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchListRequestRecentUserGames', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTRECENTUSERGAMES,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchListRequestRecentUserGames)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchListRequestRecentUserGames)
 
-class CMsgGCCStrike15_v2_MatchListRequestTournamentGames(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTTOURNAMENTGAMES
-
+CMsgGCCStrike15_v2_MatchListRequestTournamentGames = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchListRequestTournamentGames', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTTOURNAMENTGAMES,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchListRequestTournamentGames)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchListRequestTournamentGames)
 
-class CMsgGCCStrike15_v2_MatchListRequestFullGameInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTFULLGAMEINFO
-
+CMsgGCCStrike15_v2_MatchListRequestFullGameInfo = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchListRequestFullGameInfo', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTFULLGAMEINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchListRequestFullGameInfo)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchListRequestFullGameInfo)
 
-class CDataGCCStrike15_v2_MatchInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_MATCHINFO
-
+CDataGCCStrike15_v2_MatchInfo = _reflection.GeneratedProtocolMessageType('CDataGCCStrike15_v2_MatchInfo', (_message.Message,), dict(
+  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_MATCHINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CDataGCCStrike15_v2_MatchInfo)
+  ))
+_sym_db.RegisterMessage(CDataGCCStrike15_v2_MatchInfo)
 
-class CDataGCCStrike15_v2_TournamentGroupTeam(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUPTEAM
-
+CDataGCCStrike15_v2_TournamentGroupTeam = _reflection.GeneratedProtocolMessageType('CDataGCCStrike15_v2_TournamentGroupTeam', (_message.Message,), dict(
+  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUPTEAM,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CDataGCCStrike15_v2_TournamentGroupTeam)
+  ))
+_sym_db.RegisterMessage(CDataGCCStrike15_v2_TournamentGroupTeam)
 
-class CDataGCCStrike15_v2_TournamentGroup(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+CDataGCCStrike15_v2_TournamentGroup = _reflection.GeneratedProtocolMessageType('CDataGCCStrike15_v2_TournamentGroup', (_message.Message,), dict(
 
-  class Picks(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP_PICKS
-
+  Picks = _reflection.GeneratedProtocolMessageType('Picks', (_message.Message,), dict(
+    DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP_PICKS,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CDataGCCStrike15_v2_TournamentGroup.Picks)
-  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP
-
+    ))
+  ,
+  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CDataGCCStrike15_v2_TournamentGroup)
+  ))
+_sym_db.RegisterMessage(CDataGCCStrike15_v2_TournamentGroup)
+_sym_db.RegisterMessage(CDataGCCStrike15_v2_TournamentGroup.Picks)
 
-class CDataGCCStrike15_v2_TournamentSection(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTSECTION
-
+CDataGCCStrike15_v2_TournamentSection = _reflection.GeneratedProtocolMessageType('CDataGCCStrike15_v2_TournamentSection', (_message.Message,), dict(
+  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTSECTION,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CDataGCCStrike15_v2_TournamentSection)
+  ))
+_sym_db.RegisterMessage(CDataGCCStrike15_v2_TournamentSection)
 
-class CDataGCCStrike15_v2_TournamentInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTINFO
-
+CDataGCCStrike15_v2_TournamentInfo = _reflection.GeneratedProtocolMessageType('CDataGCCStrike15_v2_TournamentInfo', (_message.Message,), dict(
+  DESCRIPTOR = _CDATAGCCSTRIKE15_V2_TOURNAMENTINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CDataGCCStrike15_v2_TournamentInfo)
+  ))
+_sym_db.RegisterMessage(CDataGCCStrike15_v2_TournamentInfo)
 
-class CMsgGCCStrike15_v2_MatchList(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLIST
-
+CMsgGCCStrike15_v2_MatchList = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchList', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLIST,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_MatchList)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchList)
 
-class CMsgGCCStrike15_v2_Predictions(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+CMsgGCCStrike15_v2_Predictions = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_Predictions', (_message.Message,), dict(
 
-  class GroupMatchTeamPick(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PREDICTIONS_GROUPMATCHTEAMPICK
-
+  GroupMatchTeamPick = _reflection.GeneratedProtocolMessageType('GroupMatchTeamPick', (_message.Message,), dict(
+    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PREDICTIONS_GROUPMATCHTEAMPICK,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Predictions.GroupMatchTeamPick)
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PREDICTIONS
-
+    ))
+  ,
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_PREDICTIONS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Predictions)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Predictions)
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Predictions.GroupMatchTeamPick)
 
-class CMsgGCCStrike15_v2_Fantasy(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+CMsgGCCStrike15_v2_Fantasy = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_Fantasy', (_message.Message,), dict(
 
-  class FantasySlot(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYSLOT
-
+  FantasySlot = _reflection.GeneratedProtocolMessageType('FantasySlot', (_message.Message,), dict(
+    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYSLOT,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Fantasy.FantasySlot)
+    ))
+  ,
 
-  class FantasyTeam(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYTEAM
-
+  FantasyTeam = _reflection.GeneratedProtocolMessageType('FantasyTeam', (_message.Message,), dict(
+    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYTEAM,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Fantasy.FantasyTeam)
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_FANTASY
-
+    ))
+  ,
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_FANTASY,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Fantasy)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Fantasy)
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Fantasy.FantasySlot)
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Fantasy.FantasyTeam)
 
-class CAttribute_String(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CATTRIBUTE_STRING
-
+CAttribute_String = _reflection.GeneratedProtocolMessageType('CAttribute_String', (_message.Message,), dict(
+  DESCRIPTOR = _CATTRIBUTE_STRING,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CAttribute_String)
+  ))
+_sym_db.RegisterMessage(CAttribute_String)
 
-class CMsgGCToGCReloadVersions(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCTOGCRELOADVERSIONS
-
+CMsgGCToGCReloadVersions = _reflection.GeneratedProtocolMessageType('CMsgGCToGCReloadVersions', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCTOGCRELOADVERSIONS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCToGCReloadVersions)
+  ))
+_sym_db.RegisterMessage(CMsgGCToGCReloadVersions)
 
-class CMsgCStrike15Welcome(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGCSTRIKE15WELCOME
-
+CMsgCStrike15Welcome = _reflection.GeneratedProtocolMessageType('CMsgCStrike15Welcome', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGCSTRIKE15WELCOME,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgCStrike15Welcome)
+  ))
+_sym_db.RegisterMessage(CMsgCStrike15Welcome)
 
-class CMsgGCCStrike15_v2_ClientVarValueNotificationInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTVARVALUENOTIFICATIONINFO
-
+CMsgGCCStrike15_v2_ClientVarValueNotificationInfo = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientVarValueNotificationInfo', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTVARVALUENOTIFICATIONINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientVarValueNotificationInfo)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientVarValueNotificationInfo)
 
-class CMsgGCCStrike15_v2_ServerVarValueNotificationInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_SERVERVARVALUENOTIFICATIONINFO
-
+CMsgGCCStrike15_v2_ServerVarValueNotificationInfo = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ServerVarValueNotificationInfo', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_SERVERVARVALUENOTIFICATIONINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ServerVarValueNotificationInfo)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ServerVarValueNotificationInfo)
 
-class CMsgGCCStrike15_v2_GiftsLeaderboardRequest(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDREQUEST
-
+CMsgGCCStrike15_v2_GiftsLeaderboardRequest = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_GiftsLeaderboardRequest', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDREQUEST,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_GiftsLeaderboardRequest)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_GiftsLeaderboardRequest)
 
-class CMsgGCCStrike15_v2_GiftsLeaderboardResponse(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
+CMsgGCCStrike15_v2_GiftsLeaderboardResponse = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_GiftsLeaderboardResponse', (_message.Message,), dict(
 
-  class GiftLeaderboardEntry(_message.Message):
-    __metaclass__ = _reflection.GeneratedProtocolMessageType
-    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE_GIFTLEADERBOARDENTRY
-
+  GiftLeaderboardEntry = _reflection.GeneratedProtocolMessageType('GiftLeaderboardEntry', (_message.Message,), dict(
+    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE_GIFTLEADERBOARDENTRY,
+    __module__ = 'cstrike15_gcmessages_pb2'
     # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_GiftsLeaderboardResponse.GiftLeaderboardEntry)
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE
-
+    ))
+  ,
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_GiftsLeaderboardResponse)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_GiftsLeaderboardResponse)
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_GiftsLeaderboardResponse.GiftLeaderboardEntry)
 
-class CMsgGCCStrike15_v2_ClientSubmitSurveyVote(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTSUBMITSURVEYVOTE
-
+CMsgGCCStrike15_v2_ClientSubmitSurveyVote = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientSubmitSurveyVote', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTSUBMITSURVEYVOTE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientSubmitSurveyVote)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientSubmitSurveyVote)
 
-class CMsgGCCStrike15_v2_Server2GCClientValidate(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_SERVER2GCCLIENTVALIDATE
-
+CMsgGCCStrike15_v2_Server2GCClientValidate = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_Server2GCClientValidate', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_SERVER2GCCLIENTVALIDATE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Server2GCClientValidate)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Server2GCClientValidate)
 
-class CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_SERVER2GCPURESERVERVALIDATIONFAILURE
-
+CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_SERVER2GCPURESERVERVALIDATIONFAILURE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure)
 
-class CMsgGCCStrike15_v2_GC2ClientTournamentInfo(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2CLIENTTOURNAMENTINFO
-
+CMsgGCCStrike15_v2_GC2ClientTournamentInfo = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_GC2ClientTournamentInfo', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2CLIENTTOURNAMENTINFO,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_GC2ClientTournamentInfo)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_GC2ClientTournamentInfo)
 
-class CSOEconCoupon(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CSOECONCOUPON
-
+CSOEconCoupon = _reflection.GeneratedProtocolMessageType('CSOEconCoupon', (_message.Message,), dict(
+  DESCRIPTOR = _CSOECONCOUPON,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CSOEconCoupon)
+  ))
+_sym_db.RegisterMessage(CSOEconCoupon)
 
-class CSOQuestProgress(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CSOQUESTPROGRESS
-
+CSOQuestProgress = _reflection.GeneratedProtocolMessageType('CSOQuestProgress', (_message.Message,), dict(
+  DESCRIPTOR = _CSOQUESTPROGRESS,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CSOQuestProgress)
+  ))
+_sym_db.RegisterMessage(CSOQuestProgress)
 
-class CSOPersonaDataPublic(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CSOPERSONADATAPUBLIC
-
+CSOPersonaDataPublic = _reflection.GeneratedProtocolMessageType('CSOPersonaDataPublic', (_message.Message,), dict(
+  DESCRIPTOR = _CSOPERSONADATAPUBLIC,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CSOPersonaDataPublic)
+  ))
+_sym_db.RegisterMessage(CSOPersonaDataPublic)
 
-class CMsgGC_GlobalGame_Subscribe(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGC_GLOBALGAME_SUBSCRIBE
-
+CMsgGC_GlobalGame_Subscribe = _reflection.GeneratedProtocolMessageType('CMsgGC_GlobalGame_Subscribe', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGC_GLOBALGAME_SUBSCRIBE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGC_GlobalGame_Subscribe)
+  ))
+_sym_db.RegisterMessage(CMsgGC_GlobalGame_Subscribe)
 
-class CMsgGC_GlobalGame_Unsubscribe(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGC_GLOBALGAME_UNSUBSCRIBE
-
+CMsgGC_GlobalGame_Unsubscribe = _reflection.GeneratedProtocolMessageType('CMsgGC_GlobalGame_Unsubscribe', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGC_GLOBALGAME_UNSUBSCRIBE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGC_GlobalGame_Unsubscribe)
+  ))
+_sym_db.RegisterMessage(CMsgGC_GlobalGame_Unsubscribe)
 
-class CMsgGC_GlobalGame_Play(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGC_GLOBALGAME_PLAY
-
+CMsgGC_GlobalGame_Play = _reflection.GeneratedProtocolMessageType('CMsgGC_GlobalGame_Play', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGC_GLOBALGAME_PLAY,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGC_GlobalGame_Play)
+  ))
+_sym_db.RegisterMessage(CMsgGC_GlobalGame_Play)
 
-class CMsgGCCStrike15_v2_AcknowledgePenalty(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_ACKNOWLEDGEPENALTY
-
+CMsgGCCStrike15_v2_AcknowledgePenalty = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_AcknowledgePenalty', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_ACKNOWLEDGEPENALTY,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_AcknowledgePenalty)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_AcknowledgePenalty)
 
-class CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENT2GCREQUESTPRESTIGECOIN
-
+CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENT2GCREQUESTPRESTIGECOIN,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin)
 
-class CMsgGCCStrike15_v2_Client2GCStreamUnlock(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENT2GCSTREAMUNLOCK
-
+CMsgGCCStrike15_v2_Client2GCStreamUnlock = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_Client2GCStreamUnlock', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENT2GCSTREAMUNLOCK,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_Client2GCStreamUnlock)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Client2GCStreamUnlock)
 
-class CMsgGCCStrike15_v2_ClientToGCRequestElevate(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTTOGCREQUESTELEVATE
-
+CMsgGCCStrike15_v2_ClientToGCRequestElevate = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientToGCRequestElevate', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTTOGCREQUESTELEVATE,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientToGCRequestElevate)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientToGCRequestElevate)
 
-class CMsgGCCStrike15_v2_ClientToGCChat(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTTOGCCHAT
-
+CMsgGCCStrike15_v2_ClientToGCChat = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientToGCChat', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTTOGCCHAT,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_ClientToGCChat)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientToGCChat)
 
-class CMsgGCCStrike15_v2_GCToClientChat(_message.Message):
-  __metaclass__ = _reflection.GeneratedProtocolMessageType
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GCTOCLIENTCHAT
-
+CMsgGCCStrike15_v2_GCToClientChat = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_GCToClientChat', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GCTOCLIENTCHAT,
+  __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:CMsgGCCStrike15_v2_GCToClientChat)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_GCToClientChat)
 
 
 DESCRIPTOR.has_options = True
-DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), 'H\001\200\001\000')
+DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), b'H\001\220\001\000')
 _CSOECONCOUPON.fields_by_name['entryid'].has_options = True
-_CSOECONCOUPON.fields_by_name['entryid']._options = _descriptor._ParseOptions(descriptor_pb2.FieldOptions(), '\200\246\035\001')
+_CSOECONCOUPON.fields_by_name['entryid']._options = _descriptor._ParseOptions(descriptor_pb2.FieldOptions(), b'\200\246\035\001')
 _CSOQUESTPROGRESS.fields_by_name['questid'].has_options = True
-_CSOQUESTPROGRESS.fields_by_name['questid']._options = _descriptor._ParseOptions(descriptor_pb2.FieldOptions(), '\200\246\035\001')
+_CSOQUESTPROGRESS.fields_by_name['questid']._options = _descriptor._ParseOptions(descriptor_pb2.FieldOptions(), b'\200\246\035\001')
 # @@protoc_insertion_point(module_scope)
