@@ -3,6 +3,8 @@ Welcome to csgo's documentation!
 
 |pypi| |license|
 
+Supports Python ``2.7+`` and ``3.4+``.
+
 | Module based on `steam <https://github.com/ValvePython/steam/>`_ for interacting with CSGO's Game Coordinator.
 
 As always contributions and suggestions are welcome.
