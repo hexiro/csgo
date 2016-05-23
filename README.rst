@@ -5,7 +5,7 @@ Supports Python ``2.7+`` and ``3.4+``.
 Module based on `steam <https://github.com/ValvePython/steam/>`_
 for interacting with CSGO's Game Coordinator.
 
-**Documentation**: http://valvepython.github.io/csgo/
+**Documentation**: http://csgo.readthedocs.io
 
 | Note that this module should be considered an alpha.
 | Contributions and suggestion are always welcome.
