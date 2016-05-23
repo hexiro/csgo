@@ -1,4 +1,4 @@
-|pypi| |license|
+|pypi| |license| |docs|
 
 Supports Python ``2.7+`` and ``3.4+``.
 
@@ -30,3 +30,7 @@ Install the current dev version from ``github``::
 .. |license| image:: https://img.shields.io/pypi/l/csgo.svg?style=flat&label=license
     :target: https://pypi.python.org/pypi/csgo
     :alt: MIT License
+
+.. |docs| image:: https://readthedocs.org/projects/csgo/badge/?version=latest
+    :target: http://csgo.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation status
