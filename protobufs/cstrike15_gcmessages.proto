@@ -1,5 +1,6 @@
 syntax = "proto2";
 import "steammessages.proto";
+import "engine_gcmessages.proto";
 
 option optimize_for = SPEED;
 option py_generic_services = false;
@@ -83,6 +84,8 @@ enum ECsgoGCMsg {
 	k_EMsgGCCStrike15_v2_GlobalChat = 9180;
 	k_EMsgGCCStrike15_v2_GlobalChat_Subscribe = 9181;
 	k_EMsgGCCStrike15_v2_GlobalChat_Unsubscribe = 9182;
+	k_EMsgGCCStrike15_v2_ClientAuthKeyCode = 9183;
+	k_EMsgGCCStrike15_v2_GotvSyncPacket = 9184;
 }
 
 message GameServerPing {
@@ -301,6 +304,7 @@ message CMsgGCCStrike15_v2_MatchmakingStart {
 	optional string ticket_data = 3;
 	optional uint32 client_version = 4;
 	optional .TournamentMatchSetup tournament_match = 5;
+	optional bool prime_only = 6;
 }
 
 message CMsgGCCStrike15_v2_MatchmakingStop {
@@ -959,5 +963,14 @@ message CMsgGCCStrike15_v2_ClientToGCChat {
 message CMsgGCCStrike15_v2_GCToClientChat {
 	optional uint32 account_id = 1;
 	optional string text = 2;
+}
+
+message CMsgGCCStrike15_v2_ClientAuthKeyCode {
+	optional uint32 eventid = 1;
+	optional string code = 2;
+}
+
+message CMsgGCCStrike15_GotvSyncPacket {
+	optional .CEngineGotvSyncPacket data = 1;
 }
 

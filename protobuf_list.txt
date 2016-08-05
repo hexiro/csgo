@@ -2,4 +2,5 @@ https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/cs
 https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/csgo/gcsystemmsgs.proto
 https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/csgo/base_gcmessages.proto
 https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/csgo/gcsdk_gcmessages.proto
+https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/csgo/engine_gcmessages.proto
 https://raw.githubusercontent.com/SteamDatabase/GameTracking/master/Protobufs/csgo/cstrike15_gcmessages.proto
