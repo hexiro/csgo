@@ -61,7 +61,7 @@ pb_compile:
 	for filepath in `ls ./protobufs/*.proto`; do \
 		protoc3 --python_out ./csgo/protobufs/ --proto_path=./protobufs "$$filepath"; \
 	done;
-	sed -i 's/^import /import csgo.protobufs./' csgo/protobufs/*_pb2.py
+	sed -i '/^import sys/! s/^import /import csgo.protobufs./' csgo/protobufs/*_pb2.py
 
 pb_clear:
 	rm -f ./protobufs/*.proto ./csgo/protobufs/*_pb2.py
