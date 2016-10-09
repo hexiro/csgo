@@ -5,11 +5,18 @@ dictionary = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefhijkmnopqrstuvwxyz23456789"
 def decode(code):
     """Decodes a match share code
 
-    :param code: match share code
+    :param code: match share code (e.g. ``CSGO-Ab1cD-xYz23-7bcD9-uVZ23-12aBc``)
     :type code: str
+    :raises: :class:`ValueError`
     :return: dict with matchid, outcomeid and token
     :rtype: dict
-    :raises: :class:`ValueError`
+
+    .. code:: python
+
+        {'matchid': 0,
+         'outomceid': 0,
+         'token': 0
+         }
     """
     if not re.match(r'^(CSGO)?(-?[ABCDEFGHJKLMNOPQRSTUVWXYZabcdefhijkmnopqrstuvwxyz23456789]{5}){5}$', code):
         raise ValueError("Invalid share code")
@@ -38,7 +45,7 @@ def encode(matchid, outcomeid, token):
     :type outcomeid: int
     :param token: token
     :type token: int
-    :return: match share code
+    :return: match share code (e.g. ``CSGO-Ab1cD-xYz23-7bcD9-uVZ23-12aBc``)
     :rtype: str
     """
     b = (token << 128) | (outcomeid << 64) | matchid
