@@ -153,7 +153,7 @@ class CSGOClient(GameCoordinator, FeatureBase):
         if proto is None:
             proto = find_proto(emsg)
 
-        if not issubclass(proto, google.protobuf.message.Message):
+        if proto is None or not issubclass(proto, google.protobuf.message.Message):
             raise ValueError("Unable to find proto for emsg, or proto kwarg is invalid")
 
         message = proto()

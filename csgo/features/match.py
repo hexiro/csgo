@@ -100,16 +100,29 @@ class Match(object):
             self.emit("full_match_info", message)
 
 
-    def request_watch_info_friends(self):
-        """
-        Request watch info for friends
+    def request_watch_info_friends(self, account_ids, request_id=1, serverid=0, matchid=0):
+        """Request watch info for friends
+
+        :param account_ids: list of account ids
+        :type account_ids: list
+        :param request_id: request id, used to match reponse with request (default: 1)
+        :type request_id: int
+        :param serverid: server id
+        :type serverid: int
+        :param matchid: match id
+        :type matchid: int
 
         Response event: ``watch_info``
 
         :param message: ``CMsgGCCStrike15_v2_WatchInfoUsers`` proto message
 
         """
-        self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2)
+        self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2, {
+            'account_ids': account_ids,
+            'request_id': request_id,
+            'serverid': serverid,
+            'matchid': matchid
+            })
 
     def __handle_watch_info(self, message):
         self.emit("watch_info", message)
