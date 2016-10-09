@@ -15,7 +15,7 @@ class Match(object):
 
         Response event: ``matchmaking_stats``
 
-        :param message: `CMsgGCCStrike15_v2_MatchmakingGC2ClientHello <https://github.com/ValvePython/csgo/blob/master/protobufs/cstrike15_gcmessages.proto#L456>`_ proto message
+        :param message: `CMsgGCCStrike15_v2_MatchmakingGC2ClientHello` proto message
 
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_MatchmakingClient2GCHello)
@@ -29,7 +29,7 @@ class Match(object):
 
         Response event: ``current_live_games``
 
-        :param message: `CMsgGCCStrike15_v2_MatchList <https://github.com/ValvePython/csgo/blob/master/protobufs/cstrike15_gcmessages.proto#L791>`_ proto message
+        :param message: `CMsgGCCStrike15_v2_MatchList` proto message
 
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames)
@@ -43,7 +43,7 @@ class Match(object):
 
         Response event: ``live_game_for_user``
 
-        :param message: `CMsgGCCStrike15_v2_MatchList <https://github.com/ValvePython/csgo/blob/master/protobufs/cstrike15_gcmessages.proto#L791>`_ proto message
+        :param message: `CMsgGCCStrike15_v2_MatchList` proto message
 
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser, {
@@ -80,7 +80,7 @@ class Match(object):
 
         Response event: ``recent_user_games``
 
-        :param message: `CMsgGCCStrike15_v2_MatchList <https://github.com/ValvePython/csgo/blob/master/protobufs/cstrike15_gcmessages.proto#L791>`_ proto message
+        :param message: `CMsgGCCStrike15_v2_MatchList` proto message
 
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_MatchListRequestRecentUserGames, {
@@ -106,7 +106,7 @@ class Match(object):
 
         Response event: ``watch_info``
 
-        :param message: `CMsgGCCStrike15_v2_WatchInfoUsers <https://github.com/ValvePython/csgo/blob/master/protobufs/cstrike15_gcmessages.proto#L604>`_ proto message
+        :param message: `CMsgGCCStrike15_v2_WatchInfoUsers` proto message
 
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2)
