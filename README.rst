@@ -1,6 +1,6 @@
 |pypi| |license| |docs|
 
-Supports Python ``2.7+`` and ``3.4+``.
+Supports Python ``2.7+`` and ``3.3+``.
 
 Module based on `steam <https://github.com/ValvePython/steam/>`_
 for interacting with CSGO's Game Coordinator.
