@@ -10,3 +10,5 @@ class CSGOClient(object):
     def __new__(cls, *args, **kwargs):
         from csgo.client import CSGOClient as CSC
         return CSC(*args, **kwargs)
+
+import sharecode
