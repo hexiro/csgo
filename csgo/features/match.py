@@ -50,6 +50,27 @@ class Match(object):
                     'accountid': account_id,
                  })
 
+    def request_full_match_info(self, matchid, outcomeid, token):
+        """
+        Request full match info. The parameters can be decoded from a match ShareCode
+
+        :param matchid: match id
+        :type matchid: :class:`int`
+        :param outcomeid: outcome id
+        :type outcomeid: :class:`int`
+        :param token: token
+        :type token: :class:`int`
+
+        Response event: ``full_match_info``
+
+        :param message: `CMsgGCCStrike15_v2_MatchList` proto message
+        """
+        self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_MatchListRequestFullGameInfo, {
+                    'matchid': matchid,
+                    'outcomeid': outcomeid,
+                    'token': token,
+                 })
+
     def request_recent_user_games(self, account_id):
         """
         Request recent games for a specific user
@@ -75,6 +96,8 @@ class Match(object):
             self.emit("live_game_for_user", message)
         elif emsg == ECsgoGCMsg.EMsgGCCStrike15_v2_MatchListRequestRecentUserGames:
             self.emit("recent_user_games", message)
+        elif emsg == ECsgoGCMsg.EMsgGCCStrike15_v2_MatchListRequestFullGameInfo:
+            self.emit("full_match_info", message)
 
 
     def request_watch_info_friends(self):
