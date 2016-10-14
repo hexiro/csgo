@@ -3,9 +3,11 @@ Various utility function for dealing with messages.
 
 """
 
-from csgo.enums import EGCBaseClientMsg, ECsgoGCMsg
+from csgo.enums import EGCBaseClientMsg, ECsgoGCMsg, EGCItemMsg
 from csgo.protobufs import gcsdk_gcmessages_pb2
 from csgo.protobufs import cstrike15_gcmessages_pb2
+from csgo.protobufs import econ_gcmessages_pb2
+from csgo.protobufs import base_gcmessages_pb2
 
 
 def get_emsg_enum(emsg):
@@ -19,6 +21,7 @@ def get_emsg_enum(emsg):
     """
     for enum in (EGCBaseClientMsg,
                  ECsgoGCMsg,
+                 EGCItemMsg,
                  ):
         try:
             return enum(emsg)
@@ -46,6 +49,8 @@ def find_proto(emsg):
 
     for module in (gcsdk_gcmessages_pb2,
                    cstrike15_gcmessages_pb2,
+                   econ_gcmessages_pb2,
+                   base_gcmessages_pb2,
                   ):
 
         proto = getattr(module, emsg.name.replace("EMsg", "CMsg"), None)

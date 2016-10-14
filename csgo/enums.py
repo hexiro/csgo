@@ -11,6 +11,7 @@ from google.protobuf.internal.enum_type_wrapper import EnumTypeWrapper
 _proto_modules = ['gcsystemmsgs_pb2',
                   'gcsdk_gcmessages_pb2',
                   'cstrike15_gcmessages_pb2',
+                  'econ_gcmessages_pb2',
                   ]
 
 _proto_module = __import__("csgo.protobufs", globals(), locals(), _proto_modules, -1)
