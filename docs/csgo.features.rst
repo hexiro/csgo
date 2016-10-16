@@ -8,3 +8,4 @@ This package contains all high level features of :class:`csgo.client.CSGOClient`
    csgo.features.match
    csgo.features.player
    csgo.features.items
+   csgo.features.sharedobjects

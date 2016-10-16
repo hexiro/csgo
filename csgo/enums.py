@@ -32,4 +32,16 @@ for name in _proto_modules:
 
         gvars[key] = IntEnum(key, items)
 
+class ESOType(IntEnum):
+    CSOEconItem = 1
+    CSOPersonaDataPublic = 2
+    CSOItemRecipe = 5
+    CSOEconGameAccountClient = 7
+    CSOEconItemDropRateBonus = 38
+    CSOEconItemEventTicket = 40
+    CSOEconDefaultEquippedDefinitionInstanceClient = 43
+    CSOEconCoupon = 45
+    CSOQuestProgress = 46
+
+
 del re, IntEnum, EnumTypeWrapper, _proto_modules, _proto_module, name, proto, gvars, key, value, items, ikey, ivalue
