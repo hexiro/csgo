@@ -86,7 +86,8 @@ class Player(object):
 
         Response event: ``player_profile``
 
-        :param message: ``CMsgGCCStrike15_v2_MatchmakingGC2ClientHello`` proto message
+        :param message: `CMsgGCCStrike15_v2_MatchmakingGC2ClientHello <https://github.com/ValvePython/csgo/blob/386b76b17640f7717fe9ead5a6a607e0c821010c/protobufs/cstrike15_gcmessages.proto#L463>`_
+	:type message: proto message
 
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_ClientRequestPlayersProfile, {

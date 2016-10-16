@@ -15,7 +15,8 @@ class Match(object):
 
         Response event: ``matchmaking_stats``
 
-        :param message: ``CMsgGCCStrike15_v2_MatchmakingGC2ClientHello`` proto message
+        :param message: `CMsgGCCStrike15_v2_MatchmakingGC2ClientHello <https://github.com/ValvePython/csgo/blob/386b76b17640f7717fe9ead5a6a607e0c821010c/protobufs/cstrike15_gcmessages.proto#L463>`_
+	:type message: proto message
 
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_MatchmakingClient2GCHello)
@@ -29,7 +30,8 @@ class Match(object):
 
         Response event: ``current_live_games``
 
-        :param message: ``CMsgGCCStrike15_v2_MatchList`` proto message
+        :param message: `CMsgGCCStrike15_v2_MatchList <https://github.com/ValvePython/csgo/blob/386b76b17640f7717fe9ead5a6a607e0c821010c/protobufs/cstrike15_gcmessages.proto#L798>`_
+	:type message: proto message
 
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames)
@@ -43,7 +45,8 @@ class Match(object):
 
         Response event: ``live_game_for_user``
 
-        :param message: ``CMsgGCCStrike15_v2_MatchList`` proto message
+        :param message: `CMsgGCCStrike15_v2_MatchList <https://github.com/ValvePython/csgo/blob/386b76b17640f7717fe9ead5a6a607e0c821010c/protobufs/cstrike15_gcmessages.proto#L798>`_
+	:type message: proto message
 
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser, {
@@ -63,7 +66,8 @@ class Match(object):
 
         Response event: ``full_match_info``
 
-        :param message: ``CMsgGCCStrike15_v2_MatchList`` proto message
+        :param message: `CMsgGCCStrike15_v2_MatchList <https://github.com/ValvePython/csgo/blob/386b76b17640f7717fe9ead5a6a607e0c821010c/protobufs/cstrike15_gcmessages.proto#L798>`_
+	:type message: proto message
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_MatchListRequestFullGameInfo, {
                     'matchid': matchid,
@@ -80,8 +84,8 @@ class Match(object):
 
         Response event: ``recent_user_games``
 
-        :param message: ``CMsgGCCStrike15_v2_MatchList`` proto message
-
+        :param message: `CMsgGCCStrike15_v2_MatchList <https://github.com/ValvePython/csgo/blob/386b76b17640f7717fe9ead5a6a607e0c821010c/protobufs/cstrike15_gcmessages.proto#L798>`_
+	:type message: proto message
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_MatchListRequestRecentUserGames, {
                     'accountid': account_id,
@@ -114,8 +118,8 @@ class Match(object):
 
         Response event: ``watch_info``
 
-        :param message: ``CMsgGCCStrike15_v2_WatchInfoUsers`` proto message
-
+        :param message: `CMsgGCCStrike15_v2_WatchInfoUsers <https://github.com/ValvePython/csgo/blob/386b76b17640f7717fe9ead5a6a607e0c821010c/protobufs/cstrike15_gcmessages.proto#L611>`_
+	:type message: proto message
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2, {
             'account_ids': account_ids,
