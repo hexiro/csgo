@@ -9,6 +9,7 @@ import google.protobuf
 from steam.core.msg import GCMsgHdrProto
 from steam.client.gc import GameCoordinator
 from steam.enums.emsg import EMsg
+from steam.util import proto_fill_from_dict
 from csgo.features import FeatureBase
 from csgo.enums import EGCBaseClientMsg, GCConnectionStatus
 from csgo.msg import get_emsg_enum, find_proto
@@ -31,9 +32,16 @@ class CSGOClient(GameCoordinator, FeatureBase):
     @property
     def account_id(self):
         """
-        Account ID of the logged in user in the steam client
+        Account ID of the logged-in user in the steam client
         """
         return self.steam.steam_id.id
+
+    @property
+    def steam_id(self):
+        """
+        :class:`steam.steamid.SteamID` of the logged-in user in the steam client
+        """
+        return self.steam.steam_id
 
     def __init__(self, steam_client):
         GameCoordinator.__init__(self, steam_client, self.app_id)
@@ -157,12 +165,7 @@ class CSGOClient(GameCoordinator, FeatureBase):
             raise ValueError("Unable to find proto for emsg, or proto kwarg is invalid")
 
         message = proto()
-
-        for key, value in data.items():
-            if isinstance(value, list):
-                getattr(message, key).extend(value)
-            else:
-                setattr(message, key, value)
+        proto_fill_from_dict(message, data)
 
         header = GCMsgHdrProto(emsg)
 
