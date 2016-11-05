@@ -44,4 +44,13 @@ class ESOType(IntEnum):
     CSOQuestProgress = 46
 
 
+class EXPFlag(IntEnum):
+    UNKNOWN1                     = 0b0000000000000000000000000000001
+    LevelUpDropReceived          = 0b0000000000000000000000000000010
+    UNKNOWN2                     = 0b0000000000000000000000000010000  # OW or Prime status
+    OverwatchXPReward            = 0b0010000000000000000000000000000
+    WeeklyXPBoostReceived        = 0b0100000000000000000000000000000
+    UNKNOWN3                     = 0b1000000000000000000000000000000  # OW related?
+
+
 del re, IntEnum, EnumTypeWrapper, _proto_modules, _proto_module, name, proto, gvars, key, value, items, ikey, ivalue
