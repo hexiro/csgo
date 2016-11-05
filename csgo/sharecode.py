@@ -2,6 +2,16 @@ import re
 
 dictionary = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefhijkmnopqrstuvwxyz23456789"
 
+_bitmask64 = 2**64 - 1
+
+def _swap_endianness(number):
+    result = 0
+
+    for n in range(0, 144, 8):
+        result = (result << 8) + ((number >> n) & 0xFF)
+
+    return result
+
 def decode(code):
     """Decodes a match share code
 
@@ -18,22 +28,21 @@ def decode(code):
          'token': 0
          }
     """
-    if not re.match(r'^(CSGO)?(-?[ABCDEFGHJKLMNOPQRSTUVWXYZabcdefhijkmnopqrstuvwxyz23456789]{5}){5}$', code):
+    if not re.match(r'^(CSGO)?(-?[%s]{5}){5}$' % dictionary, code):
         raise ValueError("Invalid share code")
 
     code = re.sub('CSGO\-|\-', '', code)[::-1]
 
-    a = b = 0
+    a = 0
     for c in code:
         a = a*len(dictionary) + dictionary.index(c)
 
-    for n in range(0, 144, 8):
-        b = (b << 8) + ((a >> n) & 0xFF)
+    a = _swap_endianness(a)
 
     return {
-        'matchid': b & (2**64-1),
-        'outcomeid': b >> 64 & (2**64-1),
-        'token': b >> 128 & 0xFFFF
+        'matchid':   a        & _bitmask64,
+        'outcomeid': a >> 64  & _bitmask64,
+        'token':     a >> 128 & 0xFFFF
     }
 
 def encode(matchid, outcomeid, token):
@@ -48,11 +57,7 @@ def encode(matchid, outcomeid, token):
     :return: match share code (e.g. ``CSGO-Ab1cD-xYz23-7bcD9-uVZ23-12aBc``)
     :rtype: str
     """
-    b = (token << 128) | (outcomeid << 64) | matchid
-
-    a = 0
-    for n in range(0, 144, 8):
-        a = (a << 8) + ((b >> n) & 0xFF)
+    a = _swap_endianness((token << 128) | (outcomeid << 64) | matchid)
 
     code = ''
     for _ in range(25):
