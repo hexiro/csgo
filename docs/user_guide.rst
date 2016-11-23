@@ -27,7 +27,7 @@ This is the minimal code we need to get a session with the game coordnator.
         # send messages to gc
         pass
 
-    client.login('steamuser', 'password')
+    client.cli_login()
     client.run_forever()
 
 
