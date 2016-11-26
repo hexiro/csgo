@@ -232,8 +232,8 @@ class CSGOClient(GameCoordinator, FeatureBase):
         if not self.steam.logged_on:
             self.steam.wait_event('logged_on')
 
-        if not self._retry_welcome_loop:
-            self.steam.games_played([self.app_id])
+        if not self._retry_welcome_loop and self.app_id not in self.steam.current_games_played:
+            self.steam.games_played(self.steam.current_games_played + [self.app_id])
             self._retry_welcome_loop = gevent.spawn(self._knock_on_gc)
 
     def exit(self):
@@ -243,5 +243,7 @@ class CSGOClient(GameCoordinator, FeatureBase):
         if self._retry_welcome_loop:
             self._retry_welcome_loop.kill()
 
-        self.steam.games_played([])
+        if self.app_id in self.steam.current_games_played:
+            self.steam.games_played(filter(lambda x: x != self.app_id, self.steam.current_games_played))
+
         self._set_connection_status(GCConnectionStatus.NO_SESSION)
