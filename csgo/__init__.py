@@ -1,7 +1,7 @@
-__version__ = "0.3.2"
+__version__ = "0.3.3"
 __author__ = "Rossen Georgiev"
 
-version_info = (0, 3, 2)
+version_info = (0, 3, 3)
 
 
 # proxy object
@@ -11,4 +11,4 @@ class CSGOClient(object):
         from csgo.client import CSGOClient as CSC
         return CSC(*args, **kwargs)
 
-import sharecode
+from csgo import sharecode
