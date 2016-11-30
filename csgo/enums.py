@@ -5,6 +5,7 @@ Why generate python enums? In short, protobuf's enums aren't great.
 """
 
 import re
+import six
 from enum import IntEnum
 from google.protobuf.internal.enum_type_wrapper import EnumTypeWrapper
 
@@ -14,7 +15,9 @@ _proto_modules = ['gcsystemmsgs_pb2',
                   'econ_gcmessages_pb2',
                   ]
 
-_proto_module = __import__("csgo.protobufs", globals(), locals(), _proto_modules, -1)
+_level = -1 if six.PY2 else 0
+
+_proto_module = __import__("csgo.protobufs", globals(), locals(), _proto_modules, _level)
 
 for name in _proto_modules:
 
@@ -53,4 +56,4 @@ class EXPFlag(IntEnum):
     UNKNOWN3                     = 0b1000000000000000000000000000000  # OW related?
 
 
-del re, IntEnum, EnumTypeWrapper, _proto_modules, _proto_module, name, proto, gvars, key, value, items, ikey, ivalue
+del re, IntEnum, EnumTypeWrapper, _proto_modules, _proto_module, _level, name, proto, gvars, key, value, items, ikey, ivalue

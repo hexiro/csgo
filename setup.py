@@ -12,10 +12,11 @@ with open(path.join(here, 'csgo/__init__.py'), encoding='utf-8') as f:
     __version__ = f.readline().split('"')[1]
 
 install_requires = [
-    'steam>=0.8.12',
+    'steam>=0.8.13',
     'gevent-eventemitter>=2.0',
     'gevent>=1.1',
     'protobuf>=3.0.0',
+    'six>=1.10',
 ]
 
 if sys.version_info < (3, 4):

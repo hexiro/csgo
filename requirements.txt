@@ -1,5 +1,6 @@
+six==1.10
 enum34==1.1.2
 gevent==1.1
 protobuf==3.0.0
-steam[client]==0.8.12
+steam[client]==0.8.13
 gevent-eventemitter==2.0
