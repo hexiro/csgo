@@ -68,4 +68,5 @@ _proto_map_why_cant_we_name_things_properly = {
     EGCBaseClientMsg.EMsgGCClientConnectionStatus: gcsdk_gcmessages_pb2.CMsgConnectionStatus,
     ECsgoGCMsg.EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2: cstrike15_gcmessages_pb2.CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends,
     ECsgoGCMsg.EMsgGCCStrike15_v2_SetMyMedalsInfo: cstrike15_gcmessages_pb2.PlayerMedalsInfo,
+    ECsgoGCMsg.EMsgGCCStrike15_v2_GC2ClientGlobalStats: cstrike15_gcmessages_pb2.GlobalStatistics,
 }

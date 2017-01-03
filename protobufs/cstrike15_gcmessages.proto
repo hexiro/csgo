@@ -89,6 +89,11 @@ enum ECsgoGCMsg {
 	k_EMsgGCCStrike15_v2_ClientAuthKeyCode = 9183;
 	k_EMsgGCCStrike15_v2_GotvSyncPacket = 9184;
 	k_EMsgGCCStrike15_v2_ClientPlayerDecalSign = 9185;
+	k_EMsgGCCStrike15_v2_ClientLogonFatalError = 9187;
+	k_EMsgGCCStrike15_v2_ClientPollState = 9188;
+	k_EMsgGCCStrike15_v2_Party_Register = 9189;
+	k_EMsgGCCStrike15_v2_Party_Unregister = 9190;
+	k_EMsgGCCStrike15_v2_Party_Search = 9191;
 }
 
 message GameServerPing {
@@ -714,6 +719,7 @@ message CEconItemPreviewDataBlock {
 	optional uint32 origin = 14;
 	optional uint32 questid = 15;
 	optional uint32 dropreason = 16;
+	optional uint32 musicindex = 17;
 }
 
 message CMsgGCCStrike15_v2_MatchEndRewardDropsNotification {
@@ -919,13 +925,13 @@ message CMsgGCCStrike15_v2_GC2ClientTournamentInfo {
 }
 
 message CSOEconCoupon {
-	optional uint32 entryid = 1 [(key_field) = true];
+	optional uint32 entryid = 1;
 	optional uint32 defidx = 2;
 	optional fixed32 expiration_date = 3;
 }
 
 message CSOQuestProgress {
-	optional uint32 questid = 1 [(key_field) = true];
+	optional uint32 questid = 1;
 	optional uint32 points_remaining = 2;
 	optional uint32 bonus_points = 3;
 }
@@ -1005,5 +1011,42 @@ message PlayerDecalDigitalSignature {
 message CMsgGCCStrike15_v2_ClientPlayerDecalSign {
 	optional .PlayerDecalDigitalSignature data = 1;
 	optional uint64 itemid = 2;
+}
+
+message CMsgGCCStrike15_v2_ClientLogonFatalError {
+	optional uint32 errorcode = 1;
+	optional string message = 2;
+}
+
+message CMsgGCCStrike15_v2_ClientPollState {
+	optional uint32 pollid = 1;
+	repeated string names = 2;
+	repeated int32 values = 3;
+}
+
+message CMsgGCCStrike15_v2_Party_Register {
+	optional uint32 id = 1;
+	optional uint32 ver = 2;
+	optional uint32 apr = 3;
+	optional uint32 ark = 4;
+	optional uint32 nby = 5;
+	optional uint32 grp = 6;
+	optional uint32 slots = 7;
+}
+
+message CMsgGCCStrike15_v2_Party_Search {
+	optional uint32 ver = 1;
+	optional uint32 apr = 2;
+	optional uint32 ark = 3;
+	repeated uint32 grps = 4;
+}
+
+message CMsgGCCStrike15_v2_Party_SearchResults {
+	message Entry {
+		optional uint32 id = 1;
+		optional uint32 grp = 2;
+	}
+
+	repeated .CMsgGCCStrike15_v2_Party_SearchResults.Entry entries = 1;
 }
 
