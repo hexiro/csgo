@@ -61,14 +61,14 @@ class NO_KEY:
     pass
 
 so_key_fields = {
-    _gc_base.CSOPartyInvite.DESCRIPTOR: ['group_id'],
-    _gc_base.CSOLobbyInvite.DESCRIPTOR: ['group_id'],
-    _gc_base.CSOEconItemLeagueViewPass.DESCRIPTOR: ['account_id', 'league_id'],
-    _gc_base.CSOEconDefaultEquippedDefinitionInstanceClient.DESCRIPTOR: ['account_id', 'class_id', 'slot_id'],
+#     _gc_base.CSOPartyInvite.DESCRIPTOR: ['group_id'],
+#     _gc_base.CSOLobbyInvite.DESCRIPTOR: ['group_id'],
+#     _gc_base.CSOEconItemLeagueViewPass.DESCRIPTOR: ['account_id', 'league_id'],
+#     _gc_base.CSOEconDefaultEquippedDefinitionInstanceClient.DESCRIPTOR: ['account_id', 'class_id', 'slot_id'],
     _gc_base.CSOEconItem.DESCRIPTOR: ['id'],
     _gc_base.CSOEconGameAccountClient.DESCRIPTOR: NO_KEY,
-    _gc_cstrike.CSOEconCoupon.DESCRIPTOR: ['entryid'],
-    _gc_cstrike.CSOQuestProgress.DESCRIPTOR: ['questid'],
+#     _gc_cstrike.CSOEconCoupon.DESCRIPTOR: ['entryid'],
+#     _gc_cstrike.CSOQuestProgress.DESCRIPTOR: ['questid'],
 
 }
 

@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='gcsystemmsgs.proto',
   package='',
   syntax='proto2',
-  serialized_pb=_b('\n\x12gcsystemmsgs.proto\"S\n\x1c\x43MsgGCHVacVerificationChange\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\r\n\x05\x61ppid\x18\x02 \x01(\r\x12\x13\n\x0bis_verified\x18\x03 \x01(\x08\"\x80\x01\n\x1f\x43MsgGCHAccountPhoneNumberChange\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\r\n\x05\x61ppid\x18\x02 \x01(\r\x12\x10\n\x08phone_id\x18\x03 \x01(\x04\x12\x13\n\x0bis_verified\x18\x04 \x01(\x08\x12\x16\n\x0eis_identifying\x18\x05 \x01(\x08*\xa7\x14\n\x0c\x45GCSystemMsg\x12\x13\n\x0fk_EGCMsgInvalid\x10\x00\x12\x11\n\rk_EGCMsgMulti\x10\x01\x12\x18\n\x14k_EGCMsgGenericReply\x10\n\x12\x16\n\x12k_EGCMsgSystemBase\x10\x32\x12\x1e\n\x1ak_EGCMsgAchievementAwarded\x10\x33\x12\x16\n\x12k_EGCMsgConCommand\x10\x34\x12\x18\n\x14k_EGCMsgStartPlaying\x10\x35\x12\x17\n\x13k_EGCMsgStopPlaying\x10\x36\x12\x1b\n\x17k_EGCMsgStartGameserver\x10\x37\x12\x1a\n\x16k_EGCMsgStopGameserver\x10\x38\x12\x15\n\x11k_EGCMsgWGRequest\x10\x39\x12\x16\n\x12k_EGCMsgWGResponse\x10:\x12\"\n\x1ek_EGCMsgGetUserGameStatsSchema\x10;\x12*\n&k_EGCMsgGetUserGameStatsSchemaResponse\x10<\x12\"\n\x1ek_EGCMsgGetUserStatsDEPRECATED\x10=\x12 \n\x1ck_EGCMsgGetUserStatsResponse\x10>\x12\x1a\n\x16k_EGCMsgAppInfoUpdated\x10?\x12\x1b\n\x17k_EGCMsgValidateSession\x10@\x12#\n\x1fk_EGCMsgValidateSessionResponse\x10\x41\x12\"\n\x1ek_EGCMsgLookupAccountFromInput\x10\x42\x12\x1b\n\x17k_EGCMsgSendHTTPRequest\x10\x43\x12#\n\x1fk_EGCMsgSendHTTPRequestResponse\x10\x44\x12\x18\n\x14k_EGCMsgPreTestSetup\x10\x45\x12\x1f\n\x1bk_EGCMsgRecordSupportAction\x10\x46\x12(\n$k_EGCMsgGetAccountDetails_DEPRECATED\x10G\x12\"\n\x1ek_EGCMsgReceiveInterAppMessage\x10I\x12\x18\n\x14k_EGCMsgFindAccounts\x10J\x12\x15\n\x11k_EGCMsgPostAlert\x10K\x12\x17\n\x13k_EGCMsgGetLicenses\x10L\x12\x18\n\x14k_EGCMsgGetUserStats\x10M\x12\x17\n\x13k_EGCMsgGetCommands\x10N\x12\x1f\n\x1bk_EGCMsgGetCommandsResponse\x10O\x12\x1a\n\x16k_EGCMsgAddFreeLicense\x10P\x12\"\n\x1ek_EGCMsgAddFreeLicenseResponse\x10Q\x12\x19\n\x15k_EGCMsgGetIPLocation\x10R\x12!\n\x1dk_EGCMsgGetIPLocationResponse\x10S\x12\x1d\n\x19k_EGCMsgSystemStatsSchema\x10T\x12\x1a\n\x16k_EGCMsgGetSystemStats\x10U\x12\"\n\x1ek_EGCMsgGetSystemStatsResponse\x10V\x12\x15\n\x11k_EGCMsgSendEmail\x10W\x12\x1d\n\x19k_EGCMsgSendEmailResponse\x10X\x12\x1c\n\x18k_EGCMsgGetEmailTemplate\x10Y\x12$\n k_EGCMsgGetEmailTemplateResponse\x10Z\x12\x1a\n\x16k_EGCMsgGrantGuestPass\x10[\x12\"\n\x1ek_EGCMsgGrantGuestPassResponse\x10\\\x12\x1d\n\x19k_EGCMsgGetAccountDetails\x10]\x12%\n!k_EGCMsgGetAccountDetailsResponse\x10^\x12\x1b\n\x17k_EGCMsgGetPersonaNames\x10_\x12#\n\x1fk_EGCMsgGetPersonaNamesResponse\x10`\x12\x18\n\x14k_EGCMsgMultiplexMsg\x10\x61\x12 \n\x1ck_EGCMsgMultiplexMsgResponse\x10\x62\x12$\n k_EGCMsgWebAPIRegisterInterfaces\x10\x65\x12\x1c\n\x18k_EGCMsgWebAPIJobRequest\x10\x66\x12(\n$k_EGCMsgWebAPIJobRequestHttpResponse\x10h\x12+\n\'k_EGCMsgWebAPIJobRequestForwardResponse\x10i\x12\x19\n\x14k_EGCMsgMemCachedGet\x10\xc8\x01\x12!\n\x1ck_EGCMsgMemCachedGetResponse\x10\xc9\x01\x12\x19\n\x14k_EGCMsgMemCachedSet\x10\xca\x01\x12\x1c\n\x17k_EGCMsgMemCachedDelete\x10\xcb\x01\x12\x1b\n\x16k_EGCMsgMemCachedStats\x10\xcc\x01\x12#\n\x1ek_EGCMsgMemCachedStatsResponse\x10\xcd\x01\x12\x1f\n\x1ak_EGCMsgMasterSetDirectory\x10\xdc\x01\x12\'\n\"k_EGCMsgMasterSetDirectoryResponse\x10\xdd\x01\x12#\n\x1ek_EGCMsgMasterSetWebAPIRouting\x10\xde\x01\x12+\n&k_EGCMsgMasterSetWebAPIRoutingResponse\x10\xdf\x01\x12&\n!k_EGCMsgMasterSetClientMsgRouting\x10\xe0\x01\x12.\n)k_EGCMsgMasterSetClientMsgRoutingResponse\x10\xe1\x01\x12\x17\n\x12k_EGCMsgSetOptions\x10\xe2\x01\x12\x1f\n\x1ak_EGCMsgSetOptionsResponse\x10\xe3\x01\x12\x18\n\x13k_EGCMsgSystemBase2\x10\xf4\x03\x12#\n\x1ek_EGCMsgGetPurchaseTrustStatus\x10\xf5\x03\x12+\n&k_EGCMsgGetPurchaseTrustStatusResponse\x10\xf6\x03\x12\x1a\n\x15k_EGCMsgUpdateSession\x10\xf7\x03\x12%\n k_EGCMsgGCAccountVacStatusChange\x10\xf8\x03\x12\x1c\n\x17k_EGCMsgCheckFriendship\x10\xf9\x03\x12$\n\x1fk_EGCMsgCheckFriendshipResponse\x10\xfa\x03\x12\"\n\x1dk_EGCMsgGetPartnerAccountLink\x10\xfb\x03\x12*\n%k_EGCMsgGetPartnerAccountLinkResponse\x10\xfc\x03\x12\"\n\x1dk_EGCMsgVacVerificationChange\x10\x86\x04\x12%\n k_EGCMsgAccountPhoneNumberChange\x10\x87\x04*\xef\x01\n\x06\x45SOMsg\x12\x13\n\x0fk_ESOMsg_Create\x10\x15\x12\x13\n\x0fk_ESOMsg_Update\x10\x16\x12\x14\n\x10k_ESOMsg_Destroy\x10\x17\x12\x1c\n\x18k_ESOMsg_CacheSubscribed\x10\x18\x12\x1e\n\x1ak_ESOMsg_CacheUnsubscribed\x10\x19\x12\x1b\n\x17k_ESOMsg_UpdateMultiple\x10\x1a\x12#\n\x1fk_ESOMsg_CacheSubscriptionCheck\x10\x1b\x12%\n!k_ESOMsg_CacheSubscriptionRefresh\x10\x1c*\xd9\x02\n\x10\x45GCBaseClientMsg\x12\x1a\n\x15k_EMsgGCClientWelcome\x10\xa4\x1f\x12\x1a\n\x15k_EMsgGCServerWelcome\x10\xa5\x1f\x12\x18\n\x13k_EMsgGCClientHello\x10\xa6\x1f\x12\x18\n\x13k_EMsgGCServerHello\x10\xa7\x1f\x12#\n\x1ek_EMsgGCClientConnectionStatus\x10\xa9\x1f\x12#\n\x1ek_EMsgGCServerConnectionStatus\x10\xaa\x1f\x12\x1f\n\x1ak_EMsgGCClientHelloPartner\x10\xab\x1f\x12\x1a\n\x15k_EMsgGCClientHelloPW\x10\xac\x1f\x12\x1a\n\x15k_EMsgGCClientHelloR2\x10\xad\x1f\x12\x1a\n\x15k_EMsgGCClientHelloR3\x10\xae\x1f\x12\x1a\n\x15k_EMsgGCClientHelloR4\x10\xaf\x1f*\x89\x02\n\nEGCToGCMsg\x12\x1a\n\x15k_EGCToGCMsgMasterAck\x10\x96\x01\x12\"\n\x1dk_EGCToGCMsgMasterAckResponse\x10\x97\x01\x12\x17\n\x12k_EGCToGCMsgRouted\x10\x98\x01\x12\x1c\n\x17k_EGCToGCMsgRoutedReply\x10\x99\x01\x12\x1a\n\x15k_EMsgUpdateSessionIP\x10\x9a\x01\x12\x1b\n\x16k_EMsgRequestSessionIP\x10\x9b\x01\x12#\n\x1ek_EMsgRequestSessionIPResponse\x10\x9c\x01\x12&\n!k_EGCToGCMsgMasterStartupComplete\x10\x9d\x01\x42\x05H\x01\x90\x01\x00')
+  serialized_pb=_b('\n\x12gcsystemmsgs.proto\"S\n\x1c\x43MsgGCHVacVerificationChange\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\r\n\x05\x61ppid\x18\x02 \x01(\r\x12\x13\n\x0bis_verified\x18\x03 \x01(\x08\"\x80\x01\n\x1f\x43MsgGCHAccountPhoneNumberChange\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\r\n\x05\x61ppid\x18\x02 \x01(\r\x12\x10\n\x08phone_id\x18\x03 \x01(\x04\x12\x13\n\x0bis_verified\x18\x04 \x01(\x08\x12\x16\n\x0eis_identifying\x18\x05 \x01(\x08*\xd7\x13\n\x0c\x45GCSystemMsg\x12\x13\n\x0fk_EGCMsgInvalid\x10\x00\x12\x11\n\rk_EGCMsgMulti\x10\x01\x12\x18\n\x14k_EGCMsgGenericReply\x10\n\x12\x16\n\x12k_EGCMsgSystemBase\x10\x32\x12\x1e\n\x1ak_EGCMsgAchievementAwarded\x10\x33\x12\x16\n\x12k_EGCMsgConCommand\x10\x34\x12\x18\n\x14k_EGCMsgStartPlaying\x10\x35\x12\x17\n\x13k_EGCMsgStopPlaying\x10\x36\x12\x1b\n\x17k_EGCMsgStartGameserver\x10\x37\x12\x1a\n\x16k_EGCMsgStopGameserver\x10\x38\x12\x15\n\x11k_EGCMsgWGRequest\x10\x39\x12\x16\n\x12k_EGCMsgWGResponse\x10:\x12\"\n\x1ek_EGCMsgGetUserGameStatsSchema\x10;\x12*\n&k_EGCMsgGetUserGameStatsSchemaResponse\x10<\x12\"\n\x1ek_EGCMsgGetUserStatsDEPRECATED\x10=\x12 \n\x1ck_EGCMsgGetUserStatsResponse\x10>\x12\x1a\n\x16k_EGCMsgAppInfoUpdated\x10?\x12\x1b\n\x17k_EGCMsgValidateSession\x10@\x12#\n\x1fk_EGCMsgValidateSessionResponse\x10\x41\x12\"\n\x1ek_EGCMsgLookupAccountFromInput\x10\x42\x12\x1b\n\x17k_EGCMsgSendHTTPRequest\x10\x43\x12#\n\x1fk_EGCMsgSendHTTPRequestResponse\x10\x44\x12\x18\n\x14k_EGCMsgPreTestSetup\x10\x45\x12\x1f\n\x1bk_EGCMsgRecordSupportAction\x10\x46\x12(\n$k_EGCMsgGetAccountDetails_DEPRECATED\x10G\x12\"\n\x1ek_EGCMsgReceiveInterAppMessage\x10I\x12\x18\n\x14k_EGCMsgFindAccounts\x10J\x12\x15\n\x11k_EGCMsgPostAlert\x10K\x12\x17\n\x13k_EGCMsgGetLicenses\x10L\x12\x18\n\x14k_EGCMsgGetUserStats\x10M\x12\x17\n\x13k_EGCMsgGetCommands\x10N\x12\x1f\n\x1bk_EGCMsgGetCommandsResponse\x10O\x12\x1a\n\x16k_EGCMsgAddFreeLicense\x10P\x12\"\n\x1ek_EGCMsgAddFreeLicenseResponse\x10Q\x12\x19\n\x15k_EGCMsgGetIPLocation\x10R\x12!\n\x1dk_EGCMsgGetIPLocationResponse\x10S\x12\x1d\n\x19k_EGCMsgSystemStatsSchema\x10T\x12\x1a\n\x16k_EGCMsgGetSystemStats\x10U\x12\"\n\x1ek_EGCMsgGetSystemStatsResponse\x10V\x12\x15\n\x11k_EGCMsgSendEmail\x10W\x12\x1d\n\x19k_EGCMsgSendEmailResponse\x10X\x12\x1c\n\x18k_EGCMsgGetEmailTemplate\x10Y\x12$\n k_EGCMsgGetEmailTemplateResponse\x10Z\x12\x1a\n\x16k_EGCMsgGrantGuestPass\x10[\x12\"\n\x1ek_EGCMsgGrantGuestPassResponse\x10\\\x12\x1d\n\x19k_EGCMsgGetAccountDetails\x10]\x12%\n!k_EGCMsgGetAccountDetailsResponse\x10^\x12\x1b\n\x17k_EGCMsgGetPersonaNames\x10_\x12#\n\x1fk_EGCMsgGetPersonaNamesResponse\x10`\x12\x18\n\x14k_EGCMsgMultiplexMsg\x10\x61\x12 \n\x1ck_EGCMsgMultiplexMsgResponse\x10\x62\x12$\n k_EGCMsgWebAPIRegisterInterfaces\x10\x65\x12\x1c\n\x18k_EGCMsgWebAPIJobRequest\x10\x66\x12(\n$k_EGCMsgWebAPIJobRequestHttpResponse\x10h\x12+\n\'k_EGCMsgWebAPIJobRequestForwardResponse\x10i\x12\x19\n\x14k_EGCMsgMemCachedGet\x10\xc8\x01\x12!\n\x1ck_EGCMsgMemCachedGetResponse\x10\xc9\x01\x12\x19\n\x14k_EGCMsgMemCachedSet\x10\xca\x01\x12\x1c\n\x17k_EGCMsgMemCachedDelete\x10\xcb\x01\x12\x1b\n\x16k_EGCMsgMemCachedStats\x10\xcc\x01\x12#\n\x1ek_EGCMsgMemCachedStatsResponse\x10\xcd\x01\x12\x1f\n\x1ak_EGCMsgMasterSetDirectory\x10\xdc\x01\x12\'\n\"k_EGCMsgMasterSetDirectoryResponse\x10\xdd\x01\x12#\n\x1ek_EGCMsgMasterSetWebAPIRouting\x10\xde\x01\x12+\n&k_EGCMsgMasterSetWebAPIRoutingResponse\x10\xdf\x01\x12&\n!k_EGCMsgMasterSetClientMsgRouting\x10\xe0\x01\x12.\n)k_EGCMsgMasterSetClientMsgRoutingResponse\x10\xe1\x01\x12\x17\n\x12k_EGCMsgSetOptions\x10\xe2\x01\x12\x1f\n\x1ak_EGCMsgSetOptionsResponse\x10\xe3\x01\x12\x18\n\x13k_EGCMsgSystemBase2\x10\xf4\x03\x12#\n\x1ek_EGCMsgGetPurchaseTrustStatus\x10\xf5\x03\x12+\n&k_EGCMsgGetPurchaseTrustStatusResponse\x10\xf6\x03\x12\x1a\n\x15k_EGCMsgUpdateSession\x10\xf7\x03\x12%\n k_EGCMsgGCAccountVacStatusChange\x10\xf8\x03\x12\x1c\n\x17k_EGCMsgCheckFriendship\x10\xf9\x03\x12$\n\x1fk_EGCMsgCheckFriendshipResponse\x10\xfa\x03\x12\"\n\x1dk_EGCMsgVacVerificationChange\x10\x86\x04\x12%\n k_EGCMsgAccountPhoneNumberChange\x10\x87\x04*\xef\x01\n\x06\x45SOMsg\x12\x13\n\x0fk_ESOMsg_Create\x10\x15\x12\x13\n\x0fk_ESOMsg_Update\x10\x16\x12\x14\n\x10k_ESOMsg_Destroy\x10\x17\x12\x1c\n\x18k_ESOMsg_CacheSubscribed\x10\x18\x12\x1e\n\x1ak_ESOMsg_CacheUnsubscribed\x10\x19\x12\x1b\n\x17k_ESOMsg_UpdateMultiple\x10\x1a\x12#\n\x1fk_ESOMsg_CacheSubscriptionCheck\x10\x1b\x12%\n!k_ESOMsg_CacheSubscriptionRefresh\x10\x1c*\xc8\x01\n\x10\x45GCBaseClientMsg\x12\x1a\n\x15k_EMsgGCClientWelcome\x10\xa4\x1f\x12\x1a\n\x15k_EMsgGCServerWelcome\x10\xa5\x1f\x12\x18\n\x13k_EMsgGCClientHello\x10\xa6\x1f\x12\x18\n\x13k_EMsgGCServerHello\x10\xa7\x1f\x12#\n\x1ek_EMsgGCClientConnectionStatus\x10\xa9\x1f\x12#\n\x1ek_EMsgGCServerConnectionStatus\x10\xaa\x1f*\x89\x02\n\nEGCToGCMsg\x12\x1a\n\x15k_EGCToGCMsgMasterAck\x10\x96\x01\x12\"\n\x1dk_EGCToGCMsgMasterAckResponse\x10\x97\x01\x12\x17\n\x12k_EGCToGCMsgRouted\x10\x98\x01\x12\x1c\n\x17k_EGCToGCMsgRoutedReply\x10\x99\x01\x12\x1a\n\x15k_EMsgUpdateSessionIP\x10\x9a\x01\x12\x1b\n\x16k_EMsgRequestSessionIP\x10\x9b\x01\x12#\n\x1ek_EMsgRequestSessionIPResponse\x10\x9c\x01\x12&\n!k_EGCToGCMsgMasterStartupComplete\x10\x9d\x01\x42\x05H\x01\x90\x01\x00')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -335,26 +335,18 @@ _EGCSYSTEMMSG = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCMsgGetPartnerAccountLink', index=76, number=507,
+      name='k_EGCMsgVacVerificationChange', index=76, number=518,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCMsgGetPartnerAccountLinkResponse', index=77, number=508,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EGCMsgVacVerificationChange', index=78, number=518,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EGCMsgAccountPhoneNumberChange', index=79, number=519,
+      name='k_EGCMsgAccountPhoneNumberChange', index=77, number=519,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
   serialized_start=239,
-  serialized_end=2838,
+  serialized_end=2758,
 )
 _sym_db.RegisterEnumDescriptor(_EGCSYSTEMMSG)
 
@@ -400,8 +392,8 @@ _ESOMSG = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2841,
-  serialized_end=3080,
+  serialized_start=2761,
+  serialized_end=3000,
 )
 _sym_db.RegisterEnumDescriptor(_ESOMSG)
 
@@ -436,31 +428,11 @@ _EGCBASECLIENTMSG = _descriptor.EnumDescriptor(
       name='k_EMsgGCServerConnectionStatus', index=5, number=4010,
       options=None,
       type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCClientHelloPartner', index=6, number=4011,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCClientHelloPW', index=7, number=4012,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCClientHelloR2', index=8, number=4013,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCClientHelloR3', index=9, number=4014,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCClientHelloR4', index=10, number=4015,
-      options=None,
-      type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=3083,
-  serialized_end=3428,
+  serialized_start=3003,
+  serialized_end=3203,
 )
 _sym_db.RegisterEnumDescriptor(_EGCBASECLIENTMSG)
 
@@ -506,8 +478,8 @@ _EGCTOGCMSG = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=3431,
-  serialized_end=3696,
+  serialized_start=3206,
+  serialized_end=3471,
 )
 _sym_db.RegisterEnumDescriptor(_EGCTOGCMSG)
 
@@ -588,8 +560,6 @@ k_EGCMsgUpdateSession = 503
 k_EGCMsgGCAccountVacStatusChange = 504
 k_EGCMsgCheckFriendship = 505
 k_EGCMsgCheckFriendshipResponse = 506
-k_EGCMsgGetPartnerAccountLink = 507
-k_EGCMsgGetPartnerAccountLinkResponse = 508
 k_EGCMsgVacVerificationChange = 518
 k_EGCMsgAccountPhoneNumberChange = 519
 k_ESOMsg_Create = 21
@@ -606,11 +576,6 @@ k_EMsgGCClientHello = 4006
 k_EMsgGCServerHello = 4007
 k_EMsgGCClientConnectionStatus = 4009
 k_EMsgGCServerConnectionStatus = 4010
-k_EMsgGCClientHelloPartner = 4011
-k_EMsgGCClientHelloPW = 4012
-k_EMsgGCClientHelloR2 = 4013
-k_EMsgGCClientHelloR3 = 4014
-k_EMsgGCClientHelloR4 = 4015
 k_EGCToGCMsgMasterAck = 150
 k_EGCToGCMsgMasterAckResponse = 151
 k_EGCToGCMsgRouted = 152
