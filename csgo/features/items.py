@@ -36,10 +36,10 @@ class Items(object):
 
         """
         self.send(ECsgoGCMsg.EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest, {
-                    's': s,
-                    'a': a,
-                    'd': d,
-                    'm': m,
+                    'param_s': s,
+                    'param_a': a,
+                    'param_d': d,
+                    'param_m': m,
                  })
 
     def __handle_preview_data_block(self, message):
