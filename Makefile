@@ -54,7 +54,8 @@ upload: dist register
 
 pb_fetch:
 	wget -nv --show-progress -N -P ./protobufs/ -i protobuf_list.txt
-	sed -i '1s/^/syntax = "proto2"\;\n/' protobufs/*.proto
+	sed -i '1s/^/syntax = "proto2"\;\npackage csgo\;\n/' protobufs/*.proto
+	sed -i 's/\(optional\|repeated\) \.\([A-Z]\)/\1 csgo.\2/' protobufs/*.proto
 	sed -i 's/cc_generic_services/py_generic_services/' protobufs/*.proto
 
 pb_compile:

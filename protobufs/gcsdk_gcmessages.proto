@@ -1,4 +1,5 @@
 syntax = "proto2";
+package csgo;
 import "steammessages.proto";
 
 option optimize_for = SPEED;
@@ -21,7 +22,7 @@ message CMsgSOSingleObject {
 	optional int32 type_id = 2;
 	optional bytes object_data = 3;
 	optional fixed64 version = 4;
-	optional .CMsgSOIDOwner owner_soid = 5;
+	optional csgo.CMsgSOIDOwner owner_soid = 5;
 }
 
 message CMsgSOMultipleObjects {
@@ -32,11 +33,11 @@ message CMsgSOMultipleObjects {
 		optional bytes object_data = 2;
 	}
 
-	repeated .CMsgSOMultipleObjects.SingleObject objects_modified = 2;
+	repeated csgo.CMsgSOMultipleObjects.SingleObject objects_modified = 2;
 	optional fixed64 version = 3;
-	repeated .CMsgSOMultipleObjects.SingleObject objects_added = 4;
-	repeated .CMsgSOMultipleObjects.SingleObject objects_removed = 5;
-	optional .CMsgSOIDOwner owner_soid = 6;
+	repeated csgo.CMsgSOMultipleObjects.SingleObject objects_added = 4;
+	repeated csgo.CMsgSOMultipleObjects.SingleObject objects_removed = 5;
+	optional csgo.CMsgSOIDOwner owner_soid = 6;
 }
 
 message CMsgSOCacheSubscribed {
@@ -45,22 +46,22 @@ message CMsgSOCacheSubscribed {
 		repeated bytes object_data = 2;
 	}
 
-	repeated .CMsgSOCacheSubscribed.SubscribedType objects = 2;
+	repeated csgo.CMsgSOCacheSubscribed.SubscribedType objects = 2;
 	optional fixed64 version = 3;
-	optional .CMsgSOIDOwner owner_soid = 4;
+	optional csgo.CMsgSOIDOwner owner_soid = 4;
 }
 
 message CMsgSOCacheUnsubscribed {
-	optional .CMsgSOIDOwner owner_soid = 2;
+	optional csgo.CMsgSOIDOwner owner_soid = 2;
 }
 
 message CMsgSOCacheSubscriptionCheck {
 	optional fixed64 version = 2;
-	optional .CMsgSOIDOwner owner_soid = 3;
+	optional csgo.CMsgSOIDOwner owner_soid = 3;
 }
 
 message CMsgSOCacheSubscriptionRefresh {
-	optional .CMsgSOIDOwner owner_soid = 2;
+	optional csgo.CMsgSOIDOwner owner_soid = 2;
 }
 
 message CMsgSOCacheVersion {
@@ -136,20 +137,20 @@ message CMsgGCRequestSessionIPResponse {
 }
 
 message CMsgSOCacheHaveVersion {
-	optional .CMsgSOIDOwner soid = 1;
+	optional csgo.CMsgSOIDOwner soid = 1;
 	optional fixed64 version = 2;
 }
 
 message CMsgClientHello {
 	optional uint32 version = 1;
-	repeated .CMsgSOCacheHaveVersion socache_have_versions = 2;
+	repeated csgo.CMsgSOCacheHaveVersion socache_have_versions = 2;
 	optional uint32 client_session_need = 3;
 	optional uint32 client_launcher = 4;
 }
 
 message CMsgServerHello {
 	optional uint32 version = 1;
-	repeated .CMsgSOCacheHaveVersion socache_have_versions = 2;
+	repeated csgo.CMsgSOCacheHaveVersion socache_have_versions = 2;
 	optional uint32 legacy_client_session_need = 3;
 	optional uint32 legacy_client_launcher = 4;
 	optional uint32 steamdatagram_port = 5;
@@ -164,16 +165,16 @@ message CMsgClientWelcome {
 
 	optional uint32 version = 1;
 	optional bytes game_data = 2;
-	repeated .CMsgSOCacheSubscribed outofdate_subscribed_caches = 3;
-	repeated .CMsgSOCacheSubscriptionCheck uptodate_subscribed_caches = 4;
-	optional .CMsgClientWelcome.Location location = 5;
+	repeated csgo.CMsgSOCacheSubscribed outofdate_subscribed_caches = 3;
+	repeated csgo.CMsgSOCacheSubscriptionCheck uptodate_subscribed_caches = 4;
+	optional csgo.CMsgClientWelcome.Location location = 5;
 	optional bytes game_data2 = 6;
 	optional uint32 rtime32_gc_welcome_timestamp = 7;
 	optional uint32 currency = 8;
 }
 
 message CMsgConnectionStatus {
-	optional .GCConnectionStatus status = 1 [default = GCConnectionStatus_HAVE_SESSION];
+	optional csgo.GCConnectionStatus status = 1 [default = GCConnectionStatus_HAVE_SESSION];
 	optional uint32 client_session_need = 2;
 	optional int32 queue_position = 3;
 	optional int32 queue_size = 4;
@@ -190,11 +191,11 @@ message CWorkshop_PopulateItemDescriptions_Request {
 
 	message ItemDescriptionsLanguageBlock {
 		optional string language = 1;
-		repeated .CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription descriptions = 2;
+		repeated csgo.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription descriptions = 2;
 	}
 
 	optional uint32 appid = 1;
-	repeated .CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock languages = 2;
+	repeated csgo.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock languages = 2;
 }
 
 message CWorkshop_GetContributors_Request {
@@ -221,8 +222,8 @@ message CWorkshop_SetItemPaymentRules_Request {
 
 	optional uint32 appid = 1;
 	optional uint32 gameitemid = 2;
-	repeated .CWorkshop_SetItemPaymentRules_Request.WorkshopItemPaymentRule associated_workshop_files = 3;
-	repeated .CWorkshop_SetItemPaymentRules_Request.PartnerItemPaymentRule partner_accounts = 4;
+	repeated csgo.CWorkshop_SetItemPaymentRules_Request.WorkshopItemPaymentRule associated_workshop_files = 3;
+	repeated csgo.CWorkshop_SetItemPaymentRules_Request.PartnerItemPaymentRule partner_accounts = 4;
 }
 
 message CWorkshop_SetItemPaymentRules_Response {

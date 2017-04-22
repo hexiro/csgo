@@ -18,9 +18,9 @@ from google.protobuf import descriptor_pb2 as google_dot_protobuf_dot_descriptor
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='engine_gcmessages.proto',
-  package='',
+  package='csgo',
   syntax='proto2',
-  serialized_pb=_b('\n\x17\x65ngine_gcmessages.proto\x1a google/protobuf/descriptor.proto\"\xcb\x01\n\x15\x43\x45ngineGotvSyncPacket\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x13\n\x0binstance_id\x18\x02 \x01(\r\x12\x16\n\x0esignupfragment\x18\x03 \x01(\r\x12\x17\n\x0f\x63urrentfragment\x18\x04 \x01(\r\x12\x10\n\x08tickrate\x18\x05 \x01(\x02\x12\x0c\n\x04tick\x18\x06 \x01(\r\x12\x0f\n\x07rtdelay\x18\x08 \x01(\x02\x12\x0e\n\x06rcvage\x18\t \x01(\x02\x12\x19\n\x11keyframe_interval\x18\n \x01(\x02\x42\x03\x90\x01\x00')
+  serialized_pb=_b('\n\x17\x65ngine_gcmessages.proto\x12\x04\x63sgo\x1a google/protobuf/descriptor.proto\"\xcb\x01\n\x15\x43\x45ngineGotvSyncPacket\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x13\n\x0binstance_id\x18\x02 \x01(\r\x12\x16\n\x0esignupfragment\x18\x03 \x01(\r\x12\x17\n\x0f\x63urrentfragment\x18\x04 \x01(\r\x12\x10\n\x08tickrate\x18\x05 \x01(\x02\x12\x0c\n\x04tick\x18\x06 \x01(\r\x12\x0f\n\x07rtdelay\x18\x08 \x01(\x02\x12\x0e\n\x06rcvage\x18\t \x01(\x02\x12\x19\n\x11keyframe_interval\x18\n \x01(\x02\x42\x03\x90\x01\x00')
   ,
   dependencies=[google_dot_protobuf_dot_descriptor__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -30,69 +30,69 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _CENGINEGOTVSYNCPACKET = _descriptor.Descriptor(
   name='CEngineGotvSyncPacket',
-  full_name='CEngineGotvSyncPacket',
+  full_name='csgo.CEngineGotvSyncPacket',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='match_id', full_name='CEngineGotvSyncPacket.match_id', index=0,
+      name='match_id', full_name='csgo.CEngineGotvSyncPacket.match_id', index=0,
       number=1, type=4, cpp_type=4, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='instance_id', full_name='CEngineGotvSyncPacket.instance_id', index=1,
+      name='instance_id', full_name='csgo.CEngineGotvSyncPacket.instance_id', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='signupfragment', full_name='CEngineGotvSyncPacket.signupfragment', index=2,
+      name='signupfragment', full_name='csgo.CEngineGotvSyncPacket.signupfragment', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='currentfragment', full_name='CEngineGotvSyncPacket.currentfragment', index=3,
+      name='currentfragment', full_name='csgo.CEngineGotvSyncPacket.currentfragment', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='tickrate', full_name='CEngineGotvSyncPacket.tickrate', index=4,
+      name='tickrate', full_name='csgo.CEngineGotvSyncPacket.tickrate', index=4,
       number=5, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='tick', full_name='CEngineGotvSyncPacket.tick', index=5,
+      name='tick', full_name='csgo.CEngineGotvSyncPacket.tick', index=5,
       number=6, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='rtdelay', full_name='CEngineGotvSyncPacket.rtdelay', index=6,
+      name='rtdelay', full_name='csgo.CEngineGotvSyncPacket.rtdelay', index=6,
       number=8, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='rcvage', full_name='CEngineGotvSyncPacket.rcvage', index=7,
+      name='rcvage', full_name='csgo.CEngineGotvSyncPacket.rcvage', index=7,
       number=9, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='keyframe_interval', full_name='CEngineGotvSyncPacket.keyframe_interval', index=8,
+      name='keyframe_interval', full_name='csgo.CEngineGotvSyncPacket.keyframe_interval', index=8,
       number=10, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -110,8 +110,8 @@ _CENGINEGOTVSYNCPACKET = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=62,
-  serialized_end=265,
+  serialized_start=68,
+  serialized_end=271,
 )
 
 DESCRIPTOR.message_types_by_name['CEngineGotvSyncPacket'] = _CENGINEGOTVSYNCPACKET
@@ -119,7 +119,7 @@ DESCRIPTOR.message_types_by_name['CEngineGotvSyncPacket'] = _CENGINEGOTVSYNCPACK
 CEngineGotvSyncPacket = _reflection.GeneratedProtocolMessageType('CEngineGotvSyncPacket', (_message.Message,), dict(
   DESCRIPTOR = _CENGINEGOTVSYNCPACKET,
   __module__ = 'engine_gcmessages_pb2'
-  # @@protoc_insertion_point(class_scope:CEngineGotvSyncPacket)
+  # @@protoc_insertion_point(class_scope:csgo.CEngineGotvSyncPacket)
   ))
 _sym_db.RegisterMessage(CEngineGotvSyncPacket)
 
