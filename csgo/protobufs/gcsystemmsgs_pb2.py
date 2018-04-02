@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='gcsystemmsgs.proto',
   package='csgo',
   syntax='proto2',
-  serialized_pb=_b('\n\x12gcsystemmsgs.proto\x12\x04\x63sgo\"S\n\x1c\x43MsgGCHVacVerificationChange\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\r\n\x05\x61ppid\x18\x02 \x01(\r\x12\x13\n\x0bis_verified\x18\x03 \x01(\x08\"\x80\x01\n\x1f\x43MsgGCHAccountPhoneNumberChange\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\r\n\x05\x61ppid\x18\x02 \x01(\r\x12\x10\n\x08phone_id\x18\x03 \x01(\x04\x12\x13\n\x0bis_verified\x18\x04 \x01(\x08\x12\x16\n\x0eis_identifying\x18\x05 \x01(\x08*\xd7\x13\n\x0c\x45GCSystemMsg\x12\x13\n\x0fk_EGCMsgInvalid\x10\x00\x12\x11\n\rk_EGCMsgMulti\x10\x01\x12\x18\n\x14k_EGCMsgGenericReply\x10\n\x12\x16\n\x12k_EGCMsgSystemBase\x10\x32\x12\x1e\n\x1ak_EGCMsgAchievementAwarded\x10\x33\x12\x16\n\x12k_EGCMsgConCommand\x10\x34\x12\x18\n\x14k_EGCMsgStartPlaying\x10\x35\x12\x17\n\x13k_EGCMsgStopPlaying\x10\x36\x12\x1b\n\x17k_EGCMsgStartGameserver\x10\x37\x12\x1a\n\x16k_EGCMsgStopGameserver\x10\x38\x12\x15\n\x11k_EGCMsgWGRequest\x10\x39\x12\x16\n\x12k_EGCMsgWGResponse\x10:\x12\"\n\x1ek_EGCMsgGetUserGameStatsSchema\x10;\x12*\n&k_EGCMsgGetUserGameStatsSchemaResponse\x10<\x12\"\n\x1ek_EGCMsgGetUserStatsDEPRECATED\x10=\x12 \n\x1ck_EGCMsgGetUserStatsResponse\x10>\x12\x1a\n\x16k_EGCMsgAppInfoUpdated\x10?\x12\x1b\n\x17k_EGCMsgValidateSession\x10@\x12#\n\x1fk_EGCMsgValidateSessionResponse\x10\x41\x12\"\n\x1ek_EGCMsgLookupAccountFromInput\x10\x42\x12\x1b\n\x17k_EGCMsgSendHTTPRequest\x10\x43\x12#\n\x1fk_EGCMsgSendHTTPRequestResponse\x10\x44\x12\x18\n\x14k_EGCMsgPreTestSetup\x10\x45\x12\x1f\n\x1bk_EGCMsgRecordSupportAction\x10\x46\x12(\n$k_EGCMsgGetAccountDetails_DEPRECATED\x10G\x12\"\n\x1ek_EGCMsgReceiveInterAppMessage\x10I\x12\x18\n\x14k_EGCMsgFindAccounts\x10J\x12\x15\n\x11k_EGCMsgPostAlert\x10K\x12\x17\n\x13k_EGCMsgGetLicenses\x10L\x12\x18\n\x14k_EGCMsgGetUserStats\x10M\x12\x17\n\x13k_EGCMsgGetCommands\x10N\x12\x1f\n\x1bk_EGCMsgGetCommandsResponse\x10O\x12\x1a\n\x16k_EGCMsgAddFreeLicense\x10P\x12\"\n\x1ek_EGCMsgAddFreeLicenseResponse\x10Q\x12\x19\n\x15k_EGCMsgGetIPLocation\x10R\x12!\n\x1dk_EGCMsgGetIPLocationResponse\x10S\x12\x1d\n\x19k_EGCMsgSystemStatsSchema\x10T\x12\x1a\n\x16k_EGCMsgGetSystemStats\x10U\x12\"\n\x1ek_EGCMsgGetSystemStatsResponse\x10V\x12\x15\n\x11k_EGCMsgSendEmail\x10W\x12\x1d\n\x19k_EGCMsgSendEmailResponse\x10X\x12\x1c\n\x18k_EGCMsgGetEmailTemplate\x10Y\x12$\n k_EGCMsgGetEmailTemplateResponse\x10Z\x12\x1a\n\x16k_EGCMsgGrantGuestPass\x10[\x12\"\n\x1ek_EGCMsgGrantGuestPassResponse\x10\\\x12\x1d\n\x19k_EGCMsgGetAccountDetails\x10]\x12%\n!k_EGCMsgGetAccountDetailsResponse\x10^\x12\x1b\n\x17k_EGCMsgGetPersonaNames\x10_\x12#\n\x1fk_EGCMsgGetPersonaNamesResponse\x10`\x12\x18\n\x14k_EGCMsgMultiplexMsg\x10\x61\x12 \n\x1ck_EGCMsgMultiplexMsgResponse\x10\x62\x12$\n k_EGCMsgWebAPIRegisterInterfaces\x10\x65\x12\x1c\n\x18k_EGCMsgWebAPIJobRequest\x10\x66\x12(\n$k_EGCMsgWebAPIJobRequestHttpResponse\x10h\x12+\n\'k_EGCMsgWebAPIJobRequestForwardResponse\x10i\x12\x19\n\x14k_EGCMsgMemCachedGet\x10\xc8\x01\x12!\n\x1ck_EGCMsgMemCachedGetResponse\x10\xc9\x01\x12\x19\n\x14k_EGCMsgMemCachedSet\x10\xca\x01\x12\x1c\n\x17k_EGCMsgMemCachedDelete\x10\xcb\x01\x12\x1b\n\x16k_EGCMsgMemCachedStats\x10\xcc\x01\x12#\n\x1ek_EGCMsgMemCachedStatsResponse\x10\xcd\x01\x12\x1f\n\x1ak_EGCMsgMasterSetDirectory\x10\xdc\x01\x12\'\n\"k_EGCMsgMasterSetDirectoryResponse\x10\xdd\x01\x12#\n\x1ek_EGCMsgMasterSetWebAPIRouting\x10\xde\x01\x12+\n&k_EGCMsgMasterSetWebAPIRoutingResponse\x10\xdf\x01\x12&\n!k_EGCMsgMasterSetClientMsgRouting\x10\xe0\x01\x12.\n)k_EGCMsgMasterSetClientMsgRoutingResponse\x10\xe1\x01\x12\x17\n\x12k_EGCMsgSetOptions\x10\xe2\x01\x12\x1f\n\x1ak_EGCMsgSetOptionsResponse\x10\xe3\x01\x12\x18\n\x13k_EGCMsgSystemBase2\x10\xf4\x03\x12#\n\x1ek_EGCMsgGetPurchaseTrustStatus\x10\xf5\x03\x12+\n&k_EGCMsgGetPurchaseTrustStatusResponse\x10\xf6\x03\x12\x1a\n\x15k_EGCMsgUpdateSession\x10\xf7\x03\x12%\n k_EGCMsgGCAccountVacStatusChange\x10\xf8\x03\x12\x1c\n\x17k_EGCMsgCheckFriendship\x10\xf9\x03\x12$\n\x1fk_EGCMsgCheckFriendshipResponse\x10\xfa\x03\x12\"\n\x1dk_EGCMsgVacVerificationChange\x10\x86\x04\x12%\n k_EGCMsgAccountPhoneNumberChange\x10\x87\x04*\xef\x01\n\x06\x45SOMsg\x12\x13\n\x0fk_ESOMsg_Create\x10\x15\x12\x13\n\x0fk_ESOMsg_Update\x10\x16\x12\x14\n\x10k_ESOMsg_Destroy\x10\x17\x12\x1c\n\x18k_ESOMsg_CacheSubscribed\x10\x18\x12\x1e\n\x1ak_ESOMsg_CacheUnsubscribed\x10\x19\x12\x1b\n\x17k_ESOMsg_UpdateMultiple\x10\x1a\x12#\n\x1fk_ESOMsg_CacheSubscriptionCheck\x10\x1b\x12%\n!k_ESOMsg_CacheSubscriptionRefresh\x10\x1c*\xc8\x01\n\x10\x45GCBaseClientMsg\x12\x1a\n\x15k_EMsgGCClientWelcome\x10\xa4\x1f\x12\x1a\n\x15k_EMsgGCServerWelcome\x10\xa5\x1f\x12\x18\n\x13k_EMsgGCClientHello\x10\xa6\x1f\x12\x18\n\x13k_EMsgGCServerHello\x10\xa7\x1f\x12#\n\x1ek_EMsgGCClientConnectionStatus\x10\xa9\x1f\x12#\n\x1ek_EMsgGCServerConnectionStatus\x10\xaa\x1f*\x89\x02\n\nEGCToGCMsg\x12\x1a\n\x15k_EGCToGCMsgMasterAck\x10\x96\x01\x12\"\n\x1dk_EGCToGCMsgMasterAckResponse\x10\x97\x01\x12\x17\n\x12k_EGCToGCMsgRouted\x10\x98\x01\x12\x1c\n\x17k_EGCToGCMsgRoutedReply\x10\x99\x01\x12\x1a\n\x15k_EMsgUpdateSessionIP\x10\x9a\x01\x12\x1b\n\x16k_EMsgRequestSessionIP\x10\x9b\x01\x12#\n\x1ek_EMsgRequestSessionIPResponse\x10\x9c\x01\x12&\n!k_EGCToGCMsgMasterStartupComplete\x10\x9d\x01\x42\x05H\x01\x90\x01\x00')
+  serialized_pb=_b('\n\x12gcsystemmsgs.proto\x12\x04\x63sgo\"S\n\x1c\x43MsgGCHVacVerificationChange\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\r\n\x05\x61ppid\x18\x02 \x01(\r\x12\x13\n\x0bis_verified\x18\x03 \x01(\x08\"\x80\x01\n\x1f\x43MsgGCHAccountPhoneNumberChange\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\r\n\x05\x61ppid\x18\x02 \x01(\r\x12\x10\n\x08phone_id\x18\x03 \x01(\x04\x12\x13\n\x0bis_verified\x18\x04 \x01(\x08\x12\x16\n\x0eis_identifying\x18\x05 \x01(\x08\"j\n\x18\x43MsgGCHInviteUserToLobby\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\r\n\x05\x61ppid\x18\x02 \x01(\r\x12\x17\n\x0fsteamid_invited\x18\x03 \x01(\x06\x12\x15\n\rsteamid_lobby\x18\x04 \x01(\x06\"j\n\'CCommunity_GamePersonalDataCategoryInfo\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x1a\n\x12localization_token\x18\x02 \x01(\t\x12\x15\n\rtemplate_file\x18\x03 \x01(\t\"A\n0CCommunity_GetGamePersonalDataCategories_Request\x12\r\n\x05\x61ppid\x18\x01 \x01(\r\"\x93\x01\n1CCommunity_GetGamePersonalDataCategories_Response\x12\x41\n\ncategories\x18\x01 \x03(\x0b\x32-.csgo.CCommunity_GamePersonalDataCategoryInfo\x12\x1b\n\x13\x61pp_assets_basename\x18\x02 \x01(\t\"u\n-CCommunity_GetGamePersonalDataEntries_Request\x12\r\n\x05\x61ppid\x18\x01 \x01(\r\x12\x0f\n\x07steamid\x18\x02 \x01(\x04\x12\x0c\n\x04type\x18\x03 \x01(\t\x12\x16\n\x0e\x63ontinue_token\x18\x04 \x01(\t\"l\n.CCommunity_GetGamePersonalDataEntries_Response\x12\x11\n\tgceresult\x18\x01 \x01(\r\x12\x0f\n\x07\x65ntries\x18\x02 \x03(\t\x12\x16\n\x0e\x63ontinue_token\x18\x03 \x01(\t*\xd9\x16\n\x0c\x45GCSystemMsg\x12\x13\n\x0fk_EGCMsgInvalid\x10\x00\x12\x11\n\rk_EGCMsgMulti\x10\x01\x12\x18\n\x14k_EGCMsgGenericReply\x10\n\x12\x16\n\x12k_EGCMsgSystemBase\x10\x32\x12\x1e\n\x1ak_EGCMsgAchievementAwarded\x10\x33\x12\x16\n\x12k_EGCMsgConCommand\x10\x34\x12\x18\n\x14k_EGCMsgStartPlaying\x10\x35\x12\x17\n\x13k_EGCMsgStopPlaying\x10\x36\x12\x1b\n\x17k_EGCMsgStartGameserver\x10\x37\x12\x1a\n\x16k_EGCMsgStopGameserver\x10\x38\x12\x15\n\x11k_EGCMsgWGRequest\x10\x39\x12\x16\n\x12k_EGCMsgWGResponse\x10:\x12\"\n\x1ek_EGCMsgGetUserGameStatsSchema\x10;\x12*\n&k_EGCMsgGetUserGameStatsSchemaResponse\x10<\x12\"\n\x1ek_EGCMsgGetUserStatsDEPRECATED\x10=\x12 \n\x1ck_EGCMsgGetUserStatsResponse\x10>\x12\x1a\n\x16k_EGCMsgAppInfoUpdated\x10?\x12\x1b\n\x17k_EGCMsgValidateSession\x10@\x12#\n\x1fk_EGCMsgValidateSessionResponse\x10\x41\x12\"\n\x1ek_EGCMsgLookupAccountFromInput\x10\x42\x12\x1b\n\x17k_EGCMsgSendHTTPRequest\x10\x43\x12#\n\x1fk_EGCMsgSendHTTPRequestResponse\x10\x44\x12\x18\n\x14k_EGCMsgPreTestSetup\x10\x45\x12\x1f\n\x1bk_EGCMsgRecordSupportAction\x10\x46\x12(\n$k_EGCMsgGetAccountDetails_DEPRECATED\x10G\x12\"\n\x1ek_EGCMsgReceiveInterAppMessage\x10I\x12\x18\n\x14k_EGCMsgFindAccounts\x10J\x12\x15\n\x11k_EGCMsgPostAlert\x10K\x12\x17\n\x13k_EGCMsgGetLicenses\x10L\x12\x18\n\x14k_EGCMsgGetUserStats\x10M\x12\x17\n\x13k_EGCMsgGetCommands\x10N\x12\x1f\n\x1bk_EGCMsgGetCommandsResponse\x10O\x12\x1a\n\x16k_EGCMsgAddFreeLicense\x10P\x12\"\n\x1ek_EGCMsgAddFreeLicenseResponse\x10Q\x12\x19\n\x15k_EGCMsgGetIPLocation\x10R\x12!\n\x1dk_EGCMsgGetIPLocationResponse\x10S\x12\x1d\n\x19k_EGCMsgSystemStatsSchema\x10T\x12\x1a\n\x16k_EGCMsgGetSystemStats\x10U\x12\"\n\x1ek_EGCMsgGetSystemStatsResponse\x10V\x12\x15\n\x11k_EGCMsgSendEmail\x10W\x12\x1d\n\x19k_EGCMsgSendEmailResponse\x10X\x12\x1c\n\x18k_EGCMsgGetEmailTemplate\x10Y\x12$\n k_EGCMsgGetEmailTemplateResponse\x10Z\x12\x1a\n\x16k_EGCMsgGrantGuestPass\x10[\x12\"\n\x1ek_EGCMsgGrantGuestPassResponse\x10\\\x12\x1d\n\x19k_EGCMsgGetAccountDetails\x10]\x12%\n!k_EGCMsgGetAccountDetailsResponse\x10^\x12\x1b\n\x17k_EGCMsgGetPersonaNames\x10_\x12#\n\x1fk_EGCMsgGetPersonaNamesResponse\x10`\x12\x18\n\x14k_EGCMsgMultiplexMsg\x10\x61\x12 \n\x1ck_EGCMsgMultiplexMsgResponse\x10\x62\x12$\n k_EGCMsgWebAPIRegisterInterfaces\x10\x65\x12\x1c\n\x18k_EGCMsgWebAPIJobRequest\x10\x66\x12(\n$k_EGCMsgWebAPIJobRequestHttpResponse\x10h\x12+\n\'k_EGCMsgWebAPIJobRequestForwardResponse\x10i\x12\x19\n\x14k_EGCMsgMemCachedGet\x10\xc8\x01\x12!\n\x1ck_EGCMsgMemCachedGetResponse\x10\xc9\x01\x12\x19\n\x14k_EGCMsgMemCachedSet\x10\xca\x01\x12\x1c\n\x17k_EGCMsgMemCachedDelete\x10\xcb\x01\x12\x1b\n\x16k_EGCMsgMemCachedStats\x10\xcc\x01\x12#\n\x1ek_EGCMsgMemCachedStatsResponse\x10\xcd\x01\x12\x1f\n\x1ak_EGCMsgMasterSetDirectory\x10\xdc\x01\x12\'\n\"k_EGCMsgMasterSetDirectoryResponse\x10\xdd\x01\x12#\n\x1ek_EGCMsgMasterSetWebAPIRouting\x10\xde\x01\x12+\n&k_EGCMsgMasterSetWebAPIRoutingResponse\x10\xdf\x01\x12&\n!k_EGCMsgMasterSetClientMsgRouting\x10\xe0\x01\x12.\n)k_EGCMsgMasterSetClientMsgRoutingResponse\x10\xe1\x01\x12\x17\n\x12k_EGCMsgSetOptions\x10\xe2\x01\x12\x1f\n\x1ak_EGCMsgSetOptionsResponse\x10\xe3\x01\x12\x18\n\x13k_EGCMsgSystemBase2\x10\xf4\x03\x12#\n\x1ek_EGCMsgGetPurchaseTrustStatus\x10\xf5\x03\x12+\n&k_EGCMsgGetPurchaseTrustStatusResponse\x10\xf6\x03\x12\x1a\n\x15k_EGCMsgUpdateSession\x10\xf7\x03\x12%\n k_EGCMsgGCAccountVacStatusChange\x10\xf8\x03\x12\x1c\n\x17k_EGCMsgCheckFriendship\x10\xf9\x03\x12$\n\x1fk_EGCMsgCheckFriendshipResponse\x10\xfa\x03\x12\"\n\x1dk_EGCMsgGetPartnerAccountLink\x10\xfb\x03\x12*\n%k_EGCMsgGetPartnerAccountLinkResponse\x10\xfc\x03\x12\x1f\n\x1ak_EGCMsgDPPartnerMicroTxns\x10\x80\x04\x12\'\n\"k_EGCMsgDPPartnerMicroTxnsResponse\x10\x81\x04\x12\"\n\x1dk_EGCMsgVacVerificationChange\x10\x86\x04\x12%\n k_EGCMsgAccountPhoneNumberChange\x10\x87\x04\x12\x1e\n\x19k_EGCMsgInviteUserToLobby\x10\x8b\x04\x12\x31\n,k_EGCMsgGetGamePersonalDataCategoriesRequest\x10\x8c\x04\x12\x32\n-k_EGCMsgGetGamePersonalDataCategoriesResponse\x10\x8d\x04\x12.\n)k_EGCMsgGetGamePersonalDataEntriesRequest\x10\x8e\x04\x12/\n*k_EGCMsgGetGamePersonalDataEntriesResponse\x10\x8f\x04*\xef\x01\n\x06\x45SOMsg\x12\x13\n\x0fk_ESOMsg_Create\x10\x15\x12\x13\n\x0fk_ESOMsg_Update\x10\x16\x12\x14\n\x10k_ESOMsg_Destroy\x10\x17\x12\x1c\n\x18k_ESOMsg_CacheSubscribed\x10\x18\x12\x1e\n\x1ak_ESOMsg_CacheUnsubscribed\x10\x19\x12\x1b\n\x17k_ESOMsg_UpdateMultiple\x10\x1a\x12#\n\x1fk_ESOMsg_CacheSubscriptionCheck\x10\x1b\x12%\n!k_ESOMsg_CacheSubscriptionRefresh\x10\x1c*\xd9\x02\n\x10\x45GCBaseClientMsg\x12\x1a\n\x15k_EMsgGCClientWelcome\x10\xa4\x1f\x12\x1a\n\x15k_EMsgGCServerWelcome\x10\xa5\x1f\x12\x18\n\x13k_EMsgGCClientHello\x10\xa6\x1f\x12\x18\n\x13k_EMsgGCServerHello\x10\xa7\x1f\x12#\n\x1ek_EMsgGCClientConnectionStatus\x10\xa9\x1f\x12#\n\x1ek_EMsgGCServerConnectionStatus\x10\xaa\x1f\x12\x1f\n\x1ak_EMsgGCClientHelloPartner\x10\xab\x1f\x12\x1a\n\x15k_EMsgGCClientHelloPW\x10\xac\x1f\x12\x1a\n\x15k_EMsgGCClientHelloR2\x10\xad\x1f\x12\x1a\n\x15k_EMsgGCClientHelloR3\x10\xae\x1f\x12\x1a\n\x15k_EMsgGCClientHelloR4\x10\xaf\x1f*\x89\x02\n\nEGCToGCMsg\x12\x1a\n\x15k_EGCToGCMsgMasterAck\x10\x96\x01\x12\"\n\x1dk_EGCToGCMsgMasterAckResponse\x10\x97\x01\x12\x17\n\x12k_EGCToGCMsgRouted\x10\x98\x01\x12\x1c\n\x17k_EGCToGCMsgRoutedReply\x10\x99\x01\x12\x1a\n\x15k_EMsgUpdateSessionIP\x10\x9a\x01\x12\x1b\n\x16k_EMsgRequestSessionIP\x10\x9b\x01\x12#\n\x1ek_EMsgRequestSessionIPResponse\x10\x9c\x01\x12&\n!k_EGCToGCMsgMasterStartupComplete\x10\x9d\x01\x42\x05H\x01\x90\x01\x00')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -335,18 +335,54 @@ _EGCSYSTEMMSG = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCMsgVacVerificationChange', index=76, number=518,
+      name='k_EGCMsgGetPartnerAccountLink', index=76, number=507,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCMsgAccountPhoneNumberChange', index=77, number=519,
+      name='k_EGCMsgGetPartnerAccountLinkResponse', index=77, number=508,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCMsgDPPartnerMicroTxns', index=78, number=512,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCMsgDPPartnerMicroTxnsResponse', index=79, number=513,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCMsgVacVerificationChange', index=80, number=518,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCMsgAccountPhoneNumberChange', index=81, number=519,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCMsgInviteUserToLobby', index=82, number=523,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCMsgGetGamePersonalDataCategoriesRequest', index=83, number=524,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCMsgGetGamePersonalDataCategoriesResponse', index=84, number=525,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCMsgGetGamePersonalDataEntriesRequest', index=85, number=526,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCMsgGetGamePersonalDataEntriesResponse', index=86, number=527,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=245,
-  serialized_end=2764,
+  serialized_start=907,
+  serialized_end=3812,
 )
 _sym_db.RegisterEnumDescriptor(_EGCSYSTEMMSG)
 
@@ -392,8 +428,8 @@ _ESOMSG = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2767,
-  serialized_end=3006,
+  serialized_start=3815,
+  serialized_end=4054,
 )
 _sym_db.RegisterEnumDescriptor(_ESOMSG)
 
@@ -428,11 +464,31 @@ _EGCBASECLIENTMSG = _descriptor.EnumDescriptor(
       name='k_EMsgGCServerConnectionStatus', index=5, number=4010,
       options=None,
       type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EMsgGCClientHelloPartner', index=6, number=4011,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EMsgGCClientHelloPW', index=7, number=4012,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EMsgGCClientHelloR2', index=8, number=4013,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EMsgGCClientHelloR3', index=9, number=4014,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EMsgGCClientHelloR4', index=10, number=4015,
+      options=None,
+      type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=3009,
-  serialized_end=3209,
+  serialized_start=4057,
+  serialized_end=4402,
 )
 _sym_db.RegisterEnumDescriptor(_EGCBASECLIENTMSG)
 
@@ -478,8 +534,8 @@ _EGCTOGCMSG = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=3212,
-  serialized_end=3477,
+  serialized_start=4405,
+  serialized_end=4670,
 )
 _sym_db.RegisterEnumDescriptor(_EGCTOGCMSG)
 
@@ -560,8 +616,17 @@ k_EGCMsgUpdateSession = 503
 k_EGCMsgGCAccountVacStatusChange = 504
 k_EGCMsgCheckFriendship = 505
 k_EGCMsgCheckFriendshipResponse = 506
+k_EGCMsgGetPartnerAccountLink = 507
+k_EGCMsgGetPartnerAccountLinkResponse = 508
+k_EGCMsgDPPartnerMicroTxns = 512
+k_EGCMsgDPPartnerMicroTxnsResponse = 513
 k_EGCMsgVacVerificationChange = 518
 k_EGCMsgAccountPhoneNumberChange = 519
+k_EGCMsgInviteUserToLobby = 523
+k_EGCMsgGetGamePersonalDataCategoriesRequest = 524
+k_EGCMsgGetGamePersonalDataCategoriesResponse = 525
+k_EGCMsgGetGamePersonalDataEntriesRequest = 526
+k_EGCMsgGetGamePersonalDataEntriesResponse = 527
 k_ESOMsg_Create = 21
 k_ESOMsg_Update = 22
 k_ESOMsg_Destroy = 23
@@ -576,6 +641,11 @@ k_EMsgGCClientHello = 4006
 k_EMsgGCServerHello = 4007
 k_EMsgGCClientConnectionStatus = 4009
 k_EMsgGCServerConnectionStatus = 4010
+k_EMsgGCClientHelloPartner = 4011
+k_EMsgGCClientHelloPW = 4012
+k_EMsgGCClientHelloR2 = 4013
+k_EMsgGCClientHelloR3 = 4014
+k_EMsgGCClientHelloR4 = 4015
 k_EGCToGCMsgMasterAck = 150
 k_EGCToGCMsgMasterAckResponse = 151
 k_EGCToGCMsgRouted = 152
@@ -690,8 +760,278 @@ _CMSGGCHACCOUNTPHONENUMBERCHANGE = _descriptor.Descriptor(
   serialized_end=242,
 )
 
+
+_CMSGGCHINVITEUSERTOLOBBY = _descriptor.Descriptor(
+  name='CMsgGCHInviteUserToLobby',
+  full_name='csgo.CMsgGCHInviteUserToLobby',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='steamid', full_name='csgo.CMsgGCHInviteUserToLobby.steamid', index=0,
+      number=1, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='appid', full_name='csgo.CMsgGCHInviteUserToLobby.appid', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='steamid_invited', full_name='csgo.CMsgGCHInviteUserToLobby.steamid_invited', index=2,
+      number=3, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='steamid_lobby', full_name='csgo.CMsgGCHInviteUserToLobby.steamid_lobby', index=3,
+      number=4, type=6, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=244,
+  serialized_end=350,
+)
+
+
+_CCOMMUNITY_GAMEPERSONALDATACATEGORYINFO = _descriptor.Descriptor(
+  name='CCommunity_GamePersonalDataCategoryInfo',
+  full_name='csgo.CCommunity_GamePersonalDataCategoryInfo',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='type', full_name='csgo.CCommunity_GamePersonalDataCategoryInfo.type', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='localization_token', full_name='csgo.CCommunity_GamePersonalDataCategoryInfo.localization_token', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='template_file', full_name='csgo.CCommunity_GamePersonalDataCategoryInfo.template_file', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=352,
+  serialized_end=458,
+)
+
+
+_CCOMMUNITY_GETGAMEPERSONALDATACATEGORIES_REQUEST = _descriptor.Descriptor(
+  name='CCommunity_GetGamePersonalDataCategories_Request',
+  full_name='csgo.CCommunity_GetGamePersonalDataCategories_Request',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='appid', full_name='csgo.CCommunity_GetGamePersonalDataCategories_Request.appid', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=460,
+  serialized_end=525,
+)
+
+
+_CCOMMUNITY_GETGAMEPERSONALDATACATEGORIES_RESPONSE = _descriptor.Descriptor(
+  name='CCommunity_GetGamePersonalDataCategories_Response',
+  full_name='csgo.CCommunity_GetGamePersonalDataCategories_Response',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='categories', full_name='csgo.CCommunity_GetGamePersonalDataCategories_Response.categories', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='app_assets_basename', full_name='csgo.CCommunity_GetGamePersonalDataCategories_Response.app_assets_basename', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=528,
+  serialized_end=675,
+)
+
+
+_CCOMMUNITY_GETGAMEPERSONALDATAENTRIES_REQUEST = _descriptor.Descriptor(
+  name='CCommunity_GetGamePersonalDataEntries_Request',
+  full_name='csgo.CCommunity_GetGamePersonalDataEntries_Request',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='appid', full_name='csgo.CCommunity_GetGamePersonalDataEntries_Request.appid', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='steamid', full_name='csgo.CCommunity_GetGamePersonalDataEntries_Request.steamid', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='type', full_name='csgo.CCommunity_GetGamePersonalDataEntries_Request.type', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='continue_token', full_name='csgo.CCommunity_GetGamePersonalDataEntries_Request.continue_token', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=677,
+  serialized_end=794,
+)
+
+
+_CCOMMUNITY_GETGAMEPERSONALDATAENTRIES_RESPONSE = _descriptor.Descriptor(
+  name='CCommunity_GetGamePersonalDataEntries_Response',
+  full_name='csgo.CCommunity_GetGamePersonalDataEntries_Response',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='gceresult', full_name='csgo.CCommunity_GetGamePersonalDataEntries_Response.gceresult', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='entries', full_name='csgo.CCommunity_GetGamePersonalDataEntries_Response.entries', index=1,
+      number=2, type=9, cpp_type=9, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='continue_token', full_name='csgo.CCommunity_GetGamePersonalDataEntries_Response.continue_token', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=796,
+  serialized_end=904,
+)
+
+_CCOMMUNITY_GETGAMEPERSONALDATACATEGORIES_RESPONSE.fields_by_name['categories'].message_type = _CCOMMUNITY_GAMEPERSONALDATACATEGORYINFO
 DESCRIPTOR.message_types_by_name['CMsgGCHVacVerificationChange'] = _CMSGGCHVACVERIFICATIONCHANGE
 DESCRIPTOR.message_types_by_name['CMsgGCHAccountPhoneNumberChange'] = _CMSGGCHACCOUNTPHONENUMBERCHANGE
+DESCRIPTOR.message_types_by_name['CMsgGCHInviteUserToLobby'] = _CMSGGCHINVITEUSERTOLOBBY
+DESCRIPTOR.message_types_by_name['CCommunity_GamePersonalDataCategoryInfo'] = _CCOMMUNITY_GAMEPERSONALDATACATEGORYINFO
+DESCRIPTOR.message_types_by_name['CCommunity_GetGamePersonalDataCategories_Request'] = _CCOMMUNITY_GETGAMEPERSONALDATACATEGORIES_REQUEST
+DESCRIPTOR.message_types_by_name['CCommunity_GetGamePersonalDataCategories_Response'] = _CCOMMUNITY_GETGAMEPERSONALDATACATEGORIES_RESPONSE
+DESCRIPTOR.message_types_by_name['CCommunity_GetGamePersonalDataEntries_Request'] = _CCOMMUNITY_GETGAMEPERSONALDATAENTRIES_REQUEST
+DESCRIPTOR.message_types_by_name['CCommunity_GetGamePersonalDataEntries_Response'] = _CCOMMUNITY_GETGAMEPERSONALDATAENTRIES_RESPONSE
 DESCRIPTOR.enum_types_by_name['EGCSystemMsg'] = _EGCSYSTEMMSG
 DESCRIPTOR.enum_types_by_name['ESOMsg'] = _ESOMSG
 DESCRIPTOR.enum_types_by_name['EGCBaseClientMsg'] = _EGCBASECLIENTMSG
@@ -710,6 +1050,48 @@ CMsgGCHAccountPhoneNumberChange = _reflection.GeneratedProtocolMessageType('CMsg
   # @@protoc_insertion_point(class_scope:csgo.CMsgGCHAccountPhoneNumberChange)
   ))
 _sym_db.RegisterMessage(CMsgGCHAccountPhoneNumberChange)
+
+CMsgGCHInviteUserToLobby = _reflection.GeneratedProtocolMessageType('CMsgGCHInviteUserToLobby', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCHINVITEUSERTOLOBBY,
+  __module__ = 'gcsystemmsgs_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CMsgGCHInviteUserToLobby)
+  ))
+_sym_db.RegisterMessage(CMsgGCHInviteUserToLobby)
+
+CCommunity_GamePersonalDataCategoryInfo = _reflection.GeneratedProtocolMessageType('CCommunity_GamePersonalDataCategoryInfo', (_message.Message,), dict(
+  DESCRIPTOR = _CCOMMUNITY_GAMEPERSONALDATACATEGORYINFO,
+  __module__ = 'gcsystemmsgs_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CCommunity_GamePersonalDataCategoryInfo)
+  ))
+_sym_db.RegisterMessage(CCommunity_GamePersonalDataCategoryInfo)
+
+CCommunity_GetGamePersonalDataCategories_Request = _reflection.GeneratedProtocolMessageType('CCommunity_GetGamePersonalDataCategories_Request', (_message.Message,), dict(
+  DESCRIPTOR = _CCOMMUNITY_GETGAMEPERSONALDATACATEGORIES_REQUEST,
+  __module__ = 'gcsystemmsgs_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CCommunity_GetGamePersonalDataCategories_Request)
+  ))
+_sym_db.RegisterMessage(CCommunity_GetGamePersonalDataCategories_Request)
+
+CCommunity_GetGamePersonalDataCategories_Response = _reflection.GeneratedProtocolMessageType('CCommunity_GetGamePersonalDataCategories_Response', (_message.Message,), dict(
+  DESCRIPTOR = _CCOMMUNITY_GETGAMEPERSONALDATACATEGORIES_RESPONSE,
+  __module__ = 'gcsystemmsgs_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CCommunity_GetGamePersonalDataCategories_Response)
+  ))
+_sym_db.RegisterMessage(CCommunity_GetGamePersonalDataCategories_Response)
+
+CCommunity_GetGamePersonalDataEntries_Request = _reflection.GeneratedProtocolMessageType('CCommunity_GetGamePersonalDataEntries_Request', (_message.Message,), dict(
+  DESCRIPTOR = _CCOMMUNITY_GETGAMEPERSONALDATAENTRIES_REQUEST,
+  __module__ = 'gcsystemmsgs_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CCommunity_GetGamePersonalDataEntries_Request)
+  ))
+_sym_db.RegisterMessage(CCommunity_GetGamePersonalDataEntries_Request)
+
+CCommunity_GetGamePersonalDataEntries_Response = _reflection.GeneratedProtocolMessageType('CCommunity_GetGamePersonalDataEntries_Response', (_message.Message,), dict(
+  DESCRIPTOR = _CCOMMUNITY_GETGAMEPERSONALDATAENTRIES_RESPONSE,
+  __module__ = 'gcsystemmsgs_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CCommunity_GetGamePersonalDataEntries_Response)
+  ))
+_sym_db.RegisterMessage(CCommunity_GetGamePersonalDataEntries_Response)
 
 
 DESCRIPTOR.has_options = True

@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='base_gcmessages.proto',
   package='csgo',
   syntax='proto2',
-  serialized_pb=_b('\n\x15\x62\x61se_gcmessages.proto\x12\x04\x63sgo\x1a\x13steammessages.proto\"}\n\x1d\x43GCStorePurchaseInit_LineItem\x12\x13\n\x0bitem_def_id\x18\x01 \x01(\r\x12\x10\n\x08quantity\x18\x02 \x01(\r\x12\x1e\n\x16\x63ost_in_local_currency\x18\x03 \x01(\r\x12\x15\n\rpurchase_type\x18\x04 \x01(\r\"\x87\x01\n\x17\x43MsgGCStorePurchaseInit\x12\x0f\n\x07\x63ountry\x18\x01 \x01(\t\x12\x10\n\x08language\x18\x02 \x01(\x05\x12\x10\n\x08\x63urrency\x18\x03 \x01(\x05\x12\x37\n\nline_items\x18\x04 \x03(\x0b\x32#.csgo.CGCStorePurchaseInit_LineItem\"A\n\x1f\x43MsgGCStorePurchaseInitResponse\x12\x0e\n\x06result\x18\x01 \x01(\x05\x12\x0e\n\x06txn_id\x18\x02 \x01(\x04\"P\n\x0e\x43SOPartyInvite\x12\x16\n\x08group_id\x18\x01 \x01(\x04\x42\x04\x80\xa6\x1d\x01\x12\x11\n\tsender_id\x18\x02 \x01(\x06\x12\x13\n\x0bsender_name\x18\x03 \x01(\t\"P\n\x0e\x43SOLobbyInvite\x12\x16\n\x08group_id\x18\x01 \x01(\x04\x42\x04\x80\xa6\x1d\x01\x12\x11\n\tsender_id\x18\x02 \x01(\x06\x12\x13\n\x0bsender_name\x18\x03 \x01(\t\"&\n\x13\x43MsgSystemBroadcast\x12\x0f\n\x07message\x18\x01 \x01(\t\"R\n\x11\x43MsgInviteToParty\x12\x10\n\x08steam_id\x18\x01 \x01(\x06\x12\x16\n\x0e\x63lient_version\x18\x02 \x01(\r\x12\x13\n\x0bteam_invite\x18\x03 \x01(\r\";\n\x15\x43MsgInvitationCreated\x12\x10\n\x08group_id\x18\x01 \x01(\x04\x12\x10\n\x08steam_id\x18\x02 \x01(\x06\"h\n\x17\x43MsgPartyInviteResponse\x12\x10\n\x08party_id\x18\x01 \x01(\x04\x12\x0e\n\x06\x61\x63\x63\x65pt\x18\x02 \x01(\x08\x12\x16\n\x0e\x63lient_version\x18\x03 \x01(\r\x12\x13\n\x0bteam_invite\x18\x04 \x01(\r\"%\n\x11\x43MsgKickFromParty\x12\x10\n\x08steam_id\x18\x01 \x01(\x06\"\x10\n\x0e\x43MsgLeaveParty\"\x15\n\x13\x43MsgServerAvailable\"*\n\x16\x43MsgLANServerAvailable\x12\x10\n\x08lobby_id\x18\x01 \x01(\x06\"\xb4\x01\n\x18\x43SOEconGameAccountClient\x12$\n\x19\x61\x64\x64itional_backpack_slots\x18\x01 \x01(\r:\x01\x30\x12\"\n\x1a\x62onus_xp_timestamp_refresh\x18\x0c \x01(\x07\x12\x1a\n\x12\x62onus_xp_usedflags\x18\r \x01(\r\x12\x16\n\x0e\x65levated_state\x18\x0e \x01(\r\x12\x1a\n\x12\x65levated_timestamp\x18\x0f \x01(\r\"r\n\x18\x43SOItemCriteriaCondition\x12\n\n\x02op\x18\x01 \x01(\x05\x12\r\n\x05\x66ield\x18\x02 \x01(\t\x12\x10\n\x08required\x18\x03 \x01(\x08\x12\x13\n\x0b\x66loat_value\x18\x04 \x01(\x02\x12\x14\n\x0cstring_value\x18\x05 \x01(\t\"\xb6\x02\n\x0f\x43SOItemCriteria\x12\x12\n\nitem_level\x18\x01 \x01(\r\x12\x14\n\x0citem_quality\x18\x02 \x01(\x05\x12\x16\n\x0eitem_level_set\x18\x03 \x01(\x08\x12\x18\n\x10item_quality_set\x18\x04 \x01(\x08\x12\x19\n\x11initial_inventory\x18\x05 \x01(\r\x12\x18\n\x10initial_quantity\x18\x06 \x01(\r\x12\x1b\n\x13ignore_enabled_flag\x18\x08 \x01(\x08\x12\x32\n\nconditions\x18\t \x03(\x0b\x32\x1e.csgo.CSOItemCriteriaCondition\x12\x13\n\x0bitem_rarity\x18\n \x01(\x05\x12\x17\n\x0fitem_rarity_set\x18\x0b \x01(\x08\x12\x13\n\x0brecent_only\x18\x0c \x01(\x08\"\xdf\x03\n\rCSOItemRecipe\x12\x11\n\tdef_index\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0b\n\x03n_a\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65sc_inputs\x18\x04 \x01(\t\x12\x14\n\x0c\x64\x65sc_outputs\x18\x05 \x01(\t\x12\x0c\n\x04\x64i_a\x18\x06 \x01(\t\x12\x0c\n\x04\x64i_b\x18\x07 \x01(\t\x12\x0c\n\x04\x64i_c\x18\x08 \x01(\t\x12\x0c\n\x04\x64o_a\x18\t \x01(\t\x12\x0c\n\x04\x64o_b\x18\n \x01(\t\x12\x0c\n\x04\x64o_c\x18\x0b \x01(\t\x12\x1f\n\x17requires_all_same_class\x18\x0c \x01(\x08\x12\x1e\n\x16requires_all_same_slot\x18\r \x01(\x08\x12\x1e\n\x16\x63lass_usage_for_output\x18\x0e \x01(\x05\x12\x1d\n\x15slot_usage_for_output\x18\x0f \x01(\x05\x12\x16\n\x0eset_for_output\x18\x10 \x01(\x05\x12\x33\n\x14input_items_criteria\x18\x14 \x03(\x0b\x32\x15.csgo.CSOItemCriteria\x12\x34\n\x15output_items_criteria\x18\x15 \x03(\x0b\x32\x15.csgo.CSOItemCriteria\x12\x1e\n\x16input_item_dupe_counts\x18\x16 \x03(\r\"R\n\x15\x43MsgDevNewItemRequest\x12\x10\n\x08receiver\x18\x01 \x01(\x06\x12\'\n\x08\x63riteria\x18\x02 \x01(\x0b\x32\x15.csgo.CSOItemCriteria\"\x8c\x01\n\x1f\x43MsgIncrementKillCountAttribute\x12\x19\n\x11killer_account_id\x18\x01 \x01(\x07\x12\x19\n\x11victim_account_id\x18\x02 \x01(\x07\x12\x0f\n\x07item_id\x18\x03 \x01(\x04\x12\x12\n\nevent_type\x18\x04 \x01(\r\x12\x0e\n\x06\x61mount\x18\x05 \x01(\r\"\x86\x01\n\x10\x43MsgApplySticker\x12\x17\n\x0fsticker_item_id\x18\x01 \x01(\x04\x12\x14\n\x0citem_item_id\x18\x02 \x01(\x04\x12\x14\n\x0csticker_slot\x18\x03 \x01(\r\x12\x17\n\x0f\x62\x61seitem_defidx\x18\x04 \x01(\r\x12\x14\n\x0csticker_wear\x18\x05 \x01(\x02\"]\n\x15\x43MsgApplyStatTrakSwap\x12\x14\n\x0ctool_item_id\x18\x01 \x01(\x04\x12\x16\n\x0eitem_1_item_id\x18\x02 \x01(\x04\x12\x16\n\x0eitem_2_item_id\x18\x03 \x01(\x04\"J\n\x14\x43MsgApplyStrangePart\x12\x1c\n\x14strange_part_item_id\x18\x01 \x01(\x04\x12\x14\n\x0citem_item_id\x18\x02 \x01(\x04\"K\n\x17\x43MsgApplyPennantUpgrade\x12\x17\n\x0fupgrade_item_id\x18\x01 \x01(\x04\x12\x17\n\x0fpennant_item_id\x18\x02 \x01(\x04\"C\n\x13\x43MsgApplyEggEssence\x12\x17\n\x0f\x65ssence_item_id\x18\x01 \x01(\x04\x12\x13\n\x0b\x65gg_item_id\x18\x02 \x01(\x04\"M\n\x14\x43SOEconItemAttribute\x12\x11\n\tdef_index\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r\x12\x13\n\x0bvalue_bytes\x18\x03 \x01(\x0c\":\n\x13\x43SOEconItemEquipped\x12\x11\n\tnew_class\x18\x01 \x01(\r\x12\x10\n\x08new_slot\x18\x02 \x01(\r\"\xae\x03\n\x0b\x43SOEconItem\x12\n\n\x02id\x18\x01 \x01(\x04\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x11\n\tinventory\x18\x03 \x01(\r\x12\x11\n\tdef_index\x18\x04 \x01(\r\x12\x10\n\x08quantity\x18\x05 \x01(\r\x12\r\n\x05level\x18\x06 \x01(\r\x12\x0f\n\x07quality\x18\x07 \x01(\r\x12\x10\n\x05\x66lags\x18\x08 \x01(\r:\x01\x30\x12\x0e\n\x06origin\x18\t \x01(\r\x12\x13\n\x0b\x63ustom_name\x18\n \x01(\t\x12\x13\n\x0b\x63ustom_desc\x18\x0b \x01(\t\x12-\n\tattribute\x18\x0c \x03(\x0b\x32\x1a.csgo.CSOEconItemAttribute\x12(\n\rinterior_item\x18\r \x01(\x0b\x32\x11.csgo.CSOEconItem\x12\x15\n\x06in_use\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05style\x18\x0f \x01(\r:\x01\x30\x12\x16\n\x0boriginal_id\x18\x10 \x01(\x04:\x01\x30\x12\x31\n\x0e\x65quipped_state\x18\x12 \x03(\x0b\x32\x19.csgo.CSOEconItemEquipped\x12\x0e\n\x06rarity\x18\x13 \x01(\r\"a\n\x1b\x43MsgAdjustItemEquippedState\x12\x0f\n\x07item_id\x18\x01 \x01(\x04\x12\x11\n\tnew_class\x18\x02 \x01(\r\x12\x10\n\x08new_slot\x18\x03 \x01(\r\x12\x0c\n\x04swap\x18\x04 \x01(\x08\"\"\n\rCMsgSortItems\x12\x11\n\tsort_type\x18\x01 \x01(\r\"^\n\x10\x43SOEconClaimCode\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x11\n\tcode_type\x18\x02 \x01(\r\x12\x15\n\rtime_acquired\x18\x03 \x01(\r\x12\x0c\n\x04\x63ode\x18\x04 \x01(\t\"E\n\x14\x43MsgStoreGetUserData\x12\x1b\n\x13price_sheet_version\x18\x01 \x01(\x07\x12\x10\n\x08\x63urrency\x18\x02 \x01(\x05\"\x99\x01\n\x1c\x43MsgStoreGetUserDataResponse\x12\x0e\n\x06result\x18\x01 \x01(\x05\x12\x1b\n\x13\x63urrency_deprecated\x18\x02 \x01(\x05\x12\x1a\n\x12\x63ountry_deprecated\x18\x03 \x01(\t\x12\x1b\n\x13price_sheet_version\x18\x04 \x01(\x07\x12\x13\n\x0bprice_sheet\x18\x08 \x01(\x0c\"\x86\x01\n\x14\x43MsgUpdateItemSchema\x12\x12\n\nitems_game\x18\x01 \x01(\x0c\x12\x1b\n\x13item_schema_version\x18\x02 \x01(\x07\x12%\n\x1ditems_game_url_DEPRECATED2013\x18\x03 \x01(\t\x12\x16\n\x0eitems_game_url\x18\x04 \x01(\t\"!\n\x0b\x43MsgGCError\x12\x12\n\nerror_text\x18\x01 \x01(\t\"\x1d\n\x1b\x43MsgRequestInventoryRefresh\".\n\x0f\x43MsgConVarValue\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t\">\n\x14\x43MsgReplicateConVars\x12&\n\x07\x63onvars\x18\x01 \x03(\x0b\x32\x15.csgo.CMsgConVarValue\"\x8e\x01\n\x0b\x43MsgUseItem\x12\x0f\n\x07item_id\x18\x01 \x01(\x04\x12\x17\n\x0ftarget_steam_id\x18\x02 \x01(\x06\x12\x1f\n\x17gift__potential_targets\x18\x03 \x03(\r\x12\x18\n\x10\x64uel__class_lock\x18\x04 \x01(\r\x12\x1a\n\x12initiator_steam_id\x18\x05 \x01(\x06\"d\n\x1b\x43MsgReplayUploadedToYouTube\x12\x13\n\x0byoutube_url\x18\x01 \x01(\t\x12\x1c\n\x14youtube_account_name\x18\x02 \x01(\t\x12\x12\n\nsession_id\x18\x03 \x01(\x04\".\n\x17\x43MsgConsumableExhausted\x12\x13\n\x0bitem_def_id\x18\x01 \x01(\x05\"\x9e\x01\n CMsgItemAcknowledged__DEPRECATED\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x11\n\tinventory\x18\x02 \x01(\r\x12\x11\n\tdef_index\x18\x03 \x01(\r\x12\x0f\n\x07quality\x18\x04 \x01(\r\x12\x0e\n\x06rarity\x18\x05 \x01(\r\x12\x0e\n\x06origin\x18\x06 \x01(\r\x12\x0f\n\x07item_id\x18\x07 \x01(\x04\"\xa2\x01\n\x14\x43MsgSetItemPositions\x12?\n\x0eitem_positions\x18\x01 \x03(\x0b\x32\'.csgo.CMsgSetItemPositions.ItemPosition\x1aI\n\x0cItemPosition\x12\x16\n\x0elegacy_item_id\x18\x01 \x01(\r\x12\x10\n\x08position\x18\x02 \x01(\r\x12\x0f\n\x07item_id\x18\x03 \x01(\x04\"\xb8\x01\n\x11\x43MsgGCReportAbuse\x12\x17\n\x0ftarget_steam_id\x18\x01 \x01(\x06\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0b\n\x03gid\x18\x05 \x01(\x04\x12\x12\n\nabuse_type\x18\x02 \x01(\r\x12\x14\n\x0c\x63ontent_type\x18\x03 \x01(\r\x12\x1d\n\x15target_game_server_ip\x18\x06 \x01(\x07\x12\x1f\n\x17target_game_server_port\x18\x07 \x01(\r\"[\n\x19\x43MsgGCReportAbuseResponse\x12\x17\n\x0ftarget_steam_id\x18\x01 \x01(\x06\x12\x0e\n\x06result\x18\x02 \x01(\r\x12\x15\n\rerror_message\x18\x03 \x01(\t\"f\n\x1a\x43MsgGCNameItemNotification\x12\x16\n\x0eplayer_steamid\x18\x01 \x01(\x06\x12\x16\n\x0eitem_def_index\x18\x02 \x01(\r\x12\x18\n\x10item_name_custom\x18\x03 \x01(\t\"\xb6\x01\n\x1f\x43MsgGCClientDisplayNotification\x12+\n#notification_title_localization_key\x18\x01 \x01(\t\x12*\n\"notification_body_localization_key\x18\x02 \x01(\t\x12\x1b\n\x13\x62ody_substring_keys\x18\x03 \x03(\t\x12\x1d\n\x15\x62ody_substring_values\x18\x04 \x03(\t\"1\n\x17\x43MsgGCShowItemsPickedUp\x12\x16\n\x0eplayer_steamid\x18\x01 \x01(\x06\"|\n CMsgGCIncrementKillCountResponse\x12\x1f\n\x11killer_account_id\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x11\n\tnum_kills\x18\x02 \x01(\r\x12\x10\n\x08item_def\x18\x03 \x01(\r\x12\x12\n\nlevel_type\x18\x04 \x01(\r\"\x8f\x01\n\x18\x43SOEconItemDropRateBonus\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x17\n\x0f\x65xpiration_date\x18\x02 \x01(\x07\x12\r\n\x05\x62onus\x18\x03 \x01(\x02\x12\x13\n\x0b\x62onus_count\x18\x04 \x01(\r\x12\x0f\n\x07item_id\x18\x05 \x01(\x04\x12\x11\n\tdef_index\x18\x06 \x01(\r\"p\n\x19\x43SOEconItemLeagueViewPass\x12\x18\n\naccount_id\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x17\n\tleague_id\x18\x02 \x01(\rB\x04\x80\xa6\x1d\x01\x12\r\n\x05\x61\x64min\x18\x03 \x01(\r\x12\x11\n\titemindex\x18\x04 \x01(\r\"O\n\x16\x43SOEconItemEventTicket\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x10\n\x08\x65vent_id\x18\x02 \x01(\r\x12\x0f\n\x07item_id\x18\x03 \x01(\x04\"A\n\'CMsgGCItemPreviewItemBoughtNotification\x12\x16\n\x0eitem_def_index\x18\x01 \x01(\r\"+\n\x19\x43MsgGCStorePurchaseCancel\x12\x0e\n\x06txn_id\x18\x01 \x01(\x04\"3\n!CMsgGCStorePurchaseCancelResponse\x12\x0e\n\x06result\x18\x01 \x01(\r\"-\n\x1b\x43MsgGCStorePurchaseFinalize\x12\x0e\n\x06txn_id\x18\x01 \x01(\x04\"G\n#CMsgGCStorePurchaseFinalizeResponse\x12\x0e\n\x06result\x18\x01 \x01(\r\x12\x10\n\x08item_ids\x18\x02 \x03(\x04\"I\n\x1b\x43MsgGCBannedWordListRequest\x12\x19\n\x11\x62\x61n_list_group_id\x18\x01 \x01(\r\x12\x0f\n\x07word_id\x18\x02 \x01(\r\"\x1c\n\x1a\x43MsgGCRequestAnnouncements\"\x82\x01\n\"CMsgGCRequestAnnouncementsResponse\x12\x1a\n\x12\x61nnouncement_title\x18\x01 \x01(\t\x12\x14\n\x0c\x61nnouncement\x18\x02 \x01(\t\x12\x17\n\x0fnextmatch_title\x18\x03 \x01(\t\x12\x11\n\tnextmatch\x18\x04 \x01(\t\"z\n\x10\x43MsgGCBannedWord\x12\x0f\n\x07word_id\x18\x01 \x01(\r\x12G\n\tword_type\x18\x02 \x01(\x0e\x32\x17.csgo.GC_BannedWordType:\x1bGC_BANNED_WORD_DISABLE_WORD\x12\x0c\n\x04word\x18\x03 \x01(\t\"d\n\x1c\x43MsgGCBannedWordListResponse\x12\x19\n\x11\x62\x61n_list_group_id\x18\x01 \x01(\r\x12)\n\tword_list\x18\x02 \x03(\x0b\x32\x16.csgo.CMsgGCBannedWord\"Z\n!CMsgGCToGCBannedWordListBroadcast\x12\x35\n\tbroadcast\x18\x01 \x01(\x0b\x32\".csgo.CMsgGCBannedWordListResponse\"3\n\x1f\x43MsgGCToGCBannedWordListUpdated\x12\x10\n\x08group_id\x18\x01 \x01(\r\"\x92\x01\n.CSOEconDefaultEquippedDefinitionInstanceClient\x12\x18\n\naccount_id\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x17\n\x0fitem_definition\x18\x02 \x01(\r\x12\x16\n\x08\x63lass_id\x18\x03 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x15\n\x07slot_id\x18\x04 \x01(\rB\x04\x80\xa6\x1d\x01\"?\n\x17\x43MsgGCToGCDirtySDOCache\x12\x10\n\x08sdo_type\x18\x01 \x01(\r\x12\x12\n\nkey_uint64\x18\x02 \x01(\x04\"G\n\x1f\x43MsgGCToGCDirtyMultipleSDOCache\x12\x10\n\x08sdo_type\x18\x01 \x01(\r\x12\x12\n\nkey_uint64\x18\x02 \x03(\x04\"H\n\x11\x43MsgGCCollectItem\x12\x1a\n\x12\x63ollection_item_id\x18\x01 \x01(\x04\x12\x17\n\x0fsubject_item_id\x18\x02 \x01(\x04\"\x14\n\x12\x43MsgSDONoMemcached\"/\n\x1b\x43MsgGCToGCUpdateSQLKeyValue\x12\x10\n\x08key_name\x18\x01 \x01(\t\"-\n\x19\x43MsgGCToGCIsTrustedServer\x12\x10\n\x08steam_id\x18\x01 \x01(\x06\"7\n!CMsgGCToGCIsTrustedServerResponse\x12\x12\n\nis_trusted\x18\x01 \x01(\x08\"8\n!CMsgGCToGCBroadcastConsoleCommand\x12\x13\n\x0b\x63on_command\x18\x01 \x01(\t\"4\n\x1a\x43MsgGCServerVersionUpdated\x12\x16\n\x0eserver_version\x18\x01 \x01(\r\"4\n\x1a\x43MsgGCClientVersionUpdated\x12\x16\n\x0e\x63lient_version\x18\x01 \x01(\r\" \n\x1e\x43MsgGCToGCWebAPIAccountChanged\"^\n\"CMsgGCToGCRequestPassportItemGrant\x12\x10\n\x08steam_id\x18\x01 \x01(\x06\x12\x11\n\tleague_id\x18\x02 \x01(\r\x12\x13\n\x0breward_flag\x18\x03 \x01(\x05\"\xed\x04\n\x12\x43MsgGameServerInfo\x12\x1d\n\x15server_public_ip_addr\x18\x01 \x01(\x07\x12\x1e\n\x16server_private_ip_addr\x18\x02 \x01(\x07\x12\x13\n\x0bserver_port\x18\x03 \x01(\r\x12\x16\n\x0eserver_tv_port\x18\x04 \x01(\r\x12\x12\n\nserver_key\x18\x05 \x01(\t\x12\x1a\n\x12server_hibernation\x18\x06 \x01(\x08\x12\x45\n\x0bserver_type\x18\x07 \x01(\x0e\x32#.csgo.CMsgGameServerInfo.ServerType:\x0bUNSPECIFIED\x12\x15\n\rserver_region\x18\x08 \x01(\r\x12\x16\n\x0eserver_loadavg\x18\t \x01(\x02\x12 \n\x18server_tv_broadcast_time\x18\n \x01(\x02\x12\x18\n\x10server_game_time\x18\x0b \x01(\x02\x12\'\n\x1fserver_relay_connected_steam_id\x18\x0c \x01(\x06\x12\x17\n\x0frelay_slots_max\x18\r \x01(\r\x12\x18\n\x10relays_connected\x18\x0e \x01(\x05\x12\x1f\n\x17relay_clients_connected\x18\x0f \x01(\x05\x12$\n\x1crelayed_game_server_steam_id\x18\x10 \x01(\x06\x12\x1a\n\x12parent_relay_count\x18\x11 \x01(\r\x12\x16\n\x0etv_secret_code\x18\x12 \x01(\x06\"2\n\nServerType\x12\x0f\n\x0bUNSPECIFIED\x10\x00\x12\x08\n\x04GAME\x10\x01\x12\t\n\x05PROXY\x10\x02*\xc7\x03\n\nEGCBaseMsg\x12\x1a\n\x15k_EMsgGCSystemMessage\x10\xa1\x1f\x12\x1d\n\x18k_EMsgGCReplicateConVars\x10\xa2\x1f\x12\x1a\n\x15k_EMsgGCConVarUpdated\x10\xa3\x1f\x12\x14\n\x0fk_EMsgGCInQueue\x10\xa8\x1f\x12\x1a\n\x15k_EMsgGCInviteToParty\x10\x95#\x12\x1e\n\x19k_EMsgGCInvitationCreated\x10\x96#\x12 \n\x1bk_EMsgGCPartyInviteResponse\x10\x97#\x12\x1a\n\x15k_EMsgGCKickFromParty\x10\x98#\x12\x17\n\x12k_EMsgGCLeaveParty\x10\x99#\x12\x1c\n\x17k_EMsgGCServerAvailable\x10\x9a#\x12\"\n\x1dk_EMsgGCClientConnectToServer\x10\x9b#\x12\x1b\n\x16k_EMsgGCGameServerInfo\x10\x9c#\x12\x12\n\rk_EMsgGCError\x10\x9d#\x12%\n k_EMsgGCReplay_UploadedToYouTube\x10\x9e#\x12\x1f\n\x1ak_EMsgGCLANServerAvailable\x10\x9f#*Y\n\x17\x45GCBaseProtoObjectTypes\x12\x1e\n\x19k_EProtoObjectPartyInvite\x10\xe9\x07\x12\x1e\n\x19k_EProtoObjectLobbyInvite\x10\xea\x07*T\n\x11GC_BannedWordType\x12\x1f\n\x1bGC_BANNED_WORD_DISABLE_WORD\x10\x00\x12\x1e\n\x1aGC_BANNED_WORD_ENABLE_WORD\x10\x01\x42\x05H\x01\x90\x01\x00')
+  serialized_pb=_b('\n\x15\x62\x61se_gcmessages.proto\x12\x04\x63sgo\x1a\x13steammessages.proto\"}\n\x1d\x43GCStorePurchaseInit_LineItem\x12\x13\n\x0bitem_def_id\x18\x01 \x01(\r\x12\x10\n\x08quantity\x18\x02 \x01(\r\x12\x1e\n\x16\x63ost_in_local_currency\x18\x03 \x01(\r\x12\x15\n\rpurchase_type\x18\x04 \x01(\r\"\x87\x01\n\x17\x43MsgGCStorePurchaseInit\x12\x0f\n\x07\x63ountry\x18\x01 \x01(\t\x12\x10\n\x08language\x18\x02 \x01(\x05\x12\x10\n\x08\x63urrency\x18\x03 \x01(\x05\x12\x37\n\nline_items\x18\x04 \x03(\x0b\x32#.csgo.CGCStorePurchaseInit_LineItem\"`\n\x1f\x43MsgGCStorePurchaseInitResponse\x12\x0e\n\x06result\x18\x01 \x01(\x05\x12\x0e\n\x06txn_id\x18\x02 \x01(\x04\x12\x0b\n\x03url\x18\x03 \x01(\t\x12\x10\n\x08item_ids\x18\x04 \x03(\x04\"P\n\x0e\x43SOPartyInvite\x12\x16\n\x08group_id\x18\x01 \x01(\x04\x42\x04\x80\xa6\x1d\x01\x12\x11\n\tsender_id\x18\x02 \x01(\x06\x12\x13\n\x0bsender_name\x18\x03 \x01(\t\"P\n\x0e\x43SOLobbyInvite\x12\x16\n\x08group_id\x18\x01 \x01(\x04\x42\x04\x80\xa6\x1d\x01\x12\x11\n\tsender_id\x18\x02 \x01(\x06\x12\x13\n\x0bsender_name\x18\x03 \x01(\t\"&\n\x13\x43MsgSystemBroadcast\x12\x0f\n\x07message\x18\x01 \x01(\t\"R\n\x11\x43MsgInviteToParty\x12\x10\n\x08steam_id\x18\x01 \x01(\x06\x12\x16\n\x0e\x63lient_version\x18\x02 \x01(\r\x12\x13\n\x0bteam_invite\x18\x03 \x01(\r\";\n\x15\x43MsgInvitationCreated\x12\x10\n\x08group_id\x18\x01 \x01(\x04\x12\x10\n\x08steam_id\x18\x02 \x01(\x06\"h\n\x17\x43MsgPartyInviteResponse\x12\x10\n\x08party_id\x18\x01 \x01(\x04\x12\x0e\n\x06\x61\x63\x63\x65pt\x18\x02 \x01(\x08\x12\x16\n\x0e\x63lient_version\x18\x03 \x01(\r\x12\x13\n\x0bteam_invite\x18\x04 \x01(\r\"%\n\x11\x43MsgKickFromParty\x12\x10\n\x08steam_id\x18\x01 \x01(\x06\"\x10\n\x0e\x43MsgLeaveParty\"\x15\n\x13\x43MsgServerAvailable\"*\n\x16\x43MsgLANServerAvailable\x12\x10\n\x08lobby_id\x18\x01 \x01(\x06\"\xb4\x01\n\x18\x43SOEconGameAccountClient\x12$\n\x19\x61\x64\x64itional_backpack_slots\x18\x01 \x01(\r:\x01\x30\x12\"\n\x1a\x62onus_xp_timestamp_refresh\x18\x0c \x01(\x07\x12\x1a\n\x12\x62onus_xp_usedflags\x18\r \x01(\r\x12\x16\n\x0e\x65levated_state\x18\x0e \x01(\r\x12\x1a\n\x12\x65levated_timestamp\x18\x0f \x01(\r\"r\n\x18\x43SOItemCriteriaCondition\x12\n\n\x02op\x18\x01 \x01(\x05\x12\r\n\x05\x66ield\x18\x02 \x01(\t\x12\x10\n\x08required\x18\x03 \x01(\x08\x12\x13\n\x0b\x66loat_value\x18\x04 \x01(\x02\x12\x14\n\x0cstring_value\x18\x05 \x01(\t\"\xb6\x02\n\x0f\x43SOItemCriteria\x12\x12\n\nitem_level\x18\x01 \x01(\r\x12\x14\n\x0citem_quality\x18\x02 \x01(\x05\x12\x16\n\x0eitem_level_set\x18\x03 \x01(\x08\x12\x18\n\x10item_quality_set\x18\x04 \x01(\x08\x12\x19\n\x11initial_inventory\x18\x05 \x01(\r\x12\x18\n\x10initial_quantity\x18\x06 \x01(\r\x12\x1b\n\x13ignore_enabled_flag\x18\x08 \x01(\x08\x12\x32\n\nconditions\x18\t \x03(\x0b\x32\x1e.csgo.CSOItemCriteriaCondition\x12\x13\n\x0bitem_rarity\x18\n \x01(\x05\x12\x17\n\x0fitem_rarity_set\x18\x0b \x01(\x08\x12\x13\n\x0brecent_only\x18\x0c \x01(\x08\"\xdf\x03\n\rCSOItemRecipe\x12\x11\n\tdef_index\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0b\n\x03n_a\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65sc_inputs\x18\x04 \x01(\t\x12\x14\n\x0c\x64\x65sc_outputs\x18\x05 \x01(\t\x12\x0c\n\x04\x64i_a\x18\x06 \x01(\t\x12\x0c\n\x04\x64i_b\x18\x07 \x01(\t\x12\x0c\n\x04\x64i_c\x18\x08 \x01(\t\x12\x0c\n\x04\x64o_a\x18\t \x01(\t\x12\x0c\n\x04\x64o_b\x18\n \x01(\t\x12\x0c\n\x04\x64o_c\x18\x0b \x01(\t\x12\x1f\n\x17requires_all_same_class\x18\x0c \x01(\x08\x12\x1e\n\x16requires_all_same_slot\x18\r \x01(\x08\x12\x1e\n\x16\x63lass_usage_for_output\x18\x0e \x01(\x05\x12\x1d\n\x15slot_usage_for_output\x18\x0f \x01(\x05\x12\x16\n\x0eset_for_output\x18\x10 \x01(\x05\x12\x33\n\x14input_items_criteria\x18\x14 \x03(\x0b\x32\x15.csgo.CSOItemCriteria\x12\x34\n\x15output_items_criteria\x18\x15 \x03(\x0b\x32\x15.csgo.CSOItemCriteria\x12\x1e\n\x16input_item_dupe_counts\x18\x16 \x03(\r\"R\n\x15\x43MsgDevNewItemRequest\x12\x10\n\x08receiver\x18\x01 \x01(\x06\x12\'\n\x08\x63riteria\x18\x02 \x01(\x0b\x32\x15.csgo.CSOItemCriteria\"\x8c\x01\n\x1f\x43MsgIncrementKillCountAttribute\x12\x19\n\x11killer_account_id\x18\x01 \x01(\x07\x12\x19\n\x11victim_account_id\x18\x02 \x01(\x07\x12\x0f\n\x07item_id\x18\x03 \x01(\x04\x12\x12\n\nevent_type\x18\x04 \x01(\r\x12\x0e\n\x06\x61mount\x18\x05 \x01(\r\"\x86\x01\n\x10\x43MsgApplySticker\x12\x17\n\x0fsticker_item_id\x18\x01 \x01(\x04\x12\x14\n\x0citem_item_id\x18\x02 \x01(\x04\x12\x14\n\x0csticker_slot\x18\x03 \x01(\r\x12\x17\n\x0f\x62\x61seitem_defidx\x18\x04 \x01(\r\x12\x14\n\x0csticker_wear\x18\x05 \x01(\x02\"]\n\x15\x43MsgApplyStatTrakSwap\x12\x14\n\x0ctool_item_id\x18\x01 \x01(\x04\x12\x16\n\x0eitem_1_item_id\x18\x02 \x01(\x04\x12\x16\n\x0eitem_2_item_id\x18\x03 \x01(\x04\"J\n\x14\x43MsgApplyStrangePart\x12\x1c\n\x14strange_part_item_id\x18\x01 \x01(\x04\x12\x14\n\x0citem_item_id\x18\x02 \x01(\x04\"K\n\x17\x43MsgApplyPennantUpgrade\x12\x17\n\x0fupgrade_item_id\x18\x01 \x01(\x04\x12\x17\n\x0fpennant_item_id\x18\x02 \x01(\x04\"C\n\x13\x43MsgApplyEggEssence\x12\x17\n\x0f\x65ssence_item_id\x18\x01 \x01(\x04\x12\x13\n\x0b\x65gg_item_id\x18\x02 \x01(\x04\"M\n\x14\x43SOEconItemAttribute\x12\x11\n\tdef_index\x18\x01 \x01(\r\x12\r\n\x05value\x18\x02 \x01(\r\x12\x13\n\x0bvalue_bytes\x18\x03 \x01(\x0c\":\n\x13\x43SOEconItemEquipped\x12\x11\n\tnew_class\x18\x01 \x01(\r\x12\x10\n\x08new_slot\x18\x02 \x01(\r\"\xae\x03\n\x0b\x43SOEconItem\x12\n\n\x02id\x18\x01 \x01(\x04\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x11\n\tinventory\x18\x03 \x01(\r\x12\x11\n\tdef_index\x18\x04 \x01(\r\x12\x10\n\x08quantity\x18\x05 \x01(\r\x12\r\n\x05level\x18\x06 \x01(\r\x12\x0f\n\x07quality\x18\x07 \x01(\r\x12\x10\n\x05\x66lags\x18\x08 \x01(\r:\x01\x30\x12\x0e\n\x06origin\x18\t \x01(\r\x12\x13\n\x0b\x63ustom_name\x18\n \x01(\t\x12\x13\n\x0b\x63ustom_desc\x18\x0b \x01(\t\x12-\n\tattribute\x18\x0c \x03(\x0b\x32\x1a.csgo.CSOEconItemAttribute\x12(\n\rinterior_item\x18\r \x01(\x0b\x32\x11.csgo.CSOEconItem\x12\x15\n\x06in_use\x18\x0e \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05style\x18\x0f \x01(\r:\x01\x30\x12\x16\n\x0boriginal_id\x18\x10 \x01(\x04:\x01\x30\x12\x31\n\x0e\x65quipped_state\x18\x12 \x03(\x0b\x32\x19.csgo.CSOEconItemEquipped\x12\x0e\n\x06rarity\x18\x13 \x01(\r\"a\n\x1b\x43MsgAdjustItemEquippedState\x12\x0f\n\x07item_id\x18\x01 \x01(\x04\x12\x11\n\tnew_class\x18\x02 \x01(\r\x12\x10\n\x08new_slot\x18\x03 \x01(\r\x12\x0c\n\x04swap\x18\x04 \x01(\x08\"\"\n\rCMsgSortItems\x12\x11\n\tsort_type\x18\x01 \x01(\r\"^\n\x10\x43SOEconClaimCode\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x11\n\tcode_type\x18\x02 \x01(\r\x12\x15\n\rtime_acquired\x18\x03 \x01(\r\x12\x0c\n\x04\x63ode\x18\x04 \x01(\t\"E\n\x14\x43MsgStoreGetUserData\x12\x1b\n\x13price_sheet_version\x18\x01 \x01(\x07\x12\x10\n\x08\x63urrency\x18\x02 \x01(\x05\"\x99\x01\n\x1c\x43MsgStoreGetUserDataResponse\x12\x0e\n\x06result\x18\x01 \x01(\x05\x12\x1b\n\x13\x63urrency_deprecated\x18\x02 \x01(\x05\x12\x1a\n\x12\x63ountry_deprecated\x18\x03 \x01(\t\x12\x1b\n\x13price_sheet_version\x18\x04 \x01(\x07\x12\x13\n\x0bprice_sheet\x18\x08 \x01(\x0c\"\x86\x01\n\x14\x43MsgUpdateItemSchema\x12\x12\n\nitems_game\x18\x01 \x01(\x0c\x12\x1b\n\x13item_schema_version\x18\x02 \x01(\x07\x12%\n\x1ditems_game_url_DEPRECATED2013\x18\x03 \x01(\t\x12\x16\n\x0eitems_game_url\x18\x04 \x01(\t\"!\n\x0b\x43MsgGCError\x12\x12\n\nerror_text\x18\x01 \x01(\t\"\x1d\n\x1b\x43MsgRequestInventoryRefresh\".\n\x0f\x43MsgConVarValue\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t\">\n\x14\x43MsgReplicateConVars\x12&\n\x07\x63onvars\x18\x01 \x03(\x0b\x32\x15.csgo.CMsgConVarValue\"\x8e\x01\n\x0b\x43MsgUseItem\x12\x0f\n\x07item_id\x18\x01 \x01(\x04\x12\x17\n\x0ftarget_steam_id\x18\x02 \x01(\x06\x12\x1f\n\x17gift__potential_targets\x18\x03 \x03(\r\x12\x18\n\x10\x64uel__class_lock\x18\x04 \x01(\r\x12\x1a\n\x12initiator_steam_id\x18\x05 \x01(\x06\"d\n\x1b\x43MsgReplayUploadedToYouTube\x12\x13\n\x0byoutube_url\x18\x01 \x01(\t\x12\x1c\n\x14youtube_account_name\x18\x02 \x01(\t\x12\x12\n\nsession_id\x18\x03 \x01(\x04\".\n\x17\x43MsgConsumableExhausted\x12\x13\n\x0bitem_def_id\x18\x01 \x01(\x05\"\x9e\x01\n CMsgItemAcknowledged__DEPRECATED\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x11\n\tinventory\x18\x02 \x01(\r\x12\x11\n\tdef_index\x18\x03 \x01(\r\x12\x0f\n\x07quality\x18\x04 \x01(\r\x12\x0e\n\x06rarity\x18\x05 \x01(\r\x12\x0e\n\x06origin\x18\x06 \x01(\r\x12\x0f\n\x07item_id\x18\x07 \x01(\x04\"\xa2\x01\n\x14\x43MsgSetItemPositions\x12?\n\x0eitem_positions\x18\x01 \x03(\x0b\x32\'.csgo.CMsgSetItemPositions.ItemPosition\x1aI\n\x0cItemPosition\x12\x16\n\x0elegacy_item_id\x18\x01 \x01(\r\x12\x10\n\x08position\x18\x02 \x01(\r\x12\x0f\n\x07item_id\x18\x03 \x01(\x04\"\xb8\x01\n\x11\x43MsgGCReportAbuse\x12\x17\n\x0ftarget_steam_id\x18\x01 \x01(\x06\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0b\n\x03gid\x18\x05 \x01(\x04\x12\x12\n\nabuse_type\x18\x02 \x01(\r\x12\x14\n\x0c\x63ontent_type\x18\x03 \x01(\r\x12\x1d\n\x15target_game_server_ip\x18\x06 \x01(\x07\x12\x1f\n\x17target_game_server_port\x18\x07 \x01(\r\"[\n\x19\x43MsgGCReportAbuseResponse\x12\x17\n\x0ftarget_steam_id\x18\x01 \x01(\x06\x12\x0e\n\x06result\x18\x02 \x01(\r\x12\x15\n\rerror_message\x18\x03 \x01(\t\"f\n\x1a\x43MsgGCNameItemNotification\x12\x16\n\x0eplayer_steamid\x18\x01 \x01(\x06\x12\x16\n\x0eitem_def_index\x18\x02 \x01(\r\x12\x18\n\x10item_name_custom\x18\x03 \x01(\t\"\xb6\x01\n\x1f\x43MsgGCClientDisplayNotification\x12+\n#notification_title_localization_key\x18\x01 \x01(\t\x12*\n\"notification_body_localization_key\x18\x02 \x01(\t\x12\x1b\n\x13\x62ody_substring_keys\x18\x03 \x03(\t\x12\x1d\n\x15\x62ody_substring_values\x18\x04 \x03(\t\"1\n\x17\x43MsgGCShowItemsPickedUp\x12\x16\n\x0eplayer_steamid\x18\x01 \x01(\x06\"|\n CMsgGCIncrementKillCountResponse\x12\x1f\n\x11killer_account_id\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x11\n\tnum_kills\x18\x02 \x01(\r\x12\x10\n\x08item_def\x18\x03 \x01(\r\x12\x12\n\nlevel_type\x18\x04 \x01(\r\"\x8f\x01\n\x18\x43SOEconItemDropRateBonus\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x17\n\x0f\x65xpiration_date\x18\x02 \x01(\x07\x12\r\n\x05\x62onus\x18\x03 \x01(\x02\x12\x13\n\x0b\x62onus_count\x18\x04 \x01(\r\x12\x0f\n\x07item_id\x18\x05 \x01(\x04\x12\x11\n\tdef_index\x18\x06 \x01(\r\"p\n\x19\x43SOEconItemLeagueViewPass\x12\x18\n\naccount_id\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x17\n\tleague_id\x18\x02 \x01(\rB\x04\x80\xa6\x1d\x01\x12\r\n\x05\x61\x64min\x18\x03 \x01(\r\x12\x11\n\titemindex\x18\x04 \x01(\r\"O\n\x16\x43SOEconItemEventTicket\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x10\n\x08\x65vent_id\x18\x02 \x01(\r\x12\x0f\n\x07item_id\x18\x03 \x01(\x04\"A\n\'CMsgGCItemPreviewItemBoughtNotification\x12\x16\n\x0eitem_def_index\x18\x01 \x01(\r\"+\n\x19\x43MsgGCStorePurchaseCancel\x12\x0e\n\x06txn_id\x18\x01 \x01(\x04\"3\n!CMsgGCStorePurchaseCancelResponse\x12\x0e\n\x06result\x18\x01 \x01(\r\"-\n\x1b\x43MsgGCStorePurchaseFinalize\x12\x0e\n\x06txn_id\x18\x01 \x01(\x04\"G\n#CMsgGCStorePurchaseFinalizeResponse\x12\x0e\n\x06result\x18\x01 \x01(\r\x12\x10\n\x08item_ids\x18\x02 \x03(\x04\"I\n\x1b\x43MsgGCBannedWordListRequest\x12\x19\n\x11\x62\x61n_list_group_id\x18\x01 \x01(\r\x12\x0f\n\x07word_id\x18\x02 \x01(\r\"\x1c\n\x1a\x43MsgGCRequestAnnouncements\"\x82\x01\n\"CMsgGCRequestAnnouncementsResponse\x12\x1a\n\x12\x61nnouncement_title\x18\x01 \x01(\t\x12\x14\n\x0c\x61nnouncement\x18\x02 \x01(\t\x12\x17\n\x0fnextmatch_title\x18\x03 \x01(\t\x12\x11\n\tnextmatch\x18\x04 \x01(\t\"z\n\x10\x43MsgGCBannedWord\x12\x0f\n\x07word_id\x18\x01 \x01(\r\x12G\n\tword_type\x18\x02 \x01(\x0e\x32\x17.csgo.GC_BannedWordType:\x1bGC_BANNED_WORD_DISABLE_WORD\x12\x0c\n\x04word\x18\x03 \x01(\t\"d\n\x1c\x43MsgGCBannedWordListResponse\x12\x19\n\x11\x62\x61n_list_group_id\x18\x01 \x01(\r\x12)\n\tword_list\x18\x02 \x03(\x0b\x32\x16.csgo.CMsgGCBannedWord\"Z\n!CMsgGCToGCBannedWordListBroadcast\x12\x35\n\tbroadcast\x18\x01 \x01(\x0b\x32\".csgo.CMsgGCBannedWordListResponse\"3\n\x1f\x43MsgGCToGCBannedWordListUpdated\x12\x10\n\x08group_id\x18\x01 \x01(\r\"\x92\x01\n.CSOEconDefaultEquippedDefinitionInstanceClient\x12\x18\n\naccount_id\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x17\n\x0fitem_definition\x18\x02 \x01(\r\x12\x16\n\x08\x63lass_id\x18\x03 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x15\n\x07slot_id\x18\x04 \x01(\rB\x04\x80\xa6\x1d\x01\"?\n\x17\x43MsgGCToGCDirtySDOCache\x12\x10\n\x08sdo_type\x18\x01 \x01(\r\x12\x12\n\nkey_uint64\x18\x02 \x01(\x04\"G\n\x1f\x43MsgGCToGCDirtyMultipleSDOCache\x12\x10\n\x08sdo_type\x18\x01 \x01(\r\x12\x12\n\nkey_uint64\x18\x02 \x03(\x04\"H\n\x11\x43MsgGCCollectItem\x12\x1a\n\x12\x63ollection_item_id\x18\x01 \x01(\x04\x12\x17\n\x0fsubject_item_id\x18\x02 \x01(\x04\"\x14\n\x12\x43MsgSDONoMemcached\"/\n\x1b\x43MsgGCToGCUpdateSQLKeyValue\x12\x10\n\x08key_name\x18\x01 \x01(\t\"-\n\x19\x43MsgGCToGCIsTrustedServer\x12\x10\n\x08steam_id\x18\x01 \x01(\x06\"7\n!CMsgGCToGCIsTrustedServerResponse\x12\x12\n\nis_trusted\x18\x01 \x01(\x08\"8\n!CMsgGCToGCBroadcastConsoleCommand\x12\x13\n\x0b\x63on_command\x18\x01 \x01(\t\"4\n\x1a\x43MsgGCServerVersionUpdated\x12\x16\n\x0eserver_version\x18\x01 \x01(\r\"4\n\x1a\x43MsgGCClientVersionUpdated\x12\x16\n\x0e\x63lient_version\x18\x01 \x01(\r\" \n\x1e\x43MsgGCToGCWebAPIAccountChanged\"^\n\"CMsgGCToGCRequestPassportItemGrant\x12\x10\n\x08steam_id\x18\x01 \x01(\x06\x12\x11\n\tleague_id\x18\x02 \x01(\r\x12\x13\n\x0breward_flag\x18\x03 \x01(\x05\"\xed\x04\n\x12\x43MsgGameServerInfo\x12\x1d\n\x15server_public_ip_addr\x18\x01 \x01(\x07\x12\x1e\n\x16server_private_ip_addr\x18\x02 \x01(\x07\x12\x13\n\x0bserver_port\x18\x03 \x01(\r\x12\x16\n\x0eserver_tv_port\x18\x04 \x01(\r\x12\x12\n\nserver_key\x18\x05 \x01(\t\x12\x1a\n\x12server_hibernation\x18\x06 \x01(\x08\x12\x45\n\x0bserver_type\x18\x07 \x01(\x0e\x32#.csgo.CMsgGameServerInfo.ServerType:\x0bUNSPECIFIED\x12\x15\n\rserver_region\x18\x08 \x01(\r\x12\x16\n\x0eserver_loadavg\x18\t \x01(\x02\x12 \n\x18server_tv_broadcast_time\x18\n \x01(\x02\x12\x18\n\x10server_game_time\x18\x0b \x01(\x02\x12\'\n\x1fserver_relay_connected_steam_id\x18\x0c \x01(\x06\x12\x17\n\x0frelay_slots_max\x18\r \x01(\r\x12\x18\n\x10relays_connected\x18\x0e \x01(\x05\x12\x1f\n\x17relay_clients_connected\x18\x0f \x01(\x05\x12$\n\x1crelayed_game_server_steam_id\x18\x10 \x01(\x06\x12\x1a\n\x12parent_relay_count\x18\x11 \x01(\r\x12\x16\n\x0etv_secret_code\x18\x12 \x01(\x06\"2\n\nServerType\x12\x0f\n\x0bUNSPECIFIED\x10\x00\x12\x08\n\x04GAME\x10\x01\x12\t\n\x05PROXY\x10\x02*\xc7\x03\n\nEGCBaseMsg\x12\x1a\n\x15k_EMsgGCSystemMessage\x10\xa1\x1f\x12\x1d\n\x18k_EMsgGCReplicateConVars\x10\xa2\x1f\x12\x1a\n\x15k_EMsgGCConVarUpdated\x10\xa3\x1f\x12\x14\n\x0fk_EMsgGCInQueue\x10\xa8\x1f\x12\x1a\n\x15k_EMsgGCInviteToParty\x10\x95#\x12\x1e\n\x19k_EMsgGCInvitationCreated\x10\x96#\x12 \n\x1bk_EMsgGCPartyInviteResponse\x10\x97#\x12\x1a\n\x15k_EMsgGCKickFromParty\x10\x98#\x12\x17\n\x12k_EMsgGCLeaveParty\x10\x99#\x12\x1c\n\x17k_EMsgGCServerAvailable\x10\x9a#\x12\"\n\x1dk_EMsgGCClientConnectToServer\x10\x9b#\x12\x1b\n\x16k_EMsgGCGameServerInfo\x10\x9c#\x12\x12\n\rk_EMsgGCError\x10\x9d#\x12%\n k_EMsgGCReplay_UploadedToYouTube\x10\x9e#\x12\x1f\n\x1ak_EMsgGCLANServerAvailable\x10\x9f#*Y\n\x17\x45GCBaseProtoObjectTypes\x12\x1e\n\x19k_EProtoObjectPartyInvite\x10\xe9\x07\x12\x1e\n\x19k_EProtoObjectLobbyInvite\x10\xea\x07*T\n\x11GC_BannedWordType\x12\x1f\n\x1bGC_BANNED_WORD_DISABLE_WORD\x10\x00\x12\x1e\n\x1aGC_BANNED_WORD_ENABLE_WORD\x10\x01\x42\x05H\x01\x90\x01\x00')
   ,
   dependencies=[steammessages__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -95,8 +95,8 @@ _EGCBASEMSG = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=8142,
-  serialized_end=8597,
+  serialized_start=8173,
+  serialized_end=8628,
 )
 _sym_db.RegisterEnumDescriptor(_EGCBASEMSG)
 
@@ -118,8 +118,8 @@ _EGCBASEPROTOOBJECTTYPES = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=8599,
-  serialized_end=8688,
+  serialized_start=8630,
+  serialized_end=8719,
 )
 _sym_db.RegisterEnumDescriptor(_EGCBASEPROTOOBJECTTYPES)
 
@@ -141,8 +141,8 @@ _GC_BANNEDWORDTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=8690,
-  serialized_end=8774,
+  serialized_start=8721,
+  serialized_end=8805,
 )
 _sym_db.RegisterEnumDescriptor(_GC_BANNEDWORDTYPE)
 
@@ -189,8 +189,8 @@ _CMSGGAMESERVERINFO_SERVERTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=8089,
-  serialized_end=8139,
+  serialized_start=8120,
+  serialized_end=8170,
 )
 _sym_db.RegisterEnumDescriptor(_CMSGGAMESERVERINFO_SERVERTYPE)
 
@@ -320,6 +320,20 @@ _CMSGGCSTOREPURCHASEINITRESPONSE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='url', full_name='csgo.CMsgGCStorePurchaseInitResponse.url', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='item_ids', full_name='csgo.CMsgGCStorePurchaseInitResponse.item_ids', index=3,
+      number=4, type=4, cpp_type=4, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -333,7 +347,7 @@ _CMSGGCSTOREPURCHASEINITRESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=317,
-  serialized_end=382,
+  serialized_end=413,
 )
 
 
@@ -377,8 +391,8 @@ _CSOPARTYINVITE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=384,
-  serialized_end=464,
+  serialized_start=415,
+  serialized_end=495,
 )
 
 
@@ -422,8 +436,8 @@ _CSOLOBBYINVITE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=466,
-  serialized_end=546,
+  serialized_start=497,
+  serialized_end=577,
 )
 
 
@@ -453,8 +467,8 @@ _CMSGSYSTEMBROADCAST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=548,
-  serialized_end=586,
+  serialized_start=579,
+  serialized_end=617,
 )
 
 
@@ -498,8 +512,8 @@ _CMSGINVITETOPARTY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=588,
-  serialized_end=670,
+  serialized_start=619,
+  serialized_end=701,
 )
 
 
@@ -536,8 +550,8 @@ _CMSGINVITATIONCREATED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=672,
-  serialized_end=731,
+  serialized_start=703,
+  serialized_end=762,
 )
 
 
@@ -588,8 +602,8 @@ _CMSGPARTYINVITERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=733,
-  serialized_end=837,
+  serialized_start=764,
+  serialized_end=868,
 )
 
 
@@ -619,8 +633,8 @@ _CMSGKICKFROMPARTY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=839,
-  serialized_end=876,
+  serialized_start=870,
+  serialized_end=907,
 )
 
 
@@ -643,8 +657,8 @@ _CMSGLEAVEPARTY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=878,
-  serialized_end=894,
+  serialized_start=909,
+  serialized_end=925,
 )
 
 
@@ -667,8 +681,8 @@ _CMSGSERVERAVAILABLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=896,
-  serialized_end=917,
+  serialized_start=927,
+  serialized_end=948,
 )
 
 
@@ -698,8 +712,8 @@ _CMSGLANSERVERAVAILABLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=919,
-  serialized_end=961,
+  serialized_start=950,
+  serialized_end=992,
 )
 
 
@@ -757,8 +771,8 @@ _CSOECONGAMEACCOUNTCLIENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=964,
-  serialized_end=1144,
+  serialized_start=995,
+  serialized_end=1175,
 )
 
 
@@ -816,8 +830,8 @@ _CSOITEMCRITERIACONDITION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1146,
-  serialized_end=1260,
+  serialized_start=1177,
+  serialized_end=1291,
 )
 
 
@@ -917,8 +931,8 @@ _CSOITEMCRITERIA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1263,
-  serialized_end=1573,
+  serialized_start=1294,
+  serialized_end=1604,
 )
 
 
@@ -1074,8 +1088,8 @@ _CSOITEMRECIPE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1576,
-  serialized_end=2055,
+  serialized_start=1607,
+  serialized_end=2086,
 )
 
 
@@ -1112,8 +1126,8 @@ _CMSGDEVNEWITEMREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2057,
-  serialized_end=2139,
+  serialized_start=2088,
+  serialized_end=2170,
 )
 
 
@@ -1171,8 +1185,8 @@ _CMSGINCREMENTKILLCOUNTATTRIBUTE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2142,
-  serialized_end=2282,
+  serialized_start=2173,
+  serialized_end=2313,
 )
 
 
@@ -1230,8 +1244,8 @@ _CMSGAPPLYSTICKER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2285,
-  serialized_end=2419,
+  serialized_start=2316,
+  serialized_end=2450,
 )
 
 
@@ -1275,8 +1289,8 @@ _CMSGAPPLYSTATTRAKSWAP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2421,
-  serialized_end=2514,
+  serialized_start=2452,
+  serialized_end=2545,
 )
 
 
@@ -1313,8 +1327,8 @@ _CMSGAPPLYSTRANGEPART = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2516,
-  serialized_end=2590,
+  serialized_start=2547,
+  serialized_end=2621,
 )
 
 
@@ -1351,8 +1365,8 @@ _CMSGAPPLYPENNANTUPGRADE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2592,
-  serialized_end=2667,
+  serialized_start=2623,
+  serialized_end=2698,
 )
 
 
@@ -1389,8 +1403,8 @@ _CMSGAPPLYEGGESSENCE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2669,
-  serialized_end=2736,
+  serialized_start=2700,
+  serialized_end=2767,
 )
 
 
@@ -1434,8 +1448,8 @@ _CSOECONITEMATTRIBUTE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2738,
-  serialized_end=2815,
+  serialized_start=2769,
+  serialized_end=2846,
 )
 
 
@@ -1472,8 +1486,8 @@ _CSOECONITEMEQUIPPED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2817,
-  serialized_end=2875,
+  serialized_start=2848,
+  serialized_end=2906,
 )
 
 
@@ -1622,8 +1636,8 @@ _CSOECONITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2878,
-  serialized_end=3308,
+  serialized_start=2909,
+  serialized_end=3339,
 )
 
 
@@ -1674,8 +1688,8 @@ _CMSGADJUSTITEMEQUIPPEDSTATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3310,
-  serialized_end=3407,
+  serialized_start=3341,
+  serialized_end=3438,
 )
 
 
@@ -1705,8 +1719,8 @@ _CMSGSORTITEMS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3409,
-  serialized_end=3443,
+  serialized_start=3440,
+  serialized_end=3474,
 )
 
 
@@ -1757,8 +1771,8 @@ _CSOECONCLAIMCODE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3445,
-  serialized_end=3539,
+  serialized_start=3476,
+  serialized_end=3570,
 )
 
 
@@ -1795,8 +1809,8 @@ _CMSGSTOREGETUSERDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3541,
-  serialized_end=3610,
+  serialized_start=3572,
+  serialized_end=3641,
 )
 
 
@@ -1854,8 +1868,8 @@ _CMSGSTOREGETUSERDATARESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3613,
-  serialized_end=3766,
+  serialized_start=3644,
+  serialized_end=3797,
 )
 
 
@@ -1906,8 +1920,8 @@ _CMSGUPDATEITEMSCHEMA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3769,
-  serialized_end=3903,
+  serialized_start=3800,
+  serialized_end=3934,
 )
 
 
@@ -1937,8 +1951,8 @@ _CMSGGCERROR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3905,
-  serialized_end=3938,
+  serialized_start=3936,
+  serialized_end=3969,
 )
 
 
@@ -1961,8 +1975,8 @@ _CMSGREQUESTINVENTORYREFRESH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3940,
-  serialized_end=3969,
+  serialized_start=3971,
+  serialized_end=4000,
 )
 
 
@@ -1999,8 +2013,8 @@ _CMSGCONVARVALUE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3971,
-  serialized_end=4017,
+  serialized_start=4002,
+  serialized_end=4048,
 )
 
 
@@ -2030,8 +2044,8 @@ _CMSGREPLICATECONVARS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4019,
-  serialized_end=4081,
+  serialized_start=4050,
+  serialized_end=4112,
 )
 
 
@@ -2089,8 +2103,8 @@ _CMSGUSEITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4084,
-  serialized_end=4226,
+  serialized_start=4115,
+  serialized_end=4257,
 )
 
 
@@ -2134,8 +2148,8 @@ _CMSGREPLAYUPLOADEDTOYOUTUBE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4228,
-  serialized_end=4328,
+  serialized_start=4259,
+  serialized_end=4359,
 )
 
 
@@ -2165,8 +2179,8 @@ _CMSGCONSUMABLEEXHAUSTED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4330,
-  serialized_end=4376,
+  serialized_start=4361,
+  serialized_end=4407,
 )
 
 
@@ -2238,8 +2252,8 @@ _CMSGITEMACKNOWLEDGED__DEPRECATED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4379,
-  serialized_end=4537,
+  serialized_start=4410,
+  serialized_end=4568,
 )
 
 
@@ -2283,8 +2297,8 @@ _CMSGSETITEMPOSITIONS_ITEMPOSITION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4629,
-  serialized_end=4702,
+  serialized_start=4660,
+  serialized_end=4733,
 )
 
 _CMSGSETITEMPOSITIONS = _descriptor.Descriptor(
@@ -2313,8 +2327,8 @@ _CMSGSETITEMPOSITIONS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4540,
-  serialized_end=4702,
+  serialized_start=4571,
+  serialized_end=4733,
 )
 
 
@@ -2386,8 +2400,8 @@ _CMSGGCREPORTABUSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4705,
-  serialized_end=4889,
+  serialized_start=4736,
+  serialized_end=4920,
 )
 
 
@@ -2431,8 +2445,8 @@ _CMSGGCREPORTABUSERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4891,
-  serialized_end=4982,
+  serialized_start=4922,
+  serialized_end=5013,
 )
 
 
@@ -2476,8 +2490,8 @@ _CMSGGCNAMEITEMNOTIFICATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4984,
-  serialized_end=5086,
+  serialized_start=5015,
+  serialized_end=5117,
 )
 
 
@@ -2528,8 +2542,8 @@ _CMSGGCCLIENTDISPLAYNOTIFICATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5089,
-  serialized_end=5271,
+  serialized_start=5120,
+  serialized_end=5302,
 )
 
 
@@ -2559,8 +2573,8 @@ _CMSGGCSHOWITEMSPICKEDUP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5273,
-  serialized_end=5322,
+  serialized_start=5304,
+  serialized_end=5353,
 )
 
 
@@ -2611,8 +2625,8 @@ _CMSGGCINCREMENTKILLCOUNTRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5324,
-  serialized_end=5448,
+  serialized_start=5355,
+  serialized_end=5479,
 )
 
 
@@ -2677,8 +2691,8 @@ _CSOECONITEMDROPRATEBONUS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5451,
-  serialized_end=5594,
+  serialized_start=5482,
+  serialized_end=5625,
 )
 
 
@@ -2729,8 +2743,8 @@ _CSOECONITEMLEAGUEVIEWPASS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5596,
-  serialized_end=5708,
+  serialized_start=5627,
+  serialized_end=5739,
 )
 
 
@@ -2774,8 +2788,8 @@ _CSOECONITEMEVENTTICKET = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5710,
-  serialized_end=5789,
+  serialized_start=5741,
+  serialized_end=5820,
 )
 
 
@@ -2805,8 +2819,8 @@ _CMSGGCITEMPREVIEWITEMBOUGHTNOTIFICATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5791,
-  serialized_end=5856,
+  serialized_start=5822,
+  serialized_end=5887,
 )
 
 
@@ -2836,8 +2850,8 @@ _CMSGGCSTOREPURCHASECANCEL = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5858,
-  serialized_end=5901,
+  serialized_start=5889,
+  serialized_end=5932,
 )
 
 
@@ -2867,8 +2881,8 @@ _CMSGGCSTOREPURCHASECANCELRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5903,
-  serialized_end=5954,
+  serialized_start=5934,
+  serialized_end=5985,
 )
 
 
@@ -2898,8 +2912,8 @@ _CMSGGCSTOREPURCHASEFINALIZE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5956,
-  serialized_end=6001,
+  serialized_start=5987,
+  serialized_end=6032,
 )
 
 
@@ -2936,8 +2950,8 @@ _CMSGGCSTOREPURCHASEFINALIZERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6003,
-  serialized_end=6074,
+  serialized_start=6034,
+  serialized_end=6105,
 )
 
 
@@ -2974,8 +2988,8 @@ _CMSGGCBANNEDWORDLISTREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6076,
-  serialized_end=6149,
+  serialized_start=6107,
+  serialized_end=6180,
 )
 
 
@@ -2998,8 +3012,8 @@ _CMSGGCREQUESTANNOUNCEMENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6151,
-  serialized_end=6179,
+  serialized_start=6182,
+  serialized_end=6210,
 )
 
 
@@ -3050,8 +3064,8 @@ _CMSGGCREQUESTANNOUNCEMENTSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6182,
-  serialized_end=6312,
+  serialized_start=6213,
+  serialized_end=6343,
 )
 
 
@@ -3095,8 +3109,8 @@ _CMSGGCBANNEDWORD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6314,
-  serialized_end=6436,
+  serialized_start=6345,
+  serialized_end=6467,
 )
 
 
@@ -3133,8 +3147,8 @@ _CMSGGCBANNEDWORDLISTRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6438,
-  serialized_end=6538,
+  serialized_start=6469,
+  serialized_end=6569,
 )
 
 
@@ -3164,8 +3178,8 @@ _CMSGGCTOGCBANNEDWORDLISTBROADCAST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6540,
-  serialized_end=6630,
+  serialized_start=6571,
+  serialized_end=6661,
 )
 
 
@@ -3195,8 +3209,8 @@ _CMSGGCTOGCBANNEDWORDLISTUPDATED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6632,
-  serialized_end=6683,
+  serialized_start=6663,
+  serialized_end=6714,
 )
 
 
@@ -3247,8 +3261,8 @@ _CSOECONDEFAULTEQUIPPEDDEFINITIONINSTANCECLIENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6686,
-  serialized_end=6832,
+  serialized_start=6717,
+  serialized_end=6863,
 )
 
 
@@ -3285,8 +3299,8 @@ _CMSGGCTOGCDIRTYSDOCACHE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6834,
-  serialized_end=6897,
+  serialized_start=6865,
+  serialized_end=6928,
 )
 
 
@@ -3323,8 +3337,8 @@ _CMSGGCTOGCDIRTYMULTIPLESDOCACHE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6899,
-  serialized_end=6970,
+  serialized_start=6930,
+  serialized_end=7001,
 )
 
 
@@ -3361,8 +3375,8 @@ _CMSGGCCOLLECTITEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6972,
-  serialized_end=7044,
+  serialized_start=7003,
+  serialized_end=7075,
 )
 
 
@@ -3385,8 +3399,8 @@ _CMSGSDONOMEMCACHED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7046,
-  serialized_end=7066,
+  serialized_start=7077,
+  serialized_end=7097,
 )
 
 
@@ -3416,8 +3430,8 @@ _CMSGGCTOGCUPDATESQLKEYVALUE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7068,
-  serialized_end=7115,
+  serialized_start=7099,
+  serialized_end=7146,
 )
 
 
@@ -3447,8 +3461,8 @@ _CMSGGCTOGCISTRUSTEDSERVER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7117,
-  serialized_end=7162,
+  serialized_start=7148,
+  serialized_end=7193,
 )
 
 
@@ -3478,8 +3492,8 @@ _CMSGGCTOGCISTRUSTEDSERVERRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7164,
-  serialized_end=7219,
+  serialized_start=7195,
+  serialized_end=7250,
 )
 
 
@@ -3509,8 +3523,8 @@ _CMSGGCTOGCBROADCASTCONSOLECOMMAND = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7221,
-  serialized_end=7277,
+  serialized_start=7252,
+  serialized_end=7308,
 )
 
 
@@ -3540,8 +3554,8 @@ _CMSGGCSERVERVERSIONUPDATED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7279,
-  serialized_end=7331,
+  serialized_start=7310,
+  serialized_end=7362,
 )
 
 
@@ -3571,8 +3585,8 @@ _CMSGGCCLIENTVERSIONUPDATED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7333,
-  serialized_end=7385,
+  serialized_start=7364,
+  serialized_end=7416,
 )
 
 
@@ -3595,8 +3609,8 @@ _CMSGGCTOGCWEBAPIACCOUNTCHANGED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7387,
-  serialized_end=7419,
+  serialized_start=7418,
+  serialized_end=7450,
 )
 
 
@@ -3640,8 +3654,8 @@ _CMSGGCTOGCREQUESTPASSPORTITEMGRANT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7421,
-  serialized_end=7515,
+  serialized_start=7452,
+  serialized_end=7546,
 )
 
 
@@ -3791,8 +3805,8 @@ _CMSGGAMESERVERINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7518,
-  serialized_end=8139,
+  serialized_start=7549,
+  serialized_end=8170,
 )
 
 _CMSGGCSTOREPURCHASEINIT.fields_by_name['line_items'].message_type = _CGCSTOREPURCHASEINIT_LINEITEM
