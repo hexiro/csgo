@@ -11,7 +11,7 @@ from steam.client.gc import GameCoordinator
 from steam.enums.emsg import EMsg
 from steam.util import proto_fill_from_dict
 from csgo.features import FeatureBase
-from csgo.enums import EGCBaseClientMsg, GCConnectionStatus
+from csgo.enums import EGCBaseClientMsg, GCConnectionStatus, GCClientLauncherType
 from csgo.msg import get_emsg_enum, find_proto
 from csgo.protobufs import gcsdk_gcmessages_pb2 as pb_gc
 from csgo.protobufs import cstrike15_gcmessages_pb2 as pb_gclient
@@ -23,11 +23,17 @@ class CSGOClient(GameCoordinator, FeatureBase):
     :type steam_client: :class:`steam.client.SteamClient`
     """
     _retry_welcome_loop = None
-    verbose_debug = False  #: enable pretty print of messages in debug logging
-    app_id = 730  #: main client app id
+    verbose_debug = False
+    #: enable pretty print of messages in debug logging
+    app_id = 730
+    #: main client app id
+    launcher = GCClientLauncherType.DEFAULT
+    #: launcher type (used for access to PW) See: :class:`csgo.enums.GCClientLauncherType`
     current_jobid = 0
-    ready = False  #: ``True`` when we have a session with GC
-    connection_status = GCConnectionStatus.NO_SESSION  #: :class:`csgo.enums.GCConnectionStatus`
+    ready = False
+    #: ``True`` when we have a session with GC
+    connection_status = GCConnectionStatus.NO_SESSION
+    #: See :class:`csgo.enums.GCConnectionStatus`
 
     @property
     def account_id(self):
@@ -211,7 +217,12 @@ class CSGOClient(GameCoordinator, FeatureBase):
 
             while True:
                 if not self.ready:
-                    self.send(EGCBaseClientMsg.EMsgGCClientHello)
+                    if self.launcher == GCClientLauncherType.PERFECTWORLD:
+                        self.send(EGCBaseClientMsg.EMsgGCClientHelloPW, {
+                            'client_launcher': self.launcher,
+                            })
+                    else:  # GCClientLauncherType.DEFAULT
+                        self.send(EGCBaseClientMsg.EMsgGCClientHello)
 
                     self.wait_event('ready', timeout=3 + (2**n))
                     n = min(n + 1, 4)
