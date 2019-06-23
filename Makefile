@@ -67,4 +67,7 @@ pb_compile:
 pb_clear:
 	rm -f ./protobufs/*.proto ./csgo/protobufs/*_pb2.py
 
-pb_update: pb_fetch pb_compile
+gen_enums:
+	python gen_enum_from_protos.py > csgo/proto_enums.py
+
+pb_update: pb_fetch pb_compile gen_enums
