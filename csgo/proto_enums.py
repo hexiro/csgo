@@ -1,5 +1,30 @@
 from enum import IntEnum
 
+class ECommunityItemAttribute(IntEnum):
+    Invalid = 0
+    CardBorder = 1
+    Level = 2
+    IssueNumber = 3
+    TradableTime = 4
+    StorePackageID = 5
+    CommunityItemAppID = 6
+    CommunityItemType = 7
+    ProfileModiferEnabled = 8
+    ExpiryTime = 9
+
+class ECommunityItemClass(IntEnum):
+    Invalid = 0
+    Badge = 1
+    GameCard = 2
+    ProfileBackground = 3
+    Emoticon = 4
+    BoosterPack = 5
+    Consumable = 6
+    GameGoo = 7
+    ProfileModifier = 8
+    Scene = 9
+    SalienItem = 10
+
 class ECsgoGCMsg(IntEnum):
     EMsgGCCStrike15_v2_Base = 9100
     EMsgGCCStrike15_v2_MatchmakingStart = 9101
@@ -29,7 +54,6 @@ class ECsgoGCMsg(IntEnum):
     EMsgGCCStrike15_v2_WatchInfoUsers = 9126
     EMsgGCCStrike15_v2_ClientRequestPlayersProfile = 9127
     EMsgGCCStrike15_v2_PlayersProfile = 9128
-    EMsgGCCStrike15_v2_SetMyMedalsInfo = 9129
     EMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate = 9131
     EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment = 9132
     EMsgGCCStrike15_v2_PlayerOverwatchCaseStatus = 9133
@@ -94,6 +118,18 @@ class ECsgoGCMsg(IntEnum):
     EMsgGCCStrike15_v2_ClientGCRankUpdate = 9194
     EMsgGCCStrike15_v2_ClientRequestOffers = 9195
     EMsgGCCStrike15_v2_ClientAccountBalance = 9196
+    EMsgGCCStrike15_v2_ClientPartyJoinRelay = 9197
+    EMsgGCCStrike15_v2_ClientPartyWarning = 9198
+    EMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial = 9199
+    EMsgGCCStrike15_v2_SetEventFavorite = 9200
+    EMsgGCCStrike15_v2_GetEventFavorites_Request = 9201
+    EMsgGCCStrike15_v2_GetEventFavorites_Response = 9203
+    EMsgGCCStrike15_v2_ClientRequestSouvenir = 9204
+
+class ECsgoSteamUserStat(IntEnum):
+    XpEarnedGames = 1
+    MatchWinsCompetitive = 2
+    SurvivedDangerZone = 3
 
 class EGCBaseClientMsg(IntEnum):
     EMsgGCClientWelcome = 4004
@@ -107,6 +143,18 @@ class EGCBaseClientMsg(IntEnum):
     EMsgGCClientHelloR2 = 4013
     EMsgGCClientHelloR3 = 4014
     EMsgGCClientHelloR4 = 4015
+
+class EGCItemCustomizationNotification(IntEnum):
+    NameItem = 1006
+    UnlockCrate = 1007
+    NameBaseItem = 1019
+    RemoveItemName = 1030
+    RemoveSticker = 1053
+    ApplySticker = 1086
+    StatTrakSwap = 1088
+    ActivateFanToken = 9178
+    GraffitiUnseal = 9185
+    GenerateSouvenir = 9204
 
 class EGCItemMsg(IntEnum):
     EMsgGCBase = 1000
@@ -190,6 +238,8 @@ class EGCItemMsg(IntEnum):
     EMsgGCItemAcknowledged = 1087
     EMsgGCStatTrakSwap = 1088
     EMsgGCUserTrackTimePlayedConsecutively = 1089
+    EMsgGCItemCustomizationNotification = 1090
+    EMsgGCModifyItemAttribute = 1091
     EMsgGCTradingBase = 1500
     EMsgGCTrading_InitiateTradeRequest = 1501
     EMsgGCTrading_InitiateTradeResponse = 1502
@@ -246,6 +296,7 @@ class EGCItemMsg(IntEnum):
     EMsgGCRequestAnnouncementsResponse = 2526
     EMsgGCRequestPassportItemGrant = 2527
     EMsgGCClientVersionUpdated = 2528
+    EMsgGCAdjustItemEquippedStateMulti = 2529
 
 class EGCMsgResponse(IntEnum):
     EGCMsgResponseOK = 0
@@ -348,6 +399,8 @@ class EGCSystemMsg(IntEnum):
     EGCMsgGetGamePersonalDataCategoriesResponse = 525
     EGCMsgGetGamePersonalDataEntriesRequest = 526
     EGCMsgGetGamePersonalDataEntriesResponse = 527
+    EGCMsgTerminateGamePersonalDataEntriesRequest = 528
+    EGCMsgTerminateGamePersonalDataEntriesResponse = 529
 
 class EGCToGCMsg(IntEnum):
     EGCToGCMsgMasterAck = 150
@@ -369,6 +422,13 @@ class ESOMsg(IntEnum):
     CacheSubscriptionCheck = 27
     CacheSubscriptionRefresh = 28
 
+class ESteamPaymentRuleType(IntEnum):
+    EPaymentRuleTypeComposite = 0
+    EPaymentRuleTypeWorkshop = 1
+    EPaymentRuleTypeServiceProvider = 2
+    EPaymentRuleTypePartner = 3
+    EPaymentRuleTypeSpecialPayment = 4
+
 class EUnlockStyle(IntEnum):
     UnlockStyle_Succeeded = 0
     UnlockStyle_Failed_PreReq = 1
@@ -389,13 +449,18 @@ class GCConnectionStatus(IntEnum):
     NO_STEAM = 4
 
 __all__ = [
+    'ECommunityItemAttribute',
+    'ECommunityItemClass',
     'ECsgoGCMsg',
+    'ECsgoSteamUserStat',
     'EGCBaseClientMsg',
+    'EGCItemCustomizationNotification',
     'EGCItemMsg',
     'EGCMsgResponse',
     'EGCSystemMsg',
     'EGCToGCMsg',
     'ESOMsg',
+    'ESteamPaymentRuleType',
     'EUnlockStyle',
     'GCClientLauncherType',
     'GCConnectionStatus',
