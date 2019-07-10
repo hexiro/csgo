@@ -144,7 +144,7 @@ class CSGOClient(GameCoordinator, FeatureBase):
         :type  raises: :class:`bool`
         :return: returns a message or :class:`None`
         :rtype: :class:`None`, or `proto message`
-        :raises: ``gevent.Timeout``
+        :raises: :class:`gevent.Timeout`
         """
         resp = self.wait_event(event, timeout, raises)
 
