@@ -67,6 +67,8 @@ so_key_fields = {
 #     _gc_base.CSOEconDefaultEquippedDefinitionInstanceClient.DESCRIPTOR: ['account_id', 'class_id', 'slot_id'],
     _gc_base.CSOEconItem.DESCRIPTOR: ['id'],
     _gc_base.CSOEconGameAccountClient.DESCRIPTOR: NO_KEY,
+    _gc_base.CSOEconItemEventTicket.DESCRIPTOR: NO_KEY,
+    _gc_cstrike.CSOPersonaDataPublic.DESCRIPTOR: NO_KEY,
 #     _gc_cstrike.CSOEconCoupon.DESCRIPTOR: ['entryid'],
 #     _gc_cstrike.CSOQuestProgress.DESCRIPTOR: ['questid'],
 

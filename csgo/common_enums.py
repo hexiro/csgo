@@ -7,6 +7,7 @@ class ESOType(IntEnum):
     CSOEconGameAccountClient = 7
     CSOEconItemDropRateBonus = 38
     CSOEconItemEventTicket = 40
+    CSOAccountSeasonalOperation = 41
     CSOEconDefaultEquippedDefinitionInstanceClient = 43
     CSOEconCoupon = 45
     CSOQuestProgress = 46
