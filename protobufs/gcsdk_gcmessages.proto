@@ -48,8 +48,6 @@ message CMsgSOMultipleObjects {
 
 	repeated csgo.CMsgSOMultipleObjects.SingleObject objects_modified = 2;
 	optional fixed64 version = 3;
-	repeated csgo.CMsgSOMultipleObjects.SingleObject objects_added = 4;
-	repeated csgo.CMsgSOMultipleObjects.SingleObject objects_removed = 5;
 	optional csgo.CMsgSOIDOwner owner_soid = 6;
 }
 

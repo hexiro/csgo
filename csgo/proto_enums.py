@@ -147,12 +147,20 @@ class EGCBaseClientMsg(IntEnum):
 class EGCItemCustomizationNotification(IntEnum):
     NameItem = 1006
     UnlockCrate = 1007
+    XRayItemReveal = 1008
+    XRayItemClaim = 1009
+    CasketTooFull = 1011
+    CasketContents = 1012
+    CasketAdded = 1013
+    CasketRemoved = 1014
+    CasketInvFull = 1015
     NameBaseItem = 1019
     RemoveItemName = 1030
     RemoveSticker = 1053
     ApplySticker = 1086
     StatTrakSwap = 1088
     ActivateFanToken = 9178
+    ActivateOperationCoin = 9179
     GraffitiUnseal = 9185
     GenerateSouvenir = 9204
 
@@ -240,6 +248,9 @@ class EGCItemMsg(IntEnum):
     EMsgGCUserTrackTimePlayedConsecutively = 1089
     EMsgGCItemCustomizationNotification = 1090
     EMsgGCModifyItemAttribute = 1091
+    EMsgGCCasketItemAdd = 1092
+    EMsgGCCasketItemExtract = 1093
+    EMsgGCCasketItemLoadContents = 1094
     EMsgGCTradingBase = 1500
     EMsgGCTrading_InitiateTradeRequest = 1501
     EMsgGCTrading_InitiateTradeResponse = 1502

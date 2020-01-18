@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='csgo',
   syntax='proto2',
   serialized_options=_b('H\001\220\001\000'),
-  serialized_pb=_b('\n\x15\x65\x63on_gcmessages.proto\x12\x04\x63sgo\x1a\x13steammessages.proto\"\x98\x01\n\x11\x43MsgGCGiftedItems\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x14\n\x0cgiftdefindex\x18\x02 \x01(\r\x12\x1a\n\x12max_gifts_possible\x18\x03 \x01(\r\x12\x1f\n\x17num_eligible_recipients\x18\x04 \x01(\r\x12\x1d\n\x15recipients_accountids\x18\x05 \x03(\r\"E\n\x12\x43MsgApplyAutograph\x12\x19\n\x11\x61utograph_item_id\x18\x01 \x01(\x04\x12\x14\n\x0citem_item_id\x18\x02 \x01(\x04\"7\n&CMsgGCUserTrackTimePlayedConsecutively\x12\r\n\x05state\x18\x01 \x01(\r\"G\n#CMsgGCItemCustomizationNotification\x12\x0f\n\x07item_id\x18\x01 \x03(\x04\x12\x0f\n\x07request\x18\x02 \x01(\r*\xfc&\n\nEGCItemMsg\x12\x11\n\x0ck_EMsgGCBase\x10\xe8\x07\x12\x1c\n\x17k_EMsgGCSetItemPosition\x10\xe9\x07\x12\x12\n\rk_EMsgGCCraft\x10\xea\x07\x12\x1a\n\x15k_EMsgGCCraftResponse\x10\xeb\x07\x12\x13\n\x0ek_EMsgGCDelete\x10\xec\x07\x12$\n\x1fk_EMsgGCVerifyCacheSubscription\x10\xed\x07\x12\x15\n\x10k_EMsgGCNameItem\x10\xee\x07\x12\x18\n\x13k_EMsgGCUnlockCrate\x10\xef\x07\x12 \n\x1bk_EMsgGCUnlockCrateResponse\x10\xf0\x07\x12\x16\n\x11k_EMsgGCPaintItem\x10\xf1\x07\x12\x1e\n\x19k_EMsgGCPaintItemResponse\x10\xf2\x07\x12\"\n\x1dk_EMsgGCGoldenWrenchBroadcast\x10\xf3\x07\x12\x18\n\x13k_EMsgGCMOTDRequest\x10\xf4\x07\x12 \n\x1bk_EMsgGCMOTDRequestResponse\x10\xf5\x07\x12\'\n\"k_EMsgGCAddItemToSocket_DEPRECATED\x10\xf6\x07\x12/\n*k_EMsgGCAddItemToSocketResponse_DEPRECATED\x10\xf7\x07\x12+\n&k_EMsgGCAddSocketToBaseItem_DEPRECATED\x10\xf8\x07\x12\'\n\"k_EMsgGCAddSocketToItem_DEPRECATED\x10\xf9\x07\x12/\n*k_EMsgGCAddSocketToItemResponse_DEPRECATED\x10\xfa\x07\x12\x19\n\x14k_EMsgGCNameBaseItem\x10\xfb\x07\x12!\n\x1ck_EMsgGCNameBaseItemResponse\x10\xfc\x07\x12(\n#k_EMsgGCRemoveSocketItem_DEPRECATED\x10\xfd\x07\x12\x30\n+k_EMsgGCRemoveSocketItemResponse_DEPRECATED\x10\xfe\x07\x12!\n\x1ck_EMsgGCCustomizeItemTexture\x10\xff\x07\x12)\n$k_EMsgGCCustomizeItemTextureResponse\x10\x80\x08\x12\x1b\n\x16k_EMsgGCUseItemRequest\x10\x81\x08\x12\x1c\n\x17k_EMsgGCUseItemResponse\x10\x82\x08\x12#\n\x1ek_EMsgGCGiftedItems_DEPRECATED\x10\x83\x08\x12\x1b\n\x16k_EMsgGCRemoveItemName\x10\x86\x08\x12\x1c\n\x17k_EMsgGCRemoveItemPaint\x10\x87\x08\x12\x19\n\x14k_EMsgGCGiftWrapItem\x10\x88\x08\x12!\n\x1ck_EMsgGCGiftWrapItemResponse\x10\x89\x08\x12\x18\n\x13k_EMsgGCDeliverGift\x10\x8a\x08\x12%\n k_EMsgGCDeliverGiftResponseGiver\x10\x8b\x08\x12(\n#k_EMsgGCDeliverGiftResponseReceiver\x10\x8c\x08\x12\x1e\n\x19k_EMsgGCUnwrapGiftRequest\x10\x8d\x08\x12\x1f\n\x1ak_EMsgGCUnwrapGiftResponse\x10\x8e\x08\x12\x19\n\x14k_EMsgGCSetItemStyle\x10\x8f\x08\x12\x1e\n\x19k_EMsgGCUsedClaimCodeItem\x10\x90\x08\x12\x16\n\x11k_EMsgGCSortItems\x10\x91\x08\x12*\n%k_EMsgGC_RevolvingLootList_DEPRECATED\x10\x92\x08\x12\x1a\n\x15k_EMsgGCLookupAccount\x10\x93\x08\x12\"\n\x1dk_EMsgGCLookupAccountResponse\x10\x94\x08\x12\x1e\n\x19k_EMsgGCLookupAccountName\x10\x95\x08\x12&\n!k_EMsgGCLookupAccountNameResponse\x10\x96\x08\x12\x1d\n\x18k_EMsgGCUpdateItemSchema\x10\x99\x08\x12 \n\x1bk_EMsgGCRemoveCustomTexture\x10\x9b\x08\x12(\n#k_EMsgGCRemoveCustomTextureResponse\x10\x9c\x08\x12\x1d\n\x18k_EMsgGCRemoveMakersMark\x10\x9d\x08\x12%\n k_EMsgGCRemoveMakersMarkResponse\x10\x9e\x08\x12#\n\x1ek_EMsgGCRemoveUniqueCraftIndex\x10\x9f\x08\x12+\n&k_EMsgGCRemoveUniqueCraftIndexResponse\x10\xa0\x08\x12\x1b\n\x16k_EMsgGCSaxxyBroadcast\x10\xa1\x08\x12!\n\x1ck_EMsgGCBackpackSortFinished\x10\xa2\x08\x12$\n\x1fk_EMsgGCAdjustItemEquippedState\x10\xa3\x08\x12\x18\n\x13k_EMsgGCCollectItem\x10\xa5\x08\x12)\n$k_EMsgGCItemAcknowledged__DEPRECATED\x10\xa6\x08\x12\x19\n\x14k_EMsgGC_ReportAbuse\x10\xa9\x08\x12!\n\x1ck_EMsgGC_ReportAbuseResponse\x10\xaa\x08\x12!\n\x1ck_EMsgGCNameItemNotification\x10\xac\x08\x12#\n\x1ek_EMsgGCApplyConsumableEffects\x10\xad\x08\x12 \n\x1bk_EMsgGCConsumableExhausted\x10\xae\x08\x12\x1e\n\x19k_EMsgGCShowItemsPickedUp\x10\xaf\x08\x12&\n!k_EMsgGCClientDisplayNotification\x10\xb0\x08\x12\x1d\n\x18k_EMsgGCApplyStrangePart\x10\xb1\x08\x12)\n$k_EMsgGC_IncrementKillCountAttribute\x10\xb2\x08\x12(\n#k_EMsgGC_IncrementKillCountResponse\x10\xb3\x08\x12 \n\x1bk_EMsgGCApplyPennantUpgrade\x10\xb4\x08\x12\x1d\n\x18k_EMsgGCSetItemPositions\x10\xb5\x08\x12\x1c\n\x17k_EMsgGCApplyEggEssence\x10\xb6\x08\x12#\n\x1ek_EMsgGCNameEggEssenceResponse\x10\xb7\x08\x12\x19\n\x14k_EMsgGCPaintKitItem\x10\xb8\x08\x12\x1d\n\x18k_EMsgGCPaintKitBaseItem\x10\xb9\x08\x12!\n\x1ck_EMsgGCPaintKitItemResponse\x10\xba\x08\x12\x18\n\x13k_EMsgGCGiftedItems\x10\xbb\x08\x12\x1c\n\x17k_EMsgGCUnlockItemStyle\x10\xbc\x08\x12$\n\x1fk_EMsgGCUnlockItemStyleResponse\x10\xbd\x08\x12\x19\n\x14k_EMsgGCApplySticker\x10\xbe\x08\x12\x1d\n\x18k_EMsgGCItemAcknowledged\x10\xbf\x08\x12\x19\n\x14k_EMsgGCStatTrakSwap\x10\xc0\x08\x12-\n(k_EMsgGCUserTrackTimePlayedConsecutively\x10\xc1\x08\x12*\n%k_EMsgGCItemCustomizationNotification\x10\xc2\x08\x12 \n\x1bk_EMsgGCModifyItemAttribute\x10\xc3\x08\x12\x18\n\x13k_EMsgGCTradingBase\x10\xdc\x0b\x12)\n$k_EMsgGCTrading_InitiateTradeRequest\x10\xdd\x0b\x12*\n%k_EMsgGCTrading_InitiateTradeResponse\x10\xde\x0b\x12!\n\x1ck_EMsgGCTrading_StartSession\x10\xdf\x0b\x12\x1c\n\x17k_EMsgGCTrading_SetItem\x10\xe0\x0b\x12\x1f\n\x1ak_EMsgGCTrading_RemoveItem\x10\xe1\x0b\x12$\n\x1fk_EMsgGCTrading_UpdateTradeInfo\x10\xe2\x0b\x12!\n\x1ck_EMsgGCTrading_SetReadiness\x10\xe3\x0b\x12&\n!k_EMsgGCTrading_ReadinessResponse\x10\xe4\x0b\x12\"\n\x1dk_EMsgGCTrading_SessionClosed\x10\xe5\x0b\x12\"\n\x1dk_EMsgGCTrading_CancelSession\x10\xe6\x0b\x12!\n\x1ck_EMsgGCTrading_TradeChatMsg\x10\xe7\x0b\x12!\n\x1ck_EMsgGCTrading_ConfirmOffer\x10\xe8\x0b\x12\'\n\"k_EMsgGCTrading_TradeTypingChatMsg\x10\xe9\x0b\x12)\n$k_EMsgGCServerBrowser_FavoriteServer\x10\xc1\x0c\x12*\n%k_EMsgGCServerBrowser_BlacklistServer\x10\xc2\x0c\x12\x1e\n\x19k_EMsgGCServerRentalsBase\x10\xa4\r\x12#\n\x1ek_EMsgGCItemPreviewCheckStatus\x10\xa5\r\x12&\n!k_EMsgGCItemPreviewStatusResponse\x10\xa6\r\x12\x1f\n\x1ak_EMsgGCItemPreviewRequest\x10\xa7\r\x12\'\n\"k_EMsgGCItemPreviewRequestResponse\x10\xa8\r\x12\x1e\n\x19k_EMsgGCItemPreviewExpire\x10\xa9\r\x12*\n%k_EMsgGCItemPreviewExpireNotification\x10\xaa\r\x12.\n)k_EMsgGCItemPreviewItemBoughtNotification\x10\xab\r\x12\x1f\n\x1ak_EMsgGCDev_NewItemRequest\x10\xd1\x0f\x12\'\n\"k_EMsgGCDev_NewItemRequestResponse\x10\xd2\x0f\x12!\n\x1ck_EMsgGCDev_PaintKitDropItem\x10\xd3\x0f\x12\x1d\n\x18k_EMsgGCStoreGetUserData\x10\xc4\x13\x12%\n k_EMsgGCStoreGetUserDataResponse\x10\xc5\x13\x12)\n$k_EMsgGCStorePurchaseInit_DEPRECATED\x10\xc6\x13\x12\x31\n,k_EMsgGCStorePurchaseInitResponse_DEPRECATED\x10\xc7\x13\x12\"\n\x1dk_EMsgGCStorePurchaseFinalize\x10\xc8\x13\x12*\n%k_EMsgGCStorePurchaseFinalizeResponse\x10\xc9\x13\x12 \n\x1bk_EMsgGCStorePurchaseCancel\x10\xca\x13\x12(\n#k_EMsgGCStorePurchaseCancelResponse\x10\xcb\x13\x12\"\n\x1dk_EMsgGCStorePurchaseQueryTxn\x10\xcc\x13\x12*\n%k_EMsgGCStorePurchaseQueryTxnResponse\x10\xcd\x13\x12\x1e\n\x19k_EMsgGCStorePurchaseInit\x10\xce\x13\x12&\n!k_EMsgGCStorePurchaseInitResponse\x10\xcf\x13\x12\"\n\x1dk_EMsgGCBannedWordListRequest\x10\xd0\x13\x12#\n\x1ek_EMsgGCBannedWordListResponse\x10\xd1\x13\x12(\n#k_EMsgGCToGCBannedWordListBroadcast\x10\xd2\x13\x12&\n!k_EMsgGCToGCBannedWordListUpdated\x10\xd3\x13\x12\x1e\n\x19k_EMsgGCToGCDirtySDOCache\x10\xd4\x13\x12&\n!k_EMsgGCToGCDirtyMultipleSDOCache\x10\xd5\x13\x12\"\n\x1dk_EMsgGCToGCUpdateSQLKeyValue\x10\xd6\x13\x12 \n\x1bk_EMsgGCToGCIsTrustedServer\x10\xd7\x13\x12(\n#k_EMsgGCToGCIsTrustedServerResponse\x10\xd8\x13\x12(\n#k_EMsgGCToGCBroadcastConsoleCommand\x10\xd9\x13\x12!\n\x1ck_EMsgGCServerVersionUpdated\x10\xda\x13\x12\x1b\n\x16k_EMsgGCApplyAutograph\x10\xdb\x13\x12%\n k_EMsgGCToGCWebAPIAccountChanged\x10\xdc\x13\x12!\n\x1ck_EMsgGCRequestAnnouncements\x10\xdd\x13\x12)\n$k_EMsgGCRequestAnnouncementsResponse\x10\xde\x13\x12%\n k_EMsgGCRequestPassportItemGrant\x10\xdf\x13\x12!\n\x1ck_EMsgGCClientVersionUpdated\x10\xe0\x13\x12)\n$k_EMsgGCAdjustItemEquippedStateMulti\x10\xe1\x13*\xd5\x02\n\x0e\x45GCMsgResponse\x12\x16\n\x12k_EGCMsgResponseOK\x10\x00\x12\x1a\n\x16k_EGCMsgResponseDenied\x10\x01\x12\x1f\n\x1bk_EGCMsgResponseServerError\x10\x02\x12\x1b\n\x17k_EGCMsgResponseTimeout\x10\x03\x12\x1b\n\x17k_EGCMsgResponseInvalid\x10\x04\x12\x1b\n\x17k_EGCMsgResponseNoMatch\x10\x05\x12 \n\x1ck_EGCMsgResponseUnknownError\x10\x06\x12\x1f\n\x1bk_EGCMsgResponseNotLoggedOn\x10\x07\x12\x1a\n\x16k_EGCMsgFailedToCreate\x10\x08\x12\x19\n\x15k_EGCMsgLimitExceeded\x10\t\x12\x1d\n\x19k_EGCMsgCommitUnfinalized\x10\n*\xe9\x01\n\x0c\x45UnlockStyle\x12\x1b\n\x17k_UnlockStyle_Succeeded\x10\x00\x12\x1f\n\x1bk_UnlockStyle_Failed_PreReq\x10\x01\x12#\n\x1fk_UnlockStyle_Failed_CantAfford\x10\x02\x12#\n\x1fk_UnlockStyle_Failed_CantCommit\x10\x03\x12&\n\"k_UnlockStyle_Failed_CantLockCache\x10\x04\x12)\n%k_UnlockStyle_Failed_CantAffordAttrib\x10\x05*\xc6\x04\n EGCItemCustomizationNotification\x12\x30\n+k_EGCItemCustomizationNotification_NameItem\x10\xee\x07\x12\x33\n.k_EGCItemCustomizationNotification_UnlockCrate\x10\xef\x07\x12\x34\n/k_EGCItemCustomizationNotification_NameBaseItem\x10\xfb\x07\x12\x36\n1k_EGCItemCustomizationNotification_RemoveItemName\x10\x86\x08\x12\x35\n0k_EGCItemCustomizationNotification_RemoveSticker\x10\x9d\x08\x12\x34\n/k_EGCItemCustomizationNotification_ApplySticker\x10\xbe\x08\x12\x34\n/k_EGCItemCustomizationNotification_StatTrakSwap\x10\xc0\x08\x12\x38\n3k_EGCItemCustomizationNotification_ActivateFanToken\x10\xdaG\x12\x36\n1k_EGCItemCustomizationNotification_GraffitiUnseal\x10\xe1G\x12\x38\n3k_EGCItemCustomizationNotification_GenerateSouvenir\x10\xf4GB\x05H\x01\x90\x01\x00')
+  serialized_pb=_b('\n\x15\x65\x63on_gcmessages.proto\x12\x04\x63sgo\x1a\x13steammessages.proto\"\x98\x01\n\x11\x43MsgGCGiftedItems\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x14\n\x0cgiftdefindex\x18\x02 \x01(\r\x12\x1a\n\x12max_gifts_possible\x18\x03 \x01(\r\x12\x1f\n\x17num_eligible_recipients\x18\x04 \x01(\r\x12\x1d\n\x15recipients_accountids\x18\x05 \x03(\r\"E\n\x12\x43MsgApplyAutograph\x12\x19\n\x11\x61utograph_item_id\x18\x01 \x01(\x04\x12\x14\n\x0citem_item_id\x18\x02 \x01(\x04\">\n\x0e\x43MsgCasketItem\x12\x16\n\x0e\x63\x61sket_item_id\x18\x01 \x01(\x04\x12\x14\n\x0citem_item_id\x18\x02 \x01(\x04\"7\n&CMsgGCUserTrackTimePlayedConsecutively\x12\r\n\x05state\x18\x01 \x01(\r\"G\n#CMsgGCItemCustomizationNotification\x12\x0f\n\x07item_id\x18\x01 \x03(\x04\x12\x0f\n\x07request\x18\x02 \x01(\r*\xdd\'\n\nEGCItemMsg\x12\x11\n\x0ck_EMsgGCBase\x10\xe8\x07\x12\x1c\n\x17k_EMsgGCSetItemPosition\x10\xe9\x07\x12\x12\n\rk_EMsgGCCraft\x10\xea\x07\x12\x1a\n\x15k_EMsgGCCraftResponse\x10\xeb\x07\x12\x13\n\x0ek_EMsgGCDelete\x10\xec\x07\x12$\n\x1fk_EMsgGCVerifyCacheSubscription\x10\xed\x07\x12\x15\n\x10k_EMsgGCNameItem\x10\xee\x07\x12\x18\n\x13k_EMsgGCUnlockCrate\x10\xef\x07\x12 \n\x1bk_EMsgGCUnlockCrateResponse\x10\xf0\x07\x12\x16\n\x11k_EMsgGCPaintItem\x10\xf1\x07\x12\x1e\n\x19k_EMsgGCPaintItemResponse\x10\xf2\x07\x12\"\n\x1dk_EMsgGCGoldenWrenchBroadcast\x10\xf3\x07\x12\x18\n\x13k_EMsgGCMOTDRequest\x10\xf4\x07\x12 \n\x1bk_EMsgGCMOTDRequestResponse\x10\xf5\x07\x12\'\n\"k_EMsgGCAddItemToSocket_DEPRECATED\x10\xf6\x07\x12/\n*k_EMsgGCAddItemToSocketResponse_DEPRECATED\x10\xf7\x07\x12+\n&k_EMsgGCAddSocketToBaseItem_DEPRECATED\x10\xf8\x07\x12\'\n\"k_EMsgGCAddSocketToItem_DEPRECATED\x10\xf9\x07\x12/\n*k_EMsgGCAddSocketToItemResponse_DEPRECATED\x10\xfa\x07\x12\x19\n\x14k_EMsgGCNameBaseItem\x10\xfb\x07\x12!\n\x1ck_EMsgGCNameBaseItemResponse\x10\xfc\x07\x12(\n#k_EMsgGCRemoveSocketItem_DEPRECATED\x10\xfd\x07\x12\x30\n+k_EMsgGCRemoveSocketItemResponse_DEPRECATED\x10\xfe\x07\x12!\n\x1ck_EMsgGCCustomizeItemTexture\x10\xff\x07\x12)\n$k_EMsgGCCustomizeItemTextureResponse\x10\x80\x08\x12\x1b\n\x16k_EMsgGCUseItemRequest\x10\x81\x08\x12\x1c\n\x17k_EMsgGCUseItemResponse\x10\x82\x08\x12#\n\x1ek_EMsgGCGiftedItems_DEPRECATED\x10\x83\x08\x12\x1b\n\x16k_EMsgGCRemoveItemName\x10\x86\x08\x12\x1c\n\x17k_EMsgGCRemoveItemPaint\x10\x87\x08\x12\x19\n\x14k_EMsgGCGiftWrapItem\x10\x88\x08\x12!\n\x1ck_EMsgGCGiftWrapItemResponse\x10\x89\x08\x12\x18\n\x13k_EMsgGCDeliverGift\x10\x8a\x08\x12%\n k_EMsgGCDeliverGiftResponseGiver\x10\x8b\x08\x12(\n#k_EMsgGCDeliverGiftResponseReceiver\x10\x8c\x08\x12\x1e\n\x19k_EMsgGCUnwrapGiftRequest\x10\x8d\x08\x12\x1f\n\x1ak_EMsgGCUnwrapGiftResponse\x10\x8e\x08\x12\x19\n\x14k_EMsgGCSetItemStyle\x10\x8f\x08\x12\x1e\n\x19k_EMsgGCUsedClaimCodeItem\x10\x90\x08\x12\x16\n\x11k_EMsgGCSortItems\x10\x91\x08\x12*\n%k_EMsgGC_RevolvingLootList_DEPRECATED\x10\x92\x08\x12\x1a\n\x15k_EMsgGCLookupAccount\x10\x93\x08\x12\"\n\x1dk_EMsgGCLookupAccountResponse\x10\x94\x08\x12\x1e\n\x19k_EMsgGCLookupAccountName\x10\x95\x08\x12&\n!k_EMsgGCLookupAccountNameResponse\x10\x96\x08\x12\x1d\n\x18k_EMsgGCUpdateItemSchema\x10\x99\x08\x12 \n\x1bk_EMsgGCRemoveCustomTexture\x10\x9b\x08\x12(\n#k_EMsgGCRemoveCustomTextureResponse\x10\x9c\x08\x12\x1d\n\x18k_EMsgGCRemoveMakersMark\x10\x9d\x08\x12%\n k_EMsgGCRemoveMakersMarkResponse\x10\x9e\x08\x12#\n\x1ek_EMsgGCRemoveUniqueCraftIndex\x10\x9f\x08\x12+\n&k_EMsgGCRemoveUniqueCraftIndexResponse\x10\xa0\x08\x12\x1b\n\x16k_EMsgGCSaxxyBroadcast\x10\xa1\x08\x12!\n\x1ck_EMsgGCBackpackSortFinished\x10\xa2\x08\x12$\n\x1fk_EMsgGCAdjustItemEquippedState\x10\xa3\x08\x12\x18\n\x13k_EMsgGCCollectItem\x10\xa5\x08\x12)\n$k_EMsgGCItemAcknowledged__DEPRECATED\x10\xa6\x08\x12\x19\n\x14k_EMsgGC_ReportAbuse\x10\xa9\x08\x12!\n\x1ck_EMsgGC_ReportAbuseResponse\x10\xaa\x08\x12!\n\x1ck_EMsgGCNameItemNotification\x10\xac\x08\x12#\n\x1ek_EMsgGCApplyConsumableEffects\x10\xad\x08\x12 \n\x1bk_EMsgGCConsumableExhausted\x10\xae\x08\x12\x1e\n\x19k_EMsgGCShowItemsPickedUp\x10\xaf\x08\x12&\n!k_EMsgGCClientDisplayNotification\x10\xb0\x08\x12\x1d\n\x18k_EMsgGCApplyStrangePart\x10\xb1\x08\x12)\n$k_EMsgGC_IncrementKillCountAttribute\x10\xb2\x08\x12(\n#k_EMsgGC_IncrementKillCountResponse\x10\xb3\x08\x12 \n\x1bk_EMsgGCApplyPennantUpgrade\x10\xb4\x08\x12\x1d\n\x18k_EMsgGCSetItemPositions\x10\xb5\x08\x12\x1c\n\x17k_EMsgGCApplyEggEssence\x10\xb6\x08\x12#\n\x1ek_EMsgGCNameEggEssenceResponse\x10\xb7\x08\x12\x19\n\x14k_EMsgGCPaintKitItem\x10\xb8\x08\x12\x1d\n\x18k_EMsgGCPaintKitBaseItem\x10\xb9\x08\x12!\n\x1ck_EMsgGCPaintKitItemResponse\x10\xba\x08\x12\x18\n\x13k_EMsgGCGiftedItems\x10\xbb\x08\x12\x1c\n\x17k_EMsgGCUnlockItemStyle\x10\xbc\x08\x12$\n\x1fk_EMsgGCUnlockItemStyleResponse\x10\xbd\x08\x12\x19\n\x14k_EMsgGCApplySticker\x10\xbe\x08\x12\x1d\n\x18k_EMsgGCItemAcknowledged\x10\xbf\x08\x12\x19\n\x14k_EMsgGCStatTrakSwap\x10\xc0\x08\x12-\n(k_EMsgGCUserTrackTimePlayedConsecutively\x10\xc1\x08\x12*\n%k_EMsgGCItemCustomizationNotification\x10\xc2\x08\x12 \n\x1bk_EMsgGCModifyItemAttribute\x10\xc3\x08\x12\x1a\n\x15k_EMsgGCCasketItemAdd\x10\xc4\x08\x12\x1e\n\x19k_EMsgGCCasketItemExtract\x10\xc5\x08\x12#\n\x1ek_EMsgGCCasketItemLoadContents\x10\xc6\x08\x12\x18\n\x13k_EMsgGCTradingBase\x10\xdc\x0b\x12)\n$k_EMsgGCTrading_InitiateTradeRequest\x10\xdd\x0b\x12*\n%k_EMsgGCTrading_InitiateTradeResponse\x10\xde\x0b\x12!\n\x1ck_EMsgGCTrading_StartSession\x10\xdf\x0b\x12\x1c\n\x17k_EMsgGCTrading_SetItem\x10\xe0\x0b\x12\x1f\n\x1ak_EMsgGCTrading_RemoveItem\x10\xe1\x0b\x12$\n\x1fk_EMsgGCTrading_UpdateTradeInfo\x10\xe2\x0b\x12!\n\x1ck_EMsgGCTrading_SetReadiness\x10\xe3\x0b\x12&\n!k_EMsgGCTrading_ReadinessResponse\x10\xe4\x0b\x12\"\n\x1dk_EMsgGCTrading_SessionClosed\x10\xe5\x0b\x12\"\n\x1dk_EMsgGCTrading_CancelSession\x10\xe6\x0b\x12!\n\x1ck_EMsgGCTrading_TradeChatMsg\x10\xe7\x0b\x12!\n\x1ck_EMsgGCTrading_ConfirmOffer\x10\xe8\x0b\x12\'\n\"k_EMsgGCTrading_TradeTypingChatMsg\x10\xe9\x0b\x12)\n$k_EMsgGCServerBrowser_FavoriteServer\x10\xc1\x0c\x12*\n%k_EMsgGCServerBrowser_BlacklistServer\x10\xc2\x0c\x12\x1e\n\x19k_EMsgGCServerRentalsBase\x10\xa4\r\x12#\n\x1ek_EMsgGCItemPreviewCheckStatus\x10\xa5\r\x12&\n!k_EMsgGCItemPreviewStatusResponse\x10\xa6\r\x12\x1f\n\x1ak_EMsgGCItemPreviewRequest\x10\xa7\r\x12\'\n\"k_EMsgGCItemPreviewRequestResponse\x10\xa8\r\x12\x1e\n\x19k_EMsgGCItemPreviewExpire\x10\xa9\r\x12*\n%k_EMsgGCItemPreviewExpireNotification\x10\xaa\r\x12.\n)k_EMsgGCItemPreviewItemBoughtNotification\x10\xab\r\x12\x1f\n\x1ak_EMsgGCDev_NewItemRequest\x10\xd1\x0f\x12\'\n\"k_EMsgGCDev_NewItemRequestResponse\x10\xd2\x0f\x12!\n\x1ck_EMsgGCDev_PaintKitDropItem\x10\xd3\x0f\x12\x1d\n\x18k_EMsgGCStoreGetUserData\x10\xc4\x13\x12%\n k_EMsgGCStoreGetUserDataResponse\x10\xc5\x13\x12)\n$k_EMsgGCStorePurchaseInit_DEPRECATED\x10\xc6\x13\x12\x31\n,k_EMsgGCStorePurchaseInitResponse_DEPRECATED\x10\xc7\x13\x12\"\n\x1dk_EMsgGCStorePurchaseFinalize\x10\xc8\x13\x12*\n%k_EMsgGCStorePurchaseFinalizeResponse\x10\xc9\x13\x12 \n\x1bk_EMsgGCStorePurchaseCancel\x10\xca\x13\x12(\n#k_EMsgGCStorePurchaseCancelResponse\x10\xcb\x13\x12\"\n\x1dk_EMsgGCStorePurchaseQueryTxn\x10\xcc\x13\x12*\n%k_EMsgGCStorePurchaseQueryTxnResponse\x10\xcd\x13\x12\x1e\n\x19k_EMsgGCStorePurchaseInit\x10\xce\x13\x12&\n!k_EMsgGCStorePurchaseInitResponse\x10\xcf\x13\x12\"\n\x1dk_EMsgGCBannedWordListRequest\x10\xd0\x13\x12#\n\x1ek_EMsgGCBannedWordListResponse\x10\xd1\x13\x12(\n#k_EMsgGCToGCBannedWordListBroadcast\x10\xd2\x13\x12&\n!k_EMsgGCToGCBannedWordListUpdated\x10\xd3\x13\x12\x1e\n\x19k_EMsgGCToGCDirtySDOCache\x10\xd4\x13\x12&\n!k_EMsgGCToGCDirtyMultipleSDOCache\x10\xd5\x13\x12\"\n\x1dk_EMsgGCToGCUpdateSQLKeyValue\x10\xd6\x13\x12 \n\x1bk_EMsgGCToGCIsTrustedServer\x10\xd7\x13\x12(\n#k_EMsgGCToGCIsTrustedServerResponse\x10\xd8\x13\x12(\n#k_EMsgGCToGCBroadcastConsoleCommand\x10\xd9\x13\x12!\n\x1ck_EMsgGCServerVersionUpdated\x10\xda\x13\x12\x1b\n\x16k_EMsgGCApplyAutograph\x10\xdb\x13\x12%\n k_EMsgGCToGCWebAPIAccountChanged\x10\xdc\x13\x12!\n\x1ck_EMsgGCRequestAnnouncements\x10\xdd\x13\x12)\n$k_EMsgGCRequestAnnouncementsResponse\x10\xde\x13\x12%\n k_EMsgGCRequestPassportItemGrant\x10\xdf\x13\x12!\n\x1ck_EMsgGCClientVersionUpdated\x10\xe0\x13\x12)\n$k_EMsgGCAdjustItemEquippedStateMulti\x10\xe1\x13*\xd5\x02\n\x0e\x45GCMsgResponse\x12\x16\n\x12k_EGCMsgResponseOK\x10\x00\x12\x1a\n\x16k_EGCMsgResponseDenied\x10\x01\x12\x1f\n\x1bk_EGCMsgResponseServerError\x10\x02\x12\x1b\n\x17k_EGCMsgResponseTimeout\x10\x03\x12\x1b\n\x17k_EGCMsgResponseInvalid\x10\x04\x12\x1b\n\x17k_EGCMsgResponseNoMatch\x10\x05\x12 \n\x1ck_EGCMsgResponseUnknownError\x10\x06\x12\x1f\n\x1bk_EGCMsgResponseNotLoggedOn\x10\x07\x12\x1a\n\x16k_EGCMsgFailedToCreate\x10\x08\x12\x19\n\x15k_EGCMsgLimitExceeded\x10\t\x12\x1d\n\x19k_EGCMsgCommitUnfinalized\x10\n*\xe9\x01\n\x0c\x45UnlockStyle\x12\x1b\n\x17k_UnlockStyle_Succeeded\x10\x00\x12\x1f\n\x1bk_UnlockStyle_Failed_PreReq\x10\x01\x12#\n\x1fk_UnlockStyle_Failed_CantAfford\x10\x02\x12#\n\x1fk_UnlockStyle_Failed_CantCommit\x10\x03\x12&\n\"k_UnlockStyle_Failed_CantLockCache\x10\x04\x12)\n%k_UnlockStyle_Failed_CantAffordAttrib\x10\x05*\x86\x08\n EGCItemCustomizationNotification\x12\x30\n+k_EGCItemCustomizationNotification_NameItem\x10\xee\x07\x12\x33\n.k_EGCItemCustomizationNotification_UnlockCrate\x10\xef\x07\x12\x36\n1k_EGCItemCustomizationNotification_XRayItemReveal\x10\xf0\x07\x12\x35\n0k_EGCItemCustomizationNotification_XRayItemClaim\x10\xf1\x07\x12\x35\n0k_EGCItemCustomizationNotification_CasketTooFull\x10\xf3\x07\x12\x36\n1k_EGCItemCustomizationNotification_CasketContents\x10\xf4\x07\x12\x33\n.k_EGCItemCustomizationNotification_CasketAdded\x10\xf5\x07\x12\x35\n0k_EGCItemCustomizationNotification_CasketRemoved\x10\xf6\x07\x12\x35\n0k_EGCItemCustomizationNotification_CasketInvFull\x10\xf7\x07\x12\x34\n/k_EGCItemCustomizationNotification_NameBaseItem\x10\xfb\x07\x12\x36\n1k_EGCItemCustomizationNotification_RemoveItemName\x10\x86\x08\x12\x35\n0k_EGCItemCustomizationNotification_RemoveSticker\x10\x9d\x08\x12\x34\n/k_EGCItemCustomizationNotification_ApplySticker\x10\xbe\x08\x12\x34\n/k_EGCItemCustomizationNotification_StatTrakSwap\x10\xc0\x08\x12\x38\n3k_EGCItemCustomizationNotification_ActivateFanToken\x10\xdaG\x12=\n8k_EGCItemCustomizationNotification_ActivateOperationCoin\x10\xdbG\x12\x36\n1k_EGCItemCustomizationNotification_GraffitiUnseal\x10\xe1G\x12\x38\n3k_EGCItemCustomizationNotification_GenerateSouvenir\x10\xf4GB\x05H\x01\x90\x01\x00')
   ,
   dependencies=[steammessages__pb2.DESCRIPTOR,])
 
@@ -365,238 +365,250 @@ _EGCITEMMSG = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTradingBase', index=83, number=1500,
+      name='k_EMsgGCCasketItemAdd', index=83, number=1092,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_InitiateTradeRequest', index=84, number=1501,
+      name='k_EMsgGCCasketItemExtract', index=84, number=1093,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_InitiateTradeResponse', index=85, number=1502,
+      name='k_EMsgGCCasketItemLoadContents', index=85, number=1094,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_StartSession', index=86, number=1503,
+      name='k_EMsgGCTradingBase', index=86, number=1500,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_SetItem', index=87, number=1504,
+      name='k_EMsgGCTrading_InitiateTradeRequest', index=87, number=1501,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_RemoveItem', index=88, number=1505,
+      name='k_EMsgGCTrading_InitiateTradeResponse', index=88, number=1502,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_UpdateTradeInfo', index=89, number=1506,
+      name='k_EMsgGCTrading_StartSession', index=89, number=1503,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_SetReadiness', index=90, number=1507,
+      name='k_EMsgGCTrading_SetItem', index=90, number=1504,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_ReadinessResponse', index=91, number=1508,
+      name='k_EMsgGCTrading_RemoveItem', index=91, number=1505,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_SessionClosed', index=92, number=1509,
+      name='k_EMsgGCTrading_UpdateTradeInfo', index=92, number=1506,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_CancelSession', index=93, number=1510,
+      name='k_EMsgGCTrading_SetReadiness', index=93, number=1507,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_TradeChatMsg', index=94, number=1511,
+      name='k_EMsgGCTrading_ReadinessResponse', index=94, number=1508,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_ConfirmOffer', index=95, number=1512,
+      name='k_EMsgGCTrading_SessionClosed', index=95, number=1509,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCTrading_TradeTypingChatMsg', index=96, number=1513,
+      name='k_EMsgGCTrading_CancelSession', index=96, number=1510,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCServerBrowser_FavoriteServer', index=97, number=1601,
+      name='k_EMsgGCTrading_TradeChatMsg', index=97, number=1511,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCServerBrowser_BlacklistServer', index=98, number=1602,
+      name='k_EMsgGCTrading_ConfirmOffer', index=98, number=1512,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCServerRentalsBase', index=99, number=1700,
+      name='k_EMsgGCTrading_TradeTypingChatMsg', index=99, number=1513,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCItemPreviewCheckStatus', index=100, number=1701,
+      name='k_EMsgGCServerBrowser_FavoriteServer', index=100, number=1601,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCItemPreviewStatusResponse', index=101, number=1702,
+      name='k_EMsgGCServerBrowser_BlacklistServer', index=101, number=1602,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCItemPreviewRequest', index=102, number=1703,
+      name='k_EMsgGCServerRentalsBase', index=102, number=1700,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCItemPreviewRequestResponse', index=103, number=1704,
+      name='k_EMsgGCItemPreviewCheckStatus', index=103, number=1701,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCItemPreviewExpire', index=104, number=1705,
+      name='k_EMsgGCItemPreviewStatusResponse', index=104, number=1702,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCItemPreviewExpireNotification', index=105, number=1706,
+      name='k_EMsgGCItemPreviewRequest', index=105, number=1703,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCItemPreviewItemBoughtNotification', index=106, number=1707,
+      name='k_EMsgGCItemPreviewRequestResponse', index=106, number=1704,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCDev_NewItemRequest', index=107, number=2001,
+      name='k_EMsgGCItemPreviewExpire', index=107, number=1705,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCDev_NewItemRequestResponse', index=108, number=2002,
+      name='k_EMsgGCItemPreviewExpireNotification', index=108, number=1706,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCDev_PaintKitDropItem', index=109, number=2003,
+      name='k_EMsgGCItemPreviewItemBoughtNotification', index=109, number=1707,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStoreGetUserData', index=110, number=2500,
+      name='k_EMsgGCDev_NewItemRequest', index=110, number=2001,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStoreGetUserDataResponse', index=111, number=2501,
+      name='k_EMsgGCDev_NewItemRequestResponse', index=111, number=2002,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStorePurchaseInit_DEPRECATED', index=112, number=2502,
+      name='k_EMsgGCDev_PaintKitDropItem', index=112, number=2003,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStorePurchaseInitResponse_DEPRECATED', index=113, number=2503,
+      name='k_EMsgGCStoreGetUserData', index=113, number=2500,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStorePurchaseFinalize', index=114, number=2504,
+      name='k_EMsgGCStoreGetUserDataResponse', index=114, number=2501,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStorePurchaseFinalizeResponse', index=115, number=2505,
+      name='k_EMsgGCStorePurchaseInit_DEPRECATED', index=115, number=2502,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStorePurchaseCancel', index=116, number=2506,
+      name='k_EMsgGCStorePurchaseInitResponse_DEPRECATED', index=116, number=2503,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStorePurchaseCancelResponse', index=117, number=2507,
+      name='k_EMsgGCStorePurchaseFinalize', index=117, number=2504,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStorePurchaseQueryTxn', index=118, number=2508,
+      name='k_EMsgGCStorePurchaseFinalizeResponse', index=118, number=2505,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStorePurchaseQueryTxnResponse', index=119, number=2509,
+      name='k_EMsgGCStorePurchaseCancel', index=119, number=2506,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStorePurchaseInit', index=120, number=2510,
+      name='k_EMsgGCStorePurchaseCancelResponse', index=120, number=2507,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCStorePurchaseInitResponse', index=121, number=2511,
+      name='k_EMsgGCStorePurchaseQueryTxn', index=121, number=2508,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCBannedWordListRequest', index=122, number=2512,
+      name='k_EMsgGCStorePurchaseQueryTxnResponse', index=122, number=2509,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCBannedWordListResponse', index=123, number=2513,
+      name='k_EMsgGCStorePurchaseInit', index=123, number=2510,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCToGCBannedWordListBroadcast', index=124, number=2514,
+      name='k_EMsgGCStorePurchaseInitResponse', index=124, number=2511,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCToGCBannedWordListUpdated', index=125, number=2515,
+      name='k_EMsgGCBannedWordListRequest', index=125, number=2512,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCToGCDirtySDOCache', index=126, number=2516,
+      name='k_EMsgGCBannedWordListResponse', index=126, number=2513,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCToGCDirtyMultipleSDOCache', index=127, number=2517,
+      name='k_EMsgGCToGCBannedWordListBroadcast', index=127, number=2514,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCToGCUpdateSQLKeyValue', index=128, number=2518,
+      name='k_EMsgGCToGCBannedWordListUpdated', index=128, number=2515,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCToGCIsTrustedServer', index=129, number=2519,
+      name='k_EMsgGCToGCDirtySDOCache', index=129, number=2516,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCToGCIsTrustedServerResponse', index=130, number=2520,
+      name='k_EMsgGCToGCDirtyMultipleSDOCache', index=130, number=2517,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCToGCBroadcastConsoleCommand', index=131, number=2521,
+      name='k_EMsgGCToGCUpdateSQLKeyValue', index=131, number=2518,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCServerVersionUpdated', index=132, number=2522,
+      name='k_EMsgGCToGCIsTrustedServer', index=132, number=2519,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCApplyAutograph', index=133, number=2523,
+      name='k_EMsgGCToGCIsTrustedServerResponse', index=133, number=2520,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCToGCWebAPIAccountChanged', index=134, number=2524,
+      name='k_EMsgGCToGCBroadcastConsoleCommand', index=134, number=2521,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCRequestAnnouncements', index=135, number=2525,
+      name='k_EMsgGCServerVersionUpdated', index=135, number=2522,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCRequestAnnouncementsResponse', index=136, number=2526,
+      name='k_EMsgGCApplyAutograph', index=136, number=2523,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCRequestPassportItemGrant', index=137, number=2527,
+      name='k_EMsgGCToGCWebAPIAccountChanged', index=137, number=2524,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCClientVersionUpdated', index=138, number=2528,
+      name='k_EMsgGCRequestAnnouncements', index=138, number=2525,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCAdjustItemEquippedStateMulti', index=139, number=2529,
+      name='k_EMsgGCRequestAnnouncementsResponse', index=139, number=2526,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EMsgGCRequestPassportItemGrant', index=140, number=2527,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EMsgGCClientVersionUpdated', index=141, number=2528,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EMsgGCAdjustItemEquippedStateMulti', index=142, number=2529,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=409,
-  serialized_end=5397,
+  serialized_start=473,
+  serialized_end=5558,
 )
 _sym_db.RegisterEnumDescriptor(_EGCITEMMSG)
 
@@ -654,8 +666,8 @@ _EGCMSGRESPONSE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=5400,
-  serialized_end=5741,
+  serialized_start=5561,
+  serialized_end=5902,
 )
 _sym_db.RegisterEnumDescriptor(_EGCMSGRESPONSE)
 
@@ -693,8 +705,8 @@ _EUNLOCKSTYLE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=5744,
-  serialized_end=5977,
+  serialized_start=5905,
+  serialized_end=6138,
 )
 _sym_db.RegisterEnumDescriptor(_EUNLOCKSTYLE)
 
@@ -714,42 +726,74 @@ _EGCITEMCUSTOMIZATIONNOTIFICATION = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCItemCustomizationNotification_NameBaseItem', index=2, number=1019,
+      name='k_EGCItemCustomizationNotification_XRayItemReveal', index=2, number=1008,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCItemCustomizationNotification_RemoveItemName', index=3, number=1030,
+      name='k_EGCItemCustomizationNotification_XRayItemClaim', index=3, number=1009,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCItemCustomizationNotification_RemoveSticker', index=4, number=1053,
+      name='k_EGCItemCustomizationNotification_CasketTooFull', index=4, number=1011,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCItemCustomizationNotification_ApplySticker', index=5, number=1086,
+      name='k_EGCItemCustomizationNotification_CasketContents', index=5, number=1012,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCItemCustomizationNotification_StatTrakSwap', index=6, number=1088,
+      name='k_EGCItemCustomizationNotification_CasketAdded', index=6, number=1013,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCItemCustomizationNotification_ActivateFanToken', index=7, number=9178,
+      name='k_EGCItemCustomizationNotification_CasketRemoved', index=7, number=1014,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCItemCustomizationNotification_GraffitiUnseal', index=8, number=9185,
+      name='k_EGCItemCustomizationNotification_CasketInvFull', index=8, number=1015,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EGCItemCustomizationNotification_GenerateSouvenir', index=9, number=9204,
+      name='k_EGCItemCustomizationNotification_NameBaseItem', index=9, number=1019,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCItemCustomizationNotification_RemoveItemName', index=10, number=1030,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCItemCustomizationNotification_RemoveSticker', index=11, number=1053,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCItemCustomizationNotification_ApplySticker', index=12, number=1086,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCItemCustomizationNotification_StatTrakSwap', index=13, number=1088,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCItemCustomizationNotification_ActivateFanToken', index=14, number=9178,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCItemCustomizationNotification_ActivateOperationCoin', index=15, number=9179,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCItemCustomizationNotification_GraffitiUnseal', index=16, number=9185,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EGCItemCustomizationNotification_GenerateSouvenir', index=17, number=9204,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=5980,
-  serialized_end=6562,
+  serialized_start=6141,
+  serialized_end=7171,
 )
 _sym_db.RegisterEnumDescriptor(_EGCITEMCUSTOMIZATIONNOTIFICATION)
 
@@ -837,6 +881,9 @@ k_EMsgGCStatTrakSwap = 1088
 k_EMsgGCUserTrackTimePlayedConsecutively = 1089
 k_EMsgGCItemCustomizationNotification = 1090
 k_EMsgGCModifyItemAttribute = 1091
+k_EMsgGCCasketItemAdd = 1092
+k_EMsgGCCasketItemExtract = 1093
+k_EMsgGCCasketItemLoadContents = 1094
 k_EMsgGCTradingBase = 1500
 k_EMsgGCTrading_InitiateTradeRequest = 1501
 k_EMsgGCTrading_InitiateTradeResponse = 1502
@@ -913,12 +960,20 @@ k_UnlockStyle_Failed_CantLockCache = 4
 k_UnlockStyle_Failed_CantAffordAttrib = 5
 k_EGCItemCustomizationNotification_NameItem = 1006
 k_EGCItemCustomizationNotification_UnlockCrate = 1007
+k_EGCItemCustomizationNotification_XRayItemReveal = 1008
+k_EGCItemCustomizationNotification_XRayItemClaim = 1009
+k_EGCItemCustomizationNotification_CasketTooFull = 1011
+k_EGCItemCustomizationNotification_CasketContents = 1012
+k_EGCItemCustomizationNotification_CasketAdded = 1013
+k_EGCItemCustomizationNotification_CasketRemoved = 1014
+k_EGCItemCustomizationNotification_CasketInvFull = 1015
 k_EGCItemCustomizationNotification_NameBaseItem = 1019
 k_EGCItemCustomizationNotification_RemoveItemName = 1030
 k_EGCItemCustomizationNotification_RemoveSticker = 1053
 k_EGCItemCustomizationNotification_ApplySticker = 1086
 k_EGCItemCustomizationNotification_StatTrakSwap = 1088
 k_EGCItemCustomizationNotification_ActivateFanToken = 9178
+k_EGCItemCustomizationNotification_ActivateOperationCoin = 9179
 k_EGCItemCustomizationNotification_GraffitiUnseal = 9185
 k_EGCItemCustomizationNotification_GenerateSouvenir = 9204
 
@@ -1021,6 +1076,44 @@ _CMSGAPPLYAUTOGRAPH = _descriptor.Descriptor(
 )
 
 
+_CMSGCASKETITEM = _descriptor.Descriptor(
+  name='CMsgCasketItem',
+  full_name='csgo.CMsgCasketItem',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='casket_item_id', full_name='csgo.CMsgCasketItem.casket_item_id', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='item_item_id', full_name='csgo.CMsgCasketItem.item_item_id', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=278,
+  serialized_end=340,
+)
+
+
 _CMSGGCUSERTRACKTIMEPLAYEDCONSECUTIVELY = _descriptor.Descriptor(
   name='CMsgGCUserTrackTimePlayedConsecutively',
   full_name='csgo.CMsgGCUserTrackTimePlayedConsecutively',
@@ -1047,8 +1140,8 @@ _CMSGGCUSERTRACKTIMEPLAYEDCONSECUTIVELY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=278,
-  serialized_end=333,
+  serialized_start=342,
+  serialized_end=397,
 )
 
 
@@ -1085,12 +1178,13 @@ _CMSGGCITEMCUSTOMIZATIONNOTIFICATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=335,
-  serialized_end=406,
+  serialized_start=399,
+  serialized_end=470,
 )
 
 DESCRIPTOR.message_types_by_name['CMsgGCGiftedItems'] = _CMSGGCGIFTEDITEMS
 DESCRIPTOR.message_types_by_name['CMsgApplyAutograph'] = _CMSGAPPLYAUTOGRAPH
+DESCRIPTOR.message_types_by_name['CMsgCasketItem'] = _CMSGCASKETITEM
 DESCRIPTOR.message_types_by_name['CMsgGCUserTrackTimePlayedConsecutively'] = _CMSGGCUSERTRACKTIMEPLAYEDCONSECUTIVELY
 DESCRIPTOR.message_types_by_name['CMsgGCItemCustomizationNotification'] = _CMSGGCITEMCUSTOMIZATIONNOTIFICATION
 DESCRIPTOR.enum_types_by_name['EGCItemMsg'] = _EGCITEMMSG
@@ -1112,6 +1206,13 @@ CMsgApplyAutograph = _reflection.GeneratedProtocolMessageType('CMsgApplyAutograp
   # @@protoc_insertion_point(class_scope:csgo.CMsgApplyAutograph)
   ))
 _sym_db.RegisterMessage(CMsgApplyAutograph)
+
+CMsgCasketItem = _reflection.GeneratedProtocolMessageType('CMsgCasketItem', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGCASKETITEM,
+  __module__ = 'econ_gcmessages_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CMsgCasketItem)
+  ))
+_sym_db.RegisterMessage(CMsgCasketItem)
 
 CMsgGCUserTrackTimePlayedConsecutively = _reflection.GeneratedProtocolMessageType('CMsgGCUserTrackTimePlayedConsecutively', (_message.Message,), dict(
   DESCRIPTOR = _CMSGGCUSERTRACKTIMEPLAYEDCONSECUTIVELY,

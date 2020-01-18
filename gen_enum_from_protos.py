@@ -50,7 +50,7 @@ for class_name, (attrs, attrs_starting_with_number) in sorted(classes.items(), k
             print("    })")
         else:
             print("\nclass {class_name}(IntEnum):".format(class_name=class_name))
-            for ikey, ivalue in attrs.items():
+            for ikey, ivalue in sorted(attrs.items(), key=lambda y: y[1]):
                 print("    {} = {}".format(ikey, ivalue))
 
 print("\n__all__ = [")

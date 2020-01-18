@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='csgo',
   syntax='proto2',
   serialized_options=_b('H\001\220\001\000'),
-  serialized_pb=_b('\n\x16gcsdk_gcmessages.proto\x12\x04\x63sgo\x1a\x13steammessages.proto\")\n\rCMsgSOIDOwner\x12\x0c\n\x04type\x18\x01 \x01(\r\x12\n\n\x02id\x18\x02 \x01(\x04\"t\n\x12\x43MsgSOSingleObject\x12\x0f\n\x07type_id\x18\x02 \x01(\x05\x12\x13\n\x0bobject_data\x18\x03 \x01(\x0c\x12\x0f\n\x07version\x18\x04 \x01(\x06\x12\'\n\nowner_soid\x18\x05 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\"\xdb\x02\n\x15\x43MsgSOMultipleObjects\x12\x42\n\x10objects_modified\x18\x02 \x03(\x0b\x32(.csgo.CMsgSOMultipleObjects.SingleObject\x12\x0f\n\x07version\x18\x03 \x01(\x06\x12?\n\robjects_added\x18\x04 \x03(\x0b\x32(.csgo.CMsgSOMultipleObjects.SingleObject\x12\x41\n\x0fobjects_removed\x18\x05 \x03(\x0b\x32(.csgo.CMsgSOMultipleObjects.SingleObject\x12\'\n\nowner_soid\x18\x06 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\x1a@\n\x0cSingleObject\x12\x0f\n\x07type_id\x18\x01 \x01(\x05\x12\x13\n\x0bobject_data\x18\x02 \x01(\x0c:\n\x80\xa6\x1d\x80\x02\x88\xa6\x1d\x80\x08\"\xc6\x01\n\x15\x43MsgSOCacheSubscribed\x12;\n\x07objects\x18\x02 \x03(\x0b\x32*.csgo.CMsgSOCacheSubscribed.SubscribedType\x12\x0f\n\x07version\x18\x03 \x01(\x06\x12\'\n\nowner_soid\x18\x04 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\x1a\x36\n\x0eSubscribedType\x12\x0f\n\x07type_id\x18\x01 \x01(\x05\x12\x13\n\x0bobject_data\x18\x02 \x03(\x0c\"B\n\x17\x43MsgSOCacheUnsubscribed\x12\'\n\nowner_soid\x18\x02 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\"X\n\x1c\x43MsgSOCacheSubscriptionCheck\x12\x0f\n\x07version\x18\x02 \x01(\x06\x12\'\n\nowner_soid\x18\x03 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\"I\n\x1e\x43MsgSOCacheSubscriptionRefresh\x12\'\n\nowner_soid\x18\x02 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\"%\n\x12\x43MsgSOCacheVersion\x12\x0f\n\x07version\x18\x01 \x01(\x06\"\xa8\x03\n\x12\x43MsgAccountDetails\x12\r\n\x05valid\x18\x01 \x01(\x08\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x02 \x01(\t\x12\x16\n\x0epublic_profile\x18\x04 \x01(\x08\x12\x18\n\x10public_inventory\x18\x05 \x01(\x08\x12\x12\n\nvac_banned\x18\x06 \x01(\x08\x12\x12\n\ncyber_cafe\x18\x07 \x01(\x08\x12\x16\n\x0eschool_account\x18\x08 \x01(\x08\x12\x1a\n\x12\x66ree_trial_account\x18\t \x01(\x08\x12\x12\n\nsubscribed\x18\n \x01(\x08\x12\x14\n\x0clow_violence\x18\x0b \x01(\x08\x12\x0f\n\x07limited\x18\x0c \x01(\x08\x12\x0f\n\x07trusted\x18\r \x01(\x08\x12\x0f\n\x07package\x18\x0e \x01(\r\x12\x13\n\x0btime_cached\x18\x0f \x01(\x07\x12\x16\n\x0e\x61\x63\x63ount_locked\x18\x10 \x01(\x08\x12\x18\n\x10\x63ommunity_banned\x18\x11 \x01(\x08\x12\x14\n\x0ctrade_banned\x18\x12 \x01(\x08\x12%\n\x1d\x65ligible_for_community_market\x18\x13 \x01(\x08\"_\n\x16\x43MsgGCMultiplexMessage\x12\x0f\n\x07msgtype\x18\x01 \x01(\r\x12\x0f\n\x07payload\x18\x02 \x01(\x0c\x12\x10\n\x08steamids\x18\x03 \x03(\x06\x12\x11\n\treplytogc\x18\x04 \x01(\x08\"2\n\x1f\x43MsgGCMultiplexMessage_Response\x12\x0f\n\x07msgtype\x18\x01 \x01(\r\"9\n\x13\x43GCToGCMsgMasterAck\x12\x11\n\tdir_index\x18\x01 \x01(\r\x12\x0f\n\x07gc_type\x18\x02 \x01(\r\"2\n\x1c\x43GCToGCMsgMasterAck_Response\x12\x12\n\x07\x65result\x18\x01 \x01(\x05:\x01\x32\"!\n\x1f\x43GCToGCMsgMasterStartupComplete\"X\n\x10\x43GCToGCMsgRouted\x12\x10\n\x08msg_type\x18\x01 \x01(\r\x12\x11\n\tsender_id\x18\x02 \x01(\x06\x12\x13\n\x0bnet_message\x18\x03 \x01(\x0c\x12\n\n\x02ip\x18\x04 \x01(\r\">\n\x15\x43GCToGCMsgRoutedReply\x12\x10\n\x08msg_type\x18\x01 \x01(\r\x12\x13\n\x0bnet_message\x18\x02 \x01(\x0c\"4\n\x15\x43MsgGCUpdateSessionIP\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\n\n\x02ip\x18\x02 \x01(\x07\")\n\x16\x43MsgGCRequestSessionIP\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\",\n\x1e\x43MsgGCRequestSessionIPResponse\x12\n\n\x02ip\x18\x01 \x01(\x07\"L\n\x16\x43MsgSOCacheHaveVersion\x12!\n\x04soid\x18\x01 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\x12\x0f\n\x07version\x18\x02 \x01(\x06\"\x85\x02\n\x0f\x43MsgClientHello\x12\x0f\n\x07version\x18\x01 \x01(\r\x12;\n\x15socache_have_versions\x18\x02 \x03(\x0b\x32\x1c.csgo.CMsgSOCacheHaveVersion\x12\x1b\n\x13\x63lient_session_need\x18\x03 \x01(\r\x12\x17\n\x0f\x63lient_launcher\x18\x04 \x01(\r\x12\x15\n\rpartner_srcid\x18\x05 \x01(\r\x12\x19\n\x11partner_accountid\x18\x06 \x01(\r\x12\x1c\n\x14partner_accountflags\x18\x07 \x01(\r\x12\x1e\n\x16partner_accountbalance\x18\x08 \x01(\r\"\xff\x01\n\x0f\x43MsgServerHello\x12\x0f\n\x07version\x18\x01 \x01(\r\x12;\n\x15socache_have_versions\x18\x02 \x03(\x0b\x32\x1c.csgo.CMsgSOCacheHaveVersion\x12\"\n\x1alegacy_client_session_need\x18\x03 \x01(\r\x12\x17\n\x0f\x63lient_launcher\x18\x04 \x01(\r\x12$\n\x1clegacy_steamdatagram_routing\x18\x06 \x01(\x0c\x12\x1e\n\x16required_internal_addr\x18\x07 \x01(\r\x12\x1b\n\x13steamdatagram_login\x18\x08 \x01(\x0c\"\xc3\x03\n\x11\x43MsgClientWelcome\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\x11\n\tgame_data\x18\x02 \x01(\x0c\x12@\n\x1boutofdate_subscribed_caches\x18\x03 \x03(\x0b\x32\x1b.csgo.CMsgSOCacheSubscribed\x12\x46\n\x1auptodate_subscribed_caches\x18\x04 \x03(\x0b\x32\".csgo.CMsgSOCacheSubscriptionCheck\x12\x32\n\x08location\x18\x05 \x01(\x0b\x32 .csgo.CMsgClientWelcome.Location\x12\x12\n\ngame_data2\x18\x06 \x01(\x0c\x12$\n\x1crtime32_gc_welcome_timestamp\x18\x07 \x01(\r\x12\x10\n\x08\x63urrency\x18\x08 \x01(\r\x12\x0f\n\x07\x62\x61lance\x18\t \x01(\r\x12\x13\n\x0b\x62\x61lance_url\x18\n \x01(\t\x12\x18\n\x10txn_country_code\x18\x0b \x01(\t\x1a@\n\x08Location\x12\x10\n\x08latitude\x18\x01 \x01(\x02\x12\x11\n\tlongitude\x18\x02 \x01(\x02\x12\x0f\n\x07\x63ountry\x18\x03 \x01(\t\"\xea\x01\n\x14\x43MsgConnectionStatus\x12I\n\x06status\x18\x01 \x01(\x0e\x32\x18.csgo.GCConnectionStatus:\x1fGCConnectionStatus_HAVE_SESSION\x12\x1b\n\x13\x63lient_session_need\x18\x02 \x01(\r\x12\x16\n\x0equeue_position\x18\x03 \x01(\x05\x12\x12\n\nqueue_size\x18\x04 \x01(\x05\x12\x14\n\x0cwait_seconds\x18\x05 \x01(\x05\x12(\n estimated_wait_seconds_remaining\x18\x06 \x01(\x05\"\x90\x03\n*CWorkshop_PopulateItemDescriptions_Request\x12\r\n\x05\x61ppid\x18\x01 \x01(\r\x12\x61\n\tlanguages\x18\x02 \x03(\x0b\x32N.csgo.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock\x1a^\n\x15SingleItemDescription\x12\x12\n\ngameitemid\x18\x01 \x01(\r\x12\x18\n\x10item_description\x18\x02 \x01(\t\x12\x17\n\x0fone_per_account\x18\x03 \x01(\x08\x1a\x8f\x01\n\x1dItemDescriptionsLanguageBlock\x12\x10\n\x08language\x18\x01 \x01(\t\x12\\\n\x0c\x64\x65scriptions\x18\x02 \x03(\x0b\x32\x46.csgo.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription\"F\n!CWorkshop_GetContributors_Request\x12\r\n\x05\x61ppid\x18\x01 \x01(\r\x12\x12\n\ngameitemid\x18\x02 \x01(\r\":\n\"CWorkshop_GetContributors_Response\x12\x14\n\x0c\x63ontributors\x18\x01 \x03(\x06\"\xf5\x03\n%CWorkshop_SetItemPaymentRules_Request\x12\r\n\x05\x61ppid\x18\x01 \x01(\r\x12\x12\n\ngameitemid\x18\x02 \x01(\r\x12\x66\n\x19\x61ssociated_workshop_files\x18\x03 \x03(\x0b\x32\x43.csgo.CWorkshop_SetItemPaymentRules_Request.WorkshopItemPaymentRule\x12\\\n\x10partner_accounts\x18\x04 \x03(\x0b\x32\x42.csgo.CWorkshop_SetItemPaymentRules_Request.PartnerItemPaymentRule\x1a\x7f\n\x17WorkshopItemPaymentRule\x12\x18\n\x10workshop_file_id\x18\x01 \x01(\x04\x12\x1a\n\x12revenue_percentage\x18\x02 \x01(\x02\x12\x18\n\x10rule_description\x18\x03 \x01(\t\x12\x14\n\trule_type\x18\x04 \x01(\r:\x01\x31\x1a\x62\n\x16PartnerItemPaymentRule\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x1a\n\x12revenue_percentage\x18\x02 \x01(\x02\x12\x18\n\x10rule_description\x18\x03 \x01(\t\"(\n&CWorkshop_SetItemPaymentRules_Response\"M\n%CGameServers_AggregationQuery_Request\x12\x0e\n\x06\x66ilter\x18\x01 \x01(\t\x12\x14\n\x0cgroup_fields\x18\x03 \x03(\t\"\x97\x02\n&CGameServers_AggregationQuery_Response\x12\x42\n\x06groups\x18\x01 \x03(\x0b\x32\x32.csgo.CGameServers_AggregationQuery_Response.Group\x1a\xa8\x01\n\x05Group\x12\x14\n\x0cgroup_values\x18\x01 \x03(\t\x12\x15\n\rservers_empty\x18\x02 \x01(\r\x12\x14\n\x0cservers_full\x18\x03 \x01(\r\x12\x15\n\rservers_total\x18\x04 \x01(\r\x12\x16\n\x0eplayers_humans\x18\x05 \x01(\r\x12\x14\n\x0cplayers_bots\x18\x06 \x01(\r\x12\x17\n\x0fplayer_capacity\x18\x07 \x01(\r\"\x87\x01\n#CWorkshop_AddSpecialPayment_Request\x12\r\n\x05\x61ppid\x18\x01 \x01(\r\x12\x12\n\ngameitemid\x18\x02 \x01(\r\x12\x0c\n\x04\x64\x61te\x18\x03 \x01(\t\x12\x16\n\x0epayment_us_usd\x18\x04 \x01(\x04\x12\x17\n\x0fpayment_row_usd\x18\x05 \x01(\x04\"&\n$CWorkshop_AddSpecialPayment_Response*_\n\x14GCClientLauncherType\x12 \n\x1cGCClientLauncherType_DEFAULT\x10\x00\x12%\n!GCClientLauncherType_PERFECTWORLD\x10\x01*\xd5\x01\n\x12GCConnectionStatus\x12#\n\x1fGCConnectionStatus_HAVE_SESSION\x10\x00\x12$\n GCConnectionStatus_GC_GOING_DOWN\x10\x01\x12!\n\x1dGCConnectionStatus_NO_SESSION\x10\x02\x12\x30\n,GCConnectionStatus_NO_SESSION_IN_LOGON_QUEUE\x10\x03\x12\x1f\n\x1bGCConnectionStatus_NO_STEAM\x10\x04*\xc4\x01\n\x15\x45SteamPaymentRuleType\x12\x1f\n\x1bk_EPaymentRuleTypeComposite\x10\x00\x12\x1e\n\x1ak_EPaymentRuleTypeWorkshop\x10\x01\x12%\n!k_EPaymentRuleTypeServiceProvider\x10\x02\x12\x1d\n\x19k_EPaymentRuleTypePartner\x10\x03\x12$\n k_EPaymentRuleTypeSpecialPayment\x10\x04\x42\x05H\x01\x90\x01\x00')
+  serialized_pb=_b('\n\x16gcsdk_gcmessages.proto\x12\x04\x63sgo\x1a\x13steammessages.proto\")\n\rCMsgSOIDOwner\x12\x0c\n\x04type\x18\x01 \x01(\r\x12\n\n\x02id\x18\x02 \x01(\x04\"t\n\x12\x43MsgSOSingleObject\x12\x0f\n\x07type_id\x18\x02 \x01(\x05\x12\x13\n\x0bobject_data\x18\x03 \x01(\x0c\x12\x0f\n\x07version\x18\x04 \x01(\x06\x12\'\n\nowner_soid\x18\x05 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\"\xd7\x01\n\x15\x43MsgSOMultipleObjects\x12\x42\n\x10objects_modified\x18\x02 \x03(\x0b\x32(.csgo.CMsgSOMultipleObjects.SingleObject\x12\x0f\n\x07version\x18\x03 \x01(\x06\x12\'\n\nowner_soid\x18\x06 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\x1a@\n\x0cSingleObject\x12\x0f\n\x07type_id\x18\x01 \x01(\x05\x12\x13\n\x0bobject_data\x18\x02 \x01(\x0c:\n\x80\xa6\x1d\x80\x02\x88\xa6\x1d\x80\x08\"\xc6\x01\n\x15\x43MsgSOCacheSubscribed\x12;\n\x07objects\x18\x02 \x03(\x0b\x32*.csgo.CMsgSOCacheSubscribed.SubscribedType\x12\x0f\n\x07version\x18\x03 \x01(\x06\x12\'\n\nowner_soid\x18\x04 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\x1a\x36\n\x0eSubscribedType\x12\x0f\n\x07type_id\x18\x01 \x01(\x05\x12\x13\n\x0bobject_data\x18\x02 \x03(\x0c\"B\n\x17\x43MsgSOCacheUnsubscribed\x12\'\n\nowner_soid\x18\x02 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\"X\n\x1c\x43MsgSOCacheSubscriptionCheck\x12\x0f\n\x07version\x18\x02 \x01(\x06\x12\'\n\nowner_soid\x18\x03 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\"I\n\x1e\x43MsgSOCacheSubscriptionRefresh\x12\'\n\nowner_soid\x18\x02 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\"%\n\x12\x43MsgSOCacheVersion\x12\x0f\n\x07version\x18\x01 \x01(\x06\"\xa8\x03\n\x12\x43MsgAccountDetails\x12\r\n\x05valid\x18\x01 \x01(\x08\x12\x14\n\x0c\x61\x63\x63ount_name\x18\x02 \x01(\t\x12\x16\n\x0epublic_profile\x18\x04 \x01(\x08\x12\x18\n\x10public_inventory\x18\x05 \x01(\x08\x12\x12\n\nvac_banned\x18\x06 \x01(\x08\x12\x12\n\ncyber_cafe\x18\x07 \x01(\x08\x12\x16\n\x0eschool_account\x18\x08 \x01(\x08\x12\x1a\n\x12\x66ree_trial_account\x18\t \x01(\x08\x12\x12\n\nsubscribed\x18\n \x01(\x08\x12\x14\n\x0clow_violence\x18\x0b \x01(\x08\x12\x0f\n\x07limited\x18\x0c \x01(\x08\x12\x0f\n\x07trusted\x18\r \x01(\x08\x12\x0f\n\x07package\x18\x0e \x01(\r\x12\x13\n\x0btime_cached\x18\x0f \x01(\x07\x12\x16\n\x0e\x61\x63\x63ount_locked\x18\x10 \x01(\x08\x12\x18\n\x10\x63ommunity_banned\x18\x11 \x01(\x08\x12\x14\n\x0ctrade_banned\x18\x12 \x01(\x08\x12%\n\x1d\x65ligible_for_community_market\x18\x13 \x01(\x08\"_\n\x16\x43MsgGCMultiplexMessage\x12\x0f\n\x07msgtype\x18\x01 \x01(\r\x12\x0f\n\x07payload\x18\x02 \x01(\x0c\x12\x10\n\x08steamids\x18\x03 \x03(\x06\x12\x11\n\treplytogc\x18\x04 \x01(\x08\"2\n\x1f\x43MsgGCMultiplexMessage_Response\x12\x0f\n\x07msgtype\x18\x01 \x01(\r\"9\n\x13\x43GCToGCMsgMasterAck\x12\x11\n\tdir_index\x18\x01 \x01(\r\x12\x0f\n\x07gc_type\x18\x02 \x01(\r\"2\n\x1c\x43GCToGCMsgMasterAck_Response\x12\x12\n\x07\x65result\x18\x01 \x01(\x05:\x01\x32\"!\n\x1f\x43GCToGCMsgMasterStartupComplete\"X\n\x10\x43GCToGCMsgRouted\x12\x10\n\x08msg_type\x18\x01 \x01(\r\x12\x11\n\tsender_id\x18\x02 \x01(\x06\x12\x13\n\x0bnet_message\x18\x03 \x01(\x0c\x12\n\n\x02ip\x18\x04 \x01(\r\">\n\x15\x43GCToGCMsgRoutedReply\x12\x10\n\x08msg_type\x18\x01 \x01(\r\x12\x13\n\x0bnet_message\x18\x02 \x01(\x0c\"4\n\x15\x43MsgGCUpdateSessionIP\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\x12\n\n\x02ip\x18\x02 \x01(\x07\")\n\x16\x43MsgGCRequestSessionIP\x12\x0f\n\x07steamid\x18\x01 \x01(\x06\",\n\x1e\x43MsgGCRequestSessionIPResponse\x12\n\n\x02ip\x18\x01 \x01(\x07\"L\n\x16\x43MsgSOCacheHaveVersion\x12!\n\x04soid\x18\x01 \x01(\x0b\x32\x13.csgo.CMsgSOIDOwner\x12\x0f\n\x07version\x18\x02 \x01(\x06\"\x85\x02\n\x0f\x43MsgClientHello\x12\x0f\n\x07version\x18\x01 \x01(\r\x12;\n\x15socache_have_versions\x18\x02 \x03(\x0b\x32\x1c.csgo.CMsgSOCacheHaveVersion\x12\x1b\n\x13\x63lient_session_need\x18\x03 \x01(\r\x12\x17\n\x0f\x63lient_launcher\x18\x04 \x01(\r\x12\x15\n\rpartner_srcid\x18\x05 \x01(\r\x12\x19\n\x11partner_accountid\x18\x06 \x01(\r\x12\x1c\n\x14partner_accountflags\x18\x07 \x01(\r\x12\x1e\n\x16partner_accountbalance\x18\x08 \x01(\r\"\xff\x01\n\x0f\x43MsgServerHello\x12\x0f\n\x07version\x18\x01 \x01(\r\x12;\n\x15socache_have_versions\x18\x02 \x03(\x0b\x32\x1c.csgo.CMsgSOCacheHaveVersion\x12\"\n\x1alegacy_client_session_need\x18\x03 \x01(\r\x12\x17\n\x0f\x63lient_launcher\x18\x04 \x01(\r\x12$\n\x1clegacy_steamdatagram_routing\x18\x06 \x01(\x0c\x12\x1e\n\x16required_internal_addr\x18\x07 \x01(\r\x12\x1b\n\x13steamdatagram_login\x18\x08 \x01(\x0c\"\xc3\x03\n\x11\x43MsgClientWelcome\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\x11\n\tgame_data\x18\x02 \x01(\x0c\x12@\n\x1boutofdate_subscribed_caches\x18\x03 \x03(\x0b\x32\x1b.csgo.CMsgSOCacheSubscribed\x12\x46\n\x1auptodate_subscribed_caches\x18\x04 \x03(\x0b\x32\".csgo.CMsgSOCacheSubscriptionCheck\x12\x32\n\x08location\x18\x05 \x01(\x0b\x32 .csgo.CMsgClientWelcome.Location\x12\x12\n\ngame_data2\x18\x06 \x01(\x0c\x12$\n\x1crtime32_gc_welcome_timestamp\x18\x07 \x01(\r\x12\x10\n\x08\x63urrency\x18\x08 \x01(\r\x12\x0f\n\x07\x62\x61lance\x18\t \x01(\r\x12\x13\n\x0b\x62\x61lance_url\x18\n \x01(\t\x12\x18\n\x10txn_country_code\x18\x0b \x01(\t\x1a@\n\x08Location\x12\x10\n\x08latitude\x18\x01 \x01(\x02\x12\x11\n\tlongitude\x18\x02 \x01(\x02\x12\x0f\n\x07\x63ountry\x18\x03 \x01(\t\"\xea\x01\n\x14\x43MsgConnectionStatus\x12I\n\x06status\x18\x01 \x01(\x0e\x32\x18.csgo.GCConnectionStatus:\x1fGCConnectionStatus_HAVE_SESSION\x12\x1b\n\x13\x63lient_session_need\x18\x02 \x01(\r\x12\x16\n\x0equeue_position\x18\x03 \x01(\x05\x12\x12\n\nqueue_size\x18\x04 \x01(\x05\x12\x14\n\x0cwait_seconds\x18\x05 \x01(\x05\x12(\n estimated_wait_seconds_remaining\x18\x06 \x01(\x05\"\x90\x03\n*CWorkshop_PopulateItemDescriptions_Request\x12\r\n\x05\x61ppid\x18\x01 \x01(\r\x12\x61\n\tlanguages\x18\x02 \x03(\x0b\x32N.csgo.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock\x1a^\n\x15SingleItemDescription\x12\x12\n\ngameitemid\x18\x01 \x01(\r\x12\x18\n\x10item_description\x18\x02 \x01(\t\x12\x17\n\x0fone_per_account\x18\x03 \x01(\x08\x1a\x8f\x01\n\x1dItemDescriptionsLanguageBlock\x12\x10\n\x08language\x18\x01 \x01(\t\x12\\\n\x0c\x64\x65scriptions\x18\x02 \x03(\x0b\x32\x46.csgo.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription\"F\n!CWorkshop_GetContributors_Request\x12\r\n\x05\x61ppid\x18\x01 \x01(\r\x12\x12\n\ngameitemid\x18\x02 \x01(\r\":\n\"CWorkshop_GetContributors_Response\x12\x14\n\x0c\x63ontributors\x18\x01 \x03(\x06\"\xf5\x03\n%CWorkshop_SetItemPaymentRules_Request\x12\r\n\x05\x61ppid\x18\x01 \x01(\r\x12\x12\n\ngameitemid\x18\x02 \x01(\r\x12\x66\n\x19\x61ssociated_workshop_files\x18\x03 \x03(\x0b\x32\x43.csgo.CWorkshop_SetItemPaymentRules_Request.WorkshopItemPaymentRule\x12\\\n\x10partner_accounts\x18\x04 \x03(\x0b\x32\x42.csgo.CWorkshop_SetItemPaymentRules_Request.PartnerItemPaymentRule\x1a\x7f\n\x17WorkshopItemPaymentRule\x12\x18\n\x10workshop_file_id\x18\x01 \x01(\x04\x12\x1a\n\x12revenue_percentage\x18\x02 \x01(\x02\x12\x18\n\x10rule_description\x18\x03 \x01(\t\x12\x14\n\trule_type\x18\x04 \x01(\r:\x01\x31\x1a\x62\n\x16PartnerItemPaymentRule\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x1a\n\x12revenue_percentage\x18\x02 \x01(\x02\x12\x18\n\x10rule_description\x18\x03 \x01(\t\"(\n&CWorkshop_SetItemPaymentRules_Response\"M\n%CGameServers_AggregationQuery_Request\x12\x0e\n\x06\x66ilter\x18\x01 \x01(\t\x12\x14\n\x0cgroup_fields\x18\x03 \x03(\t\"\x97\x02\n&CGameServers_AggregationQuery_Response\x12\x42\n\x06groups\x18\x01 \x03(\x0b\x32\x32.csgo.CGameServers_AggregationQuery_Response.Group\x1a\xa8\x01\n\x05Group\x12\x14\n\x0cgroup_values\x18\x01 \x03(\t\x12\x15\n\rservers_empty\x18\x02 \x01(\r\x12\x14\n\x0cservers_full\x18\x03 \x01(\r\x12\x15\n\rservers_total\x18\x04 \x01(\r\x12\x16\n\x0eplayers_humans\x18\x05 \x01(\r\x12\x14\n\x0cplayers_bots\x18\x06 \x01(\r\x12\x17\n\x0fplayer_capacity\x18\x07 \x01(\r\"\x87\x01\n#CWorkshop_AddSpecialPayment_Request\x12\r\n\x05\x61ppid\x18\x01 \x01(\r\x12\x12\n\ngameitemid\x18\x02 \x01(\r\x12\x0c\n\x04\x64\x61te\x18\x03 \x01(\t\x12\x16\n\x0epayment_us_usd\x18\x04 \x01(\x04\x12\x17\n\x0fpayment_row_usd\x18\x05 \x01(\x04\"&\n$CWorkshop_AddSpecialPayment_Response*_\n\x14GCClientLauncherType\x12 \n\x1cGCClientLauncherType_DEFAULT\x10\x00\x12%\n!GCClientLauncherType_PERFECTWORLD\x10\x01*\xd5\x01\n\x12GCConnectionStatus\x12#\n\x1fGCConnectionStatus_HAVE_SESSION\x10\x00\x12$\n GCConnectionStatus_GC_GOING_DOWN\x10\x01\x12!\n\x1dGCConnectionStatus_NO_SESSION\x10\x02\x12\x30\n,GCConnectionStatus_NO_SESSION_IN_LOGON_QUEUE\x10\x03\x12\x1f\n\x1bGCConnectionStatus_NO_STEAM\x10\x04*\xc4\x01\n\x15\x45SteamPaymentRuleType\x12\x1f\n\x1bk_EPaymentRuleTypeComposite\x10\x00\x12\x1e\n\x1ak_EPaymentRuleTypeWorkshop\x10\x01\x12%\n!k_EPaymentRuleTypeServiceProvider\x10\x02\x12\x1d\n\x19k_EPaymentRuleTypePartner\x10\x03\x12$\n k_EPaymentRuleTypeSpecialPayment\x10\x04\x42\x05H\x01\x90\x01\x00')
   ,
   dependencies=[steammessages__pb2.DESCRIPTOR,])
 
@@ -43,8 +43,8 @@ _GCCLIENTLAUNCHERTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4967,
-  serialized_end=5062,
+  serialized_start=4835,
+  serialized_end=4930,
 )
 _sym_db.RegisterEnumDescriptor(_GCCLIENTLAUNCHERTYPE)
 
@@ -78,8 +78,8 @@ _GCCONNECTIONSTATUS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=5065,
-  serialized_end=5278,
+  serialized_start=4933,
+  serialized_end=5146,
 )
 _sym_db.RegisterEnumDescriptor(_GCCONNECTIONSTATUS)
 
@@ -113,8 +113,8 @@ _ESTEAMPAYMENTRULETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=5281,
-  serialized_end=5477,
+  serialized_start=5149,
+  serialized_end=5345,
 )
 _sym_db.RegisterEnumDescriptor(_ESTEAMPAYMENTRULETYPE)
 
@@ -257,8 +257,8 @@ _CMSGSOMULTIPLEOBJECTS_SINGLEOBJECT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=498,
-  serialized_end=562,
+  serialized_start=366,
+  serialized_end=430,
 )
 
 _CMSGSOMULTIPLEOBJECTS = _descriptor.Descriptor(
@@ -283,21 +283,7 @@ _CMSGSOMULTIPLEOBJECTS = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='objects_added', full_name='csgo.CMsgSOMultipleObjects.objects_added', index=2,
-      number=4, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='objects_removed', full_name='csgo.CMsgSOMultipleObjects.objects_removed', index=3,
-      number=5, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='owner_soid', full_name='csgo.CMsgSOMultipleObjects.owner_soid', index=4,
+      name='owner_soid', full_name='csgo.CMsgSOMultipleObjects.owner_soid', index=2,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -316,7 +302,7 @@ _CMSGSOMULTIPLEOBJECTS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=215,
-  serialized_end=562,
+  serialized_end=430,
 )
 
 
@@ -353,8 +339,8 @@ _CMSGSOCACHESUBSCRIBED_SUBSCRIBEDTYPE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=709,
-  serialized_end=763,
+  serialized_start=577,
+  serialized_end=631,
 )
 
 _CMSGSOCACHESUBSCRIBED = _descriptor.Descriptor(
@@ -397,8 +383,8 @@ _CMSGSOCACHESUBSCRIBED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=565,
-  serialized_end=763,
+  serialized_start=433,
+  serialized_end=631,
 )
 
 
@@ -428,8 +414,8 @@ _CMSGSOCACHEUNSUBSCRIBED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=765,
-  serialized_end=831,
+  serialized_start=633,
+  serialized_end=699,
 )
 
 
@@ -466,8 +452,8 @@ _CMSGSOCACHESUBSCRIPTIONCHECK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=833,
-  serialized_end=921,
+  serialized_start=701,
+  serialized_end=789,
 )
 
 
@@ -497,8 +483,8 @@ _CMSGSOCACHESUBSCRIPTIONREFRESH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=923,
-  serialized_end=996,
+  serialized_start=791,
+  serialized_end=864,
 )
 
 
@@ -528,8 +514,8 @@ _CMSGSOCACHEVERSION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=998,
-  serialized_end=1035,
+  serialized_start=866,
+  serialized_end=903,
 )
 
 
@@ -678,8 +664,8 @@ _CMSGACCOUNTDETAILS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1038,
-  serialized_end=1462,
+  serialized_start=906,
+  serialized_end=1330,
 )
 
 
@@ -730,8 +716,8 @@ _CMSGGCMULTIPLEXMESSAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1464,
-  serialized_end=1559,
+  serialized_start=1332,
+  serialized_end=1427,
 )
 
 
@@ -761,8 +747,8 @@ _CMSGGCMULTIPLEXMESSAGE_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1561,
-  serialized_end=1611,
+  serialized_start=1429,
+  serialized_end=1479,
 )
 
 
@@ -799,8 +785,8 @@ _CGCTOGCMSGMASTERACK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1613,
-  serialized_end=1670,
+  serialized_start=1481,
+  serialized_end=1538,
 )
 
 
@@ -830,8 +816,8 @@ _CGCTOGCMSGMASTERACK_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1672,
-  serialized_end=1722,
+  serialized_start=1540,
+  serialized_end=1590,
 )
 
 
@@ -854,8 +840,8 @@ _CGCTOGCMSGMASTERSTARTUPCOMPLETE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1724,
-  serialized_end=1757,
+  serialized_start=1592,
+  serialized_end=1625,
 )
 
 
@@ -906,8 +892,8 @@ _CGCTOGCMSGROUTED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1759,
-  serialized_end=1847,
+  serialized_start=1627,
+  serialized_end=1715,
 )
 
 
@@ -944,8 +930,8 @@ _CGCTOGCMSGROUTEDREPLY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1849,
-  serialized_end=1911,
+  serialized_start=1717,
+  serialized_end=1779,
 )
 
 
@@ -982,8 +968,8 @@ _CMSGGCUPDATESESSIONIP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1913,
-  serialized_end=1965,
+  serialized_start=1781,
+  serialized_end=1833,
 )
 
 
@@ -1013,8 +999,8 @@ _CMSGGCREQUESTSESSIONIP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1967,
-  serialized_end=2008,
+  serialized_start=1835,
+  serialized_end=1876,
 )
 
 
@@ -1044,8 +1030,8 @@ _CMSGGCREQUESTSESSIONIPRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2010,
-  serialized_end=2054,
+  serialized_start=1878,
+  serialized_end=1922,
 )
 
 
@@ -1082,8 +1068,8 @@ _CMSGSOCACHEHAVEVERSION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2056,
-  serialized_end=2132,
+  serialized_start=1924,
+  serialized_end=2000,
 )
 
 
@@ -1162,8 +1148,8 @@ _CMSGCLIENTHELLO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2135,
-  serialized_end=2396,
+  serialized_start=2003,
+  serialized_end=2264,
 )
 
 
@@ -1235,8 +1221,8 @@ _CMSGSERVERHELLO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2399,
-  serialized_end=2654,
+  serialized_start=2267,
+  serialized_end=2522,
 )
 
 
@@ -1280,8 +1266,8 @@ _CMSGCLIENTWELCOME_LOCATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3044,
-  serialized_end=3108,
+  serialized_start=2912,
+  serialized_end=2976,
 )
 
 _CMSGCLIENTWELCOME = _descriptor.Descriptor(
@@ -1380,8 +1366,8 @@ _CMSGCLIENTWELCOME = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2657,
-  serialized_end=3108,
+  serialized_start=2525,
+  serialized_end=2976,
 )
 
 
@@ -1446,8 +1432,8 @@ _CMSGCONNECTIONSTATUS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3111,
-  serialized_end=3345,
+  serialized_start=2979,
+  serialized_end=3213,
 )
 
 
@@ -1491,8 +1477,8 @@ _CWORKSHOP_POPULATEITEMDESCRIPTIONS_REQUEST_SINGLEITEMDESCRIPTION = _descriptor.
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3508,
-  serialized_end=3602,
+  serialized_start=3376,
+  serialized_end=3470,
 )
 
 _CWORKSHOP_POPULATEITEMDESCRIPTIONS_REQUEST_ITEMDESCRIPTIONSLANGUAGEBLOCK = _descriptor.Descriptor(
@@ -1528,8 +1514,8 @@ _CWORKSHOP_POPULATEITEMDESCRIPTIONS_REQUEST_ITEMDESCRIPTIONSLANGUAGEBLOCK = _des
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3605,
-  serialized_end=3748,
+  serialized_start=3473,
+  serialized_end=3616,
 )
 
 _CWORKSHOP_POPULATEITEMDESCRIPTIONS_REQUEST = _descriptor.Descriptor(
@@ -1565,8 +1551,8 @@ _CWORKSHOP_POPULATEITEMDESCRIPTIONS_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3348,
-  serialized_end=3748,
+  serialized_start=3216,
+  serialized_end=3616,
 )
 
 
@@ -1603,8 +1589,8 @@ _CWORKSHOP_GETCONTRIBUTORS_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3750,
-  serialized_end=3820,
+  serialized_start=3618,
+  serialized_end=3688,
 )
 
 
@@ -1634,8 +1620,8 @@ _CWORKSHOP_GETCONTRIBUTORS_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3822,
-  serialized_end=3880,
+  serialized_start=3690,
+  serialized_end=3748,
 )
 
 
@@ -1686,8 +1672,8 @@ _CWORKSHOP_SETITEMPAYMENTRULES_REQUEST_WORKSHOPITEMPAYMENTRULE = _descriptor.Des
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4157,
-  serialized_end=4284,
+  serialized_start=4025,
+  serialized_end=4152,
 )
 
 _CWORKSHOP_SETITEMPAYMENTRULES_REQUEST_PARTNERITEMPAYMENTRULE = _descriptor.Descriptor(
@@ -1730,8 +1716,8 @@ _CWORKSHOP_SETITEMPAYMENTRULES_REQUEST_PARTNERITEMPAYMENTRULE = _descriptor.Desc
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4286,
-  serialized_end=4384,
+  serialized_start=4154,
+  serialized_end=4252,
 )
 
 _CWORKSHOP_SETITEMPAYMENTRULES_REQUEST = _descriptor.Descriptor(
@@ -1781,8 +1767,8 @@ _CWORKSHOP_SETITEMPAYMENTRULES_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3883,
-  serialized_end=4384,
+  serialized_start=3751,
+  serialized_end=4252,
 )
 
 
@@ -1805,8 +1791,8 @@ _CWORKSHOP_SETITEMPAYMENTRULES_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4386,
-  serialized_end=4426,
+  serialized_start=4254,
+  serialized_end=4294,
 )
 
 
@@ -1843,8 +1829,8 @@ _CGAMESERVERS_AGGREGATIONQUERY_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4428,
-  serialized_end=4505,
+  serialized_start=4296,
+  serialized_end=4373,
 )
 
 
@@ -1916,8 +1902,8 @@ _CGAMESERVERS_AGGREGATIONQUERY_RESPONSE_GROUP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4619,
-  serialized_end=4787,
+  serialized_start=4487,
+  serialized_end=4655,
 )
 
 _CGAMESERVERS_AGGREGATIONQUERY_RESPONSE = _descriptor.Descriptor(
@@ -1946,8 +1932,8 @@ _CGAMESERVERS_AGGREGATIONQUERY_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4508,
-  serialized_end=4787,
+  serialized_start=4376,
+  serialized_end=4655,
 )
 
 
@@ -2005,8 +1991,8 @@ _CWORKSHOP_ADDSPECIALPAYMENT_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4790,
-  serialized_end=4925,
+  serialized_start=4658,
+  serialized_end=4793,
 )
 
 
@@ -2029,15 +2015,13 @@ _CWORKSHOP_ADDSPECIALPAYMENT_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4927,
-  serialized_end=4965,
+  serialized_start=4795,
+  serialized_end=4833,
 )
 
 _CMSGSOSINGLEOBJECT.fields_by_name['owner_soid'].message_type = _CMSGSOIDOWNER
 _CMSGSOMULTIPLEOBJECTS_SINGLEOBJECT.containing_type = _CMSGSOMULTIPLEOBJECTS
 _CMSGSOMULTIPLEOBJECTS.fields_by_name['objects_modified'].message_type = _CMSGSOMULTIPLEOBJECTS_SINGLEOBJECT
-_CMSGSOMULTIPLEOBJECTS.fields_by_name['objects_added'].message_type = _CMSGSOMULTIPLEOBJECTS_SINGLEOBJECT
-_CMSGSOMULTIPLEOBJECTS.fields_by_name['objects_removed'].message_type = _CMSGSOMULTIPLEOBJECTS_SINGLEOBJECT
 _CMSGSOMULTIPLEOBJECTS.fields_by_name['owner_soid'].message_type = _CMSGSOIDOWNER
 _CMSGSOCACHESUBSCRIBED_SUBSCRIBEDTYPE.containing_type = _CMSGSOCACHESUBSCRIBED
 _CMSGSOCACHESUBSCRIBED.fields_by_name['objects'].message_type = _CMSGSOCACHESUBSCRIBED_SUBSCRIBEDTYPE

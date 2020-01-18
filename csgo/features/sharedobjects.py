@@ -220,11 +220,11 @@ class SOCache(EventEmitter, dict):
             type_id, obj = result
             self.emit(('updated', type_id), obj)
 
-    def _handle_destroy(self, so):
-        result = self._parse_object_data(so.type_id, so.object_data)
+    def _handle_destroy(self, message):
+        result = self._parse_object_data(message.type_id, message.object_data)
         if result:
             key, obj = result
-            type_id = ESOType(so.type_id)
+            type_id = ESOType(message.type_id)
             current = None
 
             if key is NO_KEY:
@@ -239,10 +239,10 @@ class SOCache(EventEmitter, dict):
     def _handle_update_multiple(self, message):
         for so_object in message.objects_modified:
             self._handle_update(so_object)
-        for so_object in message.objects_added:
-            self._handle_create(so_object)
-        for so_object in message.objects_removed:
-            self._handle_destroy(so_object)
+#       for so_object in message.objects_added:
+#           self._handle_create(so_object)
+#       for so_object in message.objects_removed:
+#           self._handle_destroy(so_object)
 
     def _handle_client_welcome(self, message):
         for one in message.outofdate_subscribed_caches:

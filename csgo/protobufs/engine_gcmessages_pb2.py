@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='csgo',
   syntax='proto2',
   serialized_options=_b('\220\001\000'),
-  serialized_pb=_b('\n\x17\x65ngine_gcmessages.proto\x12\x04\x63sgo\x1a google/protobuf/descriptor.proto\"\xcb\x01\n\x15\x43\x45ngineGotvSyncPacket\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x13\n\x0binstance_id\x18\x02 \x01(\r\x12\x16\n\x0esignupfragment\x18\x03 \x01(\r\x12\x17\n\x0f\x63urrentfragment\x18\x04 \x01(\r\x12\x10\n\x08tickrate\x18\x05 \x01(\x02\x12\x0c\n\x04tick\x18\x06 \x01(\r\x12\x0f\n\x07rtdelay\x18\x08 \x01(\x02\x12\x0e\n\x06rcvage\x18\t \x01(\x02\x12\x19\n\x11keyframe_interval\x18\n \x01(\x02\x42\x03\x90\x01\x00')
+  serialized_pb=_b('\n\x17\x65ngine_gcmessages.proto\x12\x04\x63sgo\x1a google/protobuf/descriptor.proto\"\xdd\x01\n\x15\x43\x45ngineGotvSyncPacket\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x13\n\x0binstance_id\x18\x02 \x01(\r\x12\x16\n\x0esignupfragment\x18\x03 \x01(\r\x12\x17\n\x0f\x63urrentfragment\x18\x04 \x01(\r\x12\x10\n\x08tickrate\x18\x05 \x01(\x02\x12\x0c\n\x04tick\x18\x06 \x01(\r\x12\x0f\n\x07rtdelay\x18\x08 \x01(\x02\x12\x0e\n\x06rcvage\x18\t \x01(\x02\x12\x19\n\x11keyframe_interval\x18\n \x01(\x02\x12\x10\n\x08\x63\x64ndelay\x18\x0b \x01(\rB\x03\x90\x01\x00')
   ,
   dependencies=[google_dot_protobuf_dot_descriptor__pb2.DESCRIPTOR,])
 
@@ -98,6 +98,13 @@ _CENGINEGOTVSYNCPACKET = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='cdndelay', full_name='csgo.CEngineGotvSyncPacket.cdndelay', index=9,
+      number=11, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -111,7 +118,7 @@ _CENGINEGOTVSYNCPACKET = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=68,
-  serialized_end=271,
+  serialized_end=289,
 )
 
 DESCRIPTOR.message_types_by_name['CEngineGotvSyncPacket'] = _CENGINEGOTVSYNCPACKET
