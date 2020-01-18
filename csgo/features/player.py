@@ -2,7 +2,7 @@ from csgo.enums import ECsgoGCMsg
 
 class Player(object):
     ranks_map = {
-	0: "Unranked",
+	0: "Not Ranked",
 	1: "Silver I",
 	2: "Silver II",
 	3: "Silver III",
