@@ -12,8 +12,8 @@ This is the minimal code we need to get a session with the game coordnator.
 
 .. code:: python
 
-    from steam import SteamClient
-    from csgo import CSGOClient
+    from steam.client import SteamClient
+    from csgo.client import CSGOClient
 
     client = SteamClient()
     cs = CSGOClient(client)
