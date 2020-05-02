@@ -13,13 +13,16 @@ class ESOType(IntEnum):
     CSOQuestProgress = 46
 
 
-class EXPFlag(IntEnum):
-    UNKNOWN1                     = 0b0000000000000000000000000000001
-    LevelUpDropReceived          = 0b0000000000000000000000000000010
-    UNKNOWN2                     = 0b0000000000000000000000000010000  # OW or Prime status
-    OverwatchXPReward            = 0b0010000000000000000000000000000
-    WeeklyXPBoostReceived        = 0b0100000000000000000000000000000
-    UNKNOWN3                     = 0b1000000000000000000000000000000  # OW related?
+class EXPBonusFlag(IntEnum):
+    EarnedXpThisPeriod         = 1 << 0
+    FirstReward                = 1 << 1
+    Msg_YourReportGotConvicted = 1 << 2
+    Msg_YouPartiedWithCheaters = 1 << 3
+    PrestigeEarned             = 1 << 4
+    ChinaGovernmentCert        = 1 << 5
+    OverwatchBonus             = 1 << 28
+    BonusBoostConsumed         = 1 << 29
+    ReducedGain                = 1 << 30
 
 
 # Do not remove
