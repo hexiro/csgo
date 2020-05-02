@@ -12,9 +12,9 @@ with open(path.join(here, 'csgo/__init__.py'), encoding='utf-8') as f:
     __version__ = f.readline().split('"')[1]
 
 install_requires = [
-    'steam>=0.8.15,<1.0.0',
-    'gevent-eventemitter>=2.0',
-    'gevent>=1.1',
+    'steam~=1.0',
+    'gevent-eventemitter>=2.1',
+    'gevent>=1.3.0',
     'protobuf>=3.0.0',
     'six>=1.10',
 ]
@@ -41,6 +41,9 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
     keywords='valve steam steamid api webapi csgo global offensive',
     packages=['csgo'] + ['csgo.'+x for x in find_packages(where='csgo')],

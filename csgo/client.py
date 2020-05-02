@@ -9,7 +9,7 @@ import google.protobuf
 from steam.core.msg import GCMsgHdrProto
 from steam.client.gc import GameCoordinator
 from steam.enums.emsg import EMsg
-from steam.util import proto_fill_from_dict
+from steam.utils.proto import proto_fill_from_dict
 from csgo.features import FeatureBase
 from csgo.enums import EGCBaseClientMsg, GCConnectionStatus, GCClientLauncherType
 from csgo.msg import get_emsg_enum, find_proto
