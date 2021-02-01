@@ -38,6 +38,9 @@ class Match(object):
 
     def request_live_game_for_user(self, account_id):
         """
+        .. warning::
+            Deprecated. CSGO no longer reponds for this method
+
         Request recent games for a specific user
 
         :param account_id: account id of the user
