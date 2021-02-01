@@ -25,6 +25,7 @@ enum GCProtoBufMsgSrc {
 message CMsgProtoBufHeader {
 	option (msgpool_soft_limit) = 256;
 	option (msgpool_hard_limit) = 1024;
+
 	optional fixed64 client_steam_id = 1;
 	optional int32 client_session_id = 2;
 	optional uint32 source_app_id = 3;
@@ -324,6 +325,7 @@ message CMsgAMGrantGuestPasses2Response {
 message CGCSystemMsg_GetAccountDetails {
 	option (msgpool_soft_limit) = 128;
 	option (msgpool_hard_limit) = 512;
+
 	optional fixed64 steamid = 1;
 	optional uint32 appid = 2;
 }
@@ -331,6 +333,7 @@ message CGCSystemMsg_GetAccountDetails {
 message CGCSystemMsg_GetAccountDetails_Response {
 	option (msgpool_soft_limit) = 128;
 	option (msgpool_hard_limit) = 512;
+
 	optional uint32 eresult_deprecated = 1 [default = 2];
 	optional string account_name = 2;
 	optional string persona_name = 3;
@@ -438,6 +441,9 @@ message CMsgGCGetPartnerAccountLink {
 message CMsgGCGetPartnerAccountLink_Response {
 	optional uint32 pwid = 1;
 	optional uint32 nexonid = 2;
+	optional int32 ageclass = 3;
+	optional bool id_verified = 4 [default = true];
+	optional bool is_adult = 5;
 }
 
 message CMsgGCRoutingInfo {
@@ -583,3 +589,11 @@ message CMsgDPPartnerMicroTxnsResponse {
 	optional csgo.CMsgDPPartnerMicroTxnsResponse.EErrorCode eerrorcode = 2 [default = k_MsgValid];
 }
 
+message CChinaAgreementSessions_StartAgreementSessionInGame_Request {
+	optional uint32 appid = 1;
+	optional fixed64 steamid = 2;
+}
+
+message CChinaAgreementSessions_StartAgreementSessionInGame_Response {
+	optional string agreement_url = 1;
+}

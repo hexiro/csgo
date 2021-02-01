@@ -1,5 +1,10 @@
 from enum import IntEnum
 
+class EClientReportingVersion(IntEnum):
+    OldVersion = 0
+    BetaVersion = 1
+    SupportsTrustedMode = 2
+
 class ECommunityItemAttribute(IntEnum):
     Invalid = 0
     CardBorder = 1
@@ -31,18 +36,12 @@ class ECsgoGCMsg(IntEnum):
     EMsgGCCStrike15_v2_MatchmakingStop = 9102
     EMsgGCCStrike15_v2_MatchmakingClient2ServerPing = 9103
     EMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate = 9104
-    EMsgGCCStrike15_v2_MatchmakingGC2ServerReserve = 9105
     EMsgGCCStrike15_v2_MatchmakingServerReservationResponse = 9106
     EMsgGCCStrike15_v2_MatchmakingGC2ClientReserve = 9107
-    EMsgGCCStrike15_v2_MatchmakingServerRoundStats = 9108
     EMsgGCCStrike15_v2_MatchmakingClient2GCHello = 9109
     EMsgGCCStrike15_v2_MatchmakingGC2ClientHello = 9110
-    EMsgGCCStrike15_v2_MatchmakingServerMatchEnd = 9111
     EMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon = 9112
-    EMsgGCCStrike15_v2_MatchmakingServer2GCKick = 9113
-    EMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm = 9114
     EMsgGCCStrike15_v2_MatchmakingGCOperationalStats = 9115
-    EMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate = 9116
     EMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate = 9117
     EMsgGCCStrike15_v2_ServerNotificationForUserPenalty = 9118
     EMsgGCCStrike15_v2_ClientReportPlayer = 9119
@@ -67,17 +66,14 @@ class ECsgoGCMsg(IntEnum):
     EMsgGCCStrike15_v2_MatchListRequestRecentUserGames = 9141
     EMsgGCCStrike15_v2_GC2ServerReservationUpdate = 9142
     EMsgGCCStrike15_v2_ClientVarValueNotificationInfo = 9144
-    EMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification = 9145
     EMsgGCCStrike15_v2_MatchListRequestTournamentGames = 9146
     EMsgGCCStrike15_v2_MatchListRequestFullGameInfo = 9147
     EMsgGCCStrike15_v2_GiftsLeaderboardRequest = 9148
     EMsgGCCStrike15_v2_GiftsLeaderboardResponse = 9149
     EMsgGCCStrike15_v2_ServerVarValueNotificationInfo = 9150
-    EMsgGCToGCReloadVersions = 9151
     EMsgGCCStrike15_v2_ClientSubmitSurveyVote = 9152
     EMsgGCCStrike15_v2_Server2GCClientValidate = 9153
     EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser = 9154
-    EMsgGCCStrike15_v2_Server2GCPureServerValidationFailure = 9155
     EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest = 9156
     EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse = 9157
     EMsgGCCStrike15_v2_AccountPrivacySettings = 9158
@@ -88,7 +84,6 @@ class ECsgoGCMsg(IntEnum):
     EMsgGCCStrike15_v2_ClientRequestJoinFriendData = 9163
     EMsgGCCStrike15_v2_ClientRequestJoinServerData = 9164
     EMsgGCCStrike15_v2_ClientRequestNewMission = 9165
-    EMsgGCCStrike15_v2_GC2ServerNotifyXPRewarded = 9166
     EMsgGCCStrike15_v2_GC2ClientTournamentInfo = 9167
     EMsgGC_GlobalGame_Subscribe = 9168
     EMsgGC_GlobalGame_Unsubscribe = 9169
@@ -120,11 +115,17 @@ class ECsgoGCMsg(IntEnum):
     EMsgGCCStrike15_v2_ClientAccountBalance = 9196
     EMsgGCCStrike15_v2_ClientPartyJoinRelay = 9197
     EMsgGCCStrike15_v2_ClientPartyWarning = 9198
-    EMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial = 9199
     EMsgGCCStrike15_v2_SetEventFavorite = 9200
     EMsgGCCStrike15_v2_GetEventFavorites_Request = 9201
+    EMsgGCCStrike15_v2_ClientPerfReport = 9202
     EMsgGCCStrike15_v2_GetEventFavorites_Response = 9203
     EMsgGCCStrike15_v2_ClientRequestSouvenir = 9204
+    EMsgGCCStrike15_v2_ClientReportValidation = 9205
+    EMsgGCCStrike15_v2_GC2ClientRefuseSecureMode = 9206
+    EMsgGCCStrike15_v2_GC2ClientRequestValidation = 9207
+    EMsgGCCStrike15_v2_ClientRedeemMissionReward = 9209
+    EMsgGCCStrike15_ClientDeepStats = 9210
+    EMsgGCCStrike15_StartAgreementSessionInGame = 9211
 
 class ECsgoSteamUserStat(IntEnum):
     XpEarnedGames = 1
@@ -159,10 +160,13 @@ class EGCItemCustomizationNotification(IntEnum):
     RemoveSticker = 1053
     ApplySticker = 1086
     StatTrakSwap = 1088
+    RemovePatch = 1089
+    ApplyPatch = 1090
     ActivateFanToken = 9178
     ActivateOperationCoin = 9179
     GraffitiUnseal = 9185
     GenerateSouvenir = 9204
+    ClientRedeemMissionReward = 9209
 
 class EGCItemMsg(IntEnum):
     EMsgGCBase = 1000
@@ -433,13 +437,6 @@ class ESOMsg(IntEnum):
     CacheSubscriptionCheck = 27
     CacheSubscriptionRefresh = 28
 
-class ESteamPaymentRuleType(IntEnum):
-    EPaymentRuleTypeComposite = 0
-    EPaymentRuleTypeWorkshop = 1
-    EPaymentRuleTypeServiceProvider = 2
-    EPaymentRuleTypePartner = 3
-    EPaymentRuleTypeSpecialPayment = 4
-
 class EUnlockStyle(IntEnum):
     UnlockStyle_Succeeded = 0
     UnlockStyle_Failed_PreReq = 1
@@ -451,6 +448,7 @@ class EUnlockStyle(IntEnum):
 class GCClientLauncherType(IntEnum):
     DEFAULT = 0
     PERFECTWORLD = 1
+    STEAMCHINA = 2
 
 class GCConnectionStatus(IntEnum):
     HAVE_SESSION = 0
@@ -460,6 +458,7 @@ class GCConnectionStatus(IntEnum):
     NO_STEAM = 4
 
 __all__ = [
+    'EClientReportingVersion',
     'ECommunityItemAttribute',
     'ECommunityItemClass',
     'ECsgoGCMsg',
@@ -471,7 +470,6 @@ __all__ = [
     'EGCSystemMsg',
     'EGCToGCMsg',
     'ESOMsg',
-    'ESteamPaymentRuleType',
     'EUnlockStyle',
     'GCClientLauncherType',
     'GCConnectionStatus',

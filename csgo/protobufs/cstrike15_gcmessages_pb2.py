@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='csgo',
   syntax='proto2',
   serialized_options=_b('H\001\220\001\000'),
-  serialized_pb=_b('\n\x1a\x63strike15_gcmessages.proto\x12\x04\x63sgo\x1a\x13steammessages.proto\x1a\x17\x65ngine_gcmessages.proto\"=\n\x0eGameServerPing\x12\x0c\n\x04ping\x18\x02 \x01(\x05\x12\n\n\x02ip\x18\x03 \x01(\r\x12\x11\n\tinstances\x18\x05 \x01(\r\"6\n\x0e\x44\x61taCenterPing\x12\x16\n\x0e\x64\x61ta_center_id\x18\x01 \x01(\x07\x12\x0c\n\x04ping\x18\x02 \x01(\x11\"`\n\x17\x44\x65tailedSearchStatistic\x12\x11\n\tgame_type\x18\x01 \x01(\r\x12\x17\n\x0fsearch_time_avg\x18\x02 \x01(\r\x12\x19\n\x11players_searching\x18\x04 \x01(\r\"\xa7\x01\n\x10TournamentPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x13\n\x0bplayer_nick\x18\x02 \x01(\t\x12\x13\n\x0bplayer_name\x18\x03 \x01(\t\x12\x12\n\nplayer_dob\x18\x04 \x01(\r\x12\x13\n\x0bplayer_flag\x18\x05 \x01(\t\x12\x17\n\x0fplayer_location\x18\x06 \x01(\t\x12\x13\n\x0bplayer_desc\x18\x07 \x01(\t\"\x82\x01\n\x0eTournamentTeam\x12\x0f\n\x07team_id\x18\x01 \x01(\x05\x12\x10\n\x08team_tag\x18\x02 \x01(\t\x12\x11\n\tteam_flag\x18\x03 \x01(\t\x12\x11\n\tteam_name\x18\x04 \x01(\t\x12\'\n\x07players\x18\x05 \x03(\x0b\x32\x16.csgo.TournamentPlayer\"\xdf\x01\n\x0fTournamentEvent\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x11\n\tevent_tag\x18\x02 \x01(\t\x12\x12\n\nevent_name\x18\x03 \x01(\t\x12\x18\n\x10\x65vent_time_start\x18\x04 \x01(\r\x12\x16\n\x0e\x65vent_time_end\x18\x05 \x01(\r\x12\x14\n\x0c\x65vent_public\x18\x06 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x07 \x01(\x05\x12\x18\n\x10\x65vent_stage_name\x18\x08 \x01(\t\x12\x19\n\x11\x61\x63tive_section_id\x18\t \x01(\r\"\xc6\x03\n\x10GlobalStatistics\x12\x16\n\x0eplayers_online\x18\x01 \x01(\r\x12\x16\n\x0eservers_online\x18\x02 \x01(\r\x12\x19\n\x11players_searching\x18\x03 \x01(\r\x12\x19\n\x11servers_available\x18\x04 \x01(\r\x12\x17\n\x0fongoing_matches\x18\x05 \x01(\r\x12\x17\n\x0fsearch_time_avg\x18\x06 \x01(\r\x12\x38\n\x11search_statistics\x18\x07 \x03(\x0b\x32\x1d.csgo.DetailedSearchStatistic\x12\x15\n\rmain_post_url\x18\x08 \x01(\t\x12\x1e\n\x16required_appid_version\x18\t \x01(\r\x12\x1a\n\x12pricesheet_version\x18\n \x01(\r\x12\x1e\n\x16twitch_streams_version\x18\x0b \x01(\r\x12!\n\x19\x61\x63tive_tournament_eventid\x18\x0c \x01(\r\x12\x18\n\x10\x61\x63tive_survey_id\x18\r \x01(\r\x12\x13\n\x0brtime32_cur\x18\x0e \x01(\r\x12\x1b\n\x13rtime32_event_start\x18\x0f \x01(\r\">\n\x1fOperationalStatisticDescription\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05idkey\x18\x02 \x01(\r\"<\n\x1bOperationalStatisticElement\x12\r\n\x05idkey\x18\x01 \x01(\r\x12\x0e\n\x06values\x18\x02 \x03(\x05\"w\n\x1bOperationalStatisticsPacket\x12\x10\n\x08packetid\x18\x01 \x01(\x05\x12\x13\n\x0bmstimestamp\x18\x02 \x01(\x05\x12\x31\n\x06values\x18\x03 \x03(\x0b\x32!.csgo.OperationalStatisticElement\"q\n\x11PlayerRankingInfo\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0f\n\x07rank_id\x18\x02 \x01(\r\x12\x0c\n\x04wins\x18\x03 \x01(\r\x12\x13\n\x0brank_change\x18\x04 \x01(\x02\x12\x14\n\x0crank_type_id\x18\x06 \x01(\r\"X\n\x16PlayerCommendationInfo\x12\x14\n\x0c\x63md_friendly\x18\x01 \x01(\r\x12\x14\n\x0c\x63md_teaching\x18\x02 \x01(\r\x12\x12\n\ncmd_leader\x18\x04 \x01(\r\"V\n\x10PlayerMedalsInfo\x12\x1c\n\x14\x64isplay_items_defidx\x18\x07 \x03(\r\x12$\n\x1c\x66\x65\x61tured_display_item_defidx\x18\x08 \x01(\r\"O\n\x0f\x41\x63\x63ountActivity\x12\x10\n\x08\x61\x63tivity\x18\x01 \x01(\r\x12\x0c\n\x04mode\x18\x02 \x01(\r\x12\x0b\n\x03map\x18\x03 \x01(\r\x12\x0f\n\x07matchid\x18\x04 \x01(\x04\"g\n\x14TournamentMatchSetup\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x12\n\nteam_id_ct\x18\x02 \x01(\x05\x12\x11\n\tteam_id_t\x18\x03 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x04 \x01(\x05\"\xcf\x03\n\x0eServerHltvInfo\x12\x13\n\x0btv_udp_port\x18\x01 \x01(\r\x12\x14\n\x0ctv_watch_key\x18\x02 \x01(\x04\x12\x10\n\x08tv_slots\x18\x03 \x01(\r\x12\x12\n\ntv_clients\x18\x04 \x01(\r\x12\x12\n\ntv_proxies\x18\x05 \x01(\r\x12\x0f\n\x07tv_time\x18\x06 \x01(\r\x12\x11\n\tgame_type\x18\x08 \x01(\r\x12\x15\n\rgame_mapgroup\x18\t \x01(\t\x12\x10\n\x08game_map\x18\n \x01(\t\x12\x19\n\x11tv_master_steamid\x18\x0b \x01(\x04\x12\x16\n\x0etv_local_slots\x18\x0c \x01(\r\x12\x18\n\x10tv_local_clients\x18\r \x01(\r\x12\x18\n\x10tv_local_proxies\x18\x0e \x01(\r\x12\x16\n\x0etv_relay_slots\x18\x0f \x01(\r\x12\x18\n\x10tv_relay_clients\x18\x10 \x01(\r\x12\x18\n\x10tv_relay_proxies\x18\x11 \x01(\r\x12\x18\n\x10tv_relay_address\x18\x12 \x01(\r\x12\x15\n\rtv_relay_port\x18\x13 \x01(\r\x12\x18\n\x10tv_relay_steamid\x18\x14 \x01(\x04\x12\r\n\x05\x66lags\x18\x15 \x01(\r\"X\n\rIpAddressMask\x12\t\n\x01\x61\x18\x01 \x01(\r\x12\t\n\x01\x62\x18\x02 \x01(\r\x12\t\n\x01\x63\x18\x03 \x01(\r\x12\t\n\x01\x64\x18\x04 \x01(\r\x12\x0c\n\x04\x62its\x18\x05 \x01(\r\x12\r\n\x05token\x18\x06 \x01(\r\"Z\n\x1b\x43MsgCsgoSteamUserStatChange\x12\x1a\n\x12\x65\x63sgosteamuserstat\x18\x01 \x01(\x05\x12\r\n\x05\x64\x65lta\x18\x02 \x01(\x05\x12\x10\n\x08\x61\x62solute\x18\x03 \x01(\x08\"8\n\x0eXpProgressData\x12\x11\n\txp_points\x18\x01 \x01(\r\x12\x13\n\x0bxp_category\x18\x02 \x01(\x05\"_\n\x13MatchEndItemUpdates\x12\x0f\n\x07item_id\x18\x01 \x01(\x04\x12\x18\n\x10item_attr_defidx\x18\x02 \x01(\r\x12\x1d\n\x15item_attr_delta_value\x18\x03 \x01(\r\"\xad\x02\n\x14ScoreLeaderboardData\x12\x10\n\x08quest_id\x18\x01 \x01(\x04\x12\r\n\x05score\x18\x02 \x01(\r\x12\x41\n\x0e\x61\x63\x63ountentries\x18\x03 \x03(\x0b\x32).csgo.ScoreLeaderboardData.AccountEntries\x12\x36\n\x0cmatchentries\x18\x05 \x03(\x0b\x32 .csgo.ScoreLeaderboardData.Entry\x1a!\n\x05\x45ntry\x12\x0b\n\x03tag\x18\x01 \x01(\r\x12\x0b\n\x03val\x18\x02 \x01(\r\x1aV\n\x0e\x41\x63\x63ountEntries\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x31\n\x07\x65ntries\x18\x02 \x03(\x0b\x32 .csgo.ScoreLeaderboardData.Entry\"\xc0\x03\n\x0fPlayerQuestData\x12\x1a\n\x12quester_account_id\x18\x01 \x01(\r\x12<\n\x0fquest_item_data\x18\x02 \x03(\x0b\x32#.csgo.PlayerQuestData.QuestItemData\x12.\n\x10xp_progress_data\x18\x03 \x03(\x0b\x32\x14.csgo.XpProgressData\x12\x13\n\x0btime_played\x18\x04 \x01(\r\x12\x14\n\x0cmm_game_mode\x18\x05 \x01(\r\x12/\n\x0citem_updates\x18\x06 \x03(\x0b\x32\x19.csgo.MatchEndItemUpdates\x12!\n\x19operation_points_eligible\x18\x07 \x01(\x08\x12:\n\x0fuserstatchanges\x18\x08 \x03(\x0b\x32!.csgo.CMsgCsgoSteamUserStatChange\x1ah\n\rQuestItemData\x12\x10\n\x08quest_id\x18\x01 \x01(\x04\x12\"\n\x1aquest_normal_points_earned\x18\x02 \x01(\x05\x12!\n\x19quest_bonus_points_earned\x18\x03 \x01(\x05\"\xaf\x01\n\x1c\x43MsgGC_ServerQuestUpdateData\x12\x30\n\x11player_quest_data\x18\x01 \x03(\x0b\x32\x15.csgo.PlayerQuestData\x12\x13\n\x0b\x62inary_data\x18\x02 \x01(\x0c\x12\x14\n\x0cmm_game_mode\x18\x03 \x01(\r\x12\x32\n\x0emissionlbsdata\x18\x04 \x01(\x0b\x32\x1a.csgo.ScoreLeaderboardData\"\xb1\x01\n0CMsgGCCStrike15_v2_MatchmakingGCOperationalStats\x12\x10\n\x08packetid\x18\x01 \x01(\x05\x12\x37\n\x08namekeys\x18\x02 \x03(\x0b\x32%.csgo.OperationalStatisticDescription\x12\x32\n\x07packets\x18\x03 \x03(\x0b\x32!.csgo.OperationalStatisticsPacket\"`\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\r\n\x05token\x18\x01 \x01(\r\x12\r\n\x05stamp\x18\x02 \x01(\r\x12\x10\n\x08\x65xchange\x18\x03 \x01(\x04\"o\n-CMsgGCCStrike15_v2_GC2ServerReservationUpdate\x12\x1e\n\x16viewers_external_total\x18\x01 \x01(\r\x12\x1e\n\x16viewers_external_steam\x18\x02 \x01(\r\"\xc4\x01\n#CMsgGCCStrike15_v2_MatchmakingStart\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x01 \x03(\r\x12\x11\n\tgame_type\x18\x02 \x01(\r\x12\x13\n\x0bticket_data\x18\x03 \x01(\t\x12\x16\n\x0e\x63lient_version\x18\x04 \x01(\r\x12\x34\n\x10tournament_match\x18\x05 \x01(\x0b\x32\x1a.csgo.TournamentMatchSetup\x12\x12\n\nprime_only\x18\x06 \x01(\x08\"5\n\"CMsgGCCStrike15_v2_MatchmakingStop\x12\x0f\n\x07\x61\x62\x61ndon\x18\x01 \x01(\x05\"\xe2\x01\n/CMsgGCCStrike15_v2_MatchmakingClient2ServerPing\x12-\n\x0fgameserverpings\x18\x01 \x03(\x0b\x32\x14.csgo.GameServerPing\x12\x14\n\x0coffset_index\x18\x02 \x01(\x05\x12\x13\n\x0b\x66inal_batch\x18\x03 \x01(\x05\x12/\n\x11\x64\x61ta_center_pings\x18\x04 \x03(\x0b\x32\x14.csgo.DataCenterPing\x12\x10\n\x08max_ping\x18\x05 \x01(\r\x12\x12\n\ntest_token\x18\x06 \x01(\x07\"\xcc\x05\n-CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate\x12\x13\n\x0bmatchmaking\x18\x01 \x01(\x05\x12#\n\x1bwaiting_account_id_sessions\x18\x02 \x03(\r\x12\r\n\x05\x65rror\x18\x03 \x01(\t\x12(\n ongoingmatch_account_id_sessions\x18\x06 \x03(\r\x12,\n\x0cglobal_stats\x18\x07 \x01(\x0b\x32\x16.csgo.GlobalStatistics\x12$\n\x1c\x66\x61ilping_account_id_sessions\x18\x08 \x03(\r\x12#\n\x1bpenalty_account_id_sessions\x18\t \x03(\r\x12%\n\x1d\x66\x61ilready_account_id_sessions\x18\n \x03(\r\x12%\n\x1dvacbanned_account_id_sessions\x18\x0b \x03(\r\x12\x32\n\x15server_ipaddress_mask\x18\x0c \x01(\x0b\x32\x13.csgo.IpAddressMask\x12G\n\x05notes\x18\r \x03(\x0b\x32\x38.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate.Note\x12)\n!penalty_account_id_sessions_green\x18\x0e \x03(\r\x12\"\n\x1ainsufficientlevel_sessions\x18\x0f \x03(\r\x12$\n\x1cvsncheck_account_id_sessions\x18\x10 \x03(\r\x12\"\n\x1alauncher_mismatch_sessions\x18\x11 \x03(\r\x1aK\n\x04Note\x12\x0c\n\x04type\x18\x01 \x01(\x05\x12\x11\n\tregion_id\x18\x02 \x01(\x05\x12\x10\n\x08region_r\x18\x03 \x01(\x02\x12\x10\n\x08\x64istance\x18\x04 \x01(\x02\"\xdb\x02\n(CDataGCCStrike15_v2_TournamentMatchDraft\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x02 \x01(\x05\x12\x11\n\tteam_id_0\x18\x03 \x01(\x05\x12\x11\n\tteam_id_1\x18\x04 \x01(\x05\x12\x12\n\nmaps_count\x18\x05 \x01(\x05\x12\x14\n\x0cmaps_current\x18\x06 \x01(\x05\x12\x15\n\rteam_id_start\x18\x07 \x01(\x05\x12\x15\n\rteam_id_veto1\x18\x08 \x01(\x05\x12\x15\n\rteam_id_pickn\x18\t \x01(\x05\x12\x44\n\x06\x64rafts\x18\n \x03(\x0b\x32\x34.csgo.CDataGCCStrike15_v2_TournamentMatchDraft.Entry\x1a*\n\x05\x45ntry\x12\r\n\x05mapid\x18\x01 \x01(\x05\x12\x12\n\nteam_id_ct\x18\x02 \x01(\x05\"\x85\x02\n\x11\x43PreMatchInfoData\x12\x17\n\x0fpredictions_pct\x18\x01 \x01(\x05\x12=\n\x05\x64raft\x18\x04 \x01(\x0b\x32..csgo.CDataGCCStrike15_v2_TournamentMatchDraft\x12\x30\n\x05stats\x18\x05 \x03(\x0b\x32!.csgo.CPreMatchInfoData.TeamStats\x12\x0c\n\x04wins\x18\x06 \x03(\x05\x1aX\n\tTeamStats\x12\x19\n\x11match_info_idxtxt\x18\x01 \x01(\x05\x12\x16\n\x0ematch_info_txt\x18\x02 \x01(\t\x12\x18\n\x10match_info_teams\x18\x03 \x03(\t\"\xcb\x04\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x01 \x03(\r\x12\x11\n\tgame_type\x18\x02 \x01(\r\x12\x10\n\x08match_id\x18\x03 \x01(\x04\x12\x16\n\x0eserver_version\x18\x04 \x01(\r\x12\r\n\x05\x66lags\x18\x12 \x01(\r\x12)\n\x08rankings\x18\x05 \x03(\x0b\x32\x17.csgo.PlayerRankingInfo\x12\x16\n\x0e\x65ncryption_key\x18\x06 \x01(\x04\x12\x1a\n\x12\x65ncryption_key_pub\x18\x07 \x01(\x04\x12\x11\n\tparty_ids\x18\x08 \x03(\r\x12&\n\twhitelist\x18\t \x03(\x0b\x32\x13.csgo.IpAddressMask\x12\x19\n\x11tv_master_steamid\x18\n \x01(\x04\x12/\n\x10tournament_event\x18\x0b \x01(\x0b\x32\x15.csgo.TournamentEvent\x12.\n\x10tournament_teams\x18\x0c \x03(\x0b\x32\x14.csgo.TournamentTeam\x12&\n\x1etournament_casters_account_ids\x18\r \x03(\r\x12\x18\n\x10tv_relay_steamid\x18\x0e \x01(\x04\x12/\n\x0epre_match_data\x18\x0f \x01(\x0b\x32\x17.csgo.CPreMatchInfoData\x12\x1b\n\x13rtime32_event_start\x18\x10 \x01(\r\x12\x12\n\ntv_control\x18\x11 \x01(\r\"\xc0\x04\n7CMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x12\x15\n\rreservationid\x18\x01 \x01(\x04\x12I\n\x0breservation\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x03 \x01(\t\x12\x1b\n\x13gc_reservation_sent\x18\x04 \x01(\x04\x12\x16\n\x0eserver_version\x18\x05 \x01(\r\x12%\n\x07tv_info\x18\x06 \x01(\x0b\x32\x14.csgo.ServerHltvInfo\x12\x1e\n\x16reward_player_accounts\x18\x07 \x03(\r\x12\x1c\n\x14idle_player_accounts\x18\x08 \x03(\r\x12 \n\x18reward_item_attr_def_idx\x18\t \x01(\r\x12\x1e\n\x16reward_item_attr_value\x18\n \x01(\r\x12#\n\x1breward_item_attr_reward_idx\x18\x0b \x01(\r\x12\x18\n\x10reward_drop_list\x18\x0c \x01(\r\x12\x16\n\x0etournament_tag\x18\r \x01(\t\x12!\n\x19legacy_steamdatagram_port\x18\x0e \x01(\r\x12\x1d\n\x15steamdatagram_routing\x18\x11 \x01(\r\x12\x12\n\ntest_token\x18\x0f \x01(\x07\x12\r\n\x05\x66lags\x18\x10 \x01(\r\"\xf9\x01\n.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x10\n\x08serverid\x18\x01 \x01(\x04\x12\x15\n\rdirect_udp_ip\x18\x02 \x01(\r\x12\x17\n\x0f\x64irect_udp_port\x18\x03 \x01(\r\x12\x15\n\rreservationid\x18\x04 \x01(\x04\x12I\n\x0breservation\x18\x05 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x06 \x01(\t\x12\x16\n\x0eserver_address\x18\x07 \x01(\t\"\x8e\x06\n.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12\x15\n\rreservationid\x18\x01 \x01(\x04\x12I\n\x0breservation\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x03 \x01(\t\x12\r\n\x05round\x18\x04 \x01(\x05\x12\r\n\x05kills\x18\x05 \x03(\x05\x12\x0f\n\x07\x61ssists\x18\x06 \x03(\x05\x12\x0e\n\x06\x64\x65\x61ths\x18\x07 \x03(\x05\x12\x0e\n\x06scores\x18\x08 \x03(\x05\x12\r\n\x05pings\x18\t \x03(\x05\x12\x14\n\x0cround_result\x18\n \x01(\x05\x12\x14\n\x0cmatch_result\x18\x0b \x01(\x05\x12\x13\n\x0bteam_scores\x18\x0c \x03(\x05\x12\x45\n\x07\x63onfirm\x18\r \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\x19\n\x11reservation_stage\x18\x0e \x01(\x05\x12\x16\n\x0ematch_duration\x18\x0f \x01(\x05\x12\x13\n\x0b\x65nemy_kills\x18\x10 \x03(\x05\x12\x17\n\x0f\x65nemy_headshots\x18\x11 \x03(\x05\x12\x11\n\tenemy_3ks\x18\x12 \x03(\x05\x12\x11\n\tenemy_4ks\x18\x13 \x03(\x05\x12\x11\n\tenemy_5ks\x18\x14 \x03(\x05\x12\x0c\n\x04mvps\x18\x15 \x03(\x05\x12\x18\n\x10spectators_count\x18\x16 \x01(\r\x12\x1b\n\x13spectators_count_tv\x18\x17 \x01(\r\x12\x1c\n\x14spectators_count_lnk\x18\x18 \x01(\r\x12\x17\n\x0f\x65nemy_kills_agg\x18\x19 \x03(\x05\x12P\n\tdrop_info\x18\x1a \x01(\x0b\x32=.csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats.DropInfo\x1a\x1f\n\x08\x44ropInfo\x12\x13\n\x0b\x61\x63\x63ount_mvp\x18\x01 \x01(\r\"\xed\x02\n,CMsgGCCStrike15_v2_MatchmakingServerMatchEnd\x12\x43\n\x05stats\x18\x01 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12\x45\n\x07\x63onfirm\x18\x03 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\x0f\n\x07rematch\x18\x04 \x01(\x04\x12\x14\n\x0creplay_token\x18\x05 \x01(\r\x12\x19\n\x11replay_cluster_id\x18\x06 \x01(\r\x12\x15\n\raborted_match\x18\x07 \x01(\x08\x12@\n\x14match_end_quest_data\x18\x08 \x01(\x0b\x32\".csgo.CMsgGC_ServerQuestUpdateData\x12\x16\n\x0eserver_version\x18\t \x01(\r\"\xbf\x02\n3CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial\x12\x15\n\rreservationid\x18\x01 \x01(\x04\x12I\n\x0breservation\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x45\n\x07\x63onfirm\x18\x03 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12G\n\x1b\x63ompleted_player_quest_data\x18\x04 \x01(\x0b\x32\".csgo.CMsgGC_ServerQuestUpdateData\x12\x16\n\x0eserver_version\x18\x05 \x01(\r\".\n,CMsgGCCStrike15_v2_MatchmakingClient2GCHello\"\x8a\x06\n,CMsgGCCStrike15_v2_MatchmakingGC2ClientHello\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12J\n\x0congoingmatch\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12,\n\x0cglobal_stats\x18\x03 \x01(\x0b\x32\x16.csgo.GlobalStatistics\x12\x17\n\x0fpenalty_seconds\x18\x04 \x01(\r\x12\x16\n\x0epenalty_reason\x18\x05 \x01(\r\x12\x12\n\nvac_banned\x18\x06 \x01(\x05\x12(\n\x07ranking\x18\x07 \x01(\x0b\x32\x17.csgo.PlayerRankingInfo\x12\x32\n\x0c\x63ommendation\x18\x08 \x01(\x0b\x32\x1c.csgo.PlayerCommendationInfo\x12&\n\x06medals\x18\t \x01(\x0b\x32\x16.csgo.PlayerMedalsInfo\x12/\n\x10my_current_event\x18\n \x01(\x0b\x32\x15.csgo.TournamentEvent\x12\x34\n\x16my_current_event_teams\x18\x0b \x03(\x0b\x32\x14.csgo.TournamentTeam\x12-\n\x0fmy_current_team\x18\x0c \x01(\x0b\x32\x14.csgo.TournamentTeam\x12\x36\n\x17my_current_event_stages\x18\r \x03(\x0b\x32\x15.csgo.TournamentEvent\x12\x13\n\x0bsurvey_vote\x18\x0e \x01(\r\x12\'\n\x08\x61\x63tivity\x18\x0f \x01(\x0b\x32\x15.csgo.AccountActivity\x12\x14\n\x0cplayer_level\x18\x11 \x01(\x05\x12\x15\n\rplayer_cur_xp\x18\x12 \x01(\x05\x12\x1d\n\x15player_xp_bonus_flags\x18\x13 \x01(\x05\x12)\n\x08rankings\x18\x14 \x03(\x0b\x32\x17.csgo.PlayerRankingInfo\"\xae\x01\n)CMsgGCCStrike15_v2_AccountPrivacySettings\x12I\n\x08settings\x18\x01 \x03(\x0b\x32\x37.csgo.CMsgGCCStrike15_v2_AccountPrivacySettings.Setting\x1a\x36\n\x07Setting\x12\x14\n\x0csetting_type\x18\x01 \x01(\r\x12\x15\n\rsetting_value\x18\x02 \x01(\r\"\xc4\x01\n.CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12M\n\x0f\x61\x62\x61ndoned_match\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x17\n\x0fpenalty_seconds\x18\x03 \x01(\r\x12\x16\n\x0epenalty_reason\x18\x04 \x01(\r\"\x9c\x01\n+CMsgGCCStrike15_v2_MatchmakingServer2GCKick\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12I\n\x0breservation\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0e\n\x06reason\x18\x03 \x01(\r\"p\n1CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate\x12)\n\x08rankings\x18\x01 \x03(\x0b\x32\x17.csgo.PlayerRankingInfo\x12\x10\n\x08match_id\x18\x02 \x01(\x04\"R\n%CMsgGCCStrike15_v2_ClientGCRankUpdate\x12)\n\x08rankings\x18\x01 \x03(\x0b\x32\x17.csgo.PlayerRankingInfo\"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate\x12\x15\n\rmain_post_url\x18\x01 \x01(\t\"j\n3CMsgGCCStrike15_v2_ServerNotificationForUserPenalty\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0e\n\x06reason\x18\x02 \x01(\r\x12\x0f\n\x07seconds\x18\x03 \x01(\r\"\xd3\x01\n%CMsgGCCStrike15_v2_ClientReportPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x12\n\nrpt_aimbot\x18\x02 \x01(\r\x12\x14\n\x0crpt_wallhack\x18\x03 \x01(\r\x12\x15\n\rrpt_speedhack\x18\x04 \x01(\r\x12\x14\n\x0crpt_teamharm\x18\x05 \x01(\r\x12\x15\n\rrpt_textabuse\x18\x06 \x01(\r\x12\x16\n\x0erpt_voiceabuse\x18\x07 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\"\x92\x01\n&CMsgGCCStrike15_v2_ClientCommendPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\x12\x32\n\x0c\x63ommendation\x18\t \x01(\x0b\x32\x1c.csgo.PlayerCommendationInfo\x12\x0e\n\x06tokens\x18\n \x01(\r\"\xb5\x01\n%CMsgGCCStrike15_v2_ClientReportServer\x12\x14\n\x0crpt_poorperf\x18\x01 \x01(\r\x12\x19\n\x11rpt_abusivemodels\x18\x02 \x01(\r\x12\x13\n\x0brpt_badmotd\x18\x03 \x01(\r\x12\x18\n\x10rpt_listingabuse\x18\x04 \x01(\r\x12\x1a\n\x12rpt_inventoryabuse\x18\x05 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\"\xa9\x01\n\'CMsgGCCStrike15_v2_ClientReportResponse\x12\x17\n\x0f\x63onfirmation_id\x18\x01 \x01(\x04\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x11\n\tserver_ip\x18\x03 \x01(\r\x12\x15\n\rresponse_type\x18\x04 \x01(\r\x12\x17\n\x0fresponse_result\x18\x05 \x01(\r\x12\x0e\n\x06tokens\x18\x06 \x01(\r\"\xc8\x01\n0CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x02 \x03(\r\x12\x10\n\x08serverid\x18\x03 \x01(\x04\x12\x0f\n\x07matchid\x18\x04 \x01(\x04\x12\x17\n\x0f\x63lient_launcher\x18\x05 \x01(\r\x12/\n\x11\x64\x61ta_center_pings\x18\x06 \x03(\x0b\x32\x14.csgo.DataCenterPing\"\xb0\x02\n\x12WatchableMatchInfo\x12\x11\n\tserver_ip\x18\x01 \x01(\r\x12\x0f\n\x07tv_port\x18\x02 \x01(\r\x12\x15\n\rtv_spectators\x18\x03 \x01(\r\x12\x0f\n\x07tv_time\x18\x04 \x01(\r\x12\x19\n\x11tv_watch_password\x18\x05 \x01(\x0c\x12\x1a\n\x12\x63l_decryptdata_key\x18\x06 \x01(\x04\x12\x1e\n\x16\x63l_decryptdata_key_pub\x18\x07 \x01(\x04\x12\x11\n\tgame_type\x18\x08 \x01(\r\x12\x15\n\rgame_mapgroup\x18\t \x01(\t\x12\x10\n\x08game_map\x18\n \x01(\t\x12\x11\n\tserver_id\x18\x0b \x01(\x04\x12\x10\n\x08match_id\x18\x0c \x01(\x04\x12\x16\n\x0ereservation_id\x18\r \x01(\x04\"\xd0\x01\n.CMsgGCCStrike15_v2_ClientRequestJoinFriendData\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x12\n\njoin_token\x18\x03 \x01(\r\x12\x10\n\x08join_ipp\x18\x04 \x01(\r\x12\x41\n\x03res\x18\x05 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x10\n\x08\x65rrormsg\x18\x06 \x01(\t\"\xe4\x01\n.CMsgGCCStrike15_v2_ClientRequestJoinServerData\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x10\n\x08serverid\x18\x03 \x01(\x04\x12\x11\n\tserver_ip\x18\x04 \x01(\r\x12\x13\n\x0bserver_port\x18\x05 \x01(\r\x12\x41\n\x03res\x18\x06 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x10\n\x08\x65rrormsg\x18\x07 \x01(\t\"U\n*CMsgGCCstrike15_v2_ClientRequestNewMission\x12\x12\n\nmission_id\x18\x02 \x01(\r\x12\x13\n\x0b\x63\x61mpaign_id\x18\x03 \x01(\r\"\xd8\x01\n,CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded\x12.\n\x10xp_progress_data\x18\x01 \x03(\x0b\x32\x14.csgo.XpProgressData\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x12\n\ncurrent_xp\x18\x03 \x01(\r\x12\x15\n\rcurrent_level\x18\x04 \x01(\r\x12\x17\n\x0fupgraded_defidx\x18\x05 \x01(\r\x12 \n\x18operation_points_awarded\x18\x06 \x01(\r\"\x9f\x01\n!CMsgGCCStrike15_v2_WatchInfoUsers\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x02 \x03(\r\x12\x37\n\x15watchable_match_infos\x18\x03 \x03(\x0b\x32\x18.csgo.WatchableMatchInfo\x12\x18\n\x10\x65xtended_timeout\x18\x05 \x01(\r\"\x9c\x01\n.CMsgGCCStrike15_v2_ClientRequestPlayersProfile\x12\x1e\n\x16request_id__deprecated\x18\x01 \x01(\r\x12\x1f\n\x17\x61\x63\x63ount_ids__deprecated\x18\x02 \x03(\r\x12\x12\n\naccount_id\x18\x03 \x01(\r\x12\x15\n\rrequest_level\x18\x04 \x01(\r\"\x85\x01\n!CMsgGCCStrike15_v2_PlayersProfile\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12L\n\x10\x61\x63\x63ount_profiles\x18\x02 \x03(\x0b\x32\x32.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientHello\"\xcc\x01\n,CMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x11\n\tsuspectid\x18\x03 \x01(\r\x12\x12\n\nfractionid\x18\x04 \x01(\r\x12\x12\n\nrpt_aimbot\x18\x05 \x01(\r\x12\x14\n\x0crpt_wallhack\x18\x06 \x01(\r\x12\x15\n\rrpt_speedhack\x18\x07 \x01(\r\x12\x14\n\x0crpt_teamharm\x18\x08 \x01(\r\x12\x0e\n\x06reason\x18\t \x01(\r\"\x8d\x02\n0CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x0f\n\x07\x63\x61seurl\x18\x02 \x01(\t\x12\x0f\n\x07verdict\x18\x03 \x01(\r\x12\x11\n\ttimestamp\x18\x04 \x01(\r\x12\x17\n\x0fthrottleseconds\x18\x05 \x01(\r\x12\x11\n\tsuspectid\x18\x06 \x01(\r\x12\x12\n\nfractionid\x18\x07 \x01(\r\x12\x11\n\tnumrounds\x18\x08 \x01(\r\x12\x16\n\x0e\x66ractionrounds\x18\t \x01(\r\x12\x19\n\x11streakconvictions\x18\n \x01(\x05\x12\x0e\n\x06reason\x18\x0b \x01(\r\"P\n,CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x10\n\x08statusid\x18\x02 \x01(\r\"C\n\x1e\x43\x43lientHeaderOverwatchEvidence\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0e\n\x06\x63\x61seid\x18\x02 \x01(\x04\"P\n#CMsgGCCStrike15_v2_GC2ClientTextMsg\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04type\x18\x02 \x01(\r\x12\x0f\n\x07payload\x18\x03 \x01(\x0c\"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x02 \x03(\x0c\"\xc0\x01\n)CMsgGCCStrike15_v2_MatchEndRunRewardDrops\x12Q\n\nserverinfo\x18\x03 \x01(\x0b\x32=.csgo.CMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x12@\n\x14match_end_quest_data\x18\x04 \x01(\x0b\x32\".csgo.CMsgGC_ServerQuestUpdateData\"\x89\x04\n\x19\x43\x45\x63onItemPreviewDataBlock\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0e\n\x06itemid\x18\x02 \x01(\x04\x12\x10\n\x08\x64\x65\x66index\x18\x03 \x01(\r\x12\x12\n\npaintindex\x18\x04 \x01(\r\x12\x0e\n\x06rarity\x18\x05 \x01(\r\x12\x0f\n\x07quality\x18\x06 \x01(\r\x12\x11\n\tpaintwear\x18\x07 \x01(\r\x12\x11\n\tpaintseed\x18\x08 \x01(\r\x12\x1a\n\x12killeaterscoretype\x18\t \x01(\r\x12\x16\n\x0ekilleatervalue\x18\n \x01(\r\x12\x12\n\ncustomname\x18\x0b \x01(\t\x12\x39\n\x08stickers\x18\x0c \x03(\x0b\x32\'.csgo.CEconItemPreviewDataBlock.Sticker\x12\x11\n\tinventory\x18\r \x01(\r\x12\x0e\n\x06origin\x18\x0e \x01(\r\x12\x0f\n\x07questid\x18\x0f \x01(\r\x12\x12\n\ndropreason\x18\x10 \x01(\r\x12\x12\n\nmusicindex\x18\x11 \x01(\r\x12\x10\n\x08\x65ntindex\x18\x12 \x01(\x05\x1ak\n\x07Sticker\x12\x0c\n\x04slot\x18\x01 \x01(\r\x12\x12\n\nsticker_id\x18\x02 \x01(\r\x12\x0c\n\x04wear\x18\x03 \x01(\x02\x12\r\n\x05scale\x18\x04 \x01(\x02\x12\x10\n\x08rotation\x18\x05 \x01(\x02\x12\x0f\n\x07tint_id\x18\x06 \x01(\r\"g\n2CMsgGCCStrike15_v2_MatchEndRewardDropsNotification\x12\x31\n\x08iteminfo\x18\x06 \x01(\x0b\x32\x1f.csgo.CEconItemPreviewDataBlock\"I\n\x14\x43MsgItemAcknowledged\x12\x31\n\x08iteminfo\x18\x01 \x01(\x0b\x32\x1f.csgo.CEconItemPreviewDataBlock\"}\n7CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest\x12\x0f\n\x07param_s\x18\x01 \x01(\x04\x12\x0f\n\x07param_a\x18\x02 \x01(\x04\x12\x0f\n\x07param_d\x18\x03 \x01(\x04\x12\x0f\n\x07param_m\x18\x04 \x01(\x04\"m\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse\x12\x31\n\x08iteminfo\x18\x01 \x01(\x0b\x32\x1f.csgo.CEconItemPreviewDataBlock\"s\n9CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x10\n\x08\x64\x65\x66index\x18\x02 \x01(\r\x12\x12\n\naccountids\x18\x03 \x03(\r\"5\n3CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames\"G\n2CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser\x12\x11\n\taccountid\x18\x01 \x01(\r\"G\n2CMsgGCCStrike15_v2_MatchListRequestRecentUserGames\x12\x11\n\taccountid\x18\x01 \x01(\r\"E\n2CMsgGCCStrike15_v2_MatchListRequestTournamentGames\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\x05\"d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo\x12\x0f\n\x07matchid\x18\x01 \x01(\x04\x12\x11\n\toutcomeid\x18\x02 \x01(\x04\x12\r\n\x05token\x18\x03 \x01(\r\"\x97\x02\n\x1d\x43\x44\x61taGCCStrike15_v2_MatchInfo\x12\x0f\n\x07matchid\x18\x01 \x01(\x04\x12\x11\n\tmatchtime\x18\x02 \x01(\r\x12\x34\n\x12watchablematchinfo\x18\x03 \x01(\x0b\x32\x18.csgo.WatchableMatchInfo\x12O\n\x11roundstats_legacy\x18\x04 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12K\n\rroundstatsall\x18\x05 \x03(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\"^\n\'CDataGCCStrike15_v2_TournamentGroupTeam\x12\x0f\n\x07team_id\x18\x01 \x01(\x05\x12\r\n\x05score\x18\x02 \x01(\x05\x12\x13\n\x0b\x63orrectpick\x18\x03 \x01(\x08\"\xe3\x02\n#CDataGCCStrike15_v2_TournamentGroup\x12\x0f\n\x07groupid\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x65sc\x18\x03 \x01(\t\x12\x19\n\x11picks__deprecated\x18\x04 \x01(\r\x12<\n\x05teams\x18\x05 \x03(\x0b\x32-.csgo.CDataGCCStrike15_v2_TournamentGroupTeam\x12\x11\n\tstage_ids\x18\x06 \x03(\x05\x12\x19\n\x11picklockuntiltime\x18\x07 \x01(\r\x12\x15\n\rpickableteams\x18\x08 \x01(\r\x12\x17\n\x0fpoints_per_pick\x18\t \x01(\r\x12>\n\x05picks\x18\n \x03(\x0b\x32/.csgo.CDataGCCStrike15_v2_TournamentGroup.Picks\x1a\x18\n\x05Picks\x12\x0f\n\x07pickids\x18\x01 \x03(\x05\"\x91\x01\n%CDataGCCStrike15_v2_TournamentSection\x12\x11\n\tsectionid\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x65sc\x18\x03 \x01(\t\x12\x39\n\x06groups\x18\x04 \x03(\x0b\x32).csgo.CDataGCCStrike15_v2_TournamentGroup\"\xc4\x01\n\"CDataGCCStrike15_v2_TournamentInfo\x12=\n\x08sections\x18\x01 \x03(\x0b\x32+.csgo.CDataGCCStrike15_v2_TournamentSection\x12/\n\x10tournament_event\x18\x02 \x01(\x0b\x32\x15.csgo.TournamentEvent\x12.\n\x10tournament_teams\x18\x03 \x03(\x0b\x32\x14.csgo.TournamentTeam\"\xfa\x01\n\x1c\x43MsgGCCStrike15_v2_MatchList\x12\x14\n\x0cmsgrequestid\x18\x01 \x01(\r\x12\x11\n\taccountid\x18\x02 \x01(\r\x12\x12\n\nservertime\x18\x03 \x01(\r\x12\x34\n\x07matches\x18\x04 \x03(\x0b\x32#.csgo.CDataGCCStrike15_v2_MatchInfo\x12%\n\x07streams\x18\x05 \x03(\x0b\x32\x14.csgo.TournamentTeam\x12@\n\x0etournamentinfo\x18\x06 \x01(\x0b\x32(.csgo.CDataGCCStrike15_v2_TournamentInfo\"\xf4\x01\n\x1e\x43MsgGCCStrike15_v2_Predictions\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\r\x12W\n\x16group_match_team_picks\x18\x02 \x03(\x0b\x32\x37.csgo.CMsgGCCStrike15_v2_Predictions.GroupMatchTeamPick\x1ag\n\x12GroupMatchTeamPick\x12\x11\n\tsectionid\x18\x01 \x01(\x05\x12\x0f\n\x07groupid\x18\x02 \x01(\x05\x12\r\n\x05index\x18\x03 \x01(\x05\x12\x0e\n\x06teamid\x18\x04 \x01(\x05\x12\x0e\n\x06itemid\x18\x05 \x01(\x04\"\x85\x02\n\x1a\x43MsgGCCStrike15_v2_Fantasy\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\r\x12;\n\x05teams\x18\x02 \x03(\x0b\x32,.csgo.CMsgGCCStrike15_v2_Fantasy.FantasyTeam\x1a\x39\n\x0b\x46\x61ntasySlot\x12\x0c\n\x04type\x18\x01 \x01(\x05\x12\x0c\n\x04pick\x18\x02 \x01(\x05\x12\x0e\n\x06itemid\x18\x03 \x01(\x04\x1a]\n\x0b\x46\x61ntasyTeam\x12\x11\n\tsectionid\x18\x01 \x01(\x05\x12;\n\x05slots\x18\x02 \x03(\x0b\x32,.csgo.CMsgGCCStrike15_v2_Fantasy.FantasySlot\"\"\n\x11\x43\x41ttribute_String\x12\r\n\x05value\x18\x01 \x01(\t\"\x1a\n\x18\x43MsgGCToGCReloadVersions\"\xc4\x01\n\x14\x43MsgCStrike15Welcome\x12\x17\n\x0fstore_item_hash\x18\x05 \x01(\r\x12\x1f\n\x17timeplayedconsecutively\x18\x06 \x01(\r\x12\x19\n\x11time_first_played\x18\n \x01(\r\x12\x18\n\x10last_time_played\x18\x0c \x01(\r\x12\x17\n\x0flast_ip_address\x18\r \x01(\r\x12\x12\n\ngscookieid\x18\x12 \x01(\x04\x12\x10\n\x08uniqueid\x18\x13 \x01(\x04\"\x9b\x01\n1CMsgGCCStrike15_v2_ClientVarValueNotificationInfo\x12\x12\n\nvalue_name\x18\x01 \x01(\t\x12\x11\n\tvalue_int\x18\x02 \x01(\x05\x12\x13\n\x0bserver_addr\x18\x03 \x01(\r\x12\x13\n\x0bserver_port\x18\x04 \x01(\r\x12\x15\n\rchoked_blocks\x18\x05 \x03(\t\"h\n1CMsgGCCStrike15_v2_ServerVarValueNotificationInfo\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x12\n\nviewangles\x18\x02 \x03(\r\x12\x0c\n\x04type\x18\x03 \x01(\r\",\n*CMsgGCCStrike15_v2_GiftsLeaderboardRequest\"\xa2\x02\n+CMsgGCCStrike15_v2_GiftsLeaderboardResponse\x12\x12\n\nservertime\x18\x01 \x01(\r\x12\x1b\n\x13time_period_seconds\x18\x02 \x01(\r\x12\x19\n\x11total_gifts_given\x18\x03 \x01(\r\x12\x14\n\x0ctotal_givers\x18\x04 \x01(\r\x12W\n\x07\x65ntries\x18\x05 \x03(\x0b\x32\x46.csgo.CMsgGCCStrike15_v2_GiftsLeaderboardResponse.GiftLeaderboardEntry\x1a\x38\n\x14GiftLeaderboardEntry\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\r\n\x05gifts\x18\x02 \x01(\r\"L\n)CMsgGCCStrike15_v2_ClientSubmitSurveyVote\x12\x11\n\tsurvey_id\x18\x01 \x01(\r\x12\x0c\n\x04vote\x18\x02 \x01(\r\"?\n*CMsgGCCStrike15_v2_Server2GCClientValidate\x12\x11\n\taccountid\x18\x01 \x01(\r\"\xbb\x01\n7CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0c\n\x04path\x18\x02 \x01(\t\x12\x0c\n\x04\x66ile\x18\x03 \x01(\t\x12\x0b\n\x03\x63rc\x18\x04 \x01(\r\x12\x0c\n\x04hash\x18\x05 \x01(\x05\x12\x0b\n\x03len\x18\x06 \x01(\x05\x12\x13\n\x0bpack_number\x18\x07 \x01(\x05\x12\x14\n\x0cpack_file_id\x18\x08 \x01(\x05\"r\n*CMsgGCCStrike15_v2_GC2ClientTournamentInfo\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\r\x12\x0f\n\x07stageid\x18\x02 \x01(\r\x12\x11\n\tgame_type\x18\x03 \x01(\r\x12\x0f\n\x07teamids\x18\x04 \x03(\r\"O\n\rCSOEconCoupon\x12\x15\n\x07\x65ntryid\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x0e\n\x06\x64\x65\x66idx\x18\x02 \x01(\r\x12\x17\n\x0f\x65xpiration_date\x18\x03 \x01(\x07\"Y\n\x10\x43SOQuestProgress\x12\x15\n\x07questid\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x18\n\x10points_remaining\x18\x02 \x01(\r\x12\x14\n\x0c\x62onus_points\x18\x03 \x01(\r\"\x97\x01\n\x1b\x43SOAccountSeasonalOperation\x12\x1a\n\x0cseason_value\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x15\n\rtier_unlocked\x18\x02 \x01(\r\x12\x15\n\rpremium_tiers\x18\x03 \x01(\r\x12\x12\n\nmission_id\x18\x04 \x01(\r\x12\x1a\n\x12missions_completed\x18\x05 \x01(\r\"x\n\x14\x43SOPersonaDataPublic\x12\x14\n\x0cplayer_level\x18\x01 \x01(\x05\x12\x32\n\x0c\x63ommendation\x18\x02 \x01(\x0b\x32\x1c.csgo.PlayerCommendationInfo\x12\x16\n\x0e\x65levated_state\x18\x03 \x01(\x08\"-\n\x1b\x43MsgGC_GlobalGame_Subscribe\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\"1\n\x1d\x43MsgGC_GlobalGame_Unsubscribe\x12\x10\n\x08timeleft\x18\x01 \x01(\x05\"P\n\x16\x43MsgGC_GlobalGame_Play\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\x12\x12\n\ngametimems\x18\x02 \x01(\r\x12\x12\n\nmsperpoint\x18\x03 \x01(\r\"=\n%CMsgGCCStrike15_v2_AcknowledgePenalty\x12\x14\n\x0c\x61\x63knowledged\x18\x01 \x01(\x05\"{\n/CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin\x12\x10\n\x08\x64\x65\x66index\x18\x01 \x01(\r\x12\x11\n\tupgradeid\x18\x02 \x01(\x04\x12\r\n\x05hours\x18\x03 \x01(\r\x12\x14\n\x0cprestigetime\x18\x04 \x01(\r\"F\n(CMsgGCCStrike15_v2_Client2GCStreamUnlock\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\x12\n\n\x02os\x18\x02 \x01(\x05\"<\n+CMsgGCCStrike15_v2_ClientToGCRequestElevate\x12\r\n\x05stage\x18\x01 \x01(\r\"C\n!CMsgGCCStrike15_v2_ClientToGCChat\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x0c\n\x04text\x18\x02 \x01(\t\"E\n!CMsgGCCStrike15_v2_GCToClientChat\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0c\n\x04text\x18\x02 \x01(\t\"E\n$CMsgGCCStrike15_v2_ClientAuthKeyCode\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\r\x12\x0c\n\x04\x63ode\x18\x02 \x01(\t\"K\n\x1e\x43MsgGCCStrike15_GotvSyncPacket\x12)\n\x04\x64\x61ta\x18\x01 \x01(\x0b\x32\x1b.csgo.CEngineGotvSyncPacket\"\x94\x02\n\x1bPlayerDecalDigitalSignature\x12\x11\n\tsignature\x18\x01 \x01(\x0c\x12\x11\n\taccountid\x18\x02 \x01(\r\x12\r\n\x05rtime\x18\x03 \x01(\r\x12\x0e\n\x06\x65ndpos\x18\x04 \x03(\x02\x12\x10\n\x08startpos\x18\x05 \x03(\x02\x12\r\n\x05right\x18\x06 \x03(\x02\x12\x11\n\ttx_defidx\x18\x07 \x01(\r\x12\x10\n\x08\x65ntindex\x18\x08 \x01(\x05\x12\x0e\n\x06hitbox\x18\t \x01(\r\x12\x14\n\x0c\x63reationtime\x18\n \x01(\x02\x12\x11\n\tequipslot\x18\x0b \x01(\r\x12\x10\n\x08trace_id\x18\x0c \x01(\r\x12\x0e\n\x06normal\x18\r \x03(\x02\x12\x0f\n\x07tint_id\x18\x0e \x01(\r\"k\n(CMsgGCCStrike15_v2_ClientPlayerDecalSign\x12/\n\x04\x64\x61ta\x18\x01 \x01(\x0b\x32!.csgo.PlayerDecalDigitalSignature\x12\x0e\n\x06itemid\x18\x02 \x01(\x04\"_\n(CMsgGCCStrike15_v2_ClientLogonFatalError\x12\x11\n\terrorcode\x18\x01 \x01(\r\x12\x0f\n\x07message\x18\x02 \x01(\t\x12\x0f\n\x07\x63ountry\x18\x03 \x01(\t\"S\n\"CMsgGCCStrike15_v2_ClientPollState\x12\x0e\n\x06pollid\x18\x01 \x01(\r\x12\r\n\x05names\x18\x02 \x03(\t\x12\x0e\n\x06values\x18\x03 \x03(\x05\"\xa4\x01\n!CMsgGCCStrike15_v2_Party_Register\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0b\n\x03ver\x18\x02 \x01(\r\x12\x0b\n\x03\x61pr\x18\x03 \x01(\r\x12\x0b\n\x03\x61rk\x18\x04 \x01(\r\x12\x0b\n\x03nby\x18\x05 \x01(\r\x12\x0b\n\x03grp\x18\x06 \x01(\r\x12\r\n\x05slots\x18\x07 \x01(\r\x12\x10\n\x08launcher\x18\x08 \x01(\r\x12\x11\n\tgame_type\x18\t \x01(\r\"{\n\x1f\x43MsgGCCStrike15_v2_Party_Search\x12\x0b\n\x03ver\x18\x01 \x01(\r\x12\x0b\n\x03\x61pr\x18\x02 \x01(\r\x12\x0b\n\x03\x61rk\x18\x03 \x01(\r\x12\x0c\n\x04grps\x18\x04 \x03(\r\x12\x10\n\x08launcher\x18\x05 \x01(\r\x12\x11\n\tgame_type\x18\x06 \x01(\r\"\xc9\x01\n&CMsgGCCStrike15_v2_Party_SearchResults\x12\x43\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x32.csgo.CMsgGCCStrike15_v2_Party_SearchResults.Entry\x1aZ\n\x05\x45ntry\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0b\n\x03grp\x18\x02 \x01(\r\x12\x11\n\tgame_type\x18\x03 \x01(\r\x12\x0b\n\x03\x61pr\x18\x04 \x01(\r\x12\x0b\n\x03\x61rk\x18\x05 \x01(\r\x12\x0b\n\x03loc\x18\x06 \x01(\r\"E\n\x1f\x43MsgGCCStrike15_v2_Party_Invite\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0f\n\x07lobbyid\x18\x02 \x01(\r\"\xc7\x01\n)CMsgGCCStrike15_v2_Account_RequestCoPlays\x12G\n\x07players\x18\x01 \x03(\x0b\x32\x36.csgo.CMsgGCCStrike15_v2_Account_RequestCoPlays.Player\x12\x12\n\nservertime\x18\x02 \x01(\r\x1a=\n\x06Player\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x10\n\x08rtcoplay\x18\x02 \x01(\r\x12\x0e\n\x06online\x18\x03 \x01(\x08\"\xa4\x01\n*CMsgGCCStrike15_v2_ClientToGCRequestTicket\x12\x1b\n\x13\x61uthorized_steam_id\x18\x01 \x01(\x06\x12\x1c\n\x14\x61uthorized_public_ip\x18\x02 \x01(\x07\x12\x1b\n\x13gameserver_steam_id\x18\x03 \x01(\x06\x12\x1e\n\x16gameserver_sdr_routing\x18\x05 \x01(\t\">\n!CMsgGCToClientSteamDatagramTicket\x12\x19\n\x11serialized_ticket\x18\x10 \x01(\x0c\"(\n&CMsgGCCStrike15_v2_ClientRequestOffers\"\\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir\x12\x0e\n\x06itemid\x18\x01 \x01(\x04\x12\x0f\n\x07matchid\x18\x02 \x01(\x04\x12\x0f\n\x07\x65ventid\x18\x03 \x01(\x05\"F\n\'CMsgGCCStrike15_v2_ClientAccountBalance\x12\x0e\n\x06\x61mount\x18\x01 \x01(\x04\x12\x0b\n\x03url\x18\x02 \x01(\t\"M\n\'CMsgGCCStrike15_v2_ClientPartyJoinRelay\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0f\n\x07lobbyid\x18\x02 \x01(\x04\"\x99\x01\n%CMsgGCCStrike15_v2_ClientPartyWarning\x12\x42\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x31.csgo.CMsgGCCStrike15_v2_ClientPartyWarning.Entry\x1a,\n\x05\x45ntry\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x10\n\x08warntype\x18\x02 \x01(\r\"K\n#CMsgGCCStrike15_v2_SetEventFavorite\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\x04\x12\x13\n\x0bis_favorite\x18\x02 \x01(\x08\"B\n,CMsgGCCStrike15_v2_GetEventFavorites_Request\x12\x12\n\nall_events\x18\x01 \x01(\x08\"r\n-CMsgGCCStrike15_v2_GetEventFavorites_Response\x12\x12\n\nall_events\x18\x01 \x01(\x08\x12\x16\n\x0ejson_favorites\x18\x02 \x01(\t\x12\x15\n\rjson_featured\x18\x03 \x01(\t*\xb9\'\n\nECsgoGCMsg\x12\x1e\n\x19k_EMsgGCCStrike15_v2_Base\x10\x8cG\x12*\n%k_EMsgGCCStrike15_v2_MatchmakingStart\x10\x8dG\x12)\n$k_EMsgGCCStrike15_v2_MatchmakingStop\x10\x8eG\x12\x36\n1k_EMsgGCCStrike15_v2_MatchmakingClient2ServerPing\x10\x8fG\x12\x34\n/k_EMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate\x10\x90G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x10\x91G\x12>\n9k_EMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x10\x92G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x10\x93G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingServerRoundStats\x10\x94G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingClient2GCHello\x10\x95G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingGC2ClientHello\x10\x96G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingServerMatchEnd\x10\x97G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon\x10\x98G\x12\x32\n-k_EMsgGCCStrike15_v2_MatchmakingServer2GCKick\x10\x99G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x10\x9aG\x12\x37\n2k_EMsgGCCStrike15_v2_MatchmakingGCOperationalStats\x10\x9bG\x12\x38\n3k_EMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate\x10\x9cG\x12:\n5k_EMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate\x10\x9dG\x12:\n5k_EMsgGCCStrike15_v2_ServerNotificationForUserPenalty\x10\x9eG\x12,\n\'k_EMsgGCCStrike15_v2_ClientReportPlayer\x10\x9fG\x12,\n\'k_EMsgGCCStrike15_v2_ClientReportServer\x10\xa0G\x12-\n(k_EMsgGCCStrike15_v2_ClientCommendPlayer\x10\xa1G\x12.\n)k_EMsgGCCStrike15_v2_ClientReportResponse\x10\xa2G\x12\x32\n-k_EMsgGCCStrike15_v2_ClientCommendPlayerQuery\x10\xa3G\x12:\n5k_EMsgGCCStrike15_v2_ClientCommendPlayerQueryResponse\x10\xa4G\x12(\n#k_EMsgGCCStrike15_v2_WatchInfoUsers\x10\xa6G\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestPlayersProfile\x10\xa7G\x12(\n#k_EMsgGCCStrike15_v2_PlayersProfile\x10\xa8G\x12\x33\n.k_EMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate\x10\xabG\x12\x37\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment\x10\xacG\x12\x33\n.k_EMsgGCCStrike15_v2_PlayerOverwatchCaseStatus\x10\xadG\x12*\n%k_EMsgGCCStrike15_v2_GC2ClientTextMsg\x10\xaeG\x12*\n%k_EMsgGCCStrike15_v2_Client2GCTextMsg\x10\xafG\x12\x30\n+k_EMsgGCCStrike15_v2_MatchEndRunRewardDrops\x10\xb0G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification\x10\xb1G\x12\x38\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2\x10\xb2G\x12#\n\x1ek_EMsgGCCStrike15_v2_MatchList\x10\xb3G\x12:\n5k_EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames\x10\xb4G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestRecentUserGames\x10\xb5G\x12\x34\n/k_EMsgGCCStrike15_v2_GC2ServerReservationUpdate\x10\xb6G\x12\x38\n3k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo\x10\xb8G\x12@\n;k_EMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification\x10\xb9G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestTournamentGames\x10\xbaG\x12\x36\n1k_EMsgGCCStrike15_v2_MatchListRequestFullGameInfo\x10\xbbG\x12\x31\n,k_EMsgGCCStrike15_v2_GiftsLeaderboardRequest\x10\xbcG\x12\x32\n-k_EMsgGCCStrike15_v2_GiftsLeaderboardResponse\x10\xbdG\x12\x38\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo\x10\xbeG\x12\x1f\n\x1ak_EMsgGCToGCReloadVersions\x10\xbfG\x12\x30\n+k_EMsgGCCStrike15_v2_ClientSubmitSurveyVote\x10\xc0G\x12\x31\n,k_EMsgGCCStrike15_v2_Server2GCClientValidate\x10\xc1G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser\x10\xc2G\x12>\n9k_EMsgGCCStrike15_v2_Server2GCPureServerValidationFailure\x10\xc3G\x12>\n9k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest\x10\xc4G\x12?\n:k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse\x10\xc5G\x12\x30\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings\x10\xc6G\x12+\n&k_EMsgGCCStrike15_v2_SetMyActivityInfo\x10\xc7G\x12?\n:k_EMsgGCCStrike15_v2_MatchListRequestTournamentPredictions\x10\xc8G\x12>\n9k_EMsgGCCStrike15_v2_MatchListUploadTournamentPredictions\x10\xc9G\x12&\n!k_EMsgGCCStrike15_v2_DraftSummary\x10\xcaG\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestJoinFriendData\x10\xcbG\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestJoinServerData\x10\xccG\x12\x31\n,k_EMsgGCCStrike15_v2_ClientRequestNewMission\x10\xcdG\x12\x33\n.k_EMsgGCCStrike15_v2_GC2ServerNotifyXPRewarded\x10\xceG\x12\x31\n,k_EMsgGCCStrike15_v2_GC2ClientTournamentInfo\x10\xcfG\x12\"\n\x1dk_EMsgGC_GlobalGame_Subscribe\x10\xd0G\x12$\n\x1fk_EMsgGC_GlobalGame_Unsubscribe\x10\xd1G\x12\x1d\n\x18k_EMsgGC_GlobalGame_Play\x10\xd2G\x12,\n\'k_EMsgGCCStrike15_v2_AcknowledgePenalty\x10\xd3G\x12\x36\n1k_EMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin\x10\xd4G\x12.\n)k_EMsgGCCStrike15_v2_GC2ClientGlobalStats\x10\xd5G\x12/\n*k_EMsgGCCStrike15_v2_Client2GCStreamUnlock\x10\xd6G\x12\x32\n-k_EMsgGCCStrike15_v2_FantasyRequestClientData\x10\xd7G\x12\x31\n,k_EMsgGCCStrike15_v2_FantasyUpdateClientData\x10\xd8G\x12\x37\n2k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket\x10\xd9G\x12\x31\n,k_EMsgGCCStrike15_v2_ClientToGCRequestTicket\x10\xdaG\x12\x32\n-k_EMsgGCCStrike15_v2_ClientToGCRequestElevate\x10\xdbG\x12$\n\x1fk_EMsgGCCStrike15_v2_GlobalChat\x10\xdcG\x12.\n)k_EMsgGCCStrike15_v2_GlobalChat_Subscribe\x10\xddG\x12\x30\n+k_EMsgGCCStrike15_v2_GlobalChat_Unsubscribe\x10\xdeG\x12+\n&k_EMsgGCCStrike15_v2_ClientAuthKeyCode\x10\xdfG\x12(\n#k_EMsgGCCStrike15_v2_GotvSyncPacket\x10\xe0G\x12/\n*k_EMsgGCCStrike15_v2_ClientPlayerDecalSign\x10\xe1G\x12/\n*k_EMsgGCCStrike15_v2_ClientLogonFatalError\x10\xe3G\x12)\n$k_EMsgGCCStrike15_v2_ClientPollState\x10\xe4G\x12(\n#k_EMsgGCCStrike15_v2_Party_Register\x10\xe5G\x12*\n%k_EMsgGCCStrike15_v2_Party_Unregister\x10\xe6G\x12&\n!k_EMsgGCCStrike15_v2_Party_Search\x10\xe7G\x12&\n!k_EMsgGCCStrike15_v2_Party_Invite\x10\xe8G\x12\x30\n+k_EMsgGCCStrike15_v2_Account_RequestCoPlays\x10\xe9G\x12,\n\'k_EMsgGCCStrike15_v2_ClientGCRankUpdate\x10\xeaG\x12-\n(k_EMsgGCCStrike15_v2_ClientRequestOffers\x10\xebG\x12.\n)k_EMsgGCCStrike15_v2_ClientAccountBalance\x10\xecG\x12.\n)k_EMsgGCCStrike15_v2_ClientPartyJoinRelay\x10\xedG\x12,\n\'k_EMsgGCCStrike15_v2_ClientPartyWarning\x10\xeeG\x12:\n5k_EMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial\x10\xefG\x12*\n%k_EMsgGCCStrike15_v2_SetEventFavorite\x10\xf0G\x12\x33\n.k_EMsgGCCStrike15_v2_GetEventFavorites_Request\x10\xf1G\x12\x34\n/k_EMsgGCCStrike15_v2_GetEventFavorites_Response\x10\xf3G\x12/\n*k_EMsgGCCStrike15_v2_ClientRequestSouvenir\x10\xf4G*\x98\x01\n\x12\x45\x43sgoSteamUserStat\x12&\n\"k_ECsgoSteamUserStat_XpEarnedGames\x10\x01\x12-\n)k_ECsgoSteamUserStat_MatchWinsCompetitive\x10\x02\x12+\n\'k_ECsgoSteamUserStat_SurvivedDangerZone\x10\x03\x42\x05H\x01\x90\x01\x00')
+  serialized_pb=_b('\n\x1a\x63strike15_gcmessages.proto\x12\x04\x63sgo\x1a\x13steammessages.proto\x1a\x17\x65ngine_gcmessages.proto\"=\n\x0eGameServerPing\x12\x0c\n\x04ping\x18\x02 \x01(\x05\x12\n\n\x02ip\x18\x03 \x01(\r\x12\x11\n\tinstances\x18\x05 \x01(\r\"6\n\x0e\x44\x61taCenterPing\x12\x16\n\x0e\x64\x61ta_center_id\x18\x01 \x01(\x07\x12\x0c\n\x04ping\x18\x02 \x01(\x11\"`\n\x17\x44\x65tailedSearchStatistic\x12\x11\n\tgame_type\x18\x01 \x01(\r\x12\x17\n\x0fsearch_time_avg\x18\x02 \x01(\r\x12\x19\n\x11players_searching\x18\x04 \x01(\r\"\xa7\x01\n\x10TournamentPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x13\n\x0bplayer_nick\x18\x02 \x01(\t\x12\x13\n\x0bplayer_name\x18\x03 \x01(\t\x12\x12\n\nplayer_dob\x18\x04 \x01(\r\x12\x13\n\x0bplayer_flag\x18\x05 \x01(\t\x12\x17\n\x0fplayer_location\x18\x06 \x01(\t\x12\x13\n\x0bplayer_desc\x18\x07 \x01(\t\"\x82\x01\n\x0eTournamentTeam\x12\x0f\n\x07team_id\x18\x01 \x01(\x05\x12\x10\n\x08team_tag\x18\x02 \x01(\t\x12\x11\n\tteam_flag\x18\x03 \x01(\t\x12\x11\n\tteam_name\x18\x04 \x01(\t\x12\'\n\x07players\x18\x05 \x03(\x0b\x32\x16.csgo.TournamentPlayer\"\xdf\x01\n\x0fTournamentEvent\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x11\n\tevent_tag\x18\x02 \x01(\t\x12\x12\n\nevent_name\x18\x03 \x01(\t\x12\x18\n\x10\x65vent_time_start\x18\x04 \x01(\r\x12\x16\n\x0e\x65vent_time_end\x18\x05 \x01(\r\x12\x14\n\x0c\x65vent_public\x18\x06 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x07 \x01(\x05\x12\x18\n\x10\x65vent_stage_name\x18\x08 \x01(\t\x12\x19\n\x11\x61\x63tive_section_id\x18\t \x01(\r\"\xc6\x03\n\x10GlobalStatistics\x12\x16\n\x0eplayers_online\x18\x01 \x01(\r\x12\x16\n\x0eservers_online\x18\x02 \x01(\r\x12\x19\n\x11players_searching\x18\x03 \x01(\r\x12\x19\n\x11servers_available\x18\x04 \x01(\r\x12\x17\n\x0fongoing_matches\x18\x05 \x01(\r\x12\x17\n\x0fsearch_time_avg\x18\x06 \x01(\r\x12\x38\n\x11search_statistics\x18\x07 \x03(\x0b\x32\x1d.csgo.DetailedSearchStatistic\x12\x15\n\rmain_post_url\x18\x08 \x01(\t\x12\x1e\n\x16required_appid_version\x18\t \x01(\r\x12\x1a\n\x12pricesheet_version\x18\n \x01(\r\x12\x1e\n\x16twitch_streams_version\x18\x0b \x01(\r\x12!\n\x19\x61\x63tive_tournament_eventid\x18\x0c \x01(\r\x12\x18\n\x10\x61\x63tive_survey_id\x18\r \x01(\r\x12\x13\n\x0brtime32_cur\x18\x0e \x01(\r\x12\x1b\n\x13rtime32_event_start\x18\x0f \x01(\r\">\n\x1fOperationalStatisticDescription\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05idkey\x18\x02 \x01(\r\"<\n\x1bOperationalStatisticElement\x12\r\n\x05idkey\x18\x01 \x01(\r\x12\x0e\n\x06values\x18\x02 \x03(\x05\"w\n\x1bOperationalStatisticsPacket\x12\x10\n\x08packetid\x18\x01 \x01(\x05\x12\x13\n\x0bmstimestamp\x18\x02 \x01(\x05\x12\x31\n\x06values\x18\x03 \x03(\x0b\x32!.csgo.OperationalStatisticElement\"\x85\x01\n\x11PlayerRankingInfo\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0f\n\x07rank_id\x18\x02 \x01(\r\x12\x0c\n\x04wins\x18\x03 \x01(\r\x12\x13\n\x0brank_change\x18\x04 \x01(\x02\x12\x14\n\x0crank_type_id\x18\x06 \x01(\r\x12\x12\n\ntv_control\x18\x07 \x01(\r\"X\n\x16PlayerCommendationInfo\x12\x14\n\x0c\x63md_friendly\x18\x01 \x01(\r\x12\x14\n\x0c\x63md_teaching\x18\x02 \x01(\r\x12\x12\n\ncmd_leader\x18\x04 \x01(\r\"V\n\x10PlayerMedalsInfo\x12\x1c\n\x14\x64isplay_items_defidx\x18\x07 \x03(\r\x12$\n\x1c\x66\x65\x61tured_display_item_defidx\x18\x08 \x01(\r\"O\n\x0f\x41\x63\x63ountActivity\x12\x10\n\x08\x61\x63tivity\x18\x01 \x01(\r\x12\x0c\n\x04mode\x18\x02 \x01(\r\x12\x0b\n\x03map\x18\x03 \x01(\r\x12\x0f\n\x07matchid\x18\x04 \x01(\x04\"g\n\x14TournamentMatchSetup\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x12\n\nteam_id_ct\x18\x02 \x01(\x05\x12\x11\n\tteam_id_t\x18\x03 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x04 \x01(\x05\"\xcf\x03\n\x0eServerHltvInfo\x12\x13\n\x0btv_udp_port\x18\x01 \x01(\r\x12\x14\n\x0ctv_watch_key\x18\x02 \x01(\x04\x12\x10\n\x08tv_slots\x18\x03 \x01(\r\x12\x12\n\ntv_clients\x18\x04 \x01(\r\x12\x12\n\ntv_proxies\x18\x05 \x01(\r\x12\x0f\n\x07tv_time\x18\x06 \x01(\r\x12\x11\n\tgame_type\x18\x08 \x01(\r\x12\x15\n\rgame_mapgroup\x18\t \x01(\t\x12\x10\n\x08game_map\x18\n \x01(\t\x12\x19\n\x11tv_master_steamid\x18\x0b \x01(\x04\x12\x16\n\x0etv_local_slots\x18\x0c \x01(\r\x12\x18\n\x10tv_local_clients\x18\r \x01(\r\x12\x18\n\x10tv_local_proxies\x18\x0e \x01(\r\x12\x16\n\x0etv_relay_slots\x18\x0f \x01(\r\x12\x18\n\x10tv_relay_clients\x18\x10 \x01(\r\x12\x18\n\x10tv_relay_proxies\x18\x11 \x01(\r\x12\x18\n\x10tv_relay_address\x18\x12 \x01(\r\x12\x15\n\rtv_relay_port\x18\x13 \x01(\r\x12\x18\n\x10tv_relay_steamid\x18\x14 \x01(\x04\x12\r\n\x05\x66lags\x18\x15 \x01(\r\"X\n\rIpAddressMask\x12\t\n\x01\x61\x18\x01 \x01(\r\x12\t\n\x01\x62\x18\x02 \x01(\r\x12\t\n\x01\x63\x18\x03 \x01(\r\x12\t\n\x01\x64\x18\x04 \x01(\r\x12\x0c\n\x04\x62its\x18\x05 \x01(\r\x12\r\n\x05token\x18\x06 \x01(\r\"Z\n\x1b\x43MsgCsgoSteamUserStatChange\x12\x1a\n\x12\x65\x63sgosteamuserstat\x18\x01 \x01(\x05\x12\r\n\x05\x64\x65lta\x18\x02 \x01(\x05\x12\x10\n\x08\x61\x62solute\x18\x03 \x01(\x08\"8\n\x0eXpProgressData\x12\x11\n\txp_points\x18\x01 \x01(\r\x12\x13\n\x0bxp_category\x18\x02 \x01(\x05\"_\n\x13MatchEndItemUpdates\x12\x0f\n\x07item_id\x18\x01 \x01(\x04\x12\x18\n\x10item_attr_defidx\x18\x02 \x01(\r\x12\x1d\n\x15item_attr_delta_value\x18\x03 \x01(\r\"\xad\x02\n\x14ScoreLeaderboardData\x12\x10\n\x08quest_id\x18\x01 \x01(\x04\x12\r\n\x05score\x18\x02 \x01(\r\x12\x41\n\x0e\x61\x63\x63ountentries\x18\x03 \x03(\x0b\x32).csgo.ScoreLeaderboardData.AccountEntries\x12\x36\n\x0cmatchentries\x18\x05 \x03(\x0b\x32 .csgo.ScoreLeaderboardData.Entry\x1a!\n\x05\x45ntry\x12\x0b\n\x03tag\x18\x01 \x01(\r\x12\x0b\n\x03val\x18\x02 \x01(\r\x1aV\n\x0e\x41\x63\x63ountEntries\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x31\n\x07\x65ntries\x18\x02 \x03(\x0b\x32 .csgo.ScoreLeaderboardData.Entry\"\xc0\x03\n\x0fPlayerQuestData\x12\x1a\n\x12quester_account_id\x18\x01 \x01(\r\x12<\n\x0fquest_item_data\x18\x02 \x03(\x0b\x32#.csgo.PlayerQuestData.QuestItemData\x12.\n\x10xp_progress_data\x18\x03 \x03(\x0b\x32\x14.csgo.XpProgressData\x12\x13\n\x0btime_played\x18\x04 \x01(\r\x12\x14\n\x0cmm_game_mode\x18\x05 \x01(\r\x12/\n\x0citem_updates\x18\x06 \x03(\x0b\x32\x19.csgo.MatchEndItemUpdates\x12!\n\x19operation_points_eligible\x18\x07 \x01(\x08\x12:\n\x0fuserstatchanges\x18\x08 \x03(\x0b\x32!.csgo.CMsgCsgoSteamUserStatChange\x1ah\n\rQuestItemData\x12\x10\n\x08quest_id\x18\x01 \x01(\x04\x12\"\n\x1aquest_normal_points_earned\x18\x02 \x01(\x05\x12!\n\x19quest_bonus_points_earned\x18\x03 \x01(\x05\"\x96\x05\n\x14\x44\x65\x65pPlayerStatsEntry\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x10\n\x08match_id\x18\x02 \x01(\x04\x12\x14\n\x0cmm_game_mode\x18\x03 \x01(\r\x12\r\n\x05mapid\x18\x04 \x01(\r\x12\x15\n\rb_starting_ct\x18\x05 \x01(\x08\x12\x15\n\rmatch_outcome\x18\x06 \x01(\r\x12\x12\n\nrounds_won\x18\x07 \x01(\r\x12\x13\n\x0brounds_lost\x18\x08 \x01(\r\x12\x12\n\nstat_score\x18\t \x01(\r\x12\x13\n\x0bstat_deaths\x18\x0c \x01(\r\x12\x11\n\tstat_mvps\x18\r \x01(\r\x12\x13\n\x0b\x65nemy_kills\x18\x0e \x01(\r\x12\x17\n\x0f\x65nemy_headshots\x18\x0f \x01(\r\x12\x11\n\tenemy_2ks\x18\x10 \x01(\r\x12\x11\n\tenemy_3ks\x18\x11 \x01(\r\x12\x11\n\tenemy_4ks\x18\x12 \x01(\r\x12\x14\n\x0ctotal_damage\x18\x13 \x01(\r\x12\x1f\n\x17\x65ngagements_entry_count\x18\x17 \x01(\r\x12\x1e\n\x16\x65ngagements_entry_wins\x18\x18 \x01(\r\x12\x1d\n\x15\x65ngagements_1v1_count\x18\x19 \x01(\r\x12\x1c\n\x14\x65ngagements_1v1_wins\x18\x1a \x01(\r\x12\x1d\n\x15\x65ngagements_1v2_count\x18\x1b \x01(\r\x12\x1c\n\x14\x65ngagements_1v2_wins\x18\x1c \x01(\r\x12\x15\n\rutility_count\x18\x1d \x01(\r\x12\x17\n\x0futility_success\x18\x1e \x01(\r\x12\x13\n\x0b\x66lash_count\x18  \x01(\r\x12\x15\n\rflash_success\x18! \x01(\r\x12\r\n\x05mates\x18\" \x03(\r\"\xb1\x02\n\x14\x44\x65\x65pPlayerMatchEvent\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x10\n\x08match_id\x18\x02 \x01(\x04\x12\x10\n\x08\x65vent_id\x18\x03 \x01(\r\x12\x12\n\nevent_type\x18\x04 \x01(\r\x12\x14\n\x0c\x62_playing_ct\x18\x05 \x01(\x08\x12\x12\n\nuser_pos_x\x18\x06 \x01(\x05\x12\x12\n\nuser_pos_y\x18\x07 \x01(\x05\x12\x12\n\nuser_pos_z\x18\x0c \x01(\x05\x12\x13\n\x0buser_defidx\x18\x08 \x01(\r\x12\x13\n\x0bother_pos_x\x18\t \x01(\x05\x12\x13\n\x0bother_pos_y\x18\n \x01(\x05\x12\x13\n\x0bother_pos_z\x18\r \x01(\x05\x12\x14\n\x0cother_defidx\x18\x0b \x01(\r\x12\x12\n\nevent_data\x18\x0e \x01(\x05\"\xaf\x01\n\x1c\x43MsgGC_ServerQuestUpdateData\x12\x30\n\x11player_quest_data\x18\x01 \x03(\x0b\x32\x15.csgo.PlayerQuestData\x12\x13\n\x0b\x62inary_data\x18\x02 \x01(\x0c\x12\x14\n\x0cmm_game_mode\x18\x03 \x01(\r\x12\x32\n\x0emissionlbsdata\x18\x04 \x01(\x0b\x32\x1a.csgo.ScoreLeaderboardData\"\xb1\x01\n0CMsgGCCStrike15_v2_MatchmakingGCOperationalStats\x12\x10\n\x08packetid\x18\x01 \x01(\x05\x12\x37\n\x08namekeys\x18\x02 \x03(\x0b\x32%.csgo.OperationalStatisticDescription\x12\x32\n\x07packets\x18\x03 \x03(\x0b\x32!.csgo.OperationalStatisticsPacket\"`\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\r\n\x05token\x18\x01 \x01(\r\x12\r\n\x05stamp\x18\x02 \x01(\r\x12\x10\n\x08\x65xchange\x18\x03 \x01(\x04\"o\n-CMsgGCCStrike15_v2_GC2ServerReservationUpdate\x12\x1e\n\x16viewers_external_total\x18\x01 \x01(\r\x12\x1e\n\x16viewers_external_steam\x18\x02 \x01(\r\"\xc4\x01\n#CMsgGCCStrike15_v2_MatchmakingStart\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x01 \x03(\r\x12\x11\n\tgame_type\x18\x02 \x01(\r\x12\x13\n\x0bticket_data\x18\x03 \x01(\t\x12\x16\n\x0e\x63lient_version\x18\x04 \x01(\r\x12\x34\n\x10tournament_match\x18\x05 \x01(\x0b\x32\x1a.csgo.TournamentMatchSetup\x12\x12\n\nprime_only\x18\x06 \x01(\x08\"5\n\"CMsgGCCStrike15_v2_MatchmakingStop\x12\x0f\n\x07\x61\x62\x61ndon\x18\x01 \x01(\x05\"\xe2\x01\n/CMsgGCCStrike15_v2_MatchmakingClient2ServerPing\x12-\n\x0fgameserverpings\x18\x01 \x03(\x0b\x32\x14.csgo.GameServerPing\x12\x14\n\x0coffset_index\x18\x02 \x01(\x05\x12\x13\n\x0b\x66inal_batch\x18\x03 \x01(\x05\x12/\n\x11\x64\x61ta_center_pings\x18\x04 \x03(\x0b\x32\x14.csgo.DataCenterPing\x12\x10\n\x08max_ping\x18\x05 \x01(\r\x12\x12\n\ntest_token\x18\x06 \x01(\x07\"\xf2\x05\n-CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate\x12\x13\n\x0bmatchmaking\x18\x01 \x01(\x05\x12#\n\x1bwaiting_account_id_sessions\x18\x02 \x03(\r\x12\r\n\x05\x65rror\x18\x03 \x01(\t\x12(\n ongoingmatch_account_id_sessions\x18\x06 \x03(\r\x12,\n\x0cglobal_stats\x18\x07 \x01(\x0b\x32\x16.csgo.GlobalStatistics\x12$\n\x1c\x66\x61ilping_account_id_sessions\x18\x08 \x03(\r\x12#\n\x1bpenalty_account_id_sessions\x18\t \x03(\r\x12%\n\x1d\x66\x61ilready_account_id_sessions\x18\n \x03(\r\x12%\n\x1dvacbanned_account_id_sessions\x18\x0b \x03(\r\x12\x32\n\x15server_ipaddress_mask\x18\x0c \x01(\x0b\x32\x13.csgo.IpAddressMask\x12G\n\x05notes\x18\r \x03(\x0b\x32\x38.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate.Note\x12)\n!penalty_account_id_sessions_green\x18\x0e \x03(\r\x12\"\n\x1ainsufficientlevel_sessions\x18\x0f \x03(\r\x12$\n\x1cvsncheck_account_id_sessions\x18\x10 \x03(\r\x12\"\n\x1alauncher_mismatch_sessions\x18\x11 \x03(\r\x12$\n\x1cinsecure_account_id_sessions\x18\x12 \x03(\r\x1aK\n\x04Note\x12\x0c\n\x04type\x18\x01 \x01(\x05\x12\x11\n\tregion_id\x18\x02 \x01(\x05\x12\x10\n\x08region_r\x18\x03 \x01(\x02\x12\x10\n\x08\x64istance\x18\x04 \x01(\x02\"\xdb\x02\n(CDataGCCStrike15_v2_TournamentMatchDraft\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\x05\x12\x16\n\x0e\x65vent_stage_id\x18\x02 \x01(\x05\x12\x11\n\tteam_id_0\x18\x03 \x01(\x05\x12\x11\n\tteam_id_1\x18\x04 \x01(\x05\x12\x12\n\nmaps_count\x18\x05 \x01(\x05\x12\x14\n\x0cmaps_current\x18\x06 \x01(\x05\x12\x15\n\rteam_id_start\x18\x07 \x01(\x05\x12\x15\n\rteam_id_veto1\x18\x08 \x01(\x05\x12\x15\n\rteam_id_pickn\x18\t \x01(\x05\x12\x44\n\x06\x64rafts\x18\n \x03(\x0b\x32\x34.csgo.CDataGCCStrike15_v2_TournamentMatchDraft.Entry\x1a*\n\x05\x45ntry\x12\r\n\x05mapid\x18\x01 \x01(\x05\x12\x12\n\nteam_id_ct\x18\x02 \x01(\x05\"\x85\x02\n\x11\x43PreMatchInfoData\x12\x17\n\x0fpredictions_pct\x18\x01 \x01(\x05\x12=\n\x05\x64raft\x18\x04 \x01(\x0b\x32..csgo.CDataGCCStrike15_v2_TournamentMatchDraft\x12\x30\n\x05stats\x18\x05 \x03(\x0b\x32!.csgo.CPreMatchInfoData.TeamStats\x12\x0c\n\x04wins\x18\x06 \x03(\x05\x1aX\n\tTeamStats\x12\x19\n\x11match_info_idxtxt\x18\x01 \x01(\x05\x12\x16\n\x0ematch_info_txt\x18\x02 \x01(\t\x12\x18\n\x10match_info_teams\x18\x03 \x03(\t\"\xcb\x04\n.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x01 \x03(\r\x12\x11\n\tgame_type\x18\x02 \x01(\r\x12\x10\n\x08match_id\x18\x03 \x01(\x04\x12\x16\n\x0eserver_version\x18\x04 \x01(\r\x12\r\n\x05\x66lags\x18\x12 \x01(\r\x12)\n\x08rankings\x18\x05 \x03(\x0b\x32\x17.csgo.PlayerRankingInfo\x12\x16\n\x0e\x65ncryption_key\x18\x06 \x01(\x04\x12\x1a\n\x12\x65ncryption_key_pub\x18\x07 \x01(\x04\x12\x11\n\tparty_ids\x18\x08 \x03(\r\x12&\n\twhitelist\x18\t \x03(\x0b\x32\x13.csgo.IpAddressMask\x12\x19\n\x11tv_master_steamid\x18\n \x01(\x04\x12/\n\x10tournament_event\x18\x0b \x01(\x0b\x32\x15.csgo.TournamentEvent\x12.\n\x10tournament_teams\x18\x0c \x03(\x0b\x32\x14.csgo.TournamentTeam\x12&\n\x1etournament_casters_account_ids\x18\r \x03(\r\x12\x18\n\x10tv_relay_steamid\x18\x0e \x01(\x04\x12/\n\x0epre_match_data\x18\x0f \x01(\x0b\x32\x17.csgo.CPreMatchInfoData\x12\x1b\n\x13rtime32_event_start\x18\x10 \x01(\r\x12\x12\n\ntv_control\x18\x11 \x01(\r\"\xc0\x04\n7CMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x12\x15\n\rreservationid\x18\x01 \x01(\x04\x12I\n\x0breservation\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x03 \x01(\t\x12\x1b\n\x13gc_reservation_sent\x18\x04 \x01(\x04\x12\x16\n\x0eserver_version\x18\x05 \x01(\r\x12%\n\x07tv_info\x18\x06 \x01(\x0b\x32\x14.csgo.ServerHltvInfo\x12\x1e\n\x16reward_player_accounts\x18\x07 \x03(\r\x12\x1c\n\x14idle_player_accounts\x18\x08 \x03(\r\x12 \n\x18reward_item_attr_def_idx\x18\t \x01(\r\x12\x1e\n\x16reward_item_attr_value\x18\n \x01(\r\x12#\n\x1breward_item_attr_reward_idx\x18\x0b \x01(\r\x12\x18\n\x10reward_drop_list\x18\x0c \x01(\r\x12\x16\n\x0etournament_tag\x18\r \x01(\t\x12!\n\x19legacy_steamdatagram_port\x18\x0e \x01(\r\x12\x1d\n\x15steamdatagram_routing\x18\x11 \x01(\r\x12\x12\n\ntest_token\x18\x0f \x01(\x07\x12\r\n\x05\x66lags\x18\x10 \x01(\r\"\xf9\x01\n.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x10\n\x08serverid\x18\x01 \x01(\x04\x12\x15\n\rdirect_udp_ip\x18\x02 \x01(\r\x12\x17\n\x0f\x64irect_udp_port\x18\x03 \x01(\r\x12\x15\n\rreservationid\x18\x04 \x01(\x04\x12I\n\x0breservation\x18\x05 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x06 \x01(\t\x12\x16\n\x0eserver_address\x18\x07 \x01(\t\"\xed\x06\n.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12\x15\n\rreservationid\x18\x01 \x01(\x04\x12I\n\x0breservation\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve\x12\x0b\n\x03map\x18\x03 \x01(\t\x12\r\n\x05round\x18\x04 \x01(\x05\x12\r\n\x05kills\x18\x05 \x03(\x05\x12\x0f\n\x07\x61ssists\x18\x06 \x03(\x05\x12\x0e\n\x06\x64\x65\x61ths\x18\x07 \x03(\x05\x12\x0e\n\x06scores\x18\x08 \x03(\x05\x12\r\n\x05pings\x18\t \x03(\x05\x12\x14\n\x0cround_result\x18\n \x01(\x05\x12\x14\n\x0cmatch_result\x18\x0b \x01(\x05\x12\x13\n\x0bteam_scores\x18\x0c \x03(\x05\x12\x45\n\x07\x63onfirm\x18\r \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm\x12\x19\n\x11reservation_stage\x18\x0e \x01(\x05\x12\x16\n\x0ematch_duration\x18\x0f \x01(\x05\x12\x13\n\x0b\x65nemy_kills\x18\x10 \x03(\x05\x12\x17\n\x0f\x65nemy_headshots\x18\x11 \x03(\x05\x12\x11\n\tenemy_3ks\x18\x12 \x03(\x05\x12\x11\n\tenemy_4ks\x18\x13 \x03(\x05\x12\x11\n\tenemy_5ks\x18\x14 \x03(\x05\x12\x0c\n\x04mvps\x18\x15 \x03(\x05\x12\x18\n\x10spectators_count\x18\x16 \x01(\r\x12\x1b\n\x13spectators_count_tv\x18\x17 \x01(\r\x12\x1c\n\x14spectators_count_lnk\x18\x18 \x01(\r\x12\x17\n\x0f\x65nemy_kills_agg\x18\x19 \x03(\x05\x12P\n\tdrop_info\x18\x1a \x01(\x0b\x32=.csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats.DropInfo\x12\x18\n\x10\x62_switched_teams\x18\x1b \x01(\x08\x12\x11\n\tenemy_2ks\x18\x1c \x03(\x05\x12\x16\n\x0eplayer_spawned\x18\x1d \x03(\x05\x12\x18\n\x10team_spawn_count\x18\x1e \x03(\x05\x1a\x1f\n\x08\x44ropInfo\x12\x13\n\x0b\x61\x63\x63ount_mvp\x18\x01 \x01(\r\".\n,CMsgGCCStrike15_v2_MatchmakingClient2GCHello\"\x8a\x06\n,CMsgGCCStrike15_v2_MatchmakingGC2ClientHello\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12J\n\x0congoingmatch\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12,\n\x0cglobal_stats\x18\x03 \x01(\x0b\x32\x16.csgo.GlobalStatistics\x12\x17\n\x0fpenalty_seconds\x18\x04 \x01(\r\x12\x16\n\x0epenalty_reason\x18\x05 \x01(\r\x12\x12\n\nvac_banned\x18\x06 \x01(\x05\x12(\n\x07ranking\x18\x07 \x01(\x0b\x32\x17.csgo.PlayerRankingInfo\x12\x32\n\x0c\x63ommendation\x18\x08 \x01(\x0b\x32\x1c.csgo.PlayerCommendationInfo\x12&\n\x06medals\x18\t \x01(\x0b\x32\x16.csgo.PlayerMedalsInfo\x12/\n\x10my_current_event\x18\n \x01(\x0b\x32\x15.csgo.TournamentEvent\x12\x34\n\x16my_current_event_teams\x18\x0b \x03(\x0b\x32\x14.csgo.TournamentTeam\x12-\n\x0fmy_current_team\x18\x0c \x01(\x0b\x32\x14.csgo.TournamentTeam\x12\x36\n\x17my_current_event_stages\x18\r \x03(\x0b\x32\x15.csgo.TournamentEvent\x12\x13\n\x0bsurvey_vote\x18\x0e \x01(\r\x12\'\n\x08\x61\x63tivity\x18\x0f \x01(\x0b\x32\x15.csgo.AccountActivity\x12\x14\n\x0cplayer_level\x18\x11 \x01(\x05\x12\x15\n\rplayer_cur_xp\x18\x12 \x01(\x05\x12\x1d\n\x15player_xp_bonus_flags\x18\x13 \x01(\x05\x12)\n\x08rankings\x18\x14 \x03(\x0b\x32\x17.csgo.PlayerRankingInfo\"\xae\x01\n)CMsgGCCStrike15_v2_AccountPrivacySettings\x12I\n\x08settings\x18\x01 \x03(\x0b\x32\x37.csgo.CMsgGCCStrike15_v2_AccountPrivacySettings.Setting\x1a\x36\n\x07Setting\x12\x14\n\x0csetting_type\x18\x01 \x01(\r\x12\x15\n\rsetting_value\x18\x02 \x01(\r\"\xc4\x01\n.CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12M\n\x0f\x61\x62\x61ndoned_match\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x17\n\x0fpenalty_seconds\x18\x03 \x01(\r\x12\x16\n\x0epenalty_reason\x18\x04 \x01(\r\"R\n%CMsgGCCStrike15_v2_ClientGCRankUpdate\x12)\n\x08rankings\x18\x01 \x03(\x0b\x32\x17.csgo.PlayerRankingInfo\"L\n3CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate\x12\x15\n\rmain_post_url\x18\x01 \x01(\t\"\x8a\x01\n3CMsgGCCStrike15_v2_ServerNotificationForUserPenalty\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0e\n\x06reason\x18\x02 \x01(\r\x12\x0f\n\x07seconds\x18\x03 \x01(\r\x12\x1e\n\x16\x63ommunication_cooldown\x18\x04 \x01(\x08\"\xed\x01\n%CMsgGCCStrike15_v2_ClientReportPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x12\n\nrpt_aimbot\x18\x02 \x01(\r\x12\x14\n\x0crpt_wallhack\x18\x03 \x01(\r\x12\x15\n\rrpt_speedhack\x18\x04 \x01(\r\x12\x14\n\x0crpt_teamharm\x18\x05 \x01(\r\x12\x15\n\rrpt_textabuse\x18\x06 \x01(\r\x12\x16\n\x0erpt_voiceabuse\x18\x07 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\x12\x18\n\x10report_from_demo\x18\t \x01(\x08\"\x92\x01\n&CMsgGCCStrike15_v2_ClientCommendPlayer\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\x12\x32\n\x0c\x63ommendation\x18\t \x01(\x0b\x32\x1c.csgo.PlayerCommendationInfo\x12\x0e\n\x06tokens\x18\n \x01(\r\"\xb5\x01\n%CMsgGCCStrike15_v2_ClientReportServer\x12\x14\n\x0crpt_poorperf\x18\x01 \x01(\r\x12\x19\n\x11rpt_abusivemodels\x18\x02 \x01(\r\x12\x13\n\x0brpt_badmotd\x18\x03 \x01(\r\x12\x18\n\x10rpt_listingabuse\x18\x04 \x01(\r\x12\x1a\n\x12rpt_inventoryabuse\x18\x05 \x01(\r\x12\x10\n\x08match_id\x18\x08 \x01(\x04\"\xa9\x01\n\'CMsgGCCStrike15_v2_ClientReportResponse\x12\x17\n\x0f\x63onfirmation_id\x18\x01 \x01(\x04\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x11\n\tserver_ip\x18\x03 \x01(\r\x12\x15\n\rresponse_type\x18\x04 \x01(\r\x12\x17\n\x0fresponse_result\x18\x05 \x01(\r\x12\x0e\n\x06tokens\x18\x06 \x01(\r\"\xc8\x01\n0CMsgGCCStrike15_v2_ClientRequestWatchInfoFriends\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x02 \x03(\r\x12\x10\n\x08serverid\x18\x03 \x01(\x04\x12\x0f\n\x07matchid\x18\x04 \x01(\x04\x12\x17\n\x0f\x63lient_launcher\x18\x05 \x01(\r\x12/\n\x11\x64\x61ta_center_pings\x18\x06 \x03(\x0b\x32\x14.csgo.DataCenterPing\"\xb0\x02\n\x12WatchableMatchInfo\x12\x11\n\tserver_ip\x18\x01 \x01(\r\x12\x0f\n\x07tv_port\x18\x02 \x01(\r\x12\x15\n\rtv_spectators\x18\x03 \x01(\r\x12\x0f\n\x07tv_time\x18\x04 \x01(\r\x12\x19\n\x11tv_watch_password\x18\x05 \x01(\x0c\x12\x1a\n\x12\x63l_decryptdata_key\x18\x06 \x01(\x04\x12\x1e\n\x16\x63l_decryptdata_key_pub\x18\x07 \x01(\x04\x12\x11\n\tgame_type\x18\x08 \x01(\r\x12\x15\n\rgame_mapgroup\x18\t \x01(\t\x12\x10\n\x08game_map\x18\n \x01(\t\x12\x11\n\tserver_id\x18\x0b \x01(\x04\x12\x10\n\x08match_id\x18\x0c \x01(\x04\x12\x16\n\x0ereservation_id\x18\r \x01(\x04\"\xd0\x01\n.CMsgGCCStrike15_v2_ClientRequestJoinFriendData\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x12\n\njoin_token\x18\x03 \x01(\r\x12\x10\n\x08join_ipp\x18\x04 \x01(\r\x12\x41\n\x03res\x18\x05 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x10\n\x08\x65rrormsg\x18\x06 \x01(\t\"\xe4\x01\n.CMsgGCCStrike15_v2_ClientRequestJoinServerData\x12\x0f\n\x07version\x18\x01 \x01(\r\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x10\n\x08serverid\x18\x03 \x01(\x04\x12\x11\n\tserver_ip\x18\x04 \x01(\r\x12\x13\n\x0bserver_port\x18\x05 \x01(\r\x12\x41\n\x03res\x18\x06 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x12\x10\n\x08\x65rrormsg\x18\x07 \x01(\t\"U\n*CMsgGCCstrike15_v2_ClientRequestNewMission\x12\x12\n\nmission_id\x18\x02 \x01(\r\x12\x13\n\x0b\x63\x61mpaign_id\x18\x03 \x01(\r\"\x89\x01\n,CMsgGCCstrike15_v2_ClientRedeemMissionReward\x12\x13\n\x0b\x63\x61mpaign_id\x18\x01 \x01(\r\x12\x11\n\tredeem_id\x18\x02 \x01(\r\x12\x1a\n\x12redeemable_balance\x18\x03 \x01(\r\x12\x15\n\rexpected_cost\x18\x04 \x01(\r\"\xd8\x01\n,CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded\x12.\n\x10xp_progress_data\x18\x01 \x03(\x0b\x32\x14.csgo.XpProgressData\x12\x12\n\naccount_id\x18\x02 \x01(\r\x12\x12\n\ncurrent_xp\x18\x03 \x01(\r\x12\x15\n\rcurrent_level\x18\x04 \x01(\r\x12\x17\n\x0fupgraded_defidx\x18\x05 \x01(\r\x12 \n\x18operation_points_awarded\x18\x06 \x01(\r\"\xe9\x02\n\x1f\x43MsgGCCStrike15_ClientDeepStats\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x43\n\x05range\x18\x02 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsRange\x12\x45\n\x07matches\x18\x03 \x03(\x0b\x32\x34.csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsMatch\x1a<\n\x0e\x44\x65\x65pStatsRange\x12\r\n\x05\x62\x65gin\x18\x01 \x01(\r\x12\x0b\n\x03\x65nd\x18\x02 \x01(\r\x12\x0e\n\x06\x66rozen\x18\x03 \x01(\x08\x1ah\n\x0e\x44\x65\x65pStatsMatch\x12*\n\x06player\x18\x01 \x01(\x0b\x32\x1a.csgo.DeepPlayerStatsEntry\x12*\n\x06\x65vents\x18\x02 \x03(\x0b\x32\x1a.csgo.DeepPlayerMatchEvent\"\x9f\x01\n!CMsgGCCStrike15_v2_WatchInfoUsers\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12\x13\n\x0b\x61\x63\x63ount_ids\x18\x02 \x03(\r\x12\x37\n\x15watchable_match_infos\x18\x03 \x03(\x0b\x32\x18.csgo.WatchableMatchInfo\x12\x18\n\x10\x65xtended_timeout\x18\x05 \x01(\r\"\x9c\x01\n.CMsgGCCStrike15_v2_ClientRequestPlayersProfile\x12\x1e\n\x16request_id__deprecated\x18\x01 \x01(\r\x12\x1f\n\x17\x61\x63\x63ount_ids__deprecated\x18\x02 \x03(\r\x12\x12\n\naccount_id\x18\x03 \x01(\r\x12\x15\n\rrequest_level\x18\x04 \x01(\r\"\x85\x01\n!CMsgGCCStrike15_v2_PlayersProfile\x12\x12\n\nrequest_id\x18\x01 \x01(\r\x12L\n\x10\x61\x63\x63ount_profiles\x18\x02 \x03(\x0b\x32\x32.csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientHello\"\xcc\x01\n,CMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x11\n\tsuspectid\x18\x03 \x01(\r\x12\x12\n\nfractionid\x18\x04 \x01(\r\x12\x12\n\nrpt_aimbot\x18\x05 \x01(\r\x12\x14\n\x0crpt_wallhack\x18\x06 \x01(\r\x12\x15\n\rrpt_speedhack\x18\x07 \x01(\r\x12\x14\n\x0crpt_teamharm\x18\x08 \x01(\r\x12\x0e\n\x06reason\x18\t \x01(\r\"\x8d\x02\n0CMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x0f\n\x07\x63\x61seurl\x18\x02 \x01(\t\x12\x0f\n\x07verdict\x18\x03 \x01(\r\x12\x11\n\ttimestamp\x18\x04 \x01(\r\x12\x17\n\x0fthrottleseconds\x18\x05 \x01(\r\x12\x11\n\tsuspectid\x18\x06 \x01(\r\x12\x12\n\nfractionid\x18\x07 \x01(\r\x12\x11\n\tnumrounds\x18\x08 \x01(\r\x12\x16\n\x0e\x66ractionrounds\x18\t \x01(\r\x12\x19\n\x11streakconvictions\x18\n \x01(\x05\x12\x0e\n\x06reason\x18\x0b \x01(\r\"P\n,CMsgGCCStrike15_v2_PlayerOverwatchCaseStatus\x12\x0e\n\x06\x63\x61seid\x18\x01 \x01(\x04\x12\x10\n\x08statusid\x18\x02 \x01(\r\"C\n\x1e\x43\x43lientHeaderOverwatchEvidence\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0e\n\x06\x63\x61seid\x18\x02 \x01(\x04\"P\n#CMsgGCCStrike15_v2_GC2ClientTextMsg\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04type\x18\x02 \x01(\r\x12\x0f\n\x07payload\x18\x03 \x01(\x0c\"?\n#CMsgGCCStrike15_v2_Client2GCTextMsg\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0c\n\x04\x61rgs\x18\x02 \x03(\x0c\"\xc0\x01\n)CMsgGCCStrike15_v2_MatchEndRunRewardDrops\x12Q\n\nserverinfo\x18\x03 \x01(\x0b\x32=.csgo.CMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x12@\n\x14match_end_quest_data\x18\x04 \x01(\x0b\x32\".csgo.CMsgGC_ServerQuestUpdateData\"\x89\x04\n\x19\x43\x45\x63onItemPreviewDataBlock\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0e\n\x06itemid\x18\x02 \x01(\x04\x12\x10\n\x08\x64\x65\x66index\x18\x03 \x01(\r\x12\x12\n\npaintindex\x18\x04 \x01(\r\x12\x0e\n\x06rarity\x18\x05 \x01(\r\x12\x0f\n\x07quality\x18\x06 \x01(\r\x12\x11\n\tpaintwear\x18\x07 \x01(\r\x12\x11\n\tpaintseed\x18\x08 \x01(\r\x12\x1a\n\x12killeaterscoretype\x18\t \x01(\r\x12\x16\n\x0ekilleatervalue\x18\n \x01(\r\x12\x12\n\ncustomname\x18\x0b \x01(\t\x12\x39\n\x08stickers\x18\x0c \x03(\x0b\x32\'.csgo.CEconItemPreviewDataBlock.Sticker\x12\x11\n\tinventory\x18\r \x01(\r\x12\x0e\n\x06origin\x18\x0e \x01(\r\x12\x0f\n\x07questid\x18\x0f \x01(\r\x12\x12\n\ndropreason\x18\x10 \x01(\r\x12\x12\n\nmusicindex\x18\x11 \x01(\r\x12\x10\n\x08\x65ntindex\x18\x12 \x01(\x05\x1ak\n\x07Sticker\x12\x0c\n\x04slot\x18\x01 \x01(\r\x12\x12\n\nsticker_id\x18\x02 \x01(\r\x12\x0c\n\x04wear\x18\x03 \x01(\x02\x12\r\n\x05scale\x18\x04 \x01(\x02\x12\x10\n\x08rotation\x18\x05 \x01(\x02\x12\x0f\n\x07tint_id\x18\x06 \x01(\r\"g\n2CMsgGCCStrike15_v2_MatchEndRewardDropsNotification\x12\x31\n\x08iteminfo\x18\x06 \x01(\x0b\x32\x1f.csgo.CEconItemPreviewDataBlock\"I\n\x14\x43MsgItemAcknowledged\x12\x31\n\x08iteminfo\x18\x01 \x01(\x0b\x32\x1f.csgo.CEconItemPreviewDataBlock\"}\n7CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest\x12\x0f\n\x07param_s\x18\x01 \x01(\x04\x12\x0f\n\x07param_a\x18\x02 \x01(\x04\x12\x0f\n\x07param_d\x18\x03 \x01(\x04\x12\x0f\n\x07param_m\x18\x04 \x01(\x04\"m\n8CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse\x12\x31\n\x08iteminfo\x18\x01 \x01(\x0b\x32\x1f.csgo.CEconItemPreviewDataBlock\"5\n3CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames\"G\n2CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser\x12\x11\n\taccountid\x18\x01 \x01(\r\"G\n2CMsgGCCStrike15_v2_MatchListRequestRecentUserGames\x12\x11\n\taccountid\x18\x01 \x01(\r\"E\n2CMsgGCCStrike15_v2_MatchListRequestTournamentGames\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\x05\"d\n/CMsgGCCStrike15_v2_MatchListRequestFullGameInfo\x12\x0f\n\x07matchid\x18\x01 \x01(\x04\x12\x11\n\toutcomeid\x18\x02 \x01(\x04\x12\r\n\x05token\x18\x03 \x01(\r\"\x97\x02\n\x1d\x43\x44\x61taGCCStrike15_v2_MatchInfo\x12\x0f\n\x07matchid\x18\x01 \x01(\x04\x12\x11\n\tmatchtime\x18\x02 \x01(\r\x12\x34\n\x12watchablematchinfo\x18\x03 \x01(\x0b\x32\x18.csgo.WatchableMatchInfo\x12O\n\x11roundstats_legacy\x18\x04 \x01(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\x12K\n\rroundstatsall\x18\x05 \x03(\x0b\x32\x34.csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats\"^\n\'CDataGCCStrike15_v2_TournamentGroupTeam\x12\x0f\n\x07team_id\x18\x01 \x01(\x05\x12\r\n\x05score\x18\x02 \x01(\x05\x12\x13\n\x0b\x63orrectpick\x18\x03 \x01(\x08\"\xe3\x02\n#CDataGCCStrike15_v2_TournamentGroup\x12\x0f\n\x07groupid\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x65sc\x18\x03 \x01(\t\x12\x19\n\x11picks__deprecated\x18\x04 \x01(\r\x12<\n\x05teams\x18\x05 \x03(\x0b\x32-.csgo.CDataGCCStrike15_v2_TournamentGroupTeam\x12\x11\n\tstage_ids\x18\x06 \x03(\x05\x12\x19\n\x11picklockuntiltime\x18\x07 \x01(\r\x12\x15\n\rpickableteams\x18\x08 \x01(\r\x12\x17\n\x0fpoints_per_pick\x18\t \x01(\r\x12>\n\x05picks\x18\n \x03(\x0b\x32/.csgo.CDataGCCStrike15_v2_TournamentGroup.Picks\x1a\x18\n\x05Picks\x12\x0f\n\x07pickids\x18\x01 \x03(\x05\"\x91\x01\n%CDataGCCStrike15_v2_TournamentSection\x12\x11\n\tsectionid\x18\x01 \x01(\r\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x65sc\x18\x03 \x01(\t\x12\x39\n\x06groups\x18\x04 \x03(\x0b\x32).csgo.CDataGCCStrike15_v2_TournamentGroup\"\xc4\x01\n\"CDataGCCStrike15_v2_TournamentInfo\x12=\n\x08sections\x18\x01 \x03(\x0b\x32+.csgo.CDataGCCStrike15_v2_TournamentSection\x12/\n\x10tournament_event\x18\x02 \x01(\x0b\x32\x15.csgo.TournamentEvent\x12.\n\x10tournament_teams\x18\x03 \x03(\x0b\x32\x14.csgo.TournamentTeam\"\xfa\x01\n\x1c\x43MsgGCCStrike15_v2_MatchList\x12\x14\n\x0cmsgrequestid\x18\x01 \x01(\r\x12\x11\n\taccountid\x18\x02 \x01(\r\x12\x12\n\nservertime\x18\x03 \x01(\r\x12\x34\n\x07matches\x18\x04 \x03(\x0b\x32#.csgo.CDataGCCStrike15_v2_MatchInfo\x12%\n\x07streams\x18\x05 \x03(\x0b\x32\x14.csgo.TournamentTeam\x12@\n\x0etournamentinfo\x18\x06 \x01(\x0b\x32(.csgo.CDataGCCStrike15_v2_TournamentInfo\"\xf4\x01\n\x1e\x43MsgGCCStrike15_v2_Predictions\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\r\x12W\n\x16group_match_team_picks\x18\x02 \x03(\x0b\x32\x37.csgo.CMsgGCCStrike15_v2_Predictions.GroupMatchTeamPick\x1ag\n\x12GroupMatchTeamPick\x12\x11\n\tsectionid\x18\x01 \x01(\x05\x12\x0f\n\x07groupid\x18\x02 \x01(\x05\x12\r\n\x05index\x18\x03 \x01(\x05\x12\x0e\n\x06teamid\x18\x04 \x01(\x05\x12\x0e\n\x06itemid\x18\x05 \x01(\x04\"\x85\x02\n\x1a\x43MsgGCCStrike15_v2_Fantasy\x12\x10\n\x08\x65vent_id\x18\x01 \x01(\r\x12;\n\x05teams\x18\x02 \x03(\x0b\x32,.csgo.CMsgGCCStrike15_v2_Fantasy.FantasyTeam\x1a\x39\n\x0b\x46\x61ntasySlot\x12\x0c\n\x04type\x18\x01 \x01(\x05\x12\x0c\n\x04pick\x18\x02 \x01(\x05\x12\x0e\n\x06itemid\x18\x03 \x01(\x04\x1a]\n\x0b\x46\x61ntasyTeam\x12\x11\n\tsectionid\x18\x01 \x01(\x05\x12;\n\x05slots\x18\x02 \x03(\x0b\x32,.csgo.CMsgGCCStrike15_v2_Fantasy.FantasySlot\"\"\n\x11\x43\x41ttribute_String\x12\r\n\x05value\x18\x01 \x01(\t\"\xc4\x01\n\x14\x43MsgCStrike15Welcome\x12\x17\n\x0fstore_item_hash\x18\x05 \x01(\r\x12\x1f\n\x17timeplayedconsecutively\x18\x06 \x01(\r\x12\x19\n\x11time_first_played\x18\n \x01(\r\x12\x18\n\x10last_time_played\x18\x0c \x01(\r\x12\x17\n\x0flast_ip_address\x18\r \x01(\r\x12\x12\n\ngscookieid\x18\x12 \x01(\x04\x12\x10\n\x08uniqueid\x18\x13 \x01(\x04\"\x9b\x01\n1CMsgGCCStrike15_v2_ClientVarValueNotificationInfo\x12\x12\n\nvalue_name\x18\x01 \x01(\t\x12\x11\n\tvalue_int\x18\x02 \x01(\x05\x12\x13\n\x0bserver_addr\x18\x03 \x01(\r\x12\x13\n\x0bserver_port\x18\x04 \x01(\r\x12\x15\n\rchoked_blocks\x18\x05 \x03(\t\"h\n1CMsgGCCStrike15_v2_ServerVarValueNotificationInfo\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x12\n\nviewangles\x18\x02 \x03(\r\x12\x0c\n\x04type\x18\x03 \x01(\r\",\n*CMsgGCCStrike15_v2_GiftsLeaderboardRequest\"\xa2\x02\n+CMsgGCCStrike15_v2_GiftsLeaderboardResponse\x12\x12\n\nservertime\x18\x01 \x01(\r\x12\x1b\n\x13time_period_seconds\x18\x02 \x01(\r\x12\x19\n\x11total_gifts_given\x18\x03 \x01(\r\x12\x14\n\x0ctotal_givers\x18\x04 \x01(\r\x12W\n\x07\x65ntries\x18\x05 \x03(\x0b\x32\x46.csgo.CMsgGCCStrike15_v2_GiftsLeaderboardResponse.GiftLeaderboardEntry\x1a\x38\n\x14GiftLeaderboardEntry\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\r\n\x05gifts\x18\x02 \x01(\r\"L\n)CMsgGCCStrike15_v2_ClientSubmitSurveyVote\x12\x11\n\tsurvey_id\x18\x01 \x01(\r\x12\x0c\n\x04vote\x18\x02 \x01(\r\"?\n*CMsgGCCStrike15_v2_Server2GCClientValidate\x12\x11\n\taccountid\x18\x01 \x01(\r\"r\n*CMsgGCCStrike15_v2_GC2ClientTournamentInfo\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\r\x12\x0f\n\x07stageid\x18\x02 \x01(\r\x12\x11\n\tgame_type\x18\x03 \x01(\r\x12\x0f\n\x07teamids\x18\x04 \x03(\r\"O\n\rCSOEconCoupon\x12\x15\n\x07\x65ntryid\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x0e\n\x06\x64\x65\x66idx\x18\x02 \x01(\r\x12\x17\n\x0f\x65xpiration_date\x18\x03 \x01(\x07\"Y\n\x10\x43SOQuestProgress\x12\x15\n\x07questid\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x18\n\x10points_remaining\x18\x02 \x01(\r\x12\x14\n\x0c\x62onus_points\x18\x03 \x01(\r\"\xcd\x01\n\x1b\x43SOAccountSeasonalOperation\x12\x1a\n\x0cseason_value\x18\x01 \x01(\rB\x04\x80\xa6\x1d\x01\x12\x15\n\rtier_unlocked\x18\x02 \x01(\r\x12\x15\n\rpremium_tiers\x18\x03 \x01(\r\x12\x12\n\nmission_id\x18\x04 \x01(\r\x12\x1a\n\x12missions_completed\x18\x05 \x01(\r\x12\x1a\n\x12redeemable_balance\x18\x06 \x01(\r\x12\x18\n\x10season_pass_time\x18\x07 \x01(\r\"x\n\x14\x43SOPersonaDataPublic\x12\x14\n\x0cplayer_level\x18\x01 \x01(\x05\x12\x32\n\x0c\x63ommendation\x18\x02 \x01(\x0b\x32\x1c.csgo.PlayerCommendationInfo\x12\x16\n\x0e\x65levated_state\x18\x03 \x01(\x08\"-\n\x1b\x43MsgGC_GlobalGame_Subscribe\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\"1\n\x1d\x43MsgGC_GlobalGame_Unsubscribe\x12\x10\n\x08timeleft\x18\x01 \x01(\x05\"P\n\x16\x43MsgGC_GlobalGame_Play\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\x12\x12\n\ngametimems\x18\x02 \x01(\r\x12\x12\n\nmsperpoint\x18\x03 \x01(\r\"=\n%CMsgGCCStrike15_v2_AcknowledgePenalty\x12\x14\n\x0c\x61\x63knowledged\x18\x01 \x01(\x05\"{\n/CMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin\x12\x10\n\x08\x64\x65\x66index\x18\x01 \x01(\r\x12\x11\n\tupgradeid\x18\x02 \x01(\x04\x12\r\n\x05hours\x18\x03 \x01(\r\x12\x14\n\x0cprestigetime\x18\x04 \x01(\r\"F\n(CMsgGCCStrike15_v2_Client2GCStreamUnlock\x12\x0e\n\x06ticket\x18\x01 \x01(\x04\x12\n\n\x02os\x18\x02 \x01(\x05\"<\n+CMsgGCCStrike15_v2_ClientToGCRequestElevate\x12\r\n\x05stage\x18\x01 \x01(\r\"C\n!CMsgGCCStrike15_v2_ClientToGCChat\x12\x10\n\x08match_id\x18\x01 \x01(\x04\x12\x0c\n\x04text\x18\x02 \x01(\t\"E\n!CMsgGCCStrike15_v2_GCToClientChat\x12\x12\n\naccount_id\x18\x01 \x01(\r\x12\x0c\n\x04text\x18\x02 \x01(\t\"E\n$CMsgGCCStrike15_v2_ClientAuthKeyCode\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\r\x12\x0c\n\x04\x63ode\x18\x02 \x01(\t\"K\n\x1e\x43MsgGCCStrike15_GotvSyncPacket\x12)\n\x04\x64\x61ta\x18\x01 \x01(\x0b\x32\x1b.csgo.CEngineGotvSyncPacket\"\x94\x02\n\x1bPlayerDecalDigitalSignature\x12\x11\n\tsignature\x18\x01 \x01(\x0c\x12\x11\n\taccountid\x18\x02 \x01(\r\x12\r\n\x05rtime\x18\x03 \x01(\r\x12\x0e\n\x06\x65ndpos\x18\x04 \x03(\x02\x12\x10\n\x08startpos\x18\x05 \x03(\x02\x12\r\n\x05right\x18\x06 \x03(\x02\x12\x11\n\ttx_defidx\x18\x07 \x01(\r\x12\x10\n\x08\x65ntindex\x18\x08 \x01(\x05\x12\x0e\n\x06hitbox\x18\t \x01(\r\x12\x14\n\x0c\x63reationtime\x18\n \x01(\x02\x12\x11\n\tequipslot\x18\x0b \x01(\r\x12\x10\n\x08trace_id\x18\x0c \x01(\r\x12\x0e\n\x06normal\x18\r \x03(\x02\x12\x0f\n\x07tint_id\x18\x0e \x01(\r\"k\n(CMsgGCCStrike15_v2_ClientPlayerDecalSign\x12/\n\x04\x64\x61ta\x18\x01 \x01(\x0b\x32!.csgo.PlayerDecalDigitalSignature\x12\x0e\n\x06itemid\x18\x02 \x01(\x04\"_\n(CMsgGCCStrike15_v2_ClientLogonFatalError\x12\x11\n\terrorcode\x18\x01 \x01(\r\x12\x0f\n\x07message\x18\x02 \x01(\t\x12\x0f\n\x07\x63ountry\x18\x03 \x01(\t\"S\n\"CMsgGCCStrike15_v2_ClientPollState\x12\x0e\n\x06pollid\x18\x01 \x01(\r\x12\r\n\x05names\x18\x02 \x03(\t\x12\x0e\n\x06values\x18\x03 \x03(\x05\"\xa4\x01\n!CMsgGCCStrike15_v2_Party_Register\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0b\n\x03ver\x18\x02 \x01(\r\x12\x0b\n\x03\x61pr\x18\x03 \x01(\r\x12\x0b\n\x03\x61rk\x18\x04 \x01(\r\x12\x0b\n\x03nby\x18\x05 \x01(\r\x12\x0b\n\x03grp\x18\x06 \x01(\r\x12\r\n\x05slots\x18\x07 \x01(\r\x12\x10\n\x08launcher\x18\x08 \x01(\r\x12\x11\n\tgame_type\x18\t \x01(\r\"{\n\x1f\x43MsgGCCStrike15_v2_Party_Search\x12\x0b\n\x03ver\x18\x01 \x01(\r\x12\x0b\n\x03\x61pr\x18\x02 \x01(\r\x12\x0b\n\x03\x61rk\x18\x03 \x01(\r\x12\x0c\n\x04grps\x18\x04 \x03(\r\x12\x10\n\x08launcher\x18\x05 \x01(\r\x12\x11\n\tgame_type\x18\x06 \x01(\r\"\xc9\x01\n&CMsgGCCStrike15_v2_Party_SearchResults\x12\x43\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x32.csgo.CMsgGCCStrike15_v2_Party_SearchResults.Entry\x1aZ\n\x05\x45ntry\x12\n\n\x02id\x18\x01 \x01(\r\x12\x0b\n\x03grp\x18\x02 \x01(\r\x12\x11\n\tgame_type\x18\x03 \x01(\r\x12\x0b\n\x03\x61pr\x18\x04 \x01(\r\x12\x0b\n\x03\x61rk\x18\x05 \x01(\r\x12\x0b\n\x03loc\x18\x06 \x01(\r\"E\n\x1f\x43MsgGCCStrike15_v2_Party_Invite\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0f\n\x07lobbyid\x18\x02 \x01(\r\"\xc7\x01\n)CMsgGCCStrike15_v2_Account_RequestCoPlays\x12G\n\x07players\x18\x01 \x03(\x0b\x32\x36.csgo.CMsgGCCStrike15_v2_Account_RequestCoPlays.Player\x12\x12\n\nservertime\x18\x02 \x01(\r\x1a=\n\x06Player\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x10\n\x08rtcoplay\x18\x02 \x01(\r\x12\x0e\n\x06online\x18\x03 \x01(\x08\"\xa4\x01\n*CMsgGCCStrike15_v2_ClientToGCRequestTicket\x12\x1b\n\x13\x61uthorized_steam_id\x18\x01 \x01(\x06\x12\x1c\n\x14\x61uthorized_public_ip\x18\x02 \x01(\x07\x12\x1b\n\x13gameserver_steam_id\x18\x03 \x01(\x06\x12\x1e\n\x16gameserver_sdr_routing\x18\x05 \x01(\t\">\n!CMsgGCToClientSteamDatagramTicket\x12\x19\n\x11serialized_ticket\x18\x10 \x01(\x0c\"(\n&CMsgGCCStrike15_v2_ClientRequestOffers\"\\\n(CMsgGCCStrike15_v2_ClientRequestSouvenir\x12\x0e\n\x06itemid\x18\x01 \x01(\x04\x12\x0f\n\x07matchid\x18\x02 \x01(\x04\x12\x0f\n\x07\x65ventid\x18\x03 \x01(\x05\"F\n\'CMsgGCCStrike15_v2_ClientAccountBalance\x12\x0e\n\x06\x61mount\x18\x01 \x01(\x04\x12\x0b\n\x03url\x18\x02 \x01(\t\"M\n\'CMsgGCCStrike15_v2_ClientPartyJoinRelay\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x0f\n\x07lobbyid\x18\x02 \x01(\x04\"\x99\x01\n%CMsgGCCStrike15_v2_ClientPartyWarning\x12\x42\n\x07\x65ntries\x18\x01 \x03(\x0b\x32\x31.csgo.CMsgGCCStrike15_v2_ClientPartyWarning.Entry\x1a,\n\x05\x45ntry\x12\x11\n\taccountid\x18\x01 \x01(\r\x12\x10\n\x08warntype\x18\x02 \x01(\r\"K\n#CMsgGCCStrike15_v2_SetEventFavorite\x12\x0f\n\x07\x65ventid\x18\x01 \x01(\x04\x12\x13\n\x0bis_favorite\x18\x02 \x01(\x08\"B\n,CMsgGCCStrike15_v2_GetEventFavorites_Request\x12\x12\n\nall_events\x18\x01 \x01(\x08\"r\n-CMsgGCCStrike15_v2_GetEventFavorites_Response\x12\x12\n\nall_events\x18\x01 \x01(\x08\x12\x16\n\x0ejson_favorites\x18\x02 \x01(\t\x12\x15\n\rjson_featured\x18\x03 \x01(\t\"\xda\x01\n#CMsgGCCStrike15_v2_ClientPerfReport\x12@\n\x07\x65ntries\x18\x01 \x03(\x0b\x32/.csgo.CMsgGCCStrike15_v2_ClientPerfReport.Entry\x1aq\n\x05\x45ntry\x12\x13\n\x0bperfcounter\x18\x01 \x01(\r\x12\x0e\n\x06length\x18\x02 \x01(\r\x12\x11\n\treference\x18\x03 \x01(\x0c\x12\x0e\n\x06\x61\x63tual\x18\x04 \x01(\x0c\x12\x10\n\x08sourceid\x18\x05 \x01(\r\x12\x0e\n\x06status\x18\x06 \x01(\r\"Q\n\x0c\x43VDiagnostic\x12\n\n\x02id\x18\x01 \x01(\r\x12\x10\n\x08\x65xtended\x18\x02 \x01(\r\x12\r\n\x05value\x18\x03 \x01(\x04\x12\x14\n\x0cstring_value\x18\x04 \x01(\t\"\xf5\x03\n)CMsgGCCStrike15_v2_ClientReportValidation\x12\x13\n\x0b\x66ile_report\x18\x01 \x01(\t\x12\x14\n\x0c\x63ommand_line\x18\x02 \x01(\t\x12\x13\n\x0btotal_files\x18\x03 \x01(\r\x12\x16\n\x0einternal_error\x18\x04 \x01(\r\x12\x12\n\ntrust_time\x18\x05 \x01(\r\x12\x15\n\rcount_pending\x18\x06 \x01(\r\x12\x17\n\x0f\x63ount_completed\x18\x07 \x01(\r\x12\x12\n\nprocess_id\x18\x08 \x01(\r\x12\x11\n\tosversion\x18\t \x01(\x05\x12\x1b\n\x13\x63lientreportversion\x18\n \x01(\r\x12\x11\n\tstatus_id\x18\x0b \x01(\r\x12\x13\n\x0b\x64iagnostic1\x18\x0c \x01(\r\x12\x13\n\x0b\x64iagnostic2\x18\r \x01(\x04\x12\x13\n\x0b\x64iagnostic3\x18\x0e \x01(\x04\x12\x18\n\x10last_launch_data\x18\x0f \x01(\t\x12\x14\n\x0creport_count\x18\x10 \x01(\r\x12\x13\n\x0b\x63lient_time\x18\x11 \x01(\x04\x12\x13\n\x0b\x64iagnostic4\x18\x12 \x01(\x04\x12\x13\n\x0b\x64iagnostic5\x18\x13 \x01(\x04\x12\'\n\x0b\x64iagnostics\x18\x14 \x03(\x0b\x32\x12.csgo.CVDiagnostic\"\xe3\x01\n,CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode\x12\x13\n\x0b\x66ile_report\x18\x01 \x01(\t\x12\x1b\n\x13offer_insecure_mode\x18\x02 \x01(\x08\x12\x19\n\x11offer_secure_mode\x18\x03 \x01(\x08\x12\x18\n\x10show_unsigned_ui\x18\x04 \x01(\x08\x12\x11\n\tkick_user\x18\x05 \x01(\x08\x12\x17\n\x0fshow_trusted_ui\x18\x06 \x01(\x08\x12 \n\x18show_warning_not_trusted\x18\x07 \x01(\x08\"T\n-CMsgGCCStrike15_v2_GC2ClientRequestValidation\x12\x13\n\x0b\x66ull_report\x18\x01 \x01(\x08\x12\x0e\n\x06module\x18\x02 \x01(\t*\xb7%\n\nECsgoGCMsg\x12\x1e\n\x19k_EMsgGCCStrike15_v2_Base\x10\x8cG\x12*\n%k_EMsgGCCStrike15_v2_MatchmakingStart\x10\x8dG\x12)\n$k_EMsgGCCStrike15_v2_MatchmakingStop\x10\x8eG\x12\x36\n1k_EMsgGCCStrike15_v2_MatchmakingClient2ServerPing\x10\x8fG\x12\x34\n/k_EMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate\x10\x90G\x12>\n9k_EMsgGCCStrike15_v2_MatchmakingServerReservationResponse\x10\x92G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ClientReserve\x10\x93G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingClient2GCHello\x10\x95G\x12\x33\n.k_EMsgGCCStrike15_v2_MatchmakingGC2ClientHello\x10\x96G\x12\x35\n0k_EMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon\x10\x98G\x12\x37\n2k_EMsgGCCStrike15_v2_MatchmakingGCOperationalStats\x10\x9bG\x12:\n5k_EMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate\x10\x9dG\x12:\n5k_EMsgGCCStrike15_v2_ServerNotificationForUserPenalty\x10\x9eG\x12,\n\'k_EMsgGCCStrike15_v2_ClientReportPlayer\x10\x9fG\x12,\n\'k_EMsgGCCStrike15_v2_ClientReportServer\x10\xa0G\x12-\n(k_EMsgGCCStrike15_v2_ClientCommendPlayer\x10\xa1G\x12.\n)k_EMsgGCCStrike15_v2_ClientReportResponse\x10\xa2G\x12\x32\n-k_EMsgGCCStrike15_v2_ClientCommendPlayerQuery\x10\xa3G\x12:\n5k_EMsgGCCStrike15_v2_ClientCommendPlayerQueryResponse\x10\xa4G\x12(\n#k_EMsgGCCStrike15_v2_WatchInfoUsers\x10\xa6G\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestPlayersProfile\x10\xa7G\x12(\n#k_EMsgGCCStrike15_v2_PlayersProfile\x10\xa8G\x12\x33\n.k_EMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate\x10\xabG\x12\x37\n2k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment\x10\xacG\x12\x33\n.k_EMsgGCCStrike15_v2_PlayerOverwatchCaseStatus\x10\xadG\x12*\n%k_EMsgGCCStrike15_v2_GC2ClientTextMsg\x10\xaeG\x12*\n%k_EMsgGCCStrike15_v2_Client2GCTextMsg\x10\xafG\x12\x30\n+k_EMsgGCCStrike15_v2_MatchEndRunRewardDrops\x10\xb0G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification\x10\xb1G\x12\x38\n3k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2\x10\xb2G\x12#\n\x1ek_EMsgGCCStrike15_v2_MatchList\x10\xb3G\x12:\n5k_EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames\x10\xb4G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestRecentUserGames\x10\xb5G\x12\x34\n/k_EMsgGCCStrike15_v2_GC2ServerReservationUpdate\x10\xb6G\x12\x38\n3k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo\x10\xb8G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestTournamentGames\x10\xbaG\x12\x36\n1k_EMsgGCCStrike15_v2_MatchListRequestFullGameInfo\x10\xbbG\x12\x31\n,k_EMsgGCCStrike15_v2_GiftsLeaderboardRequest\x10\xbcG\x12\x32\n-k_EMsgGCCStrike15_v2_GiftsLeaderboardResponse\x10\xbdG\x12\x38\n3k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo\x10\xbeG\x12\x30\n+k_EMsgGCCStrike15_v2_ClientSubmitSurveyVote\x10\xc0G\x12\x31\n,k_EMsgGCCStrike15_v2_Server2GCClientValidate\x10\xc1G\x12\x39\n4k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser\x10\xc2G\x12>\n9k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest\x10\xc4G\x12?\n:k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse\x10\xc5G\x12\x30\n+k_EMsgGCCStrike15_v2_AccountPrivacySettings\x10\xc6G\x12+\n&k_EMsgGCCStrike15_v2_SetMyActivityInfo\x10\xc7G\x12?\n:k_EMsgGCCStrike15_v2_MatchListRequestTournamentPredictions\x10\xc8G\x12>\n9k_EMsgGCCStrike15_v2_MatchListUploadTournamentPredictions\x10\xc9G\x12&\n!k_EMsgGCCStrike15_v2_DraftSummary\x10\xcaG\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestJoinFriendData\x10\xcbG\x12\x35\n0k_EMsgGCCStrike15_v2_ClientRequestJoinServerData\x10\xccG\x12\x31\n,k_EMsgGCCStrike15_v2_ClientRequestNewMission\x10\xcdG\x12\x31\n,k_EMsgGCCStrike15_v2_GC2ClientTournamentInfo\x10\xcfG\x12\"\n\x1dk_EMsgGC_GlobalGame_Subscribe\x10\xd0G\x12$\n\x1fk_EMsgGC_GlobalGame_Unsubscribe\x10\xd1G\x12\x1d\n\x18k_EMsgGC_GlobalGame_Play\x10\xd2G\x12,\n\'k_EMsgGCCStrike15_v2_AcknowledgePenalty\x10\xd3G\x12\x36\n1k_EMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin\x10\xd4G\x12.\n)k_EMsgGCCStrike15_v2_GC2ClientGlobalStats\x10\xd5G\x12/\n*k_EMsgGCCStrike15_v2_Client2GCStreamUnlock\x10\xd6G\x12\x32\n-k_EMsgGCCStrike15_v2_FantasyRequestClientData\x10\xd7G\x12\x31\n,k_EMsgGCCStrike15_v2_FantasyUpdateClientData\x10\xd8G\x12\x37\n2k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket\x10\xd9G\x12\x31\n,k_EMsgGCCStrike15_v2_ClientToGCRequestTicket\x10\xdaG\x12\x32\n-k_EMsgGCCStrike15_v2_ClientToGCRequestElevate\x10\xdbG\x12$\n\x1fk_EMsgGCCStrike15_v2_GlobalChat\x10\xdcG\x12.\n)k_EMsgGCCStrike15_v2_GlobalChat_Subscribe\x10\xddG\x12\x30\n+k_EMsgGCCStrike15_v2_GlobalChat_Unsubscribe\x10\xdeG\x12+\n&k_EMsgGCCStrike15_v2_ClientAuthKeyCode\x10\xdfG\x12(\n#k_EMsgGCCStrike15_v2_GotvSyncPacket\x10\xe0G\x12/\n*k_EMsgGCCStrike15_v2_ClientPlayerDecalSign\x10\xe1G\x12/\n*k_EMsgGCCStrike15_v2_ClientLogonFatalError\x10\xe3G\x12)\n$k_EMsgGCCStrike15_v2_ClientPollState\x10\xe4G\x12(\n#k_EMsgGCCStrike15_v2_Party_Register\x10\xe5G\x12*\n%k_EMsgGCCStrike15_v2_Party_Unregister\x10\xe6G\x12&\n!k_EMsgGCCStrike15_v2_Party_Search\x10\xe7G\x12&\n!k_EMsgGCCStrike15_v2_Party_Invite\x10\xe8G\x12\x30\n+k_EMsgGCCStrike15_v2_Account_RequestCoPlays\x10\xe9G\x12,\n\'k_EMsgGCCStrike15_v2_ClientGCRankUpdate\x10\xeaG\x12-\n(k_EMsgGCCStrike15_v2_ClientRequestOffers\x10\xebG\x12.\n)k_EMsgGCCStrike15_v2_ClientAccountBalance\x10\xecG\x12.\n)k_EMsgGCCStrike15_v2_ClientPartyJoinRelay\x10\xedG\x12,\n\'k_EMsgGCCStrike15_v2_ClientPartyWarning\x10\xeeG\x12*\n%k_EMsgGCCStrike15_v2_SetEventFavorite\x10\xf0G\x12\x33\n.k_EMsgGCCStrike15_v2_GetEventFavorites_Request\x10\xf1G\x12*\n%k_EMsgGCCStrike15_v2_ClientPerfReport\x10\xf2G\x12\x34\n/k_EMsgGCCStrike15_v2_GetEventFavorites_Response\x10\xf3G\x12/\n*k_EMsgGCCStrike15_v2_ClientRequestSouvenir\x10\xf4G\x12\x30\n+k_EMsgGCCStrike15_v2_ClientReportValidation\x10\xf5G\x12\x33\n.k_EMsgGCCStrike15_v2_GC2ClientRefuseSecureMode\x10\xf6G\x12\x34\n/k_EMsgGCCStrike15_v2_GC2ClientRequestValidation\x10\xf7G\x12\x33\n.k_EMsgGCCStrike15_v2_ClientRedeemMissionReward\x10\xf9G\x12&\n!k_EMsgGCCStrike15_ClientDeepStats\x10\xfaG\x12\x32\n-k_EMsgGCCStrike15_StartAgreementSessionInGame\x10\xfbG*\x98\x01\n\x12\x45\x43sgoSteamUserStat\x12&\n\"k_ECsgoSteamUserStat_XpEarnedGames\x10\x01\x12-\n)k_ECsgoSteamUserStat_MatchWinsCompetitive\x10\x02\x12+\n\'k_ECsgoSteamUserStat_SurvivedDangerZone\x10\x03*\xa1\x01\n\x17\x45\x43lientReportingVersion\x12(\n$k_EClientReportingVersion_OldVersion\x10\x00\x12)\n%k_EClientReportingVersion_BetaVersion\x10\x01\x12\x31\n-k_EClientReportingVersion_SupportsTrustedMode\x10\x02\x42\x05H\x01\x90\x01\x00')
   ,
   dependencies=[steammessages__pb2.DESCRIPTOR,engine__gcmessages__pb2.DESCRIPTOR,])
 
@@ -54,386 +54,370 @@ _ECSGOGCMSG = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingGC2ServerReserve', index=5, number=9105,
+      name='k_EMsgGCCStrike15_v2_MatchmakingServerReservationResponse', index=5, number=9106,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingServerReservationResponse', index=6, number=9106,
+      name='k_EMsgGCCStrike15_v2_MatchmakingGC2ClientReserve', index=6, number=9107,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingGC2ClientReserve', index=7, number=9107,
+      name='k_EMsgGCCStrike15_v2_MatchmakingClient2GCHello', index=7, number=9109,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingServerRoundStats', index=8, number=9108,
+      name='k_EMsgGCCStrike15_v2_MatchmakingGC2ClientHello', index=8, number=9110,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingClient2GCHello', index=9, number=9109,
+      name='k_EMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon', index=9, number=9112,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingGC2ClientHello', index=10, number=9110,
+      name='k_EMsgGCCStrike15_v2_MatchmakingGCOperationalStats', index=10, number=9115,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingServerMatchEnd', index=11, number=9111,
+      name='k_EMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate', index=11, number=9117,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon', index=12, number=9112,
+      name='k_EMsgGCCStrike15_v2_ServerNotificationForUserPenalty', index=12, number=9118,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingServer2GCKick', index=13, number=9113,
+      name='k_EMsgGCCStrike15_v2_ClientReportPlayer', index=13, number=9119,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm', index=14, number=9114,
+      name='k_EMsgGCCStrike15_v2_ClientReportServer', index=14, number=9120,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingGCOperationalStats', index=15, number=9115,
+      name='k_EMsgGCCStrike15_v2_ClientCommendPlayer', index=15, number=9121,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate', index=16, number=9116,
+      name='k_EMsgGCCStrike15_v2_ClientReportResponse', index=16, number=9122,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate', index=17, number=9117,
+      name='k_EMsgGCCStrike15_v2_ClientCommendPlayerQuery', index=17, number=9123,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ServerNotificationForUserPenalty', index=18, number=9118,
+      name='k_EMsgGCCStrike15_v2_ClientCommendPlayerQueryResponse', index=18, number=9124,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientReportPlayer', index=19, number=9119,
+      name='k_EMsgGCCStrike15_v2_WatchInfoUsers', index=19, number=9126,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientReportServer', index=20, number=9120,
+      name='k_EMsgGCCStrike15_v2_ClientRequestPlayersProfile', index=20, number=9127,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientCommendPlayer', index=21, number=9121,
+      name='k_EMsgGCCStrike15_v2_PlayersProfile', index=21, number=9128,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientReportResponse', index=22, number=9122,
+      name='k_EMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate', index=22, number=9131,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientCommendPlayerQuery', index=23, number=9123,
+      name='k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment', index=23, number=9132,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientCommendPlayerQueryResponse', index=24, number=9124,
+      name='k_EMsgGCCStrike15_v2_PlayerOverwatchCaseStatus', index=24, number=9133,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_WatchInfoUsers', index=25, number=9126,
+      name='k_EMsgGCCStrike15_v2_GC2ClientTextMsg', index=25, number=9134,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientRequestPlayersProfile', index=26, number=9127,
+      name='k_EMsgGCCStrike15_v2_Client2GCTextMsg', index=26, number=9135,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_PlayersProfile', index=27, number=9128,
+      name='k_EMsgGCCStrike15_v2_MatchEndRunRewardDrops', index=27, number=9136,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_PlayerOverwatchCaseUpdate', index=28, number=9131,
+      name='k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification', index=28, number=9137,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_PlayerOverwatchCaseAssignment', index=29, number=9132,
+      name='k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2', index=29, number=9138,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_PlayerOverwatchCaseStatus', index=30, number=9133,
+      name='k_EMsgGCCStrike15_v2_MatchList', index=30, number=9139,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GC2ClientTextMsg', index=31, number=9134,
+      name='k_EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames', index=31, number=9140,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Client2GCTextMsg', index=32, number=9135,
+      name='k_EMsgGCCStrike15_v2_MatchListRequestRecentUserGames', index=32, number=9141,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchEndRunRewardDrops', index=33, number=9136,
+      name='k_EMsgGCCStrike15_v2_GC2ServerReservationUpdate', index=33, number=9142,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchEndRewardDropsNotification', index=34, number=9137,
+      name='k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo', index=34, number=9144,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientRequestWatchInfoFriends2', index=35, number=9138,
+      name='k_EMsgGCCStrike15_v2_MatchListRequestTournamentGames', index=35, number=9146,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchList', index=36, number=9139,
+      name='k_EMsgGCCStrike15_v2_MatchListRequestFullGameInfo', index=36, number=9147,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames', index=37, number=9140,
+      name='k_EMsgGCCStrike15_v2_GiftsLeaderboardRequest', index=37, number=9148,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchListRequestRecentUserGames', index=38, number=9141,
+      name='k_EMsgGCCStrike15_v2_GiftsLeaderboardResponse', index=38, number=9149,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GC2ServerReservationUpdate', index=39, number=9142,
+      name='k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo', index=39, number=9150,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo', index=40, number=9144,
+      name='k_EMsgGCCStrike15_v2_ClientSubmitSurveyVote', index=40, number=9152,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification', index=41, number=9145,
+      name='k_EMsgGCCStrike15_v2_Server2GCClientValidate', index=41, number=9153,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchListRequestTournamentGames', index=42, number=9146,
+      name='k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser', index=42, number=9154,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchListRequestFullGameInfo', index=43, number=9147,
+      name='k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest', index=43, number=9156,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GiftsLeaderboardRequest', index=44, number=9148,
+      name='k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse', index=44, number=9157,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GiftsLeaderboardResponse', index=45, number=9149,
+      name='k_EMsgGCCStrike15_v2_AccountPrivacySettings', index=45, number=9158,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo', index=46, number=9150,
+      name='k_EMsgGCCStrike15_v2_SetMyActivityInfo', index=46, number=9159,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCToGCReloadVersions', index=47, number=9151,
+      name='k_EMsgGCCStrike15_v2_MatchListRequestTournamentPredictions', index=47, number=9160,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientSubmitSurveyVote', index=48, number=9152,
+      name='k_EMsgGCCStrike15_v2_MatchListUploadTournamentPredictions', index=48, number=9161,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Server2GCClientValidate', index=49, number=9153,
+      name='k_EMsgGCCStrike15_v2_DraftSummary', index=49, number=9162,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser', index=50, number=9154,
+      name='k_EMsgGCCStrike15_v2_ClientRequestJoinFriendData', index=50, number=9163,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Server2GCPureServerValidationFailure', index=51, number=9155,
+      name='k_EMsgGCCStrike15_v2_ClientRequestJoinServerData', index=51, number=9164,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest', index=52, number=9156,
+      name='k_EMsgGCCStrike15_v2_ClientRequestNewMission', index=52, number=9165,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse', index=53, number=9157,
+      name='k_EMsgGCCStrike15_v2_GC2ClientTournamentInfo', index=53, number=9167,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_AccountPrivacySettings', index=54, number=9158,
+      name='k_EMsgGC_GlobalGame_Subscribe', index=54, number=9168,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_SetMyActivityInfo', index=55, number=9159,
+      name='k_EMsgGC_GlobalGame_Unsubscribe', index=55, number=9169,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchListRequestTournamentPredictions', index=56, number=9160,
+      name='k_EMsgGC_GlobalGame_Play', index=56, number=9170,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchListUploadTournamentPredictions', index=57, number=9161,
+      name='k_EMsgGCCStrike15_v2_AcknowledgePenalty', index=57, number=9171,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_DraftSummary', index=58, number=9162,
+      name='k_EMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin', index=58, number=9172,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientRequestJoinFriendData', index=59, number=9163,
+      name='k_EMsgGCCStrike15_v2_GC2ClientGlobalStats', index=59, number=9173,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientRequestJoinServerData', index=60, number=9164,
+      name='k_EMsgGCCStrike15_v2_Client2GCStreamUnlock', index=60, number=9174,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientRequestNewMission', index=61, number=9165,
+      name='k_EMsgGCCStrike15_v2_FantasyRequestClientData', index=61, number=9175,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GC2ServerNotifyXPRewarded', index=62, number=9166,
+      name='k_EMsgGCCStrike15_v2_FantasyUpdateClientData', index=62, number=9176,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GC2ClientTournamentInfo', index=63, number=9167,
+      name='k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket', index=63, number=9177,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGC_GlobalGame_Subscribe', index=64, number=9168,
+      name='k_EMsgGCCStrike15_v2_ClientToGCRequestTicket', index=64, number=9178,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGC_GlobalGame_Unsubscribe', index=65, number=9169,
+      name='k_EMsgGCCStrike15_v2_ClientToGCRequestElevate', index=65, number=9179,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGC_GlobalGame_Play', index=66, number=9170,
+      name='k_EMsgGCCStrike15_v2_GlobalChat', index=66, number=9180,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_AcknowledgePenalty', index=67, number=9171,
+      name='k_EMsgGCCStrike15_v2_GlobalChat_Subscribe', index=67, number=9181,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Client2GCRequestPrestigeCoin', index=68, number=9172,
+      name='k_EMsgGCCStrike15_v2_GlobalChat_Unsubscribe', index=68, number=9182,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GC2ClientGlobalStats', index=69, number=9173,
+      name='k_EMsgGCCStrike15_v2_ClientAuthKeyCode', index=69, number=9183,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Client2GCStreamUnlock', index=70, number=9174,
+      name='k_EMsgGCCStrike15_v2_GotvSyncPacket', index=70, number=9184,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_FantasyRequestClientData', index=71, number=9175,
+      name='k_EMsgGCCStrike15_v2_ClientPlayerDecalSign', index=71, number=9185,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_FantasyUpdateClientData', index=72, number=9176,
+      name='k_EMsgGCCStrike15_v2_ClientLogonFatalError', index=72, number=9187,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GCToClientSteamdatagramTicket', index=73, number=9177,
+      name='k_EMsgGCCStrike15_v2_ClientPollState', index=73, number=9188,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientToGCRequestTicket', index=74, number=9178,
+      name='k_EMsgGCCStrike15_v2_Party_Register', index=74, number=9189,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientToGCRequestElevate', index=75, number=9179,
+      name='k_EMsgGCCStrike15_v2_Party_Unregister', index=75, number=9190,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GlobalChat', index=76, number=9180,
+      name='k_EMsgGCCStrike15_v2_Party_Search', index=76, number=9191,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GlobalChat_Subscribe', index=77, number=9181,
+      name='k_EMsgGCCStrike15_v2_Party_Invite', index=77, number=9192,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GlobalChat_Unsubscribe', index=78, number=9182,
+      name='k_EMsgGCCStrike15_v2_Account_RequestCoPlays', index=78, number=9193,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientAuthKeyCode', index=79, number=9183,
+      name='k_EMsgGCCStrike15_v2_ClientGCRankUpdate', index=79, number=9194,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GotvSyncPacket', index=80, number=9184,
+      name='k_EMsgGCCStrike15_v2_ClientRequestOffers', index=80, number=9195,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientPlayerDecalSign', index=81, number=9185,
+      name='k_EMsgGCCStrike15_v2_ClientAccountBalance', index=81, number=9196,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientLogonFatalError', index=82, number=9187,
+      name='k_EMsgGCCStrike15_v2_ClientPartyJoinRelay', index=82, number=9197,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientPollState', index=83, number=9188,
+      name='k_EMsgGCCStrike15_v2_ClientPartyWarning', index=83, number=9198,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Party_Register', index=84, number=9189,
+      name='k_EMsgGCCStrike15_v2_SetEventFavorite', index=84, number=9200,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Party_Unregister', index=85, number=9190,
+      name='k_EMsgGCCStrike15_v2_GetEventFavorites_Request', index=85, number=9201,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Party_Search', index=86, number=9191,
+      name='k_EMsgGCCStrike15_v2_ClientPerfReport', index=86, number=9202,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Party_Invite', index=87, number=9192,
+      name='k_EMsgGCCStrike15_v2_GetEventFavorites_Response', index=87, number=9203,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_Account_RequestCoPlays', index=88, number=9193,
+      name='k_EMsgGCCStrike15_v2_ClientRequestSouvenir', index=88, number=9204,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientGCRankUpdate', index=89, number=9194,
+      name='k_EMsgGCCStrike15_v2_ClientReportValidation', index=89, number=9205,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientRequestOffers', index=90, number=9195,
+      name='k_EMsgGCCStrike15_v2_GC2ClientRefuseSecureMode', index=90, number=9206,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientAccountBalance', index=91, number=9196,
+      name='k_EMsgGCCStrike15_v2_GC2ClientRequestValidation', index=91, number=9207,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientPartyJoinRelay', index=92, number=9197,
+      name='k_EMsgGCCStrike15_v2_ClientRedeemMissionReward', index=92, number=9209,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientPartyWarning', index=93, number=9198,
+      name='k_EMsgGCCStrike15_ClientDeepStats', index=93, number=9210,
       serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial', index=94, number=9199,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_SetEventFavorite', index=95, number=9200,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GetEventFavorites_Request', index=96, number=9201,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_GetEventFavorites_Response', index=97, number=9203,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='k_EMsgGCCStrike15_v2_ClientRequestSouvenir', index=98, number=9204,
+      name='k_EMsgGCCStrike15_StartAgreementSessionInGame', index=94, number=9211,
       serialized_options=None,
       type=None),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=22112,
-  serialized_end=27161,
+  serialized_start=23682,
+  serialized_end=28473,
 )
 _sym_db.RegisterEnumDescriptor(_ECSGOGCMSG)
 
@@ -459,29 +443,50 @@ _ECSGOSTEAMUSERSTAT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=27164,
-  serialized_end=27316,
+  serialized_start=28476,
+  serialized_end=28628,
 )
 _sym_db.RegisterEnumDescriptor(_ECSGOSTEAMUSERSTAT)
 
 ECsgoSteamUserStat = enum_type_wrapper.EnumTypeWrapper(_ECSGOSTEAMUSERSTAT)
+_ECLIENTREPORTINGVERSION = _descriptor.EnumDescriptor(
+  name='EClientReportingVersion',
+  full_name='csgo.EClientReportingVersion',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='k_EClientReportingVersion_OldVersion', index=0, number=0,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EClientReportingVersion_BetaVersion', index=1, number=1,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='k_EClientReportingVersion_SupportsTrustedMode', index=2, number=2,
+      serialized_options=None,
+      type=None),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=28631,
+  serialized_end=28792,
+)
+_sym_db.RegisterEnumDescriptor(_ECLIENTREPORTINGVERSION)
+
+EClientReportingVersion = enum_type_wrapper.EnumTypeWrapper(_ECLIENTREPORTINGVERSION)
 k_EMsgGCCStrike15_v2_Base = 9100
 k_EMsgGCCStrike15_v2_MatchmakingStart = 9101
 k_EMsgGCCStrike15_v2_MatchmakingStop = 9102
 k_EMsgGCCStrike15_v2_MatchmakingClient2ServerPing = 9103
 k_EMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate = 9104
-k_EMsgGCCStrike15_v2_MatchmakingGC2ServerReserve = 9105
 k_EMsgGCCStrike15_v2_MatchmakingServerReservationResponse = 9106
 k_EMsgGCCStrike15_v2_MatchmakingGC2ClientReserve = 9107
-k_EMsgGCCStrike15_v2_MatchmakingServerRoundStats = 9108
 k_EMsgGCCStrike15_v2_MatchmakingClient2GCHello = 9109
 k_EMsgGCCStrike15_v2_MatchmakingGC2ClientHello = 9110
-k_EMsgGCCStrike15_v2_MatchmakingServerMatchEnd = 9111
 k_EMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon = 9112
-k_EMsgGCCStrike15_v2_MatchmakingServer2GCKick = 9113
-k_EMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm = 9114
 k_EMsgGCCStrike15_v2_MatchmakingGCOperationalStats = 9115
-k_EMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate = 9116
 k_EMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate = 9117
 k_EMsgGCCStrike15_v2_ServerNotificationForUserPenalty = 9118
 k_EMsgGCCStrike15_v2_ClientReportPlayer = 9119
@@ -506,17 +511,14 @@ k_EMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames = 9140
 k_EMsgGCCStrike15_v2_MatchListRequestRecentUserGames = 9141
 k_EMsgGCCStrike15_v2_GC2ServerReservationUpdate = 9142
 k_EMsgGCCStrike15_v2_ClientVarValueNotificationInfo = 9144
-k_EMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification = 9145
 k_EMsgGCCStrike15_v2_MatchListRequestTournamentGames = 9146
 k_EMsgGCCStrike15_v2_MatchListRequestFullGameInfo = 9147
 k_EMsgGCCStrike15_v2_GiftsLeaderboardRequest = 9148
 k_EMsgGCCStrike15_v2_GiftsLeaderboardResponse = 9149
 k_EMsgGCCStrike15_v2_ServerVarValueNotificationInfo = 9150
-k_EMsgGCToGCReloadVersions = 9151
 k_EMsgGCCStrike15_v2_ClientSubmitSurveyVote = 9152
 k_EMsgGCCStrike15_v2_Server2GCClientValidate = 9153
 k_EMsgGCCStrike15_v2_MatchListRequestLiveGameForUser = 9154
-k_EMsgGCCStrike15_v2_Server2GCPureServerValidationFailure = 9155
 k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest = 9156
 k_EMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse = 9157
 k_EMsgGCCStrike15_v2_AccountPrivacySettings = 9158
@@ -527,7 +529,6 @@ k_EMsgGCCStrike15_v2_DraftSummary = 9162
 k_EMsgGCCStrike15_v2_ClientRequestJoinFriendData = 9163
 k_EMsgGCCStrike15_v2_ClientRequestJoinServerData = 9164
 k_EMsgGCCStrike15_v2_ClientRequestNewMission = 9165
-k_EMsgGCCStrike15_v2_GC2ServerNotifyXPRewarded = 9166
 k_EMsgGCCStrike15_v2_GC2ClientTournamentInfo = 9167
 k_EMsgGC_GlobalGame_Subscribe = 9168
 k_EMsgGC_GlobalGame_Unsubscribe = 9169
@@ -559,14 +560,23 @@ k_EMsgGCCStrike15_v2_ClientRequestOffers = 9195
 k_EMsgGCCStrike15_v2_ClientAccountBalance = 9196
 k_EMsgGCCStrike15_v2_ClientPartyJoinRelay = 9197
 k_EMsgGCCStrike15_v2_ClientPartyWarning = 9198
-k_EMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial = 9199
 k_EMsgGCCStrike15_v2_SetEventFavorite = 9200
 k_EMsgGCCStrike15_v2_GetEventFavorites_Request = 9201
+k_EMsgGCCStrike15_v2_ClientPerfReport = 9202
 k_EMsgGCCStrike15_v2_GetEventFavorites_Response = 9203
 k_EMsgGCCStrike15_v2_ClientRequestSouvenir = 9204
+k_EMsgGCCStrike15_v2_ClientReportValidation = 9205
+k_EMsgGCCStrike15_v2_GC2ClientRefuseSecureMode = 9206
+k_EMsgGCCStrike15_v2_GC2ClientRequestValidation = 9207
+k_EMsgGCCStrike15_v2_ClientRedeemMissionReward = 9209
+k_EMsgGCCStrike15_ClientDeepStats = 9210
+k_EMsgGCCStrike15_StartAgreementSessionInGame = 9211
 k_ECsgoSteamUserStat_XpEarnedGames = 1
 k_ECsgoSteamUserStat_MatchWinsCompetitive = 2
 k_ECsgoSteamUserStat_SurvivedDangerZone = 3
+k_EClientReportingVersion_OldVersion = 0
+k_EClientReportingVersion_BetaVersion = 1
+k_EClientReportingVersion_SupportsTrustedMode = 2
 
 
 
@@ -1209,6 +1219,13 @@ _PLAYERRANKINGINFO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='tv_control', full_name='csgo.PlayerRankingInfo.tv_control', index=5,
+      number=7, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -1221,8 +1238,8 @@ _PLAYERRANKINGINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1532,
-  serialized_end=1645,
+  serialized_start=1533,
+  serialized_end=1666,
 )
 
 
@@ -1266,8 +1283,8 @@ _PLAYERCOMMENDATIONINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1647,
-  serialized_end=1735,
+  serialized_start=1668,
+  serialized_end=1756,
 )
 
 
@@ -1304,8 +1321,8 @@ _PLAYERMEDALSINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1737,
-  serialized_end=1823,
+  serialized_start=1758,
+  serialized_end=1844,
 )
 
 
@@ -1356,8 +1373,8 @@ _ACCOUNTACTIVITY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1825,
-  serialized_end=1904,
+  serialized_start=1846,
+  serialized_end=1925,
 )
 
 
@@ -1408,8 +1425,8 @@ _TOURNAMENTMATCHSETUP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1906,
-  serialized_end=2009,
+  serialized_start=1927,
+  serialized_end=2030,
 )
 
 
@@ -1572,8 +1589,8 @@ _SERVERHLTVINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2012,
-  serialized_end=2475,
+  serialized_start=2033,
+  serialized_end=2496,
 )
 
 
@@ -1638,8 +1655,8 @@ _IPADDRESSMASK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2477,
-  serialized_end=2565,
+  serialized_start=2498,
+  serialized_end=2586,
 )
 
 
@@ -1683,8 +1700,8 @@ _CMSGCSGOSTEAMUSERSTATCHANGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2567,
-  serialized_end=2657,
+  serialized_start=2588,
+  serialized_end=2678,
 )
 
 
@@ -1721,8 +1738,8 @@ _XPPROGRESSDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2659,
-  serialized_end=2715,
+  serialized_start=2680,
+  serialized_end=2736,
 )
 
 
@@ -1766,8 +1783,8 @@ _MATCHENDITEMUPDATES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2717,
-  serialized_end=2812,
+  serialized_start=2738,
+  serialized_end=2833,
 )
 
 
@@ -1804,8 +1821,8 @@ _SCORELEADERBOARDDATA_ENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2995,
-  serialized_end=3028,
+  serialized_start=3016,
+  serialized_end=3049,
 )
 
 _SCORELEADERBOARDDATA_ACCOUNTENTRIES = _descriptor.Descriptor(
@@ -1841,8 +1858,8 @@ _SCORELEADERBOARDDATA_ACCOUNTENTRIES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3030,
-  serialized_end=3116,
+  serialized_start=3051,
+  serialized_end=3137,
 )
 
 _SCORELEADERBOARDDATA = _descriptor.Descriptor(
@@ -1892,8 +1909,8 @@ _SCORELEADERBOARDDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2815,
-  serialized_end=3116,
+  serialized_start=2836,
+  serialized_end=3137,
 )
 
 
@@ -1937,8 +1954,8 @@ _PLAYERQUESTDATA_QUESTITEMDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3463,
-  serialized_end=3567,
+  serialized_start=3484,
+  serialized_end=3588,
 )
 
 _PLAYERQUESTDATA = _descriptor.Descriptor(
@@ -2016,8 +2033,350 @@ _PLAYERQUESTDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3119,
-  serialized_end=3567,
+  serialized_start=3140,
+  serialized_end=3588,
+)
+
+
+_DEEPPLAYERSTATSENTRY = _descriptor.Descriptor(
+  name='DeepPlayerStatsEntry',
+  full_name='csgo.DeepPlayerStatsEntry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='accountid', full_name='csgo.DeepPlayerStatsEntry.accountid', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='match_id', full_name='csgo.DeepPlayerStatsEntry.match_id', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='mm_game_mode', full_name='csgo.DeepPlayerStatsEntry.mm_game_mode', index=2,
+      number=3, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='mapid', full_name='csgo.DeepPlayerStatsEntry.mapid', index=3,
+      number=4, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='b_starting_ct', full_name='csgo.DeepPlayerStatsEntry.b_starting_ct', index=4,
+      number=5, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='match_outcome', full_name='csgo.DeepPlayerStatsEntry.match_outcome', index=5,
+      number=6, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='rounds_won', full_name='csgo.DeepPlayerStatsEntry.rounds_won', index=6,
+      number=7, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='rounds_lost', full_name='csgo.DeepPlayerStatsEntry.rounds_lost', index=7,
+      number=8, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='stat_score', full_name='csgo.DeepPlayerStatsEntry.stat_score', index=8,
+      number=9, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='stat_deaths', full_name='csgo.DeepPlayerStatsEntry.stat_deaths', index=9,
+      number=12, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='stat_mvps', full_name='csgo.DeepPlayerStatsEntry.stat_mvps', index=10,
+      number=13, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='enemy_kills', full_name='csgo.DeepPlayerStatsEntry.enemy_kills', index=11,
+      number=14, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='enemy_headshots', full_name='csgo.DeepPlayerStatsEntry.enemy_headshots', index=12,
+      number=15, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='enemy_2ks', full_name='csgo.DeepPlayerStatsEntry.enemy_2ks', index=13,
+      number=16, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='enemy_3ks', full_name='csgo.DeepPlayerStatsEntry.enemy_3ks', index=14,
+      number=17, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='enemy_4ks', full_name='csgo.DeepPlayerStatsEntry.enemy_4ks', index=15,
+      number=18, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='total_damage', full_name='csgo.DeepPlayerStatsEntry.total_damage', index=16,
+      number=19, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='engagements_entry_count', full_name='csgo.DeepPlayerStatsEntry.engagements_entry_count', index=17,
+      number=23, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='engagements_entry_wins', full_name='csgo.DeepPlayerStatsEntry.engagements_entry_wins', index=18,
+      number=24, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='engagements_1v1_count', full_name='csgo.DeepPlayerStatsEntry.engagements_1v1_count', index=19,
+      number=25, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='engagements_1v1_wins', full_name='csgo.DeepPlayerStatsEntry.engagements_1v1_wins', index=20,
+      number=26, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='engagements_1v2_count', full_name='csgo.DeepPlayerStatsEntry.engagements_1v2_count', index=21,
+      number=27, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='engagements_1v2_wins', full_name='csgo.DeepPlayerStatsEntry.engagements_1v2_wins', index=22,
+      number=28, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='utility_count', full_name='csgo.DeepPlayerStatsEntry.utility_count', index=23,
+      number=29, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='utility_success', full_name='csgo.DeepPlayerStatsEntry.utility_success', index=24,
+      number=30, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='flash_count', full_name='csgo.DeepPlayerStatsEntry.flash_count', index=25,
+      number=32, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='flash_success', full_name='csgo.DeepPlayerStatsEntry.flash_success', index=26,
+      number=33, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='mates', full_name='csgo.DeepPlayerStatsEntry.mates', index=27,
+      number=34, type=13, cpp_type=3, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3591,
+  serialized_end=4253,
+)
+
+
+_DEEPPLAYERMATCHEVENT = _descriptor.Descriptor(
+  name='DeepPlayerMatchEvent',
+  full_name='csgo.DeepPlayerMatchEvent',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='accountid', full_name='csgo.DeepPlayerMatchEvent.accountid', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='match_id', full_name='csgo.DeepPlayerMatchEvent.match_id', index=1,
+      number=2, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='event_id', full_name='csgo.DeepPlayerMatchEvent.event_id', index=2,
+      number=3, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='event_type', full_name='csgo.DeepPlayerMatchEvent.event_type', index=3,
+      number=4, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='b_playing_ct', full_name='csgo.DeepPlayerMatchEvent.b_playing_ct', index=4,
+      number=5, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='user_pos_x', full_name='csgo.DeepPlayerMatchEvent.user_pos_x', index=5,
+      number=6, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='user_pos_y', full_name='csgo.DeepPlayerMatchEvent.user_pos_y', index=6,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='user_pos_z', full_name='csgo.DeepPlayerMatchEvent.user_pos_z', index=7,
+      number=12, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='user_defidx', full_name='csgo.DeepPlayerMatchEvent.user_defidx', index=8,
+      number=8, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='other_pos_x', full_name='csgo.DeepPlayerMatchEvent.other_pos_x', index=9,
+      number=9, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='other_pos_y', full_name='csgo.DeepPlayerMatchEvent.other_pos_y', index=10,
+      number=10, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='other_pos_z', full_name='csgo.DeepPlayerMatchEvent.other_pos_z', index=11,
+      number=13, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='other_defidx', full_name='csgo.DeepPlayerMatchEvent.other_defidx', index=12,
+      number=11, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='event_data', full_name='csgo.DeepPlayerMatchEvent.event_data', index=13,
+      number=14, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=4256,
+  serialized_end=4561,
 )
 
 
@@ -2068,8 +2427,8 @@ _CMSGGC_SERVERQUESTUPDATEDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3570,
-  serialized_end=3745,
+  serialized_start=4564,
+  serialized_end=4739,
 )
 
 
@@ -2113,8 +2472,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGCOPERATIONALSTATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3748,
-  serialized_end=3925,
+  serialized_start=4742,
+  serialized_end=4919,
 )
 
 
@@ -2158,8 +2517,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERCONFIRM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3927,
-  serialized_end=4023,
+  serialized_start=4921,
+  serialized_end=5017,
 )
 
 
@@ -2196,8 +2555,8 @@ _CMSGGCCSTRIKE15_V2_GC2SERVERRESERVATIONUPDATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4025,
-  serialized_end=4136,
+  serialized_start=5019,
+  serialized_end=5130,
 )
 
 
@@ -2262,8 +2621,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSTART = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4139,
-  serialized_end=4335,
+  serialized_start=5133,
+  serialized_end=5329,
 )
 
 
@@ -2293,8 +2652,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSTOP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4337,
-  serialized_end=4390,
+  serialized_start=5331,
+  serialized_end=5384,
 )
 
 
@@ -2359,8 +2718,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2SERVERPING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4393,
-  serialized_end=4619,
+  serialized_start=5387,
+  serialized_end=5613,
 )
 
 
@@ -2411,8 +2770,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE_NOTE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5263,
-  serialized_end=5338,
+  serialized_start=6295,
+  serialized_end=6370,
 )
 
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE = _descriptor.Descriptor(
@@ -2527,6 +2886,13 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='insecure_account_id_sessions', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientUpdate.insecure_account_id_sessions', index=15,
+      number=18, type=13, cpp_type=3, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -2539,8 +2905,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTUPDATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=4622,
-  serialized_end=5338,
+  serialized_start=5616,
+  serialized_end=6370,
 )
 
 
@@ -2577,8 +2943,8 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT_ENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5646,
-  serialized_end=5688,
+  serialized_start=6678,
+  serialized_end=6720,
 )
 
 _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT = _descriptor.Descriptor(
@@ -2670,8 +3036,8 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTMATCHDRAFT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5341,
-  serialized_end=5688,
+  serialized_start=6373,
+  serialized_end=6720,
 )
 
 
@@ -2715,8 +3081,8 @@ _CPREMATCHINFODATA_TEAMSTATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5864,
-  serialized_end=5952,
+  serialized_start=6896,
+  serialized_end=6984,
 )
 
 _CPREMATCHINFODATA = _descriptor.Descriptor(
@@ -2766,8 +3132,8 @@ _CPREMATCHINFODATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5691,
-  serialized_end=5952,
+  serialized_start=6723,
+  serialized_end=6984,
 )
 
 
@@ -2916,8 +3282,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=5955,
-  serialized_end=6542,
+  serialized_start=6987,
+  serialized_end=7574,
 )
 
 
@@ -3059,8 +3425,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE = _descriptor.Descripto
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=6545,
-  serialized_end=7121,
+  serialized_start=7577,
+  serialized_end=8153,
 )
 
 
@@ -3132,8 +3498,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7124,
-  serialized_end=7373,
+  serialized_start=8156,
+  serialized_end=8405,
 )
 
 
@@ -3163,8 +3529,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS_DROPINFO = _descriptor.Descripto
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8127,
-  serialized_end=8158,
+  serialized_start=9254,
+  serialized_end=9285,
 )
 
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS = _descriptor.Descriptor(
@@ -3356,6 +3722,34 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='b_switched_teams', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats.b_switched_teams', index=26,
+      number=27, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='enemy_2ks', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats.enemy_2ks', index=27,
+      number=28, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='player_spawned', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats.player_spawned', index=28,
+      number=29, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='team_spawn_count', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerRoundStats.team_spawn_count', index=29,
+      number=30, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -3368,147 +3762,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=7376,
-  serialized_end=8158,
-)
-
-
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHEND = _descriptor.Descriptor(
-  name='CMsgGCCStrike15_v2_MatchmakingServerMatchEnd',
-  full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEnd',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='stats', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEnd.stats', index=0,
-      number=1, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='confirm', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEnd.confirm', index=1,
-      number=3, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='rematch', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEnd.rematch', index=2,
-      number=4, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='replay_token', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEnd.replay_token', index=3,
-      number=5, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='replay_cluster_id', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEnd.replay_cluster_id', index=4,
-      number=6, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='aborted_match', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEnd.aborted_match', index=5,
-      number=7, type=8, cpp_type=7, label=1,
-      has_default_value=False, default_value=False,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='match_end_quest_data', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEnd.match_end_quest_data', index=6,
-      number=8, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='server_version', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEnd.server_version', index=7,
-      number=9, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto2',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=8161,
-  serialized_end=8526,
-)
-
-
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHENDPARTIAL = _descriptor.Descriptor(
-  name='CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial',
-  full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='reservationid', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial.reservationid', index=0,
-      number=1, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='reservation', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial.reservation', index=1,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='confirm', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial.confirm', index=2,
-      number=3, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='completed_player_quest_data', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial.completed_player_quest_data', index=3,
-      number=4, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='server_version', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial.server_version', index=4,
-      number=5, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto2',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=8529,
-  serialized_end=8848,
+  serialized_start=8408,
+  serialized_end=9285,
 )
 
 
@@ -3531,8 +3786,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2GCHELLO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8850,
-  serialized_end=8896,
+  serialized_start=9287,
+  serialized_end=9333,
 )
 
 
@@ -3688,8 +3943,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=8899,
-  serialized_end=9677,
+  serialized_start=9336,
+  serialized_end=10114,
 )
 
 
@@ -3726,8 +3981,8 @@ _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS_SETTING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9800,
-  serialized_end=9854,
+  serialized_start=10237,
+  serialized_end=10291,
 )
 
 _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS = _descriptor.Descriptor(
@@ -3756,8 +4011,8 @@ _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9680,
-  serialized_end=9854,
+  serialized_start=10117,
+  serialized_end=10291,
 )
 
 
@@ -3808,91 +4063,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTABANDON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=9857,
-  serialized_end=10053,
-)
-
-
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVER2GCKICK = _descriptor.Descriptor(
-  name='CMsgGCCStrike15_v2_MatchmakingServer2GCKick',
-  full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServer2GCKick',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='account_id', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServer2GCKick.account_id', index=0,
-      number=1, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='reservation', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServer2GCKick.reservation', index=1,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='reason', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingServer2GCKick.reason', index=2,
-      number=3, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto2',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=10056,
-  serialized_end=10212,
-)
-
-
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRANKUPDATE = _descriptor.Descriptor(
-  name='CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate',
-  full_name='csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='rankings', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate.rankings', index=0,
-      number=1, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='match_id', full_name='csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate.match_id', index=1,
-      number=2, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto2',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=10214,
-  serialized_end=10326,
+  serialized_start=10294,
+  serialized_end=10490,
 )
 
 
@@ -3922,8 +4094,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTGCRANKUPDATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10328,
-  serialized_end=10410,
+  serialized_start=10492,
+  serialized_end=10574,
 )
 
 
@@ -3953,8 +4125,8 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGOPERATOR2GCBLOGUPDATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10412,
-  serialized_end=10488,
+  serialized_start=10576,
+  serialized_end=10652,
 )
 
 
@@ -3986,6 +4158,13 @@ _CMSGGCCSTRIKE15_V2_SERVERNOTIFICATIONFORUSERPENALTY = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='communication_cooldown', full_name='csgo.CMsgGCCStrike15_v2_ServerNotificationForUserPenalty.communication_cooldown', index=3,
+      number=4, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -3998,8 +4177,8 @@ _CMSGGCCSTRIKE15_V2_SERVERNOTIFICATIONFORUSERPENALTY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10490,
-  serialized_end=10596,
+  serialized_start=10655,
+  serialized_end=10793,
 )
 
 
@@ -4066,6 +4245,13 @@ _CMSGGCCSTRIKE15_V2_CLIENTREPORTPLAYER = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='report_from_demo', full_name='csgo.CMsgGCCStrike15_v2_ClientReportPlayer.report_from_demo', index=8,
+      number=9, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -4078,8 +4264,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTREPORTPLAYER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10599,
-  serialized_end=10810,
+  serialized_start=10796,
+  serialized_end=11033,
 )
 
 
@@ -4130,8 +4316,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTCOMMENDPLAYER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10813,
-  serialized_end=10959,
+  serialized_start=11036,
+  serialized_end=11182,
 )
 
 
@@ -4196,8 +4382,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTREPORTSERVER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=10962,
-  serialized_end=11143,
+  serialized_start=11185,
+  serialized_end=11366,
 )
 
 
@@ -4262,8 +4448,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTREPORTRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11146,
-  serialized_end=11315,
+  serialized_start=11369,
+  serialized_end=11538,
 )
 
 
@@ -4328,8 +4514,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTWATCHINFOFRIENDS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11318,
-  serialized_end=11518,
+  serialized_start=11541,
+  serialized_end=11741,
 )
 
 
@@ -4443,8 +4629,8 @@ _WATCHABLEMATCHINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11521,
-  serialized_end=11825,
+  serialized_start=11744,
+  serialized_end=12048,
 )
 
 
@@ -4509,8 +4695,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINFRIENDDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=11828,
-  serialized_end=12036,
+  serialized_start=12051,
+  serialized_end=12259,
 )
 
 
@@ -4582,8 +4768,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINSERVERDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12039,
-  serialized_end=12267,
+  serialized_start=12262,
+  serialized_end=12490,
 )
 
 
@@ -4620,8 +4806,60 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTNEWMISSION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12269,
-  serialized_end=12354,
+  serialized_start=12492,
+  serialized_end=12577,
+)
+
+
+_CMSGGCCSTRIKE15_V2_CLIENTREDEEMMISSIONREWARD = _descriptor.Descriptor(
+  name='CMsgGCCstrike15_v2_ClientRedeemMissionReward',
+  full_name='csgo.CMsgGCCstrike15_v2_ClientRedeemMissionReward',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='campaign_id', full_name='csgo.CMsgGCCstrike15_v2_ClientRedeemMissionReward.campaign_id', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='redeem_id', full_name='csgo.CMsgGCCstrike15_v2_ClientRedeemMissionReward.redeem_id', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='redeemable_balance', full_name='csgo.CMsgGCCstrike15_v2_ClientRedeemMissionReward.redeemable_balance', index=2,
+      number=3, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='expected_cost', full_name='csgo.CMsgGCCstrike15_v2_ClientRedeemMissionReward.expected_cost', index=3,
+      number=4, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=12580,
+  serialized_end=12717,
 )
 
 
@@ -4686,8 +4924,134 @@ _CMSGGCCSTRIKE15_V2_GC2SERVERNOTIFYXPREWARDED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12357,
-  serialized_end=12573,
+  serialized_start=12720,
+  serialized_end=12936,
+)
+
+
+_CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSRANGE = _descriptor.Descriptor(
+  name='DeepStatsRange',
+  full_name='csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsRange',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='begin', full_name='csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsRange.begin', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='end', full_name='csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsRange.end', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='frozen', full_name='csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsRange.frozen', index=2,
+      number=3, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=13134,
+  serialized_end=13194,
+)
+
+_CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSMATCH = _descriptor.Descriptor(
+  name='DeepStatsMatch',
+  full_name='csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsMatch',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='player', full_name='csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsMatch.player', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='events', full_name='csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsMatch.events', index=1,
+      number=2, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=13196,
+  serialized_end=13300,
+)
+
+_CMSGGCCSTRIKE15_CLIENTDEEPSTATS = _descriptor.Descriptor(
+  name='CMsgGCCStrike15_ClientDeepStats',
+  full_name='csgo.CMsgGCCStrike15_ClientDeepStats',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='account_id', full_name='csgo.CMsgGCCStrike15_ClientDeepStats.account_id', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='range', full_name='csgo.CMsgGCCStrike15_ClientDeepStats.range', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='matches', full_name='csgo.CMsgGCCStrike15_ClientDeepStats.matches', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[_CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSRANGE, _CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSMATCH, ],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=12939,
+  serialized_end=13300,
 )
 
 
@@ -4738,8 +5102,8 @@ _CMSGGCCSTRIKE15_V2_WATCHINFOUSERS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12576,
-  serialized_end=12735,
+  serialized_start=13303,
+  serialized_end=13462,
 )
 
 
@@ -4790,8 +5154,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTPLAYERSPROFILE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12738,
-  serialized_end=12894,
+  serialized_start=13465,
+  serialized_end=13621,
 )
 
 
@@ -4828,8 +5192,8 @@ _CMSGGCCSTRIKE15_V2_PLAYERSPROFILE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=12897,
-  serialized_end=13030,
+  serialized_start=13624,
+  serialized_end=13757,
 )
 
 
@@ -4908,8 +5272,8 @@ _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASEUPDATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13033,
-  serialized_end=13237,
+  serialized_start=13760,
+  serialized_end=13964,
 )
 
 
@@ -5009,8 +5373,8 @@ _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASEASSIGNMENT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13240,
-  serialized_end=13509,
+  serialized_start=13967,
+  serialized_end=14236,
 )
 
 
@@ -5047,8 +5411,8 @@ _CMSGGCCSTRIKE15_V2_PLAYEROVERWATCHCASESTATUS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13511,
-  serialized_end=13591,
+  serialized_start=14238,
+  serialized_end=14318,
 )
 
 
@@ -5085,8 +5449,8 @@ _CCLIENTHEADEROVERWATCHEVIDENCE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13593,
-  serialized_end=13660,
+  serialized_start=14320,
+  serialized_end=14387,
 )
 
 
@@ -5130,8 +5494,8 @@ _CMSGGCCSTRIKE15_V2_GC2CLIENTTEXTMSG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13662,
-  serialized_end=13742,
+  serialized_start=14389,
+  serialized_end=14469,
 )
 
 
@@ -5168,8 +5532,8 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCTEXTMSG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13744,
-  serialized_end=13807,
+  serialized_start=14471,
+  serialized_end=14534,
 )
 
 
@@ -5206,8 +5570,8 @@ _CMSGGCCSTRIKE15_V2_MATCHENDRUNREWARDDROPS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=13810,
-  serialized_end=14002,
+  serialized_start=14537,
+  serialized_end=14729,
 )
 
 
@@ -5272,8 +5636,8 @@ _CECONITEMPREVIEWDATABLOCK_STICKER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14419,
-  serialized_end=14526,
+  serialized_start=15146,
+  serialized_end=15253,
 )
 
 _CECONITEMPREVIEWDATABLOCK = _descriptor.Descriptor(
@@ -5421,8 +5785,8 @@ _CECONITEMPREVIEWDATABLOCK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14005,
-  serialized_end=14526,
+  serialized_start=14732,
+  serialized_end=15253,
 )
 
 
@@ -5452,8 +5816,8 @@ _CMSGGCCSTRIKE15_V2_MATCHENDREWARDDROPSNOTIFICATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14528,
-  serialized_end=14631,
+  serialized_start=15255,
+  serialized_end=15358,
 )
 
 
@@ -5483,8 +5847,8 @@ _CMSGITEMACKNOWLEDGED = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14633,
-  serialized_end=14706,
+  serialized_start=15360,
+  serialized_end=15433,
 )
 
 
@@ -5535,8 +5899,8 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKREQUEST = _descriptor.Descripto
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14708,
-  serialized_end=14833,
+  serialized_start=15435,
+  serialized_end=15560,
 )
 
 
@@ -5566,53 +5930,8 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKRESPONSE = _descriptor.Descript
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14835,
-  serialized_end=14944,
-)
-
-
-_CMSGGCCSTRIKE15_V2_TOURNAMENTMATCHREWARDDROPSNOTIFICATION = _descriptor.Descriptor(
-  name='CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification',
-  full_name='csgo.CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='match_id', full_name='csgo.CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification.match_id', index=0,
-      number=1, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='defindex', full_name='csgo.CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification.defindex', index=1,
-      number=2, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='accountids', full_name='csgo.CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification.accountids', index=2,
-      number=3, type=13, cpp_type=3, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto2',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=14946,
-  serialized_end=15061,
+  serialized_start=15562,
+  serialized_end=15671,
 )
 
 
@@ -5635,8 +5954,8 @@ _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTCURRENTLIVEGAMES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15063,
-  serialized_end=15116,
+  serialized_start=15673,
+  serialized_end=15726,
 )
 
 
@@ -5666,8 +5985,8 @@ _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTLIVEGAMEFORUSER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15118,
-  serialized_end=15189,
+  serialized_start=15728,
+  serialized_end=15799,
 )
 
 
@@ -5697,8 +6016,8 @@ _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTRECENTUSERGAMES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15191,
-  serialized_end=15262,
+  serialized_start=15801,
+  serialized_end=15872,
 )
 
 
@@ -5728,8 +6047,8 @@ _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTTOURNAMENTGAMES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15264,
-  serialized_end=15333,
+  serialized_start=15874,
+  serialized_end=15943,
 )
 
 
@@ -5773,8 +6092,8 @@ _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTFULLGAMEINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15335,
-  serialized_end=15435,
+  serialized_start=15945,
+  serialized_end=16045,
 )
 
 
@@ -5832,8 +6151,8 @@ _CDATAGCCSTRIKE15_V2_MATCHINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15438,
-  serialized_end=15717,
+  serialized_start=16048,
+  serialized_end=16327,
 )
 
 
@@ -5877,8 +6196,8 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUPTEAM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15719,
-  serialized_end=15813,
+  serialized_start=16329,
+  serialized_end=16423,
 )
 
 
@@ -5908,8 +6227,8 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP_PICKS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16147,
-  serialized_end=16171,
+  serialized_start=16757,
+  serialized_end=16781,
 )
 
 _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP = _descriptor.Descriptor(
@@ -6001,8 +6320,8 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTGROUP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=15816,
-  serialized_end=16171,
+  serialized_start=16426,
+  serialized_end=16781,
 )
 
 
@@ -6053,8 +6372,8 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTSECTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16174,
-  serialized_end=16319,
+  serialized_start=16784,
+  serialized_end=16929,
 )
 
 
@@ -6098,8 +6417,8 @@ _CDATAGCCSTRIKE15_V2_TOURNAMENTINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16322,
-  serialized_end=16518,
+  serialized_start=16932,
+  serialized_end=17128,
 )
 
 
@@ -6164,8 +6483,8 @@ _CMSGGCCSTRIKE15_V2_MATCHLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16521,
-  serialized_end=16771,
+  serialized_start=17131,
+  serialized_end=17381,
 )
 
 
@@ -6223,8 +6542,8 @@ _CMSGGCCSTRIKE15_V2_PREDICTIONS_GROUPMATCHTEAMPICK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16915,
-  serialized_end=17018,
+  serialized_start=17525,
+  serialized_end=17628,
 )
 
 _CMSGGCCSTRIKE15_V2_PREDICTIONS = _descriptor.Descriptor(
@@ -6260,8 +6579,8 @@ _CMSGGCCSTRIKE15_V2_PREDICTIONS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=16774,
-  serialized_end=17018,
+  serialized_start=17384,
+  serialized_end=17628,
 )
 
 
@@ -6305,8 +6624,8 @@ _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYSLOT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17130,
-  serialized_end=17187,
+  serialized_start=17740,
+  serialized_end=17797,
 )
 
 _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYTEAM = _descriptor.Descriptor(
@@ -6342,8 +6661,8 @@ _CMSGGCCSTRIKE15_V2_FANTASY_FANTASYTEAM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17189,
-  serialized_end=17282,
+  serialized_start=17799,
+  serialized_end=17892,
 )
 
 _CMSGGCCSTRIKE15_V2_FANTASY = _descriptor.Descriptor(
@@ -6379,8 +6698,8 @@ _CMSGGCCSTRIKE15_V2_FANTASY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17021,
-  serialized_end=17282,
+  serialized_start=17631,
+  serialized_end=17892,
 )
 
 
@@ -6410,32 +6729,8 @@ _CATTRIBUTE_STRING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17284,
-  serialized_end=17318,
-)
-
-
-_CMSGGCTOGCRELOADVERSIONS = _descriptor.Descriptor(
-  name='CMsgGCToGCReloadVersions',
-  full_name='csgo.CMsgGCToGCReloadVersions',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto2',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=17320,
-  serialized_end=17346,
+  serialized_start=17894,
+  serialized_end=17928,
 )
 
 
@@ -6507,8 +6802,8 @@ _CMSGCSTRIKE15WELCOME = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17349,
-  serialized_end=17545,
+  serialized_start=17931,
+  serialized_end=18127,
 )
 
 
@@ -6566,8 +6861,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTVARVALUENOTIFICATIONINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17548,
-  serialized_end=17703,
+  serialized_start=18130,
+  serialized_end=18285,
 )
 
 
@@ -6611,8 +6906,8 @@ _CMSGGCCSTRIKE15_V2_SERVERVARVALUENOTIFICATIONINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17705,
-  serialized_end=17809,
+  serialized_start=18287,
+  serialized_end=18391,
 )
 
 
@@ -6635,8 +6930,8 @@ _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17811,
-  serialized_end=17855,
+  serialized_start=18393,
+  serialized_end=18437,
 )
 
 
@@ -6673,8 +6968,8 @@ _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE_GIFTLEADERBOARDENTRY = _descriptor.
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18092,
-  serialized_end=18148,
+  serialized_start=18674,
+  serialized_end=18730,
 )
 
 _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE = _descriptor.Descriptor(
@@ -6731,8 +7026,8 @@ _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=17858,
-  serialized_end=18148,
+  serialized_start=18440,
+  serialized_end=18730,
 )
 
 
@@ -6769,8 +7064,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTSUBMITSURVEYVOTE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18150,
-  serialized_end=18226,
+  serialized_start=18732,
+  serialized_end=18808,
 )
 
 
@@ -6800,88 +7095,8 @@ _CMSGGCCSTRIKE15_V2_SERVER2GCCLIENTVALIDATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18228,
-  serialized_end=18291,
-)
-
-
-_CMSGGCCSTRIKE15_V2_SERVER2GCPURESERVERVALIDATIONFAILURE = _descriptor.Descriptor(
-  name='CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure',
-  full_name='csgo.CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='accountid', full_name='csgo.CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure.accountid', index=0,
-      number=1, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='path', full_name='csgo.CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure.path', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='file', full_name='csgo.CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure.file', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='crc', full_name='csgo.CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure.crc', index=3,
-      number=4, type=13, cpp_type=3, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='hash', full_name='csgo.CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure.hash', index=4,
-      number=5, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='len', full_name='csgo.CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure.len', index=5,
-      number=6, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='pack_number', full_name='csgo.CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure.pack_number', index=6,
-      number=7, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='pack_file_id', full_name='csgo.CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure.pack_file_id', index=7,
-      number=8, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto2',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=18294,
-  serialized_end=18481,
+  serialized_start=18810,
+  serialized_end=18873,
 )
 
 
@@ -6932,8 +7147,8 @@ _CMSGGCCSTRIKE15_V2_GC2CLIENTTOURNAMENTINFO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18483,
-  serialized_end=18597,
+  serialized_start=18875,
+  serialized_end=18989,
 )
 
 
@@ -6977,8 +7192,8 @@ _CSOECONCOUPON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18599,
-  serialized_end=18678,
+  serialized_start=18991,
+  serialized_end=19070,
 )
 
 
@@ -7022,8 +7237,8 @@ _CSOQUESTPROGRESS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18680,
-  serialized_end=18769,
+  serialized_start=19072,
+  serialized_end=19161,
 )
 
 
@@ -7069,6 +7284,20 @@ _CSOACCOUNTSEASONALOPERATION = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='redeemable_balance', full_name='csgo.CSOAccountSeasonalOperation.redeemable_balance', index=5,
+      number=6, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='season_pass_time', full_name='csgo.CSOAccountSeasonalOperation.season_pass_time', index=6,
+      number=7, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -7081,8 +7310,8 @@ _CSOACCOUNTSEASONALOPERATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18772,
-  serialized_end=18923,
+  serialized_start=19164,
+  serialized_end=19369,
 )
 
 
@@ -7126,8 +7355,8 @@ _CSOPERSONADATAPUBLIC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=18925,
-  serialized_end=19045,
+  serialized_start=19371,
+  serialized_end=19491,
 )
 
 
@@ -7157,8 +7386,8 @@ _CMSGGC_GLOBALGAME_SUBSCRIBE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19047,
-  serialized_end=19092,
+  serialized_start=19493,
+  serialized_end=19538,
 )
 
 
@@ -7188,8 +7417,8 @@ _CMSGGC_GLOBALGAME_UNSUBSCRIBE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19094,
-  serialized_end=19143,
+  serialized_start=19540,
+  serialized_end=19589,
 )
 
 
@@ -7233,8 +7462,8 @@ _CMSGGC_GLOBALGAME_PLAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19145,
-  serialized_end=19225,
+  serialized_start=19591,
+  serialized_end=19671,
 )
 
 
@@ -7264,8 +7493,8 @@ _CMSGGCCSTRIKE15_V2_ACKNOWLEDGEPENALTY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19227,
-  serialized_end=19288,
+  serialized_start=19673,
+  serialized_end=19734,
 )
 
 
@@ -7316,8 +7545,8 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCREQUESTPRESTIGECOIN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19290,
-  serialized_end=19413,
+  serialized_start=19736,
+  serialized_end=19859,
 )
 
 
@@ -7354,8 +7583,8 @@ _CMSGGCCSTRIKE15_V2_CLIENT2GCSTREAMUNLOCK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19415,
-  serialized_end=19485,
+  serialized_start=19861,
+  serialized_end=19931,
 )
 
 
@@ -7385,8 +7614,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTTOGCREQUESTELEVATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19487,
-  serialized_end=19547,
+  serialized_start=19933,
+  serialized_end=19993,
 )
 
 
@@ -7423,8 +7652,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTTOGCCHAT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19549,
-  serialized_end=19616,
+  serialized_start=19995,
+  serialized_end=20062,
 )
 
 
@@ -7461,8 +7690,8 @@ _CMSGGCCSTRIKE15_V2_GCTOCLIENTCHAT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19618,
-  serialized_end=19687,
+  serialized_start=20064,
+  serialized_end=20133,
 )
 
 
@@ -7499,8 +7728,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTAUTHKEYCODE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19689,
-  serialized_end=19758,
+  serialized_start=20135,
+  serialized_end=20204,
 )
 
 
@@ -7530,8 +7759,8 @@ _CMSGGCCSTRIKE15_GOTVSYNCPACKET = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19760,
-  serialized_end=19835,
+  serialized_start=20206,
+  serialized_end=20281,
 )
 
 
@@ -7652,8 +7881,8 @@ _PLAYERDECALDIGITALSIGNATURE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=19838,
-  serialized_end=20114,
+  serialized_start=20284,
+  serialized_end=20560,
 )
 
 
@@ -7690,8 +7919,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTPLAYERDECALSIGN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20116,
-  serialized_end=20223,
+  serialized_start=20562,
+  serialized_end=20669,
 )
 
 
@@ -7735,8 +7964,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTLOGONFATALERROR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20225,
-  serialized_end=20320,
+  serialized_start=20671,
+  serialized_end=20766,
 )
 
 
@@ -7780,8 +8009,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTPOLLSTATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20322,
-  serialized_end=20405,
+  serialized_start=20768,
+  serialized_end=20851,
 )
 
 
@@ -7867,8 +8096,8 @@ _CMSGGCCSTRIKE15_V2_PARTY_REGISTER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20408,
-  serialized_end=20572,
+  serialized_start=20854,
+  serialized_end=21018,
 )
 
 
@@ -7933,8 +8162,8 @@ _CMSGGCCSTRIKE15_V2_PARTY_SEARCH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20574,
-  serialized_end=20697,
+  serialized_start=21020,
+  serialized_end=21143,
 )
 
 
@@ -7999,8 +8228,8 @@ _CMSGGCCSTRIKE15_V2_PARTY_SEARCHRESULTS_ENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20811,
-  serialized_end=20901,
+  serialized_start=21257,
+  serialized_end=21347,
 )
 
 _CMSGGCCSTRIKE15_V2_PARTY_SEARCHRESULTS = _descriptor.Descriptor(
@@ -8029,8 +8258,8 @@ _CMSGGCCSTRIKE15_V2_PARTY_SEARCHRESULTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20700,
-  serialized_end=20901,
+  serialized_start=21146,
+  serialized_end=21347,
 )
 
 
@@ -8067,8 +8296,8 @@ _CMSGGCCSTRIKE15_V2_PARTY_INVITE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20903,
-  serialized_end=20972,
+  serialized_start=21349,
+  serialized_end=21418,
 )
 
 
@@ -8112,8 +8341,8 @@ _CMSGGCCSTRIKE15_V2_ACCOUNT_REQUESTCOPLAYS_PLAYER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21113,
-  serialized_end=21174,
+  serialized_start=21559,
+  serialized_end=21620,
 )
 
 _CMSGGCCSTRIKE15_V2_ACCOUNT_REQUESTCOPLAYS = _descriptor.Descriptor(
@@ -8149,8 +8378,8 @@ _CMSGGCCSTRIKE15_V2_ACCOUNT_REQUESTCOPLAYS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=20975,
-  serialized_end=21174,
+  serialized_start=21421,
+  serialized_end=21620,
 )
 
 
@@ -8201,8 +8430,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTTOGCREQUESTTICKET = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21177,
-  serialized_end=21341,
+  serialized_start=21623,
+  serialized_end=21787,
 )
 
 
@@ -8232,8 +8461,8 @@ _CMSGGCTOCLIENTSTEAMDATAGRAMTICKET = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21343,
-  serialized_end=21405,
+  serialized_start=21789,
+  serialized_end=21851,
 )
 
 
@@ -8256,8 +8485,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTOFFERS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21407,
-  serialized_end=21447,
+  serialized_start=21853,
+  serialized_end=21893,
 )
 
 
@@ -8301,8 +8530,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTREQUESTSOUVENIR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21449,
-  serialized_end=21541,
+  serialized_start=21895,
+  serialized_end=21987,
 )
 
 
@@ -8339,8 +8568,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTACCOUNTBALANCE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21543,
-  serialized_end=21613,
+  serialized_start=21989,
+  serialized_end=22059,
 )
 
 
@@ -8377,8 +8606,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTPARTYJOINRELAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21615,
-  serialized_end=21692,
+  serialized_start=22061,
+  serialized_end=22138,
 )
 
 
@@ -8415,8 +8644,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTPARTYWARNING_ENTRY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21804,
-  serialized_end=21848,
+  serialized_start=22250,
+  serialized_end=22294,
 )
 
 _CMSGGCCSTRIKE15_V2_CLIENTPARTYWARNING = _descriptor.Descriptor(
@@ -8445,8 +8674,8 @@ _CMSGGCCSTRIKE15_V2_CLIENTPARTYWARNING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21695,
-  serialized_end=21848,
+  serialized_start=22141,
+  serialized_end=22294,
 )
 
 
@@ -8483,8 +8712,8 @@ _CMSGGCCSTRIKE15_V2_SETEVENTFAVORITE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21850,
-  serialized_end=21925,
+  serialized_start=22296,
+  serialized_end=22371,
 )
 
 
@@ -8514,8 +8743,8 @@ _CMSGGCCSTRIKE15_V2_GETEVENTFAVORITES_REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21927,
-  serialized_end=21993,
+  serialized_start=22373,
+  serialized_end=22439,
 )
 
 
@@ -8559,8 +8788,431 @@ _CMSGGCCSTRIKE15_V2_GETEVENTFAVORITES_RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=21995,
-  serialized_end=22109,
+  serialized_start=22441,
+  serialized_end=22555,
+)
+
+
+_CMSGGCCSTRIKE15_V2_CLIENTPERFREPORT_ENTRY = _descriptor.Descriptor(
+  name='Entry',
+  full_name='csgo.CMsgGCCStrike15_v2_ClientPerfReport.Entry',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='perfcounter', full_name='csgo.CMsgGCCStrike15_v2_ClientPerfReport.Entry.perfcounter', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='length', full_name='csgo.CMsgGCCStrike15_v2_ClientPerfReport.Entry.length', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='reference', full_name='csgo.CMsgGCCStrike15_v2_ClientPerfReport.Entry.reference', index=2,
+      number=3, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b(""),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='actual', full_name='csgo.CMsgGCCStrike15_v2_ClientPerfReport.Entry.actual', index=3,
+      number=4, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b(""),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='sourceid', full_name='csgo.CMsgGCCStrike15_v2_ClientPerfReport.Entry.sourceid', index=4,
+      number=5, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='status', full_name='csgo.CMsgGCCStrike15_v2_ClientPerfReport.Entry.status', index=5,
+      number=6, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=22663,
+  serialized_end=22776,
+)
+
+_CMSGGCCSTRIKE15_V2_CLIENTPERFREPORT = _descriptor.Descriptor(
+  name='CMsgGCCStrike15_v2_ClientPerfReport',
+  full_name='csgo.CMsgGCCStrike15_v2_ClientPerfReport',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='entries', full_name='csgo.CMsgGCCStrike15_v2_ClientPerfReport.entries', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[_CMSGGCCSTRIKE15_V2_CLIENTPERFREPORT_ENTRY, ],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=22558,
+  serialized_end=22776,
+)
+
+
+_CVDIAGNOSTIC = _descriptor.Descriptor(
+  name='CVDiagnostic',
+  full_name='csgo.CVDiagnostic',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='id', full_name='csgo.CVDiagnostic.id', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='extended', full_name='csgo.CVDiagnostic.extended', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='csgo.CVDiagnostic.value', index=2,
+      number=3, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='string_value', full_name='csgo.CVDiagnostic.string_value', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=22778,
+  serialized_end=22859,
+)
+
+
+_CMSGGCCSTRIKE15_V2_CLIENTREPORTVALIDATION = _descriptor.Descriptor(
+  name='CMsgGCCStrike15_v2_ClientReportValidation',
+  full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='file_report', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.file_report', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='command_line', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.command_line', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='total_files', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.total_files', index=2,
+      number=3, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='internal_error', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.internal_error', index=3,
+      number=4, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='trust_time', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.trust_time', index=4,
+      number=5, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='count_pending', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.count_pending', index=5,
+      number=6, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='count_completed', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.count_completed', index=6,
+      number=7, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='process_id', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.process_id', index=7,
+      number=8, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='osversion', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.osversion', index=8,
+      number=9, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='clientreportversion', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.clientreportversion', index=9,
+      number=10, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='status_id', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.status_id', index=10,
+      number=11, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='diagnostic1', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.diagnostic1', index=11,
+      number=12, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='diagnostic2', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.diagnostic2', index=12,
+      number=13, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='diagnostic3', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.diagnostic3', index=13,
+      number=14, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='last_launch_data', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.last_launch_data', index=14,
+      number=15, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='report_count', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.report_count', index=15,
+      number=16, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='client_time', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.client_time', index=16,
+      number=17, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='diagnostic4', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.diagnostic4', index=17,
+      number=18, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='diagnostic5', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.diagnostic5', index=18,
+      number=19, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='diagnostics', full_name='csgo.CMsgGCCStrike15_v2_ClientReportValidation.diagnostics', index=19,
+      number=20, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=22862,
+  serialized_end=23363,
+)
+
+
+_CMSGGCCSTRIKE15_V2_GC2CLIENTREFUSESECUREMODE = _descriptor.Descriptor(
+  name='CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode',
+  full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='file_report', full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode.file_report', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='offer_insecure_mode', full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode.offer_insecure_mode', index=1,
+      number=2, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='offer_secure_mode', full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode.offer_secure_mode', index=2,
+      number=3, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='show_unsigned_ui', full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode.show_unsigned_ui', index=3,
+      number=4, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='kick_user', full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode.kick_user', index=4,
+      number=5, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='show_trusted_ui', full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode.show_trusted_ui', index=5,
+      number=6, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='show_warning_not_trusted', full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode.show_warning_not_trusted', index=6,
+      number=7, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=23366,
+  serialized_end=23593,
+)
+
+
+_CMSGGCCSTRIKE15_V2_GC2CLIENTREQUESTVALIDATION = _descriptor.Descriptor(
+  name='CMsgGCCStrike15_v2_GC2ClientRequestValidation',
+  full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRequestValidation',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='full_report', full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRequestValidation.full_report', index=0,
+      number=1, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='module', full_name='csgo.CMsgGCCStrike15_v2_GC2ClientRequestValidation.module', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=23595,
+  serialized_end=23679,
 )
 
 _TOURNAMENTTEAM.fields_by_name['players'].message_type = _TOURNAMENTPLAYER
@@ -8604,12 +9256,6 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS_DROPINFO.containing_type = _CMSG
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS.fields_by_name['reservation'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS.fields_by_name['confirm'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERCONFIRM
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS.fields_by_name['drop_info'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS_DROPINFO
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHEND.fields_by_name['stats'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHEND.fields_by_name['confirm'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERCONFIRM
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHEND.fields_by_name['match_end_quest_data'].message_type = _CMSGGC_SERVERQUESTUPDATEDATA
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHENDPARTIAL.fields_by_name['reservation'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHENDPARTIAL.fields_by_name['confirm'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERCONFIRM
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHENDPARTIAL.fields_by_name['completed_player_quest_data'].message_type = _CMSGGC_SERVERQUESTUPDATEDATA
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO.fields_by_name['ongoingmatch'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO.fields_by_name['global_stats'].message_type = _GLOBALSTATISTICS
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO.fields_by_name['ranking'].message_type = _PLAYERRANKINGINFO
@@ -8624,14 +9270,18 @@ _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO.fields_by_name['rankings'].message
 _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS_SETTING.containing_type = _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS
 _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS.fields_by_name['settings'].message_type = _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS_SETTING
 _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTABANDON.fields_by_name['abandoned_match'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVER2GCKICK.fields_by_name['reservation'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRESERVE
-_CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRANKUPDATE.fields_by_name['rankings'].message_type = _PLAYERRANKINGINFO
 _CMSGGCCSTRIKE15_V2_CLIENTGCRANKUPDATE.fields_by_name['rankings'].message_type = _PLAYERRANKINGINFO
 _CMSGGCCSTRIKE15_V2_CLIENTCOMMENDPLAYER.fields_by_name['commendation'].message_type = _PLAYERCOMMENDATIONINFO
 _CMSGGCCSTRIKE15_V2_CLIENTREQUESTWATCHINFOFRIENDS.fields_by_name['data_center_pings'].message_type = _DATACENTERPING
 _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINFRIENDDATA.fields_by_name['res'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE
 _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINSERVERDATA.fields_by_name['res'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE
 _CMSGGCCSTRIKE15_V2_GC2SERVERNOTIFYXPREWARDED.fields_by_name['xp_progress_data'].message_type = _XPPROGRESSDATA
+_CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSRANGE.containing_type = _CMSGGCCSTRIKE15_CLIENTDEEPSTATS
+_CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSMATCH.fields_by_name['player'].message_type = _DEEPPLAYERSTATSENTRY
+_CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSMATCH.fields_by_name['events'].message_type = _DEEPPLAYERMATCHEVENT
+_CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSMATCH.containing_type = _CMSGGCCSTRIKE15_CLIENTDEEPSTATS
+_CMSGGCCSTRIKE15_CLIENTDEEPSTATS.fields_by_name['range'].message_type = _CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSRANGE
+_CMSGGCCSTRIKE15_CLIENTDEEPSTATS.fields_by_name['matches'].message_type = _CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSMATCH
 _CMSGGCCSTRIKE15_V2_WATCHINFOUSERS.fields_by_name['watchable_match_infos'].message_type = _WATCHABLEMATCHINFO
 _CMSGGCCSTRIKE15_V2_PLAYERSPROFILE.fields_by_name['account_profiles'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO
 _CMSGGCCSTRIKE15_V2_MATCHENDRUNREWARDDROPS.fields_by_name['serverinfo'].message_type = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE
@@ -8671,6 +9321,9 @@ _CMSGGCCSTRIKE15_V2_ACCOUNT_REQUESTCOPLAYS_PLAYER.containing_type = _CMSGGCCSTRI
 _CMSGGCCSTRIKE15_V2_ACCOUNT_REQUESTCOPLAYS.fields_by_name['players'].message_type = _CMSGGCCSTRIKE15_V2_ACCOUNT_REQUESTCOPLAYS_PLAYER
 _CMSGGCCSTRIKE15_V2_CLIENTPARTYWARNING_ENTRY.containing_type = _CMSGGCCSTRIKE15_V2_CLIENTPARTYWARNING
 _CMSGGCCSTRIKE15_V2_CLIENTPARTYWARNING.fields_by_name['entries'].message_type = _CMSGGCCSTRIKE15_V2_CLIENTPARTYWARNING_ENTRY
+_CMSGGCCSTRIKE15_V2_CLIENTPERFREPORT_ENTRY.containing_type = _CMSGGCCSTRIKE15_V2_CLIENTPERFREPORT
+_CMSGGCCSTRIKE15_V2_CLIENTPERFREPORT.fields_by_name['entries'].message_type = _CMSGGCCSTRIKE15_V2_CLIENTPERFREPORT_ENTRY
+_CMSGGCCSTRIKE15_V2_CLIENTREPORTVALIDATION.fields_by_name['diagnostics'].message_type = _CVDIAGNOSTIC
 DESCRIPTOR.message_types_by_name['GameServerPing'] = _GAMESERVERPING
 DESCRIPTOR.message_types_by_name['DataCenterPing'] = _DATACENTERPING
 DESCRIPTOR.message_types_by_name['DetailedSearchStatistic'] = _DETAILEDSEARCHSTATISTIC
@@ -8693,6 +9346,8 @@ DESCRIPTOR.message_types_by_name['XpProgressData'] = _XPPROGRESSDATA
 DESCRIPTOR.message_types_by_name['MatchEndItemUpdates'] = _MATCHENDITEMUPDATES
 DESCRIPTOR.message_types_by_name['ScoreLeaderboardData'] = _SCORELEADERBOARDDATA
 DESCRIPTOR.message_types_by_name['PlayerQuestData'] = _PLAYERQUESTDATA
+DESCRIPTOR.message_types_by_name['DeepPlayerStatsEntry'] = _DEEPPLAYERSTATSENTRY
+DESCRIPTOR.message_types_by_name['DeepPlayerMatchEvent'] = _DEEPPLAYERMATCHEVENT
 DESCRIPTOR.message_types_by_name['CMsgGC_ServerQuestUpdateData'] = _CMSGGC_SERVERQUESTUPDATEDATA
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingGCOperationalStats'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGCOPERATIONALSTATS
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingGC2ServerConfirm'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERCONFIRM
@@ -8707,14 +9362,10 @@ DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingGC2ServerReserve
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingServerReservationResponse'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERRESERVATIONRESPONSE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingGC2ClientReserve'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTRESERVE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingServerRoundStats'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERROUNDSTATS
-DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingServerMatchEnd'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHEND
-DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHENDPARTIAL
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingClient2GCHello'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2GCHELLO
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingGC2ClientHello'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTHELLO
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_AccountPrivacySettings'] = _CMSGGCCSTRIKE15_V2_ACCOUNTPRIVACYSETTINGS
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2CLIENTABANDON
-DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingServer2GCKick'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVER2GCKICK
-DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRANKUPDATE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientGCRankUpdate'] = _CMSGGCCSTRIKE15_V2_CLIENTGCRANKUPDATE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchmakingOperator2GCBlogUpdate'] = _CMSGGCCSTRIKE15_V2_MATCHMAKINGOPERATOR2GCBLOGUPDATE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ServerNotificationForUserPenalty'] = _CMSGGCCSTRIKE15_V2_SERVERNOTIFICATIONFORUSERPENALTY
@@ -8727,7 +9378,9 @@ DESCRIPTOR.message_types_by_name['WatchableMatchInfo'] = _WATCHABLEMATCHINFO
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientRequestJoinFriendData'] = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINFRIENDDATA
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientRequestJoinServerData'] = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTJOINSERVERDATA
 DESCRIPTOR.message_types_by_name['CMsgGCCstrike15_v2_ClientRequestNewMission'] = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTNEWMISSION
+DESCRIPTOR.message_types_by_name['CMsgGCCstrike15_v2_ClientRedeemMissionReward'] = _CMSGGCCSTRIKE15_V2_CLIENTREDEEMMISSIONREWARD
 DESCRIPTOR.message_types_by_name['CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded'] = _CMSGGCCSTRIKE15_V2_GC2SERVERNOTIFYXPREWARDED
+DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_ClientDeepStats'] = _CMSGGCCSTRIKE15_CLIENTDEEPSTATS
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_WatchInfoUsers'] = _CMSGGCCSTRIKE15_V2_WATCHINFOUSERS
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientRequestPlayersProfile'] = _CMSGGCCSTRIKE15_V2_CLIENTREQUESTPLAYERSPROFILE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_PlayersProfile'] = _CMSGGCCSTRIKE15_V2_PLAYERSPROFILE
@@ -8743,7 +9396,6 @@ DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchEndRewardDropsNotifica
 DESCRIPTOR.message_types_by_name['CMsgItemAcknowledged'] = _CMSGITEMACKNOWLEDGED
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockRequest'] = _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKREQUEST
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse'] = _CMSGGCCSTRIKE15_V2_CLIENT2GCECONPREVIEWDATABLOCKRESPONSE
-DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification'] = _CMSGGCCSTRIKE15_V2_TOURNAMENTMATCHREWARDDROPSNOTIFICATION
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames'] = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTCURRENTLIVEGAMES
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchListRequestLiveGameForUser'] = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTLIVEGAMEFORUSER
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchListRequestRecentUserGames'] = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTRECENTUSERGAMES
@@ -8758,7 +9410,6 @@ DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_MatchList'] = _CMSGGCCSTRIK
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_Predictions'] = _CMSGGCCSTRIKE15_V2_PREDICTIONS
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_Fantasy'] = _CMSGGCCSTRIKE15_V2_FANTASY
 DESCRIPTOR.message_types_by_name['CAttribute_String'] = _CATTRIBUTE_STRING
-DESCRIPTOR.message_types_by_name['CMsgGCToGCReloadVersions'] = _CMSGGCTOGCRELOADVERSIONS
 DESCRIPTOR.message_types_by_name['CMsgCStrike15Welcome'] = _CMSGCSTRIKE15WELCOME
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientVarValueNotificationInfo'] = _CMSGGCCSTRIKE15_V2_CLIENTVARVALUENOTIFICATIONINFO
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ServerVarValueNotificationInfo'] = _CMSGGCCSTRIKE15_V2_SERVERVARVALUENOTIFICATIONINFO
@@ -8766,7 +9417,6 @@ DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_GiftsLeaderboardRequest'] =
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_GiftsLeaderboardResponse'] = _CMSGGCCSTRIKE15_V2_GIFTSLEADERBOARDRESPONSE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientSubmitSurveyVote'] = _CMSGGCCSTRIKE15_V2_CLIENTSUBMITSURVEYVOTE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_Server2GCClientValidate'] = _CMSGGCCSTRIKE15_V2_SERVER2GCCLIENTVALIDATE
-DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure'] = _CMSGGCCSTRIKE15_V2_SERVER2GCPURESERVERVALIDATIONFAILURE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_GC2ClientTournamentInfo'] = _CMSGGCCSTRIKE15_V2_GC2CLIENTTOURNAMENTINFO
 DESCRIPTOR.message_types_by_name['CSOEconCoupon'] = _CSOECONCOUPON
 DESCRIPTOR.message_types_by_name['CSOQuestProgress'] = _CSOQUESTPROGRESS
@@ -8802,8 +9452,14 @@ DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientPartyWarning'] = _CMS
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_SetEventFavorite'] = _CMSGGCCSTRIKE15_V2_SETEVENTFAVORITE
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_GetEventFavorites_Request'] = _CMSGGCCSTRIKE15_V2_GETEVENTFAVORITES_REQUEST
 DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_GetEventFavorites_Response'] = _CMSGGCCSTRIKE15_V2_GETEVENTFAVORITES_RESPONSE
+DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientPerfReport'] = _CMSGGCCSTRIKE15_V2_CLIENTPERFREPORT
+DESCRIPTOR.message_types_by_name['CVDiagnostic'] = _CVDIAGNOSTIC
+DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_ClientReportValidation'] = _CMSGGCCSTRIKE15_V2_CLIENTREPORTVALIDATION
+DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode'] = _CMSGGCCSTRIKE15_V2_GC2CLIENTREFUSESECUREMODE
+DESCRIPTOR.message_types_by_name['CMsgGCCStrike15_v2_GC2ClientRequestValidation'] = _CMSGGCCSTRIKE15_V2_GC2CLIENTREQUESTVALIDATION
 DESCRIPTOR.enum_types_by_name['ECsgoGCMsg'] = _ECSGOGCMSG
 DESCRIPTOR.enum_types_by_name['ECsgoSteamUserStat'] = _ECSGOSTEAMUSERSTAT
+DESCRIPTOR.enum_types_by_name['EClientReportingVersion'] = _ECLIENTREPORTINGVERSION
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 GameServerPing = _reflection.GeneratedProtocolMessageType('GameServerPing', (_message.Message,), dict(
@@ -8984,6 +9640,20 @@ PlayerQuestData = _reflection.GeneratedProtocolMessageType('PlayerQuestData', (_
 _sym_db.RegisterMessage(PlayerQuestData)
 _sym_db.RegisterMessage(PlayerQuestData.QuestItemData)
 
+DeepPlayerStatsEntry = _reflection.GeneratedProtocolMessageType('DeepPlayerStatsEntry', (_message.Message,), dict(
+  DESCRIPTOR = _DEEPPLAYERSTATSENTRY,
+  __module__ = 'cstrike15_gcmessages_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.DeepPlayerStatsEntry)
+  ))
+_sym_db.RegisterMessage(DeepPlayerStatsEntry)
+
+DeepPlayerMatchEvent = _reflection.GeneratedProtocolMessageType('DeepPlayerMatchEvent', (_message.Message,), dict(
+  DESCRIPTOR = _DEEPPLAYERMATCHEVENT,
+  __module__ = 'cstrike15_gcmessages_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.DeepPlayerMatchEvent)
+  ))
+_sym_db.RegisterMessage(DeepPlayerMatchEvent)
+
 CMsgGC_ServerQuestUpdateData = _reflection.GeneratedProtocolMessageType('CMsgGC_ServerQuestUpdateData', (_message.Message,), dict(
   DESCRIPTOR = _CMSGGC_SERVERQUESTUPDATEDATA,
   __module__ = 'cstrike15_gcmessages_pb2'
@@ -9114,20 +9784,6 @@ CMsgGCCStrike15_v2_MatchmakingServerRoundStats = _reflection.GeneratedProtocolMe
 _sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingServerRoundStats)
 _sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingServerRoundStats.DropInfo)
 
-CMsgGCCStrike15_v2_MatchmakingServerMatchEnd = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingServerMatchEnd', (_message.Message,), dict(
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHEND,
-  __module__ = 'cstrike15_gcmessages_pb2'
-  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEnd)
-  ))
-_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingServerMatchEnd)
-
-CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial', (_message.Message,), dict(
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVERMATCHENDPARTIAL,
-  __module__ = 'cstrike15_gcmessages_pb2'
-  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial)
-  ))
-_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingServerMatchEndPartial)
-
 CMsgGCCStrike15_v2_MatchmakingClient2GCHello = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingClient2GCHello', (_message.Message,), dict(
   DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGCLIENT2GCHELLO,
   __module__ = 'cstrike15_gcmessages_pb2'
@@ -9163,20 +9819,6 @@ CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon = _reflection.GeneratedProtocolMe
   # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon)
   ))
 _sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGC2ClientAbandon)
-
-CMsgGCCStrike15_v2_MatchmakingServer2GCKick = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingServer2GCKick', (_message.Message,), dict(
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGSERVER2GCKICK,
-  __module__ = 'cstrike15_gcmessages_pb2'
-  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_MatchmakingServer2GCKick)
-  ))
-_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingServer2GCKick)
-
-CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate', (_message.Message,), dict(
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHMAKINGGC2SERVERRANKUPDATE,
-  __module__ = 'cstrike15_gcmessages_pb2'
-  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate)
-  ))
-_sym_db.RegisterMessage(CMsgGCCStrike15_v2_MatchmakingGC2ServerRankUpdate)
 
 CMsgGCCStrike15_v2_ClientGCRankUpdate = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientGCRankUpdate', (_message.Message,), dict(
   DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTGCRANKUPDATE,
@@ -9262,12 +9904,42 @@ CMsgGCCstrike15_v2_ClientRequestNewMission = _reflection.GeneratedProtocolMessag
   ))
 _sym_db.RegisterMessage(CMsgGCCstrike15_v2_ClientRequestNewMission)
 
+CMsgGCCstrike15_v2_ClientRedeemMissionReward = _reflection.GeneratedProtocolMessageType('CMsgGCCstrike15_v2_ClientRedeemMissionReward', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREDEEMMISSIONREWARD,
+  __module__ = 'cstrike15_gcmessages_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCstrike15_v2_ClientRedeemMissionReward)
+  ))
+_sym_db.RegisterMessage(CMsgGCCstrike15_v2_ClientRedeemMissionReward)
+
 CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded = _reflection.GeneratedProtocolMessageType('CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded', (_message.Message,), dict(
   DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2SERVERNOTIFYXPREWARDED,
   __module__ = 'cstrike15_gcmessages_pb2'
   # @@protoc_insertion_point(class_scope:csgo.CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded)
   ))
 _sym_db.RegisterMessage(CMsgGCCstrike15_v2_GC2ServerNotifyXPRewarded)
+
+CMsgGCCStrike15_ClientDeepStats = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_ClientDeepStats', (_message.Message,), dict(
+
+  DeepStatsRange = _reflection.GeneratedProtocolMessageType('DeepStatsRange', (_message.Message,), dict(
+    DESCRIPTOR = _CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSRANGE,
+    __module__ = 'cstrike15_gcmessages_pb2'
+    # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsRange)
+    ))
+  ,
+
+  DeepStatsMatch = _reflection.GeneratedProtocolMessageType('DeepStatsMatch', (_message.Message,), dict(
+    DESCRIPTOR = _CMSGGCCSTRIKE15_CLIENTDEEPSTATS_DEEPSTATSMATCH,
+    __module__ = 'cstrike15_gcmessages_pb2'
+    # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_ClientDeepStats.DeepStatsMatch)
+    ))
+  ,
+  DESCRIPTOR = _CMSGGCCSTRIKE15_CLIENTDEEPSTATS,
+  __module__ = 'cstrike15_gcmessages_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_ClientDeepStats)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_ClientDeepStats)
+_sym_db.RegisterMessage(CMsgGCCStrike15_ClientDeepStats.DeepStatsRange)
+_sym_db.RegisterMessage(CMsgGCCStrike15_ClientDeepStats.DeepStatsMatch)
 
 CMsgGCCStrike15_v2_WatchInfoUsers = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_WatchInfoUsers', (_message.Message,), dict(
   DESCRIPTOR = _CMSGGCCSTRIKE15_V2_WATCHINFOUSERS,
@@ -9381,13 +10053,6 @@ CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse = _reflection.Generated
   # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse)
   ))
 _sym_db.RegisterMessage(CMsgGCCStrike15_v2_Client2GCEconPreviewDataBlockResponse)
-
-CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification', (_message.Message,), dict(
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_TOURNAMENTMATCHREWARDDROPSNOTIFICATION,
-  __module__ = 'cstrike15_gcmessages_pb2'
-  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification)
-  ))
-_sym_db.RegisterMessage(CMsgGCCStrike15_v2_TournamentMatchRewardDropsNotification)
 
 CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_MatchListRequestCurrentLiveGames', (_message.Message,), dict(
   DESCRIPTOR = _CMSGGCCSTRIKE15_V2_MATCHLISTREQUESTCURRENTLIVEGAMES,
@@ -9519,13 +10184,6 @@ CAttribute_String = _reflection.GeneratedProtocolMessageType('CAttribute_String'
   ))
 _sym_db.RegisterMessage(CAttribute_String)
 
-CMsgGCToGCReloadVersions = _reflection.GeneratedProtocolMessageType('CMsgGCToGCReloadVersions', (_message.Message,), dict(
-  DESCRIPTOR = _CMSGGCTOGCRELOADVERSIONS,
-  __module__ = 'cstrike15_gcmessages_pb2'
-  # @@protoc_insertion_point(class_scope:csgo.CMsgGCToGCReloadVersions)
-  ))
-_sym_db.RegisterMessage(CMsgGCToGCReloadVersions)
-
 CMsgCStrike15Welcome = _reflection.GeneratedProtocolMessageType('CMsgCStrike15Welcome', (_message.Message,), dict(
   DESCRIPTOR = _CMSGCSTRIKE15WELCOME,
   __module__ = 'cstrike15_gcmessages_pb2'
@@ -9582,13 +10240,6 @@ CMsgGCCStrike15_v2_Server2GCClientValidate = _reflection.GeneratedProtocolMessag
   # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_Server2GCClientValidate)
   ))
 _sym_db.RegisterMessage(CMsgGCCStrike15_v2_Server2GCClientValidate)
-
-CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure', (_message.Message,), dict(
-  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_SERVER2GCPURESERVERVALIDATIONFAILURE,
-  __module__ = 'cstrike15_gcmessages_pb2'
-  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure)
-  ))
-_sym_db.RegisterMessage(CMsgGCCStrike15_v2_Server2GCPureServerValidationFailure)
 
 CMsgGCCStrike15_v2_GC2ClientTournamentInfo = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_GC2ClientTournamentInfo', (_message.Message,), dict(
   DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2CLIENTTOURNAMENTINFO,
@@ -9858,6 +10509,49 @@ CMsgGCCStrike15_v2_GetEventFavorites_Response = _reflection.GeneratedProtocolMes
   # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_GetEventFavorites_Response)
   ))
 _sym_db.RegisterMessage(CMsgGCCStrike15_v2_GetEventFavorites_Response)
+
+CMsgGCCStrike15_v2_ClientPerfReport = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientPerfReport', (_message.Message,), dict(
+
+  Entry = _reflection.GeneratedProtocolMessageType('Entry', (_message.Message,), dict(
+    DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTPERFREPORT_ENTRY,
+    __module__ = 'cstrike15_gcmessages_pb2'
+    # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_ClientPerfReport.Entry)
+    ))
+  ,
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTPERFREPORT,
+  __module__ = 'cstrike15_gcmessages_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_ClientPerfReport)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientPerfReport)
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientPerfReport.Entry)
+
+CVDiagnostic = _reflection.GeneratedProtocolMessageType('CVDiagnostic', (_message.Message,), dict(
+  DESCRIPTOR = _CVDIAGNOSTIC,
+  __module__ = 'cstrike15_gcmessages_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CVDiagnostic)
+  ))
+_sym_db.RegisterMessage(CVDiagnostic)
+
+CMsgGCCStrike15_v2_ClientReportValidation = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_ClientReportValidation', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_CLIENTREPORTVALIDATION,
+  __module__ = 'cstrike15_gcmessages_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_ClientReportValidation)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_ClientReportValidation)
+
+CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2CLIENTREFUSESECUREMODE,
+  __module__ = 'cstrike15_gcmessages_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_GC2ClientRefuseSecureMode)
+
+CMsgGCCStrike15_v2_GC2ClientRequestValidation = _reflection.GeneratedProtocolMessageType('CMsgGCCStrike15_v2_GC2ClientRequestValidation', (_message.Message,), dict(
+  DESCRIPTOR = _CMSGGCCSTRIKE15_V2_GC2CLIENTREQUESTVALIDATION,
+  __module__ = 'cstrike15_gcmessages_pb2'
+  # @@protoc_insertion_point(class_scope:csgo.CMsgGCCStrike15_v2_GC2ClientRequestValidation)
+  ))
+_sym_db.RegisterMessage(CMsgGCCStrike15_v2_GC2ClientRequestValidation)
 
 
 DESCRIPTOR._options = None
