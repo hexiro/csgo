@@ -1,9 +1,11 @@
 from enum import IntEnum
 
+
 class EClientReportingVersion(IntEnum):
     OldVersion = 0
     BetaVersion = 1
     SupportsTrustedMode = 2
+
 
 class ECommunityItemAttribute(IntEnum):
     Invalid = 0
@@ -17,6 +19,7 @@ class ECommunityItemAttribute(IntEnum):
     ProfileModiferEnabled = 8
     ExpiryTime = 9
 
+
 class ECommunityItemClass(IntEnum):
     Invalid = 0
     Badge = 1
@@ -29,6 +32,7 @@ class ECommunityItemClass(IntEnum):
     ProfileModifier = 8
     Scene = 9
     SalienItem = 10
+
 
 class ECsgoGCMsg(IntEnum):
     EMsgGCCStrike15_v2_Base = 9100
@@ -126,11 +130,17 @@ class ECsgoGCMsg(IntEnum):
     EMsgGCCStrike15_v2_ClientRedeemMissionReward = 9209
     EMsgGCCStrike15_ClientDeepStats = 9210
     EMsgGCCStrike15_StartAgreementSessionInGame = 9211
+    EMsgGCCStrike15_v2_GC2ClientInitSystem = 9212
+    EMsgGCCStrike15_v2_GC2ClientInitSystem_Response = 9213
+    EMsgGCCStrike15_v2_PrivateQueues = 9214
+    EMsgGCCStrike15_v2_MatchListTournamentOperatorMgmt = 9215
+
 
 class ECsgoSteamUserStat(IntEnum):
     XpEarnedGames = 1
     MatchWinsCompetitive = 2
     SurvivedDangerZone = 3
+
 
 class EGCBaseClientMsg(IntEnum):
     EMsgGCClientWelcome = 4004
@@ -144,6 +154,7 @@ class EGCBaseClientMsg(IntEnum):
     EMsgGCClientHelloR2 = 4013
     EMsgGCClientHelloR3 = 4014
     EMsgGCClientHelloR4 = 4015
+
 
 class EGCItemCustomizationNotification(IntEnum):
     NameItem = 1006
@@ -167,6 +178,7 @@ class EGCItemCustomizationNotification(IntEnum):
     GraffitiUnseal = 9185
     GenerateSouvenir = 9204
     ClientRedeemMissionReward = 9209
+
 
 class EGCItemMsg(IntEnum):
     EMsgGCBase = 1000
@@ -312,6 +324,8 @@ class EGCItemMsg(IntEnum):
     EMsgGCRequestPassportItemGrant = 2527
     EMsgGCClientVersionUpdated = 2528
     EMsgGCAdjustItemEquippedStateMulti = 2529
+    EMsgGCRecurringSubscriptionStatus = 2530
+
 
 class EGCMsgResponse(IntEnum):
     EGCMsgResponseOK = 0
@@ -325,6 +339,7 @@ class EGCMsgResponse(IntEnum):
     EGCMsgFailedToCreate = 8
     EGCMsgLimitExceeded = 9
     EGCMsgCommitUnfinalized = 10
+
 
 class EGCSystemMsg(IntEnum):
     EGCMsgInvalid = 0
@@ -416,6 +431,10 @@ class EGCSystemMsg(IntEnum):
     EGCMsgGetGamePersonalDataEntriesResponse = 527
     EGCMsgTerminateGamePersonalDataEntriesRequest = 528
     EGCMsgTerminateGamePersonalDataEntriesResponse = 529
+    EGCMsgRecurringSubscriptionStatusChange = 530
+    EGCMsgDirectServiceMethod = 531
+    EGCMsgDirectServiceMethodResponse = 532
+
 
 class EGCToGCMsg(IntEnum):
     EGCToGCMsgMasterAck = 150
@@ -427,6 +446,23 @@ class EGCToGCMsg(IntEnum):
     EMsgRequestSessionIPResponse = 156
     EGCToGCMsgMasterStartupComplete = 157
 
+
+EInitSystemResult = IntEnum(
+    "EInitSystemResult",
+    {
+        "Invalid": 0,
+        "Success": 1,
+        "None": 2,
+        "NotFound": 3,
+        "Existing": 4,
+        "FailedOpen": 5,
+        "Mismatch": 6,
+        "FailedInit": 7,
+        "Max": 8,
+    },
+)
+
+
 class ESOMsg(IntEnum):
     Create = 21
     Update = 22
@@ -437,6 +473,7 @@ class ESOMsg(IntEnum):
     CacheSubscriptionCheck = 27
     CacheSubscriptionRefresh = 28
 
+
 class EUnlockStyle(IntEnum):
     UnlockStyle_Succeeded = 0
     UnlockStyle_Failed_PreReq = 1
@@ -445,10 +482,12 @@ class EUnlockStyle(IntEnum):
     UnlockStyle_Failed_CantLockCache = 4
     UnlockStyle_Failed_CantAffordAttrib = 5
 
+
 class GCClientLauncherType(IntEnum):
     DEFAULT = 0
     PERFECTWORLD = 1
     STEAMCHINA = 2
+
 
 class GCConnectionStatus(IntEnum):
     HAVE_SESSION = 0
@@ -457,20 +496,22 @@ class GCConnectionStatus(IntEnum):
     NO_SESSION_IN_LOGON_QUEUE = 3
     NO_STEAM = 4
 
+
 __all__ = [
-    'EClientReportingVersion',
-    'ECommunityItemAttribute',
-    'ECommunityItemClass',
-    'ECsgoGCMsg',
-    'ECsgoSteamUserStat',
-    'EGCBaseClientMsg',
-    'EGCItemCustomizationNotification',
-    'EGCItemMsg',
-    'EGCMsgResponse',
-    'EGCSystemMsg',
-    'EGCToGCMsg',
-    'ESOMsg',
-    'EUnlockStyle',
-    'GCClientLauncherType',
-    'GCConnectionStatus',
-    ]
+    "EClientReportingVersion",
+    "ECommunityItemAttribute",
+    "ECommunityItemClass",
+    "ECsgoGCMsg",
+    "ECsgoSteamUserStat",
+    "EGCBaseClientMsg",
+    "EGCItemCustomizationNotification",
+    "EGCItemMsg",
+    "EGCMsgResponse",
+    "EGCSystemMsg",
+    "EGCToGCMsg",
+    "EInitSystemResult",
+    "ESOMsg",
+    "EUnlockStyle",
+    "GCClientLauncherType",
+    "GCConnectionStatus",
+]
